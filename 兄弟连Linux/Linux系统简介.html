@@ -1,0 +1,770 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linux系统简介 · 0day计划</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="None">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Linux常用命令.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="none.org.cn" target="_blank" class="custom-link">None's 树洞</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">《 0day计划 》</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    社工
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../社工/获取位置信息.html">
+            
+                <a href="../社工/获取位置信息.html">
+            
+                    
+                    获取位置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第一阶段-基础篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第一阶段-基础篇/零基础必看课程.html">
+            
+                <a href="../第一阶段-基础篇/零基础必看课程.html">
+            
+                    
+                    零基础必看课程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第一阶段-基础篇/Windows基础.html">
+            
+                <a href="../第一阶段-基础篇/Windows基础.html">
+            
+                    
+                    Windows基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第一阶段-基础篇/数据库基础.html">
+            
+                <a href="../第一阶段-基础篇/数据库基础.html">
+            
+                    
+                    数据库基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第二阶段-Web安全篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                <a href="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                    
+                    2019网络安全训练营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                <a href="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                    
+                    BurpSuite学习使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                <a href="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                    
+                    Web安全攻防学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第六阶段-Python黑客编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                <a href="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                    
+                    Python编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    软考-信息安全工程师
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../软考-信息安全工程师/第一版.html">
+            
+                <a href="../软考-信息安全工程师/第一版.html">
+            
+                    
+                    第一版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    兄弟连Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1" data-path="Linux系统简介.html">
+            
+                <a href="Linux系统简介.html">
+            
+                    
+                    Linux系统简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="Linux常用命令.html">
+            
+                <a href="Linux常用命令.html">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="文本编辑器Vim.html">
+            
+                <a href="文本编辑器Vim.html">
+            
+                    
+                    文本编辑器Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="软件包管理.html">
+            
+                <a href="软件包管理.html">
+            
+                    
+                    软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    韩立刚计算机网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../韩立刚计算机网络/概述.html">
+            
+                <a href="../韩立刚计算机网络/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../韩立刚计算机网络/物理层.html">
+            
+                <a href="../韩立刚计算机网络/物理层.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../韩立刚计算机网络/数据链路层.html">
+            
+                <a href="../韩立刚计算机网络/数据链路层.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    韩立刚CCNA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../韩立刚CCNA/计算机网络.html">
+            
+                <a href="../韩立刚CCNA/计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../韩立刚CCNA/TCP&IP.html">
+            
+                <a href="../韩立刚CCNA/TCP&IP.html">
+            
+                    
+                    TCP&IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../韩立刚CCNA/IP地址和子网.html">
+            
+                <a href="../韩立刚CCNA/IP地址和子网.html">
+            
+                    
+                    IP地址和子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../韩立刚CCNA/静态路由.html">
+            
+                <a href="../韩立刚CCNA/静态路由.html">
+            
+                    
+                    静态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../韩立刚CCNA/动态路由.html">
+            
+                <a href="../韩立刚CCNA/动态路由.html">
+            
+                    
+                    动态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../韩立刚CCNA/交换机.html">
+            
+                <a href="../韩立刚CCNA/交换机.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Linux系统简介</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#linux&#x7CFB;&#x7EDF;&#x7B80;&#x4ECB;"><b></b>Linux&#x7CFB;&#x7EDF;&#x7B80;&#x4ECB;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7CFB;&#x7EDF;&#x5206;&#x533A;"><b></b>&#x7CFB;&#x7EDF;&#x5206;&#x533A;</a></li><li><span class="title-icon "></span><a href="#&#x670D;&#x52A1;&#x5668;&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><b></b>&#x670D;&#x52A1;&#x5668;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></li><li><span class="title-icon "></span><a href="#&#x76EE;&#x5F55;&#x4ECB;&#x7ECD;"><b></b>&#x76EE;&#x5F55;&#x4ECB;&#x7ECD;</a></li></ul></ul></div><a href="#linux&#x7CFB;&#x7EDF;&#x7B80;&#x4ECB;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="linux&#x7CFB;&#x7EDF;&#x7B80;&#x4ECB;"><a name="linux&#x7CFB;&#x7EDF;&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#linux&#x7CFB;&#x7EDF;&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>Linux&#x7CFB;&#x7EDF;&#x7B80;&#x4ECB;</h1>
+<p>&#x4EE5;&#x4E0B;&#x5747;&#x4E3A;Linux-CentOS&#x4E3A;&#x4F8B;</p>
+<h2 id="&#x7CFB;&#x7EDF;&#x5206;&#x533A;"><a name="&#x7CFB;&#x7EDF;&#x5206;&#x533A;" class="anchor-navigation-ex-anchor" href="#&#x7CFB;&#x7EDF;&#x5206;&#x533A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7CFB;&#x7EDF;&#x5206;&#x533A;</h2>
+<ul>
+<li>&#x78C1;&#x76D8;&#x5206;&#x533A;<ul>
+<li>&#x78C1;&#x76D8;&#x5206;&#x533A;&#x662F;&#x4F7F;&#x7528;&#x5206;&#x533A;&#x7F16;&#x8F91;&#x5668;&#xFF08;partition editor&#xFF09;&#x5728;&#x78C1;&#x76D8;&#x4E0A;&#x5212;&#x5206;&#x51E0;&#x4E2A;&#x903B;&#x8F91;&#x90E8;&#x5206;&#x3002;&#x789F;&#x7247;&#x4E00;&#x65E6;&#x5212;&#x5206;&#x6210;&#x6570;&#x4E2A;&#x5206;&#x533A;&#xFF08;Partition&#xFF09;&#xFF0C;&#x4E0D;&#x540C;&#x7C7B;&#x7684;&#x76EE;&#x5F55;&#x4E0E;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x8FDB;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x533A;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>&#x5206;&#x533A;&#x7C7B;&#x578B;<ul>
+<li><strong>&#x4E3B;&#x5206;&#x533A;&#xFF1A;</strong>&#x6700;&#x591A;&#x53EA;&#x80FD;&#x6709;4&#x4E2A;</li>
+<li><strong>&#x6269;&#x5C55;&#x5206;&#x533A;&#xFF1A;</strong><ul>
+<li>&#x6700;&#x591A;&#x53EA;&#x80FD;&#x6709;1&#x4E2A;</li>
+<li>&#x4E3B;&#x5206;&#x533A;&#x52A0;&#x6269;&#x5C55;&#x5206;&#x533A;&#x6700;&#x591A;&#x6709;4&#x4E2A;</li>
+<li>&#x4E0D;&#x80FD;&#x5199;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x53EA;&#x80FD;&#x5305;&#x542B;&#x903B;&#x8F91;&#x5206;&#x533A;&#x903B;&#x8F91;&#x5206;&#x533A;</li>
+</ul>
+</li>
+<li><strong>&#x903B;&#x8F91;&#x5206;&#x533A;</strong> &#x4ECE;5&#x5F00;&#x59CB;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>&#x683C;&#x5F0F;&#x5316;<ul>
+<li>&#x683C;&#x5F0F;&#x5316;&#xFF08;&#x9AD8;&#x7EA7;&#x683C;&#x5F0F;&#x5316;&#xFF09;&#x53C8;&#x79F0;&#x903B;&#x8F91;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x5B83;&#x662F;&#x6307;&#x6839;&#x636E;&#x7528;&#x6237;&#x9009;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF08;&#x5982;Windows&#xFF1A;FAT16&#x3001;FAT32&#x3001;NTFS&#x3001;Linux&#xFF1A;EXT2&#x3001;EXT3&#x3001;<strong>EXT4</strong>&#x7B49;&#xFF09;&#xFF0C;&#x5728;&#x78C1;&#x76D8;&#x7684;&#x7279;&#x5B9A;&#x533A;&#x57DF;&#x5199;&#x5165;&#x7279;&#x5B9A;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x5206;&#x533A;&#x4E2D;&#x5212;&#x51FA;&#x4E00;&#x7247;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x6587;&#x4EF6;&#x5206;&#x914D;&#x8868;&#x3001;&#x76EE;&#x5F55;&#x8868;&#x7B49;&#x7528;&#x4E8E;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x7684;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Linux&#x4E0D;&#x9760;&#x6269;&#x5C55;&#x540D;&#x533A;&#x5206;&#x6587;&#x4EF6;&#x7C7B;&#x578B;<ul>
+<li>&#x538B;&#x7F29;&#x5305;&#xFF1A;&#x201C;*.gz&#x201D;&#x3001;&#x201C;*.bz2&#x201D;&#x3001;&#x201C;*.tar.bz2&#x201D;&#x3001;&#x201C;*.tgz&#x201D;&#x7B49;</li>
+<li>&#x4E8C;&#x8FDB;&#x5236;&#x8F6F;&#x4EF6;&#x5305;&#xFF1A;&#x201C;.rpm&#x201D;</li>
+<li>&#x7F51;&#x9875;&#x6587;&#x4EF6;&#xFF1A;&#x201C;<em>.html&#x201D;&#x3001;&#x201C;</em>.php&#x201D;</li>
+<li>&#x811A;&#x672C;&#x6587;&#x4EF6;&#xFF1A;&#x201C;*.sh&#x201D;</li>
+<li>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;&#x201C;*.conf&#x201D;</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x670D;&#x52A1;&#x5668;&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x670D;&#x52A1;&#x5668;&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x670D;&#x52A1;&#x5668;&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x670D;&#x52A1;&#x5668;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2>
+<ul>
+<li>&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x5141;&#x8BB8;&#x5173;&#x673A;&#xFF0C;&#x53EA;&#x80FD;&#x91CD;&#x542F;</li>
+<li>&#x91CD;&#x542F;&#x65F6;&#x5E94;&#x8BE5;&#x5173;&#x95ED;&#x670D;&#x52A1;</li>
+<li>&#x4E0D;&#x8981;&#x5728;&#x670D;&#x52A1;&#x5668;&#x8BBF;&#x95EE;&#x9AD8;&#x5CF0;&#x8FD0;&#x884C;&#x9AD8;&#x8D1F;&#x8F7D;&#x547D;&#x4EE4;</li>
+<li>&#x8FDC;&#x7A0B;&#x914D;&#x7F6E;&#x9632;&#x706B;&#x5899;&#x65F6;&#x4E0D;&#x8981;&#x628A;&#x81EA;&#x5DF1;&#x8E22;&#x51FA;&#x670D;&#x52A1;&#x5668;</li>
+<li>&#x6307;&#x5B9A;&#x5408;&#x7406;&#x7684;&#x5BC6;&#x7801;&#x89C4;&#x8303;&#x5E76;&#x5B9A;&#x671F;&#x66F4;&#x65B0;</li>
+<li>&#x5408;&#x7406;&#x5206;&#x914D;&#x6743;&#x9650;</li>
+<li>&#x5B9A;&#x671F;&#x5907;&#x4EFD;&#x91CD;&#x8981;&#x6570;&#x636E;&#x548C;&#x65E5;&#x5FD7;</li>
+</ul>
+<h2 id="&#x76EE;&#x5F55;&#x4ECB;&#x7ECD;"><a name="&#x76EE;&#x5F55;&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#&#x76EE;&#x5F55;&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76EE;&#x5F55;&#x4ECB;&#x7ECD;</h2>
+<ul>
+<li>/bin/&#xFF1A;&#x5B58;&#x653E;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x666E;&#x901A;&#x7528;&#x6237;&#x548C;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x90FD;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x3002;&#x4E0D;&#x8FC7;&#x653E;&#x5728;/bin&#x4E0B;&#x7684;&#x547D;&#x4EE4;&#x5728;&#x5355;&#x7528;&#x6237;&#x6A21;&#x5F0F;&#x4E0B;&#x4E5F;&#x53EF;&#x4EE5;&#x6267;&#x884C;</li>
+<li>/sbin/&#xFF1A;&#x4FDD;&#x5B58;&#x548C;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x8BBE;&#x7F6E;&#x76F8;&#x5173;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x53EA;&#x6709;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x8BBE;&#x7F6E;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x4E9B;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5141;&#x8BB8;&#x666E;&#x901A;&#x7528;&#x6237;&#x67E5;&#x770B;</li>
+<li>/usr/bin/&#xFF1A;&#x5B58;&#x653E;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x666E;&#x901A;&#x7528;&#x6237;&#x548C;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x90FD;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x3002;&#x8FD9;&#x4E9B;&#x547D;&#x4EE4;&#x548C;&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x65E0;&#x5173;&#xFF0C;&#x5728;&#x5355;&#x7528;&#x6237;&#x6A21;&#x5F0F;&#x4E0B;&#x4E0D;&#x80FD;&#x6267;&#x884C;</li>
+<li>/usr/sbin/&#xFF1A;&#x5B58;&#x653E;&#x6839;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x547D;&#x4EE4;&#xFF0C;&#x4F8B;&#x5982;&#x591A;&#x6570;&#x670D;&#x52A1;&#x7A0B;&#x5E8F;&#x3002;&#x53EA;&#x6709;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x3002;&#x5927;&#x5BB6;&#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x6CE8;&#x610F;&#x5230;Linux&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x5728;&#x6240;&#x6709;&#x201C;sbin&#x201D;&#x76EE;&#x5F55;&#x4E2D;&#x4FDD;&#x5B58;&#x7684;&#x547D;&#x4EE4;&#x53EA;&#x6709;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x201C;bin&#x201D;&#x76EE;&#x5F55;&#x4E2D;&#x4FDD;&#x5B58;&#x7684;&#x547D;&#x4EE4;&#x6240;&#x6709;&#x7528;&#x6237;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;</li>
+<li>/boot/&#xFF1A;&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x76EE;&#x5F55;&#xFF0C;&#x4FDD;&#x5B58;&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x76F8;&#x5173;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x5185;&#x6838;&#x6587;&#x4EF6;&#x548C;&#x542F;&#x52A8;&#x5F15;&#x5BFC;&#x7A0B;&#x5E8F;&#xFF08;grub&#xFF09;&#x6587;&#x4EF6;&#x7B49;</li>
+<li>/dev/&#xFF1A;&#x8BBE;&#x5907;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x4F4D;&#x7F6E;&#x3002;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8BF4;&#x8FC7;Linux&#x4E2D;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x4EE5;&#x6587;&#x4EF6;&#x5F62;&#x5F0F;&#x4FDD;&#x5B58;&#xFF0C;&#x5305;&#x62EC;&#x786C;&#x4EF6;&#x3002;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5C31;&#x662F;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x6240;&#x6709;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x6587;&#x4EF6;&#x7684;</li>
+<li>/etc/&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x4F4D;&#x7F6E;&#x3002;&#x7CFB;&#x7EDF;&#x5185;&#x6240;&#x6709;&#x91C7;&#x7528;&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x65B9;&#x5F0F;&#xFF08;rpm&#x5B89;&#x88C5;&#xFF09;&#x7684;&#x670D;&#x52A1;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5168;&#x90E8;&#x90FD;&#x4FDD;&#x5B58;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5F53;&#x4E2D;&#xFF0C;&#x5982;&#x7528;&#x6237;&#x8D26;&#x6237;&#x548C;&#x5BC6;&#x7801;&#xFF0C;&#x670D;&#x52A1;&#x7684;&#x542F;&#x52A8;&#x811A;&#x672C;&#xFF0C;&#x5E38;&#x7528;&#x670D;&#x52A1;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7B49;</li>
+<li>/home/&#xFF1A;&#x666E;&#x901A;&#x7528;&#x6237;&#x7684;&#x5BB6;&#x76EE;&#x5F55;&#x3002;&#x5EFA;&#x7ACB;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x767B;&#x5F55;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x5BB6;&#x76EE;&#x5F55;&#xFF0C;&#x6240;&#x6709;&#x666E;&#x901A;&#x7528;&#x6237;&#x7684;&#x5BB6;&#x76EE;&#x5F55;&#x5C31;&#x662F;&#x5728;/home&#x4E0B;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x548C;&#x7528;&#x6237;&#x540D;&#x76F8;&#x540C;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x5982;&#x7528;&#x6237;user1&#x7684;&#x5BB6;&#x76EE;&#x5F55;&#x5C31;&#x662F;/home/user1</li>
+<li>/lib/&#xFF1A;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#x5E93;&#x4FDD;&#x5B58;&#x4F4D;&#x7F6E;</li>
+<li>/lost+found/&#xFF1A;&#x5F53;&#x7CFB;&#x7EDF;&#x610F;&#x5916;&#x5D29;&#x6E83;&#x6216;&#x673A;&#x5668;&#x610F;&#x5916;&#x5173;&#x673A;&#xFF0C;&#x800C;&#x4EA7;&#x751F;&#x4E00;&#x4E9B;&#x6587;&#x4EF6;&#x788E;&#x7247;&#x653E;&#x5728;&#x8FD9;&#x91CC;&#x3002;&#x5F53;&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;fsck&#x5DE5;&#x5177;&#x4F1A;&#x68C0;&#x67E5;&#x8FD9;&#x91CC;&#xFF0C;&#x5E76;&#x4FEE;&#x590D;&#x5DF2;&#x7ECF;&#x635F;&#x574F;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x53EA;&#x5728;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x4E2D;&#x51FA;&#x73B0;&#xFF0C;&#x4F8B;&#x5982;/lost+found&#x5C31;&#x662F;&#x6839;&#x5206;&#x533A;&#x7684;&#x5907;&#x4EFD;&#x6062;&#x590D;&#x76EE;&#x5F55;&#xFF0C;/boot/lost+found&#x5C31;&#x662F;/boot&#x5206;&#x533A;&#x7684;&#x5907;&#x4EFD;&#x6062;&#x590D;&#x76EE;&#x5F55;</li>
+<li>/media/&#xFF1A;&#x6302;&#x8F7D;&#x76EE;&#x5F55;&#x3002;&#x7CFB;&#x7EDF;&#x5EFA;&#x8BAE;&#x662F;&#x7528;&#x6765;&#x6302;&#x8F7D;&#x5A92;&#x4F53;&#x8BBE;&#x5907;&#x7684;&#xFF0C;&#x4F8B;&#x5982;&#x8F6F;&#x76D8;&#x548C;&#x5149;&#x76D8;</li>
+<li>/mnt/&#xFF1A;&#x6302;&#x8F7D;&#x76EE;&#x5F55;&#xFF0C;&#x65E9;&#x671F;Linux&#x4E2D;&#x53EA;&#x6709;&#x8FD9;&#x4E00;&#x4E2A;&#x6302;&#x8F7D;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x7EC6;&#x5206;&#x3002;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x7CFB;&#x7EDF;&#x5EFA;&#x8BAE;&#x6302;&#x8F7D;&#x989D;&#x5916;&#x8BBE;&#x5907;&#xFF0C;&#x5982;U&#x76D8;&#xFF0C;&#x79FB;&#x52A8;&#x786C;&#x76D8;&#x548C;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x5206;&#x533A;</li>
+<li>/misc/&#xFF1A;&#x6302;&#x8F7D;&#x76EE;&#x5F55;&#x3002;&#x7CFB;&#x7EDF;&#x5EFA;&#x8BAE;&#x7528;&#x6765;&#x6302;&#x8F7D;NFS&#x670D;&#x52A1;&#x7684;&#x5171;&#x4EAB;&#x76EE;&#x5F55;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x521A;&#x521A;&#x5DF2;&#x7ECF;&#x89E3;&#x91CA;&#x4E86;&#x6302;&#x8F7D;&#x3002;&#x7AE5;&#x978B;&#x4EEC;&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#x53EA;&#x8981;&#x662F;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5EFA;&#x7ACB;&#x7684;&#x7A7A;&#x76EE;&#x5F55;&#x5C31;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x6302;&#x8F7D;&#x70B9;&#x3002;&#x90A3;&#x4E48;&#x7CFB;&#x7EDF;&#x867D;&#x7136;&#x51C6;&#x5907;&#x4E86;&#x4E09;&#x4E2A;&#x9ED8;&#x8BA4;&#x6302;&#x8F7D;&#x76EE;&#x5F55;/media&#x3001;/mnt&#x3001;/misc&#xFF0C;&#x4F46;&#x662F;&#x5230;&#x5E95;&#x5728;&#x54EA;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#x6302;&#x8F7D;&#x4EC0;&#x4E48;&#x8BBE;&#x5907;&#x90FD;&#x53EF;&#x4EE5;&#x7531;&#x7BA1;&#x7406;&#x5458;&#x81EA;&#x5DF1;&#x51B3;&#x5B9A;&#x3002;&#x4F8B;&#x5982;&#x8D85;&#x54E5;&#x63A5;&#x89E6;Linux&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9ED8;&#x8BA4;&#x6302;&#x8F7D;&#x76EE;&#x5F55;&#x53EA;&#x6709;/mnt&#x4E00;&#x4E2A;&#xFF0C;&#x6240;&#x4EE5;&#x517B;&#x6210;&#x4E86;&#x5728;/mnt&#x4E0B;&#x5EFA;&#x7ACB;&#x4E0D;&#x540C;&#x76EE;&#x5F55;&#x6302;&#x8F7D;&#x4E0D;&#x540C;&#x8BBE;&#x5907;&#x7684;&#x4E60;&#x60EF;&#x3002;&#x5982;/mnt/cdrom&#x6302;&#x8F7D;&#x5149;&#x76D8;&#xFF0C;/mnt/usb&#x6302;&#x8F7D;U&#x76D8;&#xFF0C;&#x8FD9;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x7684;</li>
+<li>/opt/&#xFF1A;&#x7B2C;&#x4E09;&#x65B9;&#x5B89;&#x88C5;&#x7684;&#x8F6F;&#x4EF6;&#x4FDD;&#x5B58;&#x4F4D;&#x7F6E;&#x3002;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5C31;&#x662F;&#x653E;&#x7F6E;&#x548C;&#x5B89;&#x88C5;&#x5176;&#x4ED6;&#x8F6F;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6211;&#x624B;&#x5DE5;&#x5B89;&#x88C5;&#x7684;&#x6E90;&#x7801;&#x5305;&#x8F6F;&#x4EF6;&#x90FD;&#x53EF;&#x4EE5;&#x5B89;&#x88C5;&#x5230;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5F53;&#x4E2D;&#x3002;</li>
+<li>/proc/&#xFF1A;&#x865A;&#x62DF;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x8BE5;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E76;&#x4E0D;&#x4FDD;&#x5B58;&#x5230;&#x786C;&#x76D8;&#x5F53;&#x4E2D;&#xFF0C;&#x800C;&#x662F;&#x4FDD;&#x5B58;&#x5230;&#x5185;&#x5B58;&#x5F53;&#x4E2D;&#x3002;&#x4E3B;&#x8981;&#x4FDD;&#x5B58;&#x7CFB;&#x7EDF;&#x7684;&#x5185;&#x6838;&#xFF0C;&#x8FDB;&#x7A0B;&#xFF0C;&#x5916;&#x90E8;&#x8BBE;&#x5907;&#x72B6;&#x6001;&#x548C;&#x7F51;&#x7EDC;&#x72B6;&#x6001;&#x706F;&#x3002;&#x5982;/proc/cpuinfo&#x662F;&#x4FDD;&#x5B58;CPU&#x4FE1;&#x606F;&#x7684;&#xFF0C;/proc/devices&#x662F;&#x4FDD;&#x5B58;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x7684;&#x5217;&#x8868;&#x7684;&#xFF0C;/proc/filesystems&#x662F;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5217;&#x8868;&#x7684;&#xFF0C;/proc/net/&#x662F;&#x4FDD;&#x5B58;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x4FE1;&#x606F;&#x7684;</li>
+<li>/sys/&#xFF1A;&#x865A;&#x62DF;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;&#x548C;/proc&#x76EE;&#x5F55;&#x76F8;&#x4F3C;&#xFF0C;&#x90FD;&#x662F;&#x4FDD;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x5F53;&#x4E2D;&#x7684;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x4FDD;&#x5B58;&#x4E8E;&#x5185;&#x6838;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x7684;</li>
+<li>/root/&#xFF1A;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x7684;&#x5BB6;&#x76EE;&#x5F55;&#x3002;&#x666E;&#x901A;&#x7528;&#x6237;&#x5BB6;&#x76EE;&#x5F55;&#x5728;&#x201C;/home&#x201D;&#x4E0B;&#xFF0C;&#x8D85;&#x7EA7;&#x7528;&#x4E8E;&#x5BB6;&#x76EE;&#x5F55;&#x76F4;&#x63A5;&#x5728;&#x201C;/&#x201D;&#x4E0B;</li>
+<li>/srv/&#xFF1A;&#x670D;&#x52A1;&#x6570;&#x636E;&#x76EE;&#x5F55;&#x3002;&#x4E00;&#x4E9B;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;&#x542F;&#x52A8;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#x4FDD;&#x5B58;&#x6240;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;</li>
+<li>/tmp/&#xFF1A;&#x4E34;&#x65F6;&#x76EE;&#x5F55;&#x3002;&#x7CFB;&#x7EDF;&#x5B58;&#x653E;&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x6240;&#x6709;&#x7528;&#x6237;&#x90FD;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x548C;&#x5199;&#x5165;&#x3002;&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x6B64;&#x76EE;&#x5F55;&#x4E2D;&#x4E0D;&#x80FD;&#x4FDD;&#x5B58;&#x91CD;&#x8981;&#x6570;&#x636E;&#xFF0C;&#x6700;&#x597D;&#x6BCF;&#x6B21;&#x5F00;&#x673A;&#x90FD;&#x628A;&#x8BE5;&#x76EE;&#x5F55;&#x6E05;&#x7A7A;</li>
+<li>/usr/&#xFF1A;&#x7CFB;&#x7EDF;&#x8F6F;&#x4EF6;&#x8D44;&#x6E90;&#x76EE;&#x5F55;&#x3002;&#x6CE8;&#x610F;usr&#x4E0D;&#x662F;user&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x800C;&#x662F;&#x201C;Unix     Softwre     Resource&#x201D;&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x662F;&#x5B58;&#x653E;&#x7528;&#x6237;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x662F;&#x5B58;&#x653E;&#x7CFB;&#x7EDF;&#x8F6F;&#x4EF6;&#x8D44;&#x6E90;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B89;&#x88C5;&#x7684;&#x8F6F;&#x4EF6;&#x5927;&#x591A;&#x6570;&#x4FDD;&#x5B58;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x6240;&#x4EE5;&#x9664;&#x4E86;/usr/bin/&#x548C;/usr/sbin/&#x8FD9;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x6211;&#x5728;&#x4ECB;&#x7ECD;&#x51E0;&#x4E2A;/usr/&#x4E0B;&#x7684;&#x4E8C;&#x7EA7;&#x76EE;&#x5F55;</li>
+<li>/var/&#xFF1A;&#x52A8;&#x6001;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x4F4D;&#x7F6E;&#x3002;&#x4E3B;&#x8981;&#x4FDD;&#x5B58;&#x7F13;&#x5B58;&#x3001;&#x65E5;&#x5FD7;&#x4EE5;&#x53CA;&#x8F6F;&#x4EF6;&#x8FD0;&#x884C;&#x6240;&#x4EA7;&#x751F;&#x7684;&#x6587;&#x4EF6;</li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2020-07-20 15:28 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Linux常用命令.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Linux常用命令">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linux系统简介","level":"1.7.1","depth":2,"next":{"title":"Linux常用命令","level":"1.7.2","depth":2,"path":"兄弟连Linux/Linux常用命令.md","ref":"兄弟连Linux/Linux常用命令.md","articles":[]},"previous":{"title":"兄弟连Linux","level":"1.7","depth":1,"ref":"","articles":[{"title":"Linux系统简介","level":"1.7.1","depth":2,"path":"兄弟连Linux/Linux系统简介.md","ref":"兄弟连Linux/Linux系统简介.md","articles":[]},{"title":"Linux常用命令","level":"1.7.2","depth":2,"path":"兄弟连Linux/Linux常用命令.md","ref":"兄弟连Linux/Linux常用命令.md","articles":[]},{"title":"文本编辑器Vim","level":"1.7.3","depth":2,"path":"兄弟连Linux/文本编辑器Vim.md","ref":"兄弟连Linux/文本编辑器Vim.md","articles":[]},{"title":"软件包管理","level":"1.7.4","depth":2,"path":"兄弟连Linux/软件包管理.md","ref":"兄弟连Linux/软件包管理.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://github.com/Tm9uZQ/gitbook/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"0day计划","language":"zh-hans","links":{"sidebar":{"None's 树洞":"none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"兄弟连Linux/Linux系统简介.md","mtime":"2020-07-20T07:28:47.907Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T07:35:14.820Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

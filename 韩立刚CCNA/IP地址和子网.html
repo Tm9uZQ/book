@@ -1,0 +1,763 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>IP地址和子网 · 0day计划</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="None">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="静态路由.html" />
+    
+    
+    <link rel="prev" href="TCP&IP.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="none.org.cn" target="_blank" class="custom-link">None's 树洞</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">《 0day计划 》</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    社工
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../社工/获取位置信息.html">
+            
+                <a href="../社工/获取位置信息.html">
+            
+                    
+                    获取位置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第一阶段-基础篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第一阶段-基础篇/零基础必看课程.html">
+            
+                <a href="../第一阶段-基础篇/零基础必看课程.html">
+            
+                    
+                    零基础必看课程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第一阶段-基础篇/Windows基础.html">
+            
+                <a href="../第一阶段-基础篇/Windows基础.html">
+            
+                    
+                    Windows基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第一阶段-基础篇/数据库基础.html">
+            
+                <a href="../第一阶段-基础篇/数据库基础.html">
+            
+                    
+                    数据库基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第二阶段-Web安全篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                <a href="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                    
+                    2019网络安全训练营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                <a href="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                    
+                    BurpSuite学习使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                <a href="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                    
+                    Web安全攻防学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第六阶段-Python黑客编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                <a href="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                    
+                    Python编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    软考-信息安全工程师
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../软考-信息安全工程师/第一版.html">
+            
+                <a href="../软考-信息安全工程师/第一版.html">
+            
+                    
+                    第一版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    兄弟连Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../兄弟连Linux/Linux系统简介.html">
+            
+                <a href="../兄弟连Linux/Linux系统简介.html">
+            
+                    
+                    Linux系统简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../兄弟连Linux/Linux常用命令.html">
+            
+                <a href="../兄弟连Linux/Linux常用命令.html">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../兄弟连Linux/文本编辑器Vim.html">
+            
+                <a href="../兄弟连Linux/文本编辑器Vim.html">
+            
+                    
+                    文本编辑器Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../兄弟连Linux/软件包管理.html">
+            
+                <a href="../兄弟连Linux/软件包管理.html">
+            
+                    
+                    软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    韩立刚计算机网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../韩立刚计算机网络/概述.html">
+            
+                <a href="../韩立刚计算机网络/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../韩立刚计算机网络/物理层.html">
+            
+                <a href="../韩立刚计算机网络/物理层.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../韩立刚计算机网络/数据链路层.html">
+            
+                <a href="../韩立刚计算机网络/数据链路层.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    韩立刚CCNA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="计算机网络.html">
+            
+                <a href="计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="TCP&IP.html">
+            
+                <a href="TCP&IP.html">
+            
+                    
+                    TCP&IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.3" data-path="IP地址和子网.html">
+            
+                <a href="IP地址和子网.html">
+            
+                    
+                    IP地址和子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="静态路由.html">
+            
+                <a href="静态路由.html">
+            
+                    
+                    静态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="动态路由.html">
+            
+                <a href="动态路由.html">
+            
+                    
+                    动态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="交换机.html">
+            
+                <a href="交换机.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >IP地址和子网</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#ip&#x5730;&#x5740;&#x548C;&#x5B50;&#x7F51;"><b></b>IP&#x5730;&#x5740;&#x548C;&#x5B50;&#x7F51;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7B49;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;"><b></b>&#x7B49;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;</a></li><li><span class="title-icon "></span><a href="#&#x53D8;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;"><b></b>&#x53D8;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;</a></li><li><span class="title-icon "></span><a href="#&#x8D85;&#x7F51;"><b></b>&#x8D85;&#x7F51;</a></li></ul></ul></div><a href="#ip&#x5730;&#x5740;&#x548C;&#x5B50;&#x7F51;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="ip&#x5730;&#x5740;&#x548C;&#x5B50;&#x7F51;"><a name="ip&#x5730;&#x5740;&#x548C;&#x5B50;&#x7F51;" class="anchor-navigation-ex-anchor" href="#ip&#x5730;&#x5740;&#x548C;&#x5B50;&#x7F51;"><i class="fa fa-link" aria-hidden="true"></i></a>IP&#x5730;&#x5740;&#x548C;&#x5B50;&#x7F51;</h1>
+<ul>
+<li><p>&#x4E8C;&#x8FDB;&#x5236;&#x548C;&#x5341;&#x8FDB;&#x5236;</p>
+<pre><code>00000001          1
+00000010          2
+00000100          4
+00001000          8
+00010000          16
+00100000          32
+01000000          64
+10000000          128
+
+10000000          128
+11000000          192
+11100000          224
+11110000          240
+11111000          248
+11111100          252
+11111110          254
+11111111          255
+</code></pre></li>
+</ul>
+<ul>
+<li>IP&#x5730;&#x5740;&#xFF1A;32&#x4F4D;&#x4E8C;&#x8FDB;&#x5236;</li>
+</ul>
+<p><a href="images/clip_image001-1595225830478.png" data-lightbox="75a2adcc-dccc-438d-899b-1c8c525d59b5" data-title=""><img src="images/clip_image001-1595225830478.png" alt=""></a></p>
+<ul>
+<li>A&#x7C7B;&#x7F51;&#x7EDC;&#x7F3A;&#x7701;&#x5B50;&#x7F51;&#x63A9;&#x7801;&#xFF1A;255.0.0.0</li>
+<li>B&#x7C7B;&#x7F51;&#x7EDC;&#x7F3A;&#x7701;&#x5B50;&#x7F51;&#x63A9;&#x7801;&#xFF1A;255.255.0.0</li>
+<li>C&#x7C7B;&#x7F51;&#x7EDC;&#x7F3A;&#x7701;&#x5B50;&#x7F51;&#x63A9;&#x7801;&#xFF1A;255.255.255.0</li>
+</ul>
+<p><a href="images/clip_image001-1595225865489.png" data-lightbox="2cd4a95a-c8f5-4f5c-a83f-49e39b112849" data-title=""><img src="images/clip_image001-1595225865489.png" alt=""></a></p>
+<ul>
+<li><p>&#x4FDD;&#x7559;&#x7684;&#x79C1;&#x7F51;&#x5730;&#x5740;</p>
+<ul>
+<li>A&#x7C7B;10.0.0.0</li>
+<li>B&#x7C7B;172.16.0.0--172.31.0.0</li>
+<li>C&#x7C7B;192.168.0.0--192.168.255.0</li>
+</ul>
+</li>
+<li>&#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;&#xFF1A;127.0.0.1</li>
+<li>&#x65E0;&#x6CD5;&#x83B7;&#x53D6;DHCP&#x65F6;&#x7684;&#x5730;&#x5740;&#x65F6;&#xFF0C;IP&#x4E3A;169.254.0.0</li>
+</ul>
+<h2 id="&#x7B49;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;"><a name="&#x7B49;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x7B49;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B49;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;</h2>
+<p><a href="images/clip_image001-1595226048569.png" data-lightbox="26681e8a-e78e-4795-a426-c911605ac7c4" data-title=""><img src="images/clip_image001-1595226048569.png" alt=""></a></p>
+<p><a href="images/clip_image001-1595226198453.png" data-lightbox="4111ceb4-0af2-4620-a77e-77859439ba28" data-title=""><img src="images/clip_image001-1595226198453.png" alt=""></a></p>
+<h2 id="&#x53D8;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;"><a name="&#x53D8;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x957F;&#x5B50;&#x7F51;&#x5212;&#x5206;</h2>
+<p><a href="images/clip_image001-1595226313239.png" data-lightbox="1e662899-2fc3-440b-b896-aae280a0a4a2" data-title=""><img src="images/clip_image001-1595226313239.png" alt=""></a></p>
+<ul>
+<li>&#x4E3B;&#x673A;&#x53F7;&#x9664;4&#xFF0C;&#x4F59;&#x6570;&#x4E3A;1&#x3001;2&#x80FD;&#x7528;</li>
+<li>&#x4E3B;&#x673A;&#x53F7;&#x9664;4&#xFF0C;&#x4F59;&#x6570;&#x4E3A;3 &#x7684;&#x4E3A;&#x5E7F;&#x64AD;&#x5730;&#x5740;</li>
+</ul>
+<h2 id="&#x8D85;&#x7F51;"><a name="&#x8D85;&#x7F51;" class="anchor-navigation-ex-anchor" href="#&#x8D85;&#x7F51;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D85;&#x7F51;</h2>
+<p><a href="images/clip_image001-1595226371359.png" data-lightbox="666ebeca-b95d-407f-984b-50445f7fda63" data-title=""><img src="images/clip_image001-1595226371359.png" alt=""></a>
+<a href="images/clip_image001-1595226408486.png" data-lightbox="689281fc-9ec4-4127-9b82-c9b21a2ac5ad" data-title=""><img src="images/clip_image001-1595226408486.png" alt=""></a>
+<a href="images/clip_image001-1595226463739.png" data-lightbox="42a9e3ee-904e-4bcb-ae12-b02bdc5c618d" data-title=""><img src="images/clip_image001-1595226463739.png" alt=""></a></p>
+<ul>
+<li>&#x4F59;&#x6570;&#x4E3A;0,1,2,3&#x53EF;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#x7F51;&#x6BB5;&#xFF0C;&#x5B50;&#x7F51;&#x63A9;&#x7801;&#x5DE6;&#x79FB;2&#x4F4D;&#xFF1B;&#x5982;&#x4E0A;&#x56FE;&#x5408;&#x5E76;&#x4E3A;192.168.16.0/22</li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2020-07-21 13:27 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="TCP&IP.html" class="navigation navigation-prev " aria-label="Previous page: TCP&IP">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="静态路由.html" class="navigation navigation-next " aria-label="Next page: 静态路由">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"IP地址和子网","level":"1.9.3","depth":2,"next":{"title":"静态路由","level":"1.9.4","depth":2,"path":"韩立刚CCNA/静态路由.md","ref":"韩立刚CCNA/静态路由.md","articles":[]},"previous":{"title":"TCP&IP","level":"1.9.2","depth":2,"path":"韩立刚CCNA/TCP&IP.md","ref":"韩立刚CCNA/TCP&IP.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://github.com/Tm9uZQ/gitbook/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"0day计划","language":"zh-hans","links":{"sidebar":{"None's 树洞":"none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"韩立刚CCNA/IP地址和子网.md","mtime":"2020-07-21T05:27:01.496Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T07:35:14.820Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
