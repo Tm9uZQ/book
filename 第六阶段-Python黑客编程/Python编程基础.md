@@ -15,6 +15,8 @@
 
 
 
+- 变量命名规则：变量名可以包括字母、数字、下划线，但是数字不能做为开头。
+
 - Python2打印中文会出现报错，解决方法：首行添加代码：`#-*- encoding:utf-8 -*-`
 - python中没有常量，约定俗成全大写为“常量”
 - 单行注释：#
@@ -88,6 +90,7 @@ while 条件:
   - \# print(0 or 100) # 100
 - 一个非零数字转换为布尔值为True，零转换为布尔值为False
 - Ture转换为数字是1，False转换为数字是0
+- 0、None、''、()、[]、{} ==> Flase
 - str -----> bool：非空即为True
 
 
@@ -134,22 +137,25 @@ while 条件:
 
 ### ASCII码
 
-- 8位bit = 一个字节byte。最左边那位都为0，为预留位。1024 byte = 1 kb
+- 8位bit = 一个字节byte
+- 最左边那位都为0，为预留位
+- 1024 byte = 1 kb
 
 ### 万国码 unicode
 
-- 32位表示一个字符。
+- 一个字符用四个字节（32位）表示
 
 ### Unicode 升级 utf-8
 
 - utf-8 一个字符最少用8位去表示
-- 英文用8位 一个字节
-- 欧洲文字用16位去表示   两个字节
-- 中文用24 位去表示      三个字节
+- 一个英文用一个字节（8位）表示
+- 一个欧洲文字用两个字节（16位）表示
+- 一个中文用三个字节（24 位）表示
 
 ### gbk
 
 - 国产，只能用于中文和ascii码中的文字。
+- 一个中文用两个字节（16位）表示
 
 
 
@@ -169,26 +175,26 @@ while 条件:
 ```python
 s = 'ABCDEFG'
 #索引
-s1 = s[0]      #形成了一个新的字符串
+s1 = s[0]       #形成了一个新的字符串
 s2 = s[1]
-print (s1)     #输出A
-print (s2)     #输出B
+print (s1)      #输出A
+print (s2)      #输出B
 s3 = s[-1]
 s4 = s[-2]
-print (s3)     #输出G
-print (s4)     #输出F
+print (s3)      #输出G
+print (s4)      #输出F
 #切片：顾头不顾尾
 s5 = s[0:4]
-print (s5)     #输出ABCD
+print (s5)      #输出ABCD
 s6 = s[0:-1]
-print (s6)     #输出ABCDEF
+print (s6)      #输出ABCDEF
 s7 = s[0:]
-print (s7)     #输出ABCDEFG
+print (s7)      #输出ABCDEFG
 s8 = s[:]
-print (s8)     #输出ABCDEFG
+print (s8)      #输出ABCDEFG
 #[首:尾:步长]
-s9 = s[0:5:2]  #隔一个取一个
-print (s9)     #输出ACE
+s9 = s[0:5:2]   #隔一个取一个
+print (s9)      #输出ACE
 s10 = s[0:7:3]  #隔两个取一个
 print (s10)     #输出ADG
 s11 = s[4:0:-1]
@@ -212,7 +218,7 @@ print (s1)                  #输出None
 s2 = s.upper()              #全部大写
 print (s2)                  #输出NONE
 s3 = s.lower()              #全部小写
-print (s3)                  #输出NONE
+print (s3)                  #输出none
 s4 = s.swapcase()           #大小写翻转
 print (s4)                  #输出NoNe
 #每个隔开的(特殊字符或数字)单词首字母大写
@@ -252,7 +258,7 @@ print (s15)                 #输出NONE
 d = '*none-none-'
 s16 = d.strip('-*')         #删除前后的-和*
 print (s16)                 #输出none-none
-s17 = d.rstrip('-*')        #删除前后的-和*
+s17 = d.rstrip('-*')        #删除右边的-和*
 print (s17)                 #输出*none-none
 s18 = d.count('n')          #统计字符串中n的个数
 print (s18)                 #输出4
@@ -289,13 +295,13 @@ if 'none' in d:
 
 
 
-### 元组tupe
+### 元组tupe()
 
 - 元组：俗称不可变的列表,又被成为只读列表，元祖也是python的基本数据类型之一，用小括号括起来，里面可以放任何数据类型的数据，查询可以，循环也可以，切片也可以，但就是不能改。例：（1，2，3）（"a"，"b"，"c"）
 
 
 
-### 列表list
+### 列表list[]
 
 - 列表是python的基础数据类型之一     ,其他编程语言也有类似的数据类型。比如JS中的数组， java中的数组等等.。它是以[ ]括起来，每个元素用' ,     '隔开而且可以存放各种数据类型：列表是python中的基础数据类型之一，其他语言中也有类似于列表的数据类型，比如js中叫数组，他是以[]括起来，每个元素以逗号隔开，而且他里面可以存放各种数据类型比如：li = ['alex',123,Ture,(1,2,3,'wusir'),[1,2,3,'小明'],{'name':'alex'}]
 - 列表相比于字符串，不仅可以储存不同的数据类型，而且可以储存大量数据，32位python的限制是     536870912 个元素,64位python的限制是 1152921504606846975     个元素。而且列表是有序的，有索引值，可切片，方便取值。
@@ -312,23 +318,23 @@ print(l[4])           #输出[2, 3]
 l.append('admin')
 print(l)              #输出[0, 1, 'overwatch', 'none', [2, 3], 'admin']
 l.insert(3,'player')
-print(l)              #[0, 1, 'overwatch', 'player', 'none', [2, 3], 'admin']
+print(l)              #输出[0, 1, 'overwatch', 'player', 'none', [2, 3], 'admin']
 l.extend('DG')        #extend迭代处理增添元素
-print(l)              #[0, 1, 'overwatch', 'player', 'none', [2, 3], 'admin', 'D', 'G']
+print(l)              #输出[0, 1, 'overwatch', 'player', 'none', [2, 3], 'admin', 'D', 'G']
 l.extend([4,5,6])
-print(l)              #[0, 1, 'overwatch', 'player', 'none', [2, 3], 'admin', 'D', 'G', 4, 5, 6]
+print(l)              #输出[0, 1, 'overwatch', 'player', 'none', [2, 3], 'admin', 'D', 'G', 4, 5, 6]
 
 #删
 l = [0,1,'overwatch','none',[2,3]]
 delete = l.pop(2)
-print(l)              #[0, 1, 'none', [2, 3]]
-print(delete)         #overwatch【pop有返回值】
+print(l)              #输出[0, 1, 'none', [2, 3]]
+print(delete)         #输出overwatch【pop有返回值】
 l.pop()               #默认删最后一个
-print(l)              #[0, 1, 'none']
+print(l)              #输出[0, 1, 'none']
 del l[0:2]            #删除前两个元素
-print(l)              #['none']
+print(l)              #输出['none']
 l.clear()             #清空列表
-print(l)              #[]
+print(l)              #输出[]
 
 #查
 l = [0,1,'overwatch','none',[2,3]]
@@ -341,51 +347,53 @@ for i in l:           #迭代查找
 #none
 #[2,3]
 l = [0,1,'overwatch','none',[2,3]]
-print(l[2][1])        #v
+print(l[2][1])        #输出v
 
 #改
 l = [0,1,'overwatch','none',[2,3]]
 l[3] = l[3].upper()   #改变第4个元素
-print(l)              #[0, 1, 'overwatch', 'NONE', [2, 3]]
+print(l)              #输出[0, 1, 'overwatch', 'NONE', [2, 3]]
 l[0:2] = 'win'        #迭代处理改动元素
-print(l)              #['w', 'i', 'n', 'overwatch', 'NONE', [2, 3]]
+print(l)              #输出['w', 'i', 'n', 'overwatch', 'NONE', [2, 3]]
 l[0:3] = [1,2,'win']  #迭代处理改动元素
-print(l)              #[1, 2, 'win', 'overwatch', 'NONE', [2, 3]]
+print(l)              #输出[1, 2, 'win', 'overwatch', 'NONE', [2, 3]]
 
 #其他
 l = [0,1,'overwatch','none',[2,3]]
-print(len(l))         #5
-print(l.count('none'))#对none计数
-print(l.index('none'))#查找none的索引【列表无find】
+print(len(l))         #输出5
+print(l.count('none'))#对none计数，输出1
+print(l.index('none'))#查找none的索引【列表无find】，输出3
 
 #排序
 l = [6,4,2,3,8,9,1]
 l.reverse()           #翻转
-print(l)              #[1, 9, 8, 3, 2, 4, 6]
+print(l)              #输出[1, 9, 8, 3, 2, 4, 6]
 l.sort()              #正向排序
-print(l)              #[1, 2, 3, 4, 6, 8, 9]
+print(l)              #输出[1, 2, 3, 4, 6, 8, 9]
 l.sort(reverse=True)  #反向排序
-print(l)              #[9, 8, 6, 4, 3, 2, 1]
+print(l)              #输出[9, 8, 6, 4, 3, 2, 1]
 
 #元组【元组的元素只读，元组里的列表可动】
 y = (0,1,'none',3,[4,5,'overwatch'])
 y[4][2] = y[4][2].upper()
-print(y)              #(0, 1, 'none', 3, [4, 5, 'OVERWATCH'])
+print(y)              #输出(0, 1, 'none', 3, [4, 5, 'OVERWATCH'])
 y[4][1] = 'nice'
-print(y)              #(0, 1, 'none', 3, [4, 'nice', 'OVERWATCH'])
+print(y)              #输出(0, 1, 'none', 3, [4, 'nice', 'OVERWATCH'])
 del y[4][2]
-print(y)              #(0, 1, 'none', 3, [4, 'nice'])
+print(y)              #输出(0, 1, 'none', 3, [4, 'nice'])
 y[4].append('OK')
-print(y)              #(0, 1, 'none', 3, [4, 'nice', 'OK'])
+print(y)              #输出(0, 1, 'none', 3, [4, 'nice', 'OK'])
 
 s = 'none'
 s1 = '-'.join(s)      #join()里为可迭代对象，如字符串列表元组
-print(s1)             #n-o-n-e
-#str ------> list 用 split
-#list ------> str 用 join
+print(s1)             #输出n-o-n-e
+
+#str 转为 list 用 split
+#list 转为 str 用 join
 l = ['none','is','admin']
 s2 = ' '.join(l)
-print(s2)             #none is admin
+print(s2)             #输出none is admin
+
 #range(n,m)相当于[n,.....,m-1]且n<m，否则输出为空
 for i in range(-2,2):
     print(i)
@@ -408,16 +416,15 @@ for i in range(-2,4,2):
 
   - 不可变数据类型：元组、bool、int、str    可哈希
   - 可变数据类型：list、dict、set                    不可哈希
+- dict、key：必须是不可变数据类型，可哈希；value：任意数据类型。
 
-- dict key     必须是不可变数据类型，可哈希，value：任意数据类型。
+### 字典dict{}
 
+- 字典的每个键值 key=>value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中。
 - dict 优点：
-
-  - 二分查找去查询
+- 二分查找去查询
   - 存储大量的关系型数据
-
 - 字典是python中唯一的映射类型，采用键值对（key-value）的形式存储数据。python对key进行哈希函数运算，根据计算的结果决定value的存储地址，所以字典是无序存储的，且key必须是可哈希的，可哈希表示key必须是不可变类型，如：数字、字符串、元组。
-
 - 字典（dictionary）是除列表以外python之中最灵活的内置数据结构类型。列表是有序的对象运合，字典是无序的对象集合。两者之间的区别在于：字典当中的元素是通过键来存取的，而不是通过偏移存取。
 
 ```python
@@ -435,17 +442,17 @@ dic = {
 }
 
 #增
-dic['hobby'] = 'girl'        #有键值对则覆盖，没有则添加
-print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male', 'hobby': 'girl'}
+dic['hobby'] = 'game'        #有键值对则覆盖，没有则添加
+print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male', 'hobby': 'game'}
 dic.setdefault('hight',175)  #有键值对则不做改变，没有则添加
-print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male', 'hobby': 'girl', 'hight': 175}
+print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male', 'hobby': 'game', 'hight': 175}
 dic.setdefault('name','admin')
-print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male', 'hobby': 'girl', 'hight': 175}
+print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male', 'hobby': 'game', 'hight': 175}
 
 #删
 dic.pop('hight')             #有返回值
-#print(dic.pop('hight')) ======> 175
-print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male', 'hobby': 'girl'}
+#print(dic.pop('hight'))     #输出175
+print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male', 'hobby': 'game'}
 print(dic.pop('asd',None))   #若没有要删的键则报错，可在","后添加返回值则不报错
 dic.popitem()                #py3.5前随机删除，py3.6后删除最后一个
 print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male'}
@@ -456,56 +463,56 @@ del dic                      #删除字典
 
 #查
 dic = {'name':'none','age':20,'sex':'male',}
-print(dic['age'])            #20若没有该键则会报错
-print(dic.get('name1'))      #None因为没有该键所以返回None，不报错
-print(dic.get('name1','没有该值'))#没有该值
+print(dic['age'])            #输出20，若没有该键则会报错
+print(dic.get('name1'))      #输出None，因为没有该键所以返回None，不报错
+print(dic.get('name1','没有该值'))#输出：没有该值
 
-print(dic.keys(),type(dic.keys()))#dict_keys(['name', 'age', 'sex']) <class 'dict_keys'>
-print(dic.values())          #dict_values(['none', 20, 'male'])
-print(dic.items())           #dict_items([('name', 'none'), ('age', 20), ('sex', 'male')])
+print(dic.keys(),type(dic.keys()))#输出dict_keys(['name', 'age', 'sex']) <class 'dict_keys'>
+print(dic.values())          #输出dict_values(['none', 20, 'male'])
+print(dic.items())           #输出dict_items([('name', 'none'), ('age', 20), ('sex', 'male')])
 for i in dic:
-    print(i)                 #键name//age//sex
+    print(i)                 #逐行输出键name//age//sex
 for i in dic.values():
-    print(i)                 #值none//20//male
+    print(i)                 #逐行输出值none//20//male
 for i in dic.items():
-    print(i)                 #键值对('name', 'none')//('age', 20)//('sex', 'male')
+    print(i)                 #逐行输出键值对('name', 'none')//('age', 20)//('sex', 'male')
 for k,v in dic.items():
-    print(k,v)               #name none//age 20//sex male
+    print(k,v)               #逐行输出name none//age 20//sex male
 
 #改
 dic = {'name':'none','age':20,'sex':'male',}
 dic['name'] = 'admin'        ##有键值对则覆盖，没有则添加
 print(dic)                   #{'name': 'admin', 'age': 20, 'sex': 'male'}
-dic1 = {'name':'none','hobby':'girl',}
+dic1 = {'name':'none','hobby':'game',}
 dic.update(dic1)             #将dic1添加到dic里，有则覆盖，没有则添加
-print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male', 'hobby': 'girl'}
+print(dic)                   #{'name': 'none', 'age': 20, 'sex': 'male', 'hobby': 'game'}
 
 #字典的嵌套
 dic = {
     'name':['none','admin','asuna'],
     'mike':{
         'age':20,
-        'hobby':'girl'
+        'hobby':'game'
     },
     'country':'China'
 }
 dic['country'] = 'CN'
 dic['name'].append('alice')
-print(dic['name'])           #['none', 'admin', 'asuna', 'alice']
+print(dic['name'])           #输出['none', 'admin', 'asuna', 'alice']
 dic['name'][2] = dic['name'][2].capitalize()
-print(dic['name'])           #['none', 'admin', 'Asuna', 'alice']
+print(dic['name'])           #输出['none', 'admin', 'Asuna', 'alice']
 dic['mike']['country'] = 'USA'
-print(dic['mike'])           #{'age': 20, 'hobby': 'girl', 'country': 'USA'}
+print(dic['mike'])           #输出{'age': 20, 'hobby': 'game', 'country': 'USA'}
 dic['name'].insert(0,'asd')
-print(dic['name'])           #['asd', 'none', 'admin', 'Asuna', 'alice']
+print(dic['name'])           #输出['asd', 'none', 'admin', 'Asuna', 'alice']
 
 #判断字符串中的整数个数
 str = input('>>>')
-for i in str:
-    if not i.isdigit():
-        str = str.replace(i,' ')
-l = str.split()
-print(len(l))
+for i in str:                #对字符串的内容进行逐个检查
+    if not i.isdigit():      #判断内容是否为数字
+        str = str.replace(i,' ')#若元素不为数字则替换为空格
+l = str.split()              #将字符串转换为列表
+print(len(l))                #统计列表的元素格个数并输出
 ```
 
 
@@ -568,44 +575,43 @@ print(len(l))
 # = 赋值，== 判断值是否相等，is 判断内存地址是否相等
 li = [1,2,3]
 li1 = li
-print(li is li1)          #True
-print(id(li),id(li1))     #17038760 17038760
+print(li is li1)     #输出True
+print(id(li),id(li1))#输出17038760 17038760
 #数字，字符串 存在小数据池
 #数字：-5 ~ 256
 #字符串：不能含有特殊字符，等
 n = 6
 n1 = 6
-print(n is n1)       #True
-n = 300
-n1 = 300
-print(n is n1)       #False（在terminal体现）
+print(n is n1)       #输出True
 
 
 #编码
 #str -----> bytes
 s = 'asuna'
 s1 = s.encode('utf-8')
-print(s1)            #b'asuna'
+print(s1)            #输出b'asuna'
 s = '亚丝娜'
 s1 = s.encode('gbk')
-print(s1)            #b'\xd1\xc7\xcb\xbf\xc4\xc8'
+print(s1)            #输出b'\xd1\xc7\xcb\xbf\xc4\xc8'
 ```
 
 
 
 ## Day7
 
+### 字典{}与集合({})
+
 ```python
 #0 '' [] () {}   ------>   False，其他的为True
 #元组里面只有一个元素，且没有逗号，该元素是什么类型就什么类型
 tu1 = (1)
 tu2 = (1,)
-print(tu1,type(tu1))           #1 <class 'int'>
-print(tu2,type(tu2))           #(1,) <class 'tuple'>
+print(tu1,type(tu1))           #输出1 <class 'int'>
+print(tu2,type(tu2))           #输出(1,) <class 'tuple'>
 tu3 = ([1])
 tu4 = ([1],)
-print(tu3,type(tu3))           #[1] <class 'list'>
-print(tu4,type(tu4))           #([1],) <class 'tuple'>
+print(tu3,type(tu3))           #输出[1] <class 'list'>
+print(tu4,type(tu4))           #输出([1],) <class 'tuple'>
 
 #要求：删除字典中“键”中含有“k”的键值对
 #在循环的字典中删除键值对会报错
@@ -620,7 +626,7 @@ for i in dic:
     if 'k' not in i:
         dic1.setdefault(i,dic[i])
 dic = dic1
-print(dic)
+print(dic)                     #输出{'a3': 'v3'}
 #法2
 dic = {'k1':'v1','k2':'v2','a3':'v3'}
 l = []
@@ -629,64 +635,401 @@ for i in dic:
         l.append(i)
 for i in l:
     del dic[i]
-print(dic)
+print(dic)                     #输出{'a3': 'v3'}
 
 #集合set({})：可变的数据类型，但里面的元素必须是不可变数据类型，无序，不重复
 set1 = set({1,2,3})
-print(set1)                    #{1, 2, 3}
+print(set1)                    #输出{1, 2, 3}
 #增
 set2 = set({'asd',1,'none','none','asuna'})
 set2.add('3')
-print(set2)                    #{1, 'none', '3', 'asuna', 'asd'} 无序不重复
+print(set2)                    #输出{1, 'none', '3', 'asuna', 'asd'} 无序不重复
 set2.update('abc')
-print(set2)                    #{1, 'none', '3', 'asuna', 'asd'}
+print(set2)                    #输出{1, 'asuna', 'c', 'asd', 'a', '3', 'b', 'none'}
 #删
 set2.pop()                     #随机删除，有返回值
-print(set2,set2.pop())         #{'asuna', 'none', 'a', 'b', '3', 'c'} asd
+print(set2,set2.pop())         #输出{'c', 'asd', 'a', '3', 'b', 'none'} asuna
 set2.remove('c')
-print(set2)                    #{'a', 'asd', 'none', 'b', 'asuna'}
+print(set2)                    #输出{'asd', 'a', '3', 'b', 'none'}
 set2.clear()
-print(set2)                    #set()
+print(set2)                    #输出set()
 #查
 set2 = set({'asd',1,'none','none','asuna'})
 for i in set2:
-    print(i)                   #none//1//asuna//asd
+    print(i)                   #输出none//1//asuna//asd
 #交集
 set1 = ({4,5,3,2,1})
 set2 = ({1,3,5,6,2})
-print(set1 & set2)             #{1, 2, 3, 5}
-print(set1.intersection(set2)) #{1, 2, 3, 5}
+print(set1 & set2)             #输出{1, 2, 3, 5}
+print(set1.intersection(set2)) #输出{1, 2, 3, 5}
 #并集
-print(set1 | set2)             #{1, 2, 3, 4, 5, 6}
-print(set1.union(set2))        #{1, 2, 3, 4, 5, 6}
+print(set1 | set2)             #输出{1, 2, 3, 4, 5, 6}
+print(set1.union(set2))        #输出{1, 2, 3, 4, 5, 6}
 #反交集
-print(set1 ^ set2)             #{4, 6}
-print(set1.symmetric_difference(set2)) #{4, 6}
+print(set1 ^ set2)             #输出{4, 6}
+print(set1.symmetric_difference(set2)) #输出{4, 6}
 #差集
-print(set1 - set2)             #{4}
-print(set1.difference(set2))   #{4}
+print(set1 - set2)             #输出{4}
+print(set1.difference(set2))   #输出{4}
 #子集
 set1 = ({3,2,1})
 set2 = ({1,3,5,6,2})
-print(set1 < set2)             #True
-print(set1.issubset(set2))     #True
+print(set1 < set2)             #输出True
+print(set1.issubset(set2))     #输出True
 #超集
-print(set2 > set1)             #True
-print(set2.issuperset(set2))   #True
+print(set2 > set1)             #输出True
+print(set2.issuperset(set2))   #输出True
 
-#要求去除重
+#去重
 li = [1,22,22,33,'none','none']
 li = list(set(li))
-print(li)                    #[1, 'none', 22, 33]
+print(li)                      #输出[1, 'none', 22, 33]
 
 #冻结   ----->   不可变
 set4 = set({'none','asuna',123})
-print(set4,type(set4))       #{123, 'none', 'asuna'} <class 'set'>
+print(set4,type(set4))         #输出{123, 'none', 'asuna'} <class 'set'>
 set4 = frozenset(set4)
-print(set4,type(set4))       #frozenset({123, 'none', 'asuna'}) <class 'frozenset'>
+print(set4,type(set4))         #输出frozenset({123, 'none', 'asuna'}) <class 'frozenset'>
 ```
 
 
 
 ## Day8
+
+### 文件处理
+
+- 文件处理：内存 ↔ 硬盘
+
+1. 文件路径
+2. 操作方式：只读，只写，追加，读写，写读......
+3. 编码方式：utf-8，gbk......
+
+
+
+**读：mode = 'r'**
+
+```python
+f = open('E:\test.txt',mode = 'r',encoding = 'utf-8')
+content = f.read()
+print(content)              #输出0DAY计划
+f.close()
+```
+
+   
+
+**非文字类文件、上传下载：mode = 'rb'**
+
+```python
+f = open('E:\test.txt',mode = 'rb')
+content = f.read()
+print(content)              #输出b'0DAY\xe8\xae\xa1\xe5\x88\x92'
+f.close()
+```
+
+
+
+**写：mode = 'w'**
+
+```python
+f = open('hack',mode = 'w',encoding = 'utf-8')      #没有此文件则创建，有则覆盖
+f.write('hack the world')
+f.close()
+```
+
+
+
+**写：mode = 'wb'**
+
+```python
+f = open('hack',mode = 'wb')
+f.write('hack the world!'.encode('utf-8'))          #str转换为bytes类型
+f.close()
+```
+
+
+
+**追加：mode = 'a'**
+
+```python
+f = open('hack',mode = 'a',encoding = 'utf-8')
+f.write('hack the world!')
+f.close()
+```
+
+
+
+**读写：mode = 'r+'**
+
+- 若先写后读，则会在文件开头进行写入，读取写入内容后面剩余的内容；读写后再读，无效，只能读取一次】
+
+```python
+f = open('hack',mode = 'r+',encoding = 'utf-8')
+print(f.read())
+f.write('by None')
+f.close()
+```
+
+
+
+**读写：mode = 'r+b'**
+
+```python
+f = open('hack',mode = 'r+b')
+print(f.read())
+f.write('一叶知秋'.encode('utf-8'))
+f.close()
+```
+
+
+
+**写读：mode = 'w+'**
+
+- 如果该文件已存在则打开文件，并从开头开始编辑，即原有内容会被删除。如果该文件不存在，创建新文件。
+
+```python
+f = open('hack',mode = 'w+',encoding = 'utf-8')
+f.write('by 一叶知秋')
+print(f.read())                    #输出为空白
+f.close()
+
+f = open('hack',mode = 'w+',encoding = 'utf-8')
+f.write('by 一叶知秋')
+f.seek(0)                          #将文件指针移至开头
+print(f.read())                    #输出by 一叶知秋
+f.close()
+```
+
+
+
+**追加写读：mode = 'a+'**
+
+```python
+f = open('hack',mode = 'a+',encoding = 'utf-8')
+f.write('by 一叶知秋')
+f.seek(0)                          #将文件指针移至开头
+print(f.read())                    #输出by 一叶知秋by 一叶知秋
+f.close()
+```
+
+
+
+**read()【一次性读取】**
+
+```python
+f = open('hack',mode = 'r+',encoding = 'utf-8')
+content = f.read(5)                #单位为字符
+print(content)                     #输出by 一叶
+f.close
+```
+
+
+
+**seek()【使文件指针移动到指定位置】**
+
+```python
+f = open('hack',mode = 'r+',encoding = 'utf-8')
+f.seek(6)                         #单位为字节,若改为seek(4)则会报错，一个中文占3个字节
+content = f.read()
+print(content)                    #输出叶知秋by 一叶知秋
+f.close
+```
+
+
+
+**tell()【获取文件指针当前的位置】**
+
+```python
+f = open('hack',mode = 'a+',encoding = 'utf-8')
+print(f.tell())                   #输出30
+f.write('hello world')
+f.seek(f.tell() - 11)
+print(f.read())                   #输出hello world
+f.close
+```
+
+
+
+**readline()   #一行一行的读取**
+
+**readlines()   #每一行当成列表中的一个元素，添加到列表中【一次性读取】**
+
+```python
+f = open('hack',mode = 'r+',encoding = 'utf-8')
+#print(f.readline())               #输出by 一叶知秋by 一叶知秋
+print(f.readlines())              #输出['by 一叶知秋by 一叶知秋\n', 'hello world']
+f.close()
+```
+
+
+
+**显示文件内容【警告：注意读取文件的大小，忌全部读取】**
+
+```python
+f = open('hack',mode = 'r+',encoding = 'utf-8')
+for i in f:
+    print(i)
+f.close()
+'''
+输出为：
+by 一叶知秋by 一叶知秋
+
+hello world
+'''
+```
+
+
+
+**truncate()【截取文件】**
+
+```python
+f = open('hack',mode = 'r+',encoding = 'utf-8')
+f.truncate(15)                    #截存前15个字节的内容
+print(f.readlines())              #输出['by 一叶知秋']
+f.close()
+```
+
+
+
+**非close()写法，自动关闭**
+
+```python
+with open('hack',mode = 'r+',encoding = 'utf-8') as f:
+    print(f.read())               #输出by 一叶知秋
+```
+
+```python
+with open('hack',mode = 'r+',encoding = 'utf-8') as f,open('hack',mode = 'a+',encoding = 'utf-8') as f1:
+    print(f.read())               #输出by 一叶知秋
+    f1.write('\nhello world')
+    f1.seek(0)
+    print(f1.readlines())         #输出['by 一叶知秋\n', 'hello world']
+```
+
+
+
+**修改文件**
+
+```python
+with open('hack',mode = 'r',encoding = 'utf-8') as f,open('hack.bak',mode = 'w',encoding = 'utf-8') as f1:
+    for line in f:
+        if '一叶知秋' in line:
+            line = line.replace('一叶知秋','None')   #修改文件内容
+        f1.write(line)   #写文件
+
+import os
+os.remove('hack')   #删除原文件
+os.rename('hack.bak','hcak')   #重命名新文件
+```
+
+
+
+### 登录注册
+
+```python
+lis = []
+i = 3
+username = input('请输入注册用户名：')
+password = input('请输入初始密码：')
+with open('info',mode = 'w',encoding = 'utf-8') as f:
+    f.write('{}\n{}'.format(username,password))
+print('注册成功！')
+
+while i > 0:
+    i-=1
+    uname = input('请输入你的用户名：')
+    passwd = input('请输入你的密码：')
+    with open('info',mode = 'r',encoding = 'utf-8') as f1:
+        for line in f1:
+            lis.append(line)
+    if uname == lis[0].strip() and passwd == lis[1].strip():
+        print('登录成功！')
+        break
+    else:
+        print('账号或密码错误！剩余{}次机会！'.format(i))
+```
+
+
+
+## Day9
+
+### 函数
+
+- 关于<u>参数</u>
+  - 没有参数：定义函数和调用函数时括号里都为空
+  - 一个参数：传什么就是什么
+  - 多个参数：【**顺序：**位置参数，*args，默认参数，**kwargs】
+- 关于<u>传参</u>
+  - 按照**位置传参**：**必须传，有几个形参就得传几个实参**
+  - 按照**关键字传参**：可不传，即使用默认参数
+  - 可以混用，但必须是先位置传参再关键字传参（同一个变量仅可传递一个参数）
+
+- 关于<u>返回值</u>
+  - 函数中执行了retune后，则该函数后面的内容都不执行
+  - 当函数有多个返回值，若只用一个变量接收，得到的是一个元组
+
+![img](https://www.runoob.com/wp-content/uploads/2014/05/py-tup-10-26-1.png)
+
+
+
+动态参数：用于传递任意个参数
+
+- 动态参数*args：
+  - 默认命名为args
+  - 接收的是按照**位置传参**的值，组成一个元组
+
+```python
+def sum(*args):
+    n = 0
+    for i in args:
+        n += i
+    return n
+
+print(sum(1,2,3,4))                    #输出10
+```
+
+- 动态参数**kwargs：
+  - 默认命名为kwargs
+  - 接收的是按照**关键字传参**的值，组成一个字典
+
+```python
+def sum(**kwargs):
+    print(kwargs)
+
+print(sum(a = 'aaa',b = 'bbb'))      #{'a': 'aaa', 'b': 'bbb'}
+```
+
+
+
+动态参数的另一种传参方式
+
+- 在传参时，在实参前面加上*，即对这个实参逐个传参
+
+```python
+def func(*args):
+    print(args)
+
+l = [1,2,3]
+func(*l)                                 #输出(1, 2, 3)
+
+def fun(**kwargs):
+    print(kwargs)
+
+d = {'a': 1,'b' : 2}
+fun(**d)                                 #输出{'a': 1, 'b': 2}
+```
+
+
+
+函数的注释
+
+```python
+def func():
+    '''
+    这个函数实现的功能
+    参数1：
+    参数2：
+    return：
+    '''
+    pass
+```
 
