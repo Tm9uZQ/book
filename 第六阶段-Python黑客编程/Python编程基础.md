@@ -95,6 +95,17 @@ while 条件:
 
 
 
+- 三元运算
+
+  ```python
+  a = 1
+  b = 5
+  c = a if a>b else b   #三元运算
+  print(c)              #输出5
+  ```
+
+  
+
 ## Day2
 
 ### 格式化输出：
@@ -967,11 +978,19 @@ while i > 0:
   - 函数中执行了retune后，则该函数后面的内容都不执行
   - 当函数有多个返回值，若只用一个变量接收，得到的是一个元组
 
+
+
+- 函数名：地址；函数名+括号：执行
+
+
+
+- 默认参数的陷阱：如果默认参数的值是一个可变数据类型，且使用默认参数，那么每一次调用函数时，都是公用这个数据类型的资源
+
 ![img](https://www.runoob.com/wp-content/uploads/2014/05/py-tup-10-26-1.png)
 
 
 
-动态参数：用于传递任意个参数
+动态参数：用于传递任意个参数，【接受聚合，调用打散】
 
 - 动态参数*args：
   - 默认命名为args
@@ -1031,5 +1050,277 @@ def func():
     return：
     '''
     pass
+
+print(func.__doc__)     #打印该函数的注释
+```
+
+
+
+## Day10
+
+### 命名空间
+
+- 内置命名空间 —— Python解释器
+  - print()、input()、len()
+  - 就是Python解释器一启动就可以使用的函数存储在内置命名空间中
+  - 启动解释器时就被加载进内存
+- 全局命名空间 —— 自定义变量
+  - 在程序从上到下被执行的过程中依次加载进内存
+- 局部命名空间 —— 函数
+  - 函数内部定义的变量
+  - 当调用函数时才会产生命名空间，随着函数执行的结束而消失
+  - 多个局部命名空间是相互独立的
+
+
+
+- 依赖关系：局部命名空间（全局命名空间（内置命名空间））），底层空间可被高层空间调用，但不能反向调用
+- 当我们的全局定义和内置命名空间中存在同名时，会使用全局定义的命名空间，即调用查找顺序为局部→全局→内置
+
+
+
+### 作用域
+
+- 全局作用域
+  - 内置和全局命名空间
+  - 可用globals()进行查看，globals()永远显示的是全局的命名空间
+- 局部作用域
+  - 局部命名空间
+  - 可用locals()进行查看，locals()显示的命名空间和其被放置的位置有关
+
+
+
+- global
+  - 若想在函数内部对函数外的变量进行操作，就需要在函数内部声明其为global。
+  - 如果一个变量进行了global声明，那么这个变量在局部的操作将影响全局。
+  - global为不安全代码，应用传参进行操作
+
+```python
+a = 1
+def func():
+    global a
+    a += 1
+
+func()
+print(a)
+```
+
+
+
+### 闭包
+
+- 闭包
+  - 嵌套函数，内部函数调用外部函数的变量
+  - 使用`.__closure__`可查看是否为闭包函数
+  - 可以减少反复调用时开辟和关闭内存消耗的时间
+
+```python
+def outer():
+    a = 1
+    def inner():
+        print(a)
+    print(inner.__closure__)     #输出(<cell at 0x00000182AB226BE0: int object at 0x00007FFFC049D6A0>,)
+
+outer()
+print(outer.__closure__)         #输出None
+```
+
+
+
+闭包的常用方法：在函数外部使用函数内部的变量
+
+```python
+def outer():
+    a = 1            #由于后面会调用该变量，所以不会随函数的结束而消失
+    def inner():
+        print(a)
+    return inner     #返回了inner函数的地址
+
+inn = outer()        #全局变量指向了一个内部函数
+inn()
+```
+
+
+
+## Day11
+
+### 装饰器
+
+- 作用：在不修改函数的调用方式的前提下，在原来的函数上添加功能
+- 原则：开放封闭原则：对扩展的开放的，对修改是封闭的（用于维护代码的稳定性）
+- 本质：闭包函数
+
+```python
+import time
+
+def func():
+    time.sleep(0.01)
+    print('Hello World!')
+
+def wrapper(f):     #装饰器函数
+    def inner():
+        start = time.time()
+        f()        #被装饰的函数
+        end = time.time()
+        print(end - start)
+    return inner
+
+func = wrapper(func)   #将被装饰函数传入装饰函数
+func()                 #实际上运行的是inner()
+```
+
+
+
+### 语法糖
+
+- 以上代码可用**语法糖**来进行简化
+
+```python
+import time
+
+def wrapper(f):     #装饰器函数
+    def inner():
+        start = time.time()
+        f()        #被装饰的函数
+        end = time.time()
+        print(end - start)
+    return inner
+
+@wrapper            #语法糖 @装饰器函数
+def func():        #被装饰的函数
+    time.sleep(0.01)
+    print('Hello World!')
+
+func()
+```
+
+
+
+- 装饰带返回值的函数
+
+```python
+import time
+
+def wrapper(f):     #装饰器函数
+    def inner():
+        start = time.time()
+        ret = f()        #记录被装饰的函数的返回值
+        end = time.time()
+        print(end - start)
+        return ret       #返回被装饰函数的返回值
+    return inner
+
+@wrapper            #语法糖
+def func():
+    time.sleep(0.01)
+    print('Hello World!')
+    return 'by 一叶知秋'
+
+ret = func()
+print(ret)
+```
+
+
+
+- 装饰带参数的函数
+
+```python
+import time
+
+def wrapper(f):     #装饰器函数
+    def inner(a):  #带上形参
+        start = time.time()
+        ret = f(a)        #被装饰的函数
+        end = time.time()
+        print(end - start)
+        return ret
+    return inner
+
+@wrapper            #语法糖
+def func(a):
+    time.sleep(0.01)
+    print('Hello World!',a)
+    return 'by 一叶知秋'
+
+ret = func(1)
+print(ret)
+```
+
+
+
+- 装饰带多个参数的函数
+
+```python
+import time
+
+def wrapper(f):     #装饰器函数
+    def inner(*args,**kwargs):  #带上形参，动态参数：接受聚合，(1,2)
+        start = time.time()
+        ret = f(*args,**kwargs)        #被装饰的函数，动态参数：调用打散，*(1,2)
+        end = time.time()
+        print(end - start)
+        return ret
+    return inner
+
+@wrapper            #语法糖
+def func(a,b):
+    time.sleep(0.01)
+    print('Hello World!',a,b)
+    return 'by 一叶知秋'
+
+ret = func(1,2)
+ret = func(1,b=2)
+print(ret)
+```
+
+
+
+- 装饰器的固定格式
+
+```python
+def wrapper(f):     #装饰器函数,f是被装饰的函数
+    def inner(*args,**kwargs):
+
+        ''' 在被装饰函数之前要做的事 '''
+
+        ret = f(*args,**kwargs)      #被装饰的函数
+
+        ''' 在被装饰函数之后要做的事 '''
+
+        return ret
+    return inner
+
+@wrapper            #语法糖
+def func(a,b):                       #被装饰的函数
+    pass
+```
+
+
+
+## Day12
+
+### 带参数的装饰器
+
+```python
+from functools import wraps
+def wrapper(func):
+    @wraps(func)     #带参数的装饰器
+    def inner(*args,**kwargs):
+        print('在被装饰的函数执行前做的事')
+        ret = func(*args,**kwargs)
+        print('在被装饰的函数执行后做的事')
+        return ret
+    return inner
+
+@wrapper
+def holiday(day):
+    '''这是一个放假通知'''
+    print('全体放假%s天'%day)
+    return '好耶'
+
+print(holiday.__name__)     #输出：holiday，若没有第1,3行代码，则输出inner的信息
+print(holiday.__doc__)
+
+ret = holiday(3)
+print(ret)
 ```
 
