@@ -1,0 +1,1840 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Day13-反射+注解 · 0day计划</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="None">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Day14-XML+Dom4j+动态代理.html" />
+    
+    
+    <link rel="prev" href="Day12-网络编程+junit.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://none.org.cn" target="_blank" class="custom-link">None's 树洞</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">《 0day计划 》</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    社工
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../社工/获取位置信息.html">
+            
+                <a href="../社工/获取位置信息.html">
+            
+                    
+                    获取位置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第一阶段-基础篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第一阶段-基础篇/零基础必看课程.html">
+            
+                <a href="../第一阶段-基础篇/零基础必看课程.html">
+            
+                    
+                    零基础必看课程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第一阶段-基础篇/Windows基础.html">
+            
+                <a href="../第一阶段-基础篇/Windows基础.html">
+            
+                    
+                    Windows基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第一阶段-基础篇/数据库基础.html">
+            
+                <a href="../第一阶段-基础篇/数据库基础.html">
+            
+                    
+                    数据库基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第二阶段-Web安全篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                <a href="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                    
+                    2019网络安全训练营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                <a href="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                    
+                    BurpSuite学习使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                <a href="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                    
+                    Web安全攻防学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第六阶段-Python黑客编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                <a href="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                    
+                    Python编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    软考-信息安全工程师
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../软考-信息安全工程师/第一版.html">
+            
+                <a href="../软考-信息安全工程师/第一版.html">
+            
+                    
+                    第一版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    兄弟连Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../兄弟连Linux/Linux系统简介.html">
+            
+                <a href="../兄弟连Linux/Linux系统简介.html">
+            
+                    
+                    Linux系统简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../兄弟连Linux/Linux常用命令.html">
+            
+                <a href="../兄弟连Linux/Linux常用命令.html">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../兄弟连Linux/文本编辑器Vim.html">
+            
+                <a href="../兄弟连Linux/文本编辑器Vim.html">
+            
+                    
+                    文本编辑器Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../兄弟连Linux/软件包管理.html">
+            
+                <a href="../兄弟连Linux/软件包管理.html">
+            
+                    
+                    软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    韩立刚计算机网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../韩立刚计算机网络/概述.html">
+            
+                <a href="../韩立刚计算机网络/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../韩立刚计算机网络/物理层.html">
+            
+                <a href="../韩立刚计算机网络/物理层.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../韩立刚计算机网络/数据链路层.html">
+            
+                <a href="../韩立刚计算机网络/数据链路层.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    韩立刚CCNA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../韩立刚CCNA/计算机网络.html">
+            
+                <a href="../韩立刚CCNA/计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../韩立刚CCNA/TCP&IP.html">
+            
+                <a href="../韩立刚CCNA/TCP&IP.html">
+            
+                    
+                    TCP&IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../韩立刚CCNA/IP地址和子网.html">
+            
+                <a href="../韩立刚CCNA/IP地址和子网.html">
+            
+                    
+                    IP地址和子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../韩立刚CCNA/静态路由.html">
+            
+                <a href="../韩立刚CCNA/静态路由.html">
+            
+                    
+                    静态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../韩立刚CCNA/动态路由.html">
+            
+                <a href="../韩立刚CCNA/动态路由.html">
+            
+                    
+                    动态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../韩立刚CCNA/交换机.html">
+            
+                <a href="../韩立刚CCNA/交换机.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Java笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="01-面试题.html">
+            
+                <a href="01-面试题.html">
+            
+                    
+                    01-面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="02-未归类知识点.html">
+            
+                <a href="02-未归类知识点.html">
+            
+                    
+                    02-未归类知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="基础班day01.html">
+            
+                <a href="基础班day01.html">
+            
+                    
+                    基础班day01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="基础班day02.html">
+            
+                <a href="基础班day02.html">
+            
+                    
+                    基础班day02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="基础班day03.html">
+            
+                <a href="基础班day03.html">
+            
+                    
+                    基础班day03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="基础班day04.html">
+            
+                <a href="基础班day04.html">
+            
+                    
+                    基础班day04
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="基础班day05.html">
+            
+                <a href="基础班day05.html">
+            
+                    
+                    基础班day05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="基础班day06.html">
+            
+                <a href="基础班day06.html">
+            
+                    
+                    基础班day06
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="基础班day07.html">
+            
+                <a href="基础班day07.html">
+            
+                    
+                    基础班day07
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="基础班day08.html">
+            
+                <a href="基础班day08.html">
+            
+                    
+                    基础班day08
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="基础班day09.html">
+            
+                <a href="基础班day09.html">
+            
+                    
+                    基础班day09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="基础班day10.html">
+            
+                <a href="基础班day10.html">
+            
+                    
+                    基础班day10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Day01-Static+继承+权限修饰.html">
+            
+                <a href="Day01-Static+继承+权限修饰.html">
+            
+                    
+                    Day01-Static+继承+权限修饰
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.14" data-path="Day02-抽象+接口+单例.html">
+            
+                <a href="Day02-抽象+接口+单例.html">
+            
+                    
+                    Day02-抽象+接口+单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.15" data-path="Day03-多态+内部类+枚举.html">
+            
+                <a href="Day03-多态+内部类+枚举.html">
+            
+                    
+                    Day03-多态+内部类+枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.16" data-path="Day04-常用API+正则.html">
+            
+                <a href="Day04-常用API+正则.html">
+            
+                    
+                    Day04-常用API+正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.17" data-path="Day05-数据结构+List集合+泛型.html">
+            
+                <a href="Day05-数据结构+List集合+泛型.html">
+            
+                    
+                    Day05-数据结构+List集合+泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.18" data-path="Day06-Set集合+迭代器+增强for.html">
+            
+                <a href="Day06-Set集合+迭代器+增强for.html">
+            
+                    
+                    Day06-Set集合+迭代器+增强for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.19" data-path="Day07-Map集合.html">
+            
+                <a href="Day07-Map集合.html">
+            
+                    
+                    Day07-Map集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.20" data-path="Day08-异常+多线程.html">
+            
+                <a href="Day08-异常+多线程.html">
+            
+                    
+                    Day08-异常+多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.21" data-path="Day09-线程池+Lambda+Stream流.html">
+            
+                <a href="Day09-线程池+Lambda+Stream流.html">
+            
+                    
+                    Day09-线程池+Lambda+Stream流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.22" data-path="Day10-File+IO流.html">
+            
+                <a href="Day10-File+IO流.html">
+            
+                    
+                    Day10-File+IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.23" data-path="Day11-IO流+装饰模式.html">
+            
+                <a href="Day11-IO流+装饰模式.html">
+            
+                    
+                    Day11-IO流+装饰模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.24" data-path="Day12-网络编程+junit.html">
+            
+                <a href="Day12-网络编程+junit.html">
+            
+                    
+                    Day12-网络编程+junit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.25" data-path="Day13-反射+注解.html">
+            
+                <a href="Day13-反射+注解.html">
+            
+                    
+                    Day13-反射+注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.26" data-path="Day14-XML+Dom4j+动态代理.html">
+            
+                <a href="Day14-XML+Dom4j+动态代理.html">
+            
+                    
+                    Day14-XML+Dom4j+动态代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.27" data-path="Day15-MySQL基础.html">
+            
+                <a href="Day15-MySQL基础.html">
+            
+                    
+                    Day15-MySQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.28" data-path="Day16-MySQL高级.html">
+            
+                <a href="Day16-MySQL高级.html">
+            
+                    
+                    Day16-MySQL高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.29" data-path="Day17-JDBC.html">
+            
+                <a href="Day17-JDBC.html">
+            
+                    
+                    Day17-JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.30" data-path="Day18-Maven+MyBatis入门.html">
+            
+                <a href="Day18-Maven+MyBatis入门.html">
+            
+                    
+                    Day18-Maven+MyBatis入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.31" data-path="Day19-MyBatis进阶.html">
+            
+                <a href="Day19-MyBatis进阶.html">
+            
+                    
+                    Day19-MyBatis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.32" data-path="Day20-MyBatis高级.html">
+            
+                <a href="Day20-MyBatis高级.html">
+            
+                    
+                    Day20-MyBatis高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.33" data-path="Day21-HTML5+CSS.html">
+            
+                <a href="Day21-HTML5+CSS.html">
+            
+                    
+                    Day21-HTML5+CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.34" data-path="Day22-JavaScript.html">
+            
+                <a href="Day22-JavaScript.html">
+            
+                    
+                    Day22-JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.35" data-path="Day23-HTTP+Tomcat+Servlet.html">
+            
+                <a href="Day23-HTTP+Tomcat+Servlet.html">
+            
+                    
+                    Day23-HTTP+Tomcat+Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.36" data-path="Day24-Request+Response.html">
+            
+                <a href="Day24-Request+Response.html">
+            
+                    
+                    Day24-Request+Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.37" data-path="Day25-Jsp+MVC.html">
+            
+                <a href="Day25-Jsp+MVC.html">
+            
+                    
+                    Day25-Jsp+MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.38" data-path="Day26-Cookie+Session.html">
+            
+                <a href="Day26-Cookie+Session.html">
+            
+                    
+                    Day26-Cookie+Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.39" data-path="Day27-Filter+Listener.html">
+            
+                <a href="Day27-Filter+Listener.html">
+            
+                    
+                    Day27-Filter+Listener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.40" data-path="Day28-Json+Vue.html">
+            
+                <a href="Day28-Json+Vue.html">
+            
+                    
+                    Day28-Json+Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.41" data-path="Day29-Element.html">
+            
+                <a href="Day29-Element.html">
+            
+                    
+                    Day29-Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.42" data-path="Day30-brand综合案例.html">
+            
+                <a href="Day30-brand综合案例.html">
+            
+                    
+                    Day30-brand综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.43" data-path="Day31~35-Spring.html">
+            
+                <a href="Day31~35-Spring.html">
+            
+                    
+                    Day31~35-Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.44" data-path="Day36-SSM.html">
+            
+                <a href="Day36-SSM.html">
+            
+                    
+                    Day36-SSM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.45" data-path="Day37-Maven高级.html">
+            
+                <a href="Day37-Maven高级.html">
+            
+                    
+                    Day37-Maven高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.46" data-path="Day38-SpringBoot.html">
+            
+                <a href="Day38-SpringBoot.html">
+            
+                    
+                    Day38-SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.47" data-path="Day39-Git.html">
+            
+                <a href="Day39-Git.html">
+            
+                    
+                    Day39-Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.48" data-path="Day40~45-瑞吉点餐.html">
+            
+                <a href="Day40~45-瑞吉点餐.html">
+            
+                    
+                    Day40~45-瑞吉点餐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.49" data-path="Day46~47-Linux.html">
+            
+                <a href="Day46~47-Linux.html">
+            
+                    
+                    Day46~47-Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.50" data-path="Day48-Redis.html">
+            
+                <a href="Day48-Redis.html">
+            
+                    
+                    Day48-Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.51" data-path="Day49~51-瑞吉点餐优化.html">
+            
+                <a href="Day49~51-瑞吉点餐优化.html">
+            
+                    
+                    Day49~51-瑞吉点餐优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.52" data-path="Day52-MyBatisPlus+乐观锁.html">
+            
+                <a href="Day52-MyBatisPlus+乐观锁.html">
+            
+                    
+                    Day52-MyBatisPlus+乐观锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.53" data-path="Day53~54-SpringCloud.html">
+            
+                <a href="Day53~54-SpringCloud.html">
+            
+                    
+                    Day53~54-SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.54" data-path="Day55-Docker.html">
+            
+                <a href="Day55-Docker.html">
+            
+                    
+                    Day55-Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.55" data-path="Day56-RabbitMQ.html">
+            
+                <a href="Day56-RabbitMQ.html">
+            
+                    
+                    Day56-RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.56" data-path="Day57~59-ElasticSearch.html">
+            
+                <a href="Day57~59-ElasticSearch.html">
+            
+                    
+                    Day57~59-ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.57" data-path="Day60-Sentinel.html">
+            
+                <a href="Day60-Sentinel.html">
+            
+                    
+                    Day60-Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.58" data-path="Day61-Seata.html">
+            
+                <a href="Day61-Seata.html">
+            
+                    
+                    Day61-Seata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.59" data-path="Day62~64-黑马商城.html">
+            
+                <a href="Day62~64-黑马商城.html">
+            
+                    
+                    Day62~64-黑马商城
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.60" data-path="Day65-黑马头条.html">
+            
+                <a href="Day65-黑马头条.html">
+            
+                    
+                    Day65-黑马头条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.61" data-path="就业加强-MySQL.html">
+            
+                <a href="就业加强-MySQL.html">
+            
+                    
+                    就业加强-MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    面试必会篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                <a href="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                    
+                    01-面试必会-JAVA基础篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                <a href="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                    
+                    02-面试必会-SSM框架篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                <a href="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                    
+                    03-面试必会-Mysql篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                <a href="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                    
+                    04-面试必会-Redis篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                <a href="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                    
+                    05-面试必会-SpringBoot&SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                <a href="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                    
+                    06-面试必会-MQ篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../面试必会篇/07-面试必须-事物控制.html">
+            
+                <a href="../面试必会篇/07-面试必须-事物控制.html">
+            
+                    
+                    07-面试必须-事物控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Spring系列面试题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Spring系列面试题/面试题.html">
+            
+                <a href="../Spring系列面试题/面试题.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Day13-反射+注解</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#&#x53CD;&#x5C04;"><b></b>&#x53CD;&#x5C04;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x89E3;"><b></b>&#x6CE8;&#x89E3;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="&#x53CD;&#x5C04;"><a name="&#x53CD;&#x5C04;" class="anchor-navigation-ex-anchor" href="#&#x53CD;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53CD;&#x5C04;</h3>
+<ul>
+<li><p>Class&#x7C7B;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x6211;&#x4EEC;&#x79F0;&#x4E3A;Class&#x5BF9;&#x8C61;/&#x7C7B;&#x5BF9;&#x8C61;/&#x5B57;&#x8282;&#x7801;&#x5BF9;&#x8C61;&#xFF0C;&#x4F1A;&#x4FDD;&#x5B58;&#x7C7B;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#xFF08;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x3001;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x3001;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x7B49;&#xFF09;</p>
+</li>
+<li><p>&#x83B7;&#x53D6;Class&#x5BF9;&#x8C61;&#x7684;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#xFF08;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x7B2C;&#x4E00;&#x79CD;&#x6216;&#x7B2C;&#x4E09;&#x79CD;&#xFF09;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x7C7B;&#x540D;.class;Class&lt;Employee&gt;:</span>
+Class&lt;Employee&gt; cls1 = Employee.class;
+
+<span class="hljs-comment">// &#x5BF9;&#x8C61;.getClass();Class&lt;? extends Employee&gt;:&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7C7B;&#x6216;&#x8005;&#x5176;&#x5B50;&#x7C7B;&#x7684;&#x7C7B;&#x5BF9;&#x8C61;</span>
+Employee emp = <span class="hljs-keyword">new</span> Employee();
+Class&lt;? extends Employee&gt; cls2 = emp.getClass();
+
+<span class="hljs-comment">// Class.forName(&quot;&#x7C7B;&#x5168;&#x540D;&quot;);&#x5305;&#x540D;.&#x7C7B;&#x540D;</span>
+Class&lt;?&gt; cls3 = Class.forName(<span class="hljs-string">&quot;com.itheima.bean.Employee&quot;</span>);
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x83B7;&#x53D6;&#x5BF9;&#x8C61;&#x4FE1;&#x606F;&#x7684;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-java"><span class="hljs-function">String <span class="hljs-title">getSimpleName</span><span class="hljs-params">()</span></span>;<span class="hljs-comment">//&#x83B7;&#x53D6;&#x7C7B;&#x540D;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;&#x7C7B;&#x540D;</span>
+<span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">()</span></span>;         <span class="hljs-comment">//&#x83B7;&#x53D6;&#x7C7B;&#x5168;&#x540D;&#xFF1A;&#x5305;&#x540D;.&#x7C7B;&#x540D;</span>
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x53CD;&#x5C04;&#x83B7;&#x53D6;&#x6784;&#x9020;&#x5668;</p>
+<p>| &#x65B9;&#x6CD5;                                                         | &#x8BF4;&#x660E;                                       |
+| ------------------------------------------------------------ | ------------------------------------------ |
+| Constructor&lt;?&gt;[] <strong>getConstructors</strong>()                       | &#x8FD4;&#x56DE;&#x6240;&#x6709;&#x6784;&#x9020;&#x5668;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF08;&#x53EA;&#x80FD;&#x62FF;public&#x7684;&#xFF09; |
+| Constructor<t> <strong>getConstructor</strong>(Class&lt;?&gt;... parameterTypes) | &#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x6784;&#x9020;&#x5668;&#x5BF9;&#x8C61;&#xFF08;&#x53EA;&#x80FD;&#x62FF;public&#x7684;&#xFF09;       |
+| Constructor&lt;?&gt;[] <strong>getDeclaredConstructors</strong>()               | &#x8FD4;&#x56DE;&#x6240;&#x6709;&#x6784;&#x9020;&#x5668;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x5728;&#x5C31;&#x80FD;&#x62FF;&#x5230;     |
+| Constructor<t> <strong>getDeclaredConstructor</strong>(Class&lt;?&gt;... parameterTypes) | &#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x6784;&#x9020;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x5B58;&#x5728;&#x5C31;&#x80FD;&#x62FF;&#x5230;           |</t></t></p>
+</li>
+<li><p>Constructor&#x7C7B;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>| &#x7B26;&#x53F7;                                        | &#x8BF4;&#x660E;                                       |
+| ------------------------------------------- | ------------------------------------------ |
+| T <strong>newInstance</strong>(Object... initargs)       | &#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x6784;&#x9020;&#x5668;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;                   |
+| public void <strong>setAccessible</strong>(boolean flag) | &#x8BBE;&#x7F6E;&#x4E3A;true&#xFF0C;&#x8868;&#x793A;&#x53D6;&#x6D88;&#x8BBF;&#x95EE;&#x68C0;&#x67E5;&#xFF0C;&#x8FDB;&#x884C;&#x66B4;&#x529B;&#x53CD;&#x5C04; |</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x53CD;&#x5C04;&#x83B7;&#x53D6;&#x6210;&#x5458;&#x65B9;&#x6CD5;</p>
+<p>| &#x65B9;&#x6CD5;                                                         | &#x8BF4;&#x660E;                                         |
+| ------------------------------------------------------------ | -------------------------------------------- |
+| Method[] <strong>getMethods</strong>()                                    | &#x8FD4;&#x56DE;&#x6240;&#x6709;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF08;&#x53EA;&#x80FD;&#x62FF;public&#x7684;&#xFF09; |
+| Method <strong>getMethod</strong>(String name, Class&lt;?&gt;... parameterTypes) | &#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x5BF9;&#x8C61;&#xFF08;&#x53EA;&#x80FD;&#x62FF;public&#x7684;&#xFF09;       |
+| Method[] <strong>getDeclaredMethods</strong>()                            | &#x8FD4;&#x56DE;&#x6240;&#x6709;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x5728;&#x5C31;&#x80FD;&#x62FF;&#x5230;     |
+| Method <strong>getDeclaredMethod</strong>(String name, Class&lt;?&gt;... parameterTypes) | &#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x5BF9;&#x8C61;&#xFF0C;&#x5B58;&#x5728;&#x5C31;&#x80FD;&#x62FF;&#x5230;           |</p>
+</li>
+<li><p>Method&#x7C7B;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>| &#x65B9;&#x6CD5;                                          | &#x8BF4;&#x660E;                                                         |
+| --------------------------------------------- | ------------------------------------------------------------ |
+| Object <strong>invoke</strong>(Object obj, Object... args) | &#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x6570;&#x4E00;&#xFF1A;&#x7528;obj&#x5BF9;&#x8C61;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#xFF1B;&#x53C2;&#x6570;&#x4E8C;&#xFF1A;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x7684;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF08;&#x6CA1;&#x6709;&#x5C31;&#x4E0D;&#x5199;&#xFF09; |
+| public void <strong>setAccessible</strong>(boolean flag)   | &#x8BBE;&#x7F6E;&#x4E3A;true&#xFF0C;&#x8868;&#x793A;&#x53D6;&#x6D88;&#x8BBF;&#x95EE;&#x68C0;&#x67E5;&#xFF0C;&#x8FDB;&#x884C;&#x66B4;&#x529B;&#x53CD;&#x5C04;                   |</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x53CD;&#x5C04;&#x83B7;&#x53D6;&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+<p>| &#x65B9;&#x6CD5;                                    | &#x8BF4;&#x660E;                                         |
+| --------------------------------------- | -------------------------------------------- |
+| Field[] <strong>getFields</strong>()                 | &#x8FD4;&#x56DE;&#x6240;&#x6709;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF08;&#x53EA;&#x80FD;&#x62FF;public&#x7684;&#xFF09; |
+| Field <strong>getField</strong>(String name)         | &#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x5BF9;&#x8C61;&#xFF08;&#x53EA;&#x80FD;&#x62FF;public&#x7684;&#xFF09;       |
+| Field[] <strong>getDeclaredFields</strong>()         | &#x8FD4;&#x56DE;&#x6240;&#x6709;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5B58;&#x5728;&#x5C31;&#x80FD;&#x62FF;&#x5230;     |
+| Field <strong>getDeclaredField</strong>(String name) | &#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x5BF9;&#x8C61;&#xFF0C;&#x5B58;&#x5728;&#x5C31;&#x80FD;&#x62FF;&#x5230;           |</p>
+</li>
+<li><p>Field&#x7C7B;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>| &#x7B26;&#x53F7;                                        | &#x8BF4;&#x660E;                                       |
+| ------------------------------------------- | ------------------------------------------ |
+| void <strong>set</strong>(Object obj, Object value)      | &#x8D4B;&#x503C;                                       |
+| Object <strong>get</strong>(Object obj)                  | &#x83B7;&#x53D6;&#x503C;                                     |
+| public void <strong>setAccessible</strong>(boolean flag) | &#x8BBE;&#x7F6E;&#x4E3A;true&#xFF0C;&#x8868;&#x793A;&#x53D6;&#x6D88;&#x8BBF;&#x95EE;&#x68C0;&#x67E5;&#xFF0C;&#x8FDB;&#x884C;&#x66B4;&#x529B;&#x53CD;&#x5C04; |</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x53CD;&#x5C04;&#x5E94;&#x7528;&#x6848;&#x4F8B;</p>
+<ul>
+<li>&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x7B80;&#x5355;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x7075;&#x6D3B;&#x7684;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#xFF08;&#x4FEE;&#x6539;&#x3001;&#x589E;&#x52A0;&#xFF09;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">// 1.&#x901A;&#x8FC7;Properties&#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+Properties pp = <span class="hljs-keyword">new</span> Properties();
+pp.load(<span class="hljs-keyword">new</span> FileReader(<span class="hljs-string">&quot;D:\\code\\javaUp182\\study_day13\\src\\config.properties&quot;</span>));
+<span class="hljs-comment">// 2.&#x5F97;&#x5230;&#x7C7B;&#x540D;&#x548C;&#x65B9;&#x6CD5;&#x540D; &#x901A;&#x8FC7;&#x952E;&#x627E;&#x503C;</span>
+String className = pp.getProperty(<span class="hljs-string">&quot;className&quot;</span>);
+String methodName = pp.getProperty(<span class="hljs-string">&quot;methodName&quot;</span>);
+<span class="hljs-comment">// 3.&#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x53CD;&#x5C04;&#x5F97;&#x5230;Class&#x5BF9;&#x8C61;</span>
+Class&lt;?&gt; cls = Class.forName(className);
+<span class="hljs-comment">// 4.&#x901A;&#x8FC7;Class&#x5BF9;&#x8C61;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</span>
+Object obj = cls.getConstructor().newInstance();
+<span class="hljs-comment">// 5.&#x901A;&#x8FC7;Class&#x5BF9;&#x8C61;&#x5F97;&#x5230;&#x65B9;&#x6CD5;</span>
+Method method = cls.getMethod(methodName);
+<span class="hljs-comment">// 6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+method.invoke(obj);
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x6CE8;&#x89E3;"><a name="&#x6CE8;&#x89E3;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x89E3;</h3>
+<ul>
+<li><p>&#x81EA;&#x5B9A;&#x4E49;&#x6CE8;&#x89E3;</p>
+<ul>
+<li>&#x5C5E;&#x6027;&#x7C7B;&#x578B;&#x53EA;&#x80FD;&#x662F;&#xFF1A;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3001;String&#x3001;Class&#x3001;&#x6CE8;&#x89E3;&#x3001;&#x679A;&#x4E3E;&#x3001;&#x4EE5;&#x53CA;&#x4EE5;&#x4E0A;&#x7C7B;&#x578B;&#x7684;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> &#x6CE8;&#x89E3;&#x540D;&#x79F0; {
+<span class="hljs-keyword">public</span> &#x5C5E;&#x6027;&#x7C7B;&#x578B; &#x5C5E;&#x6027;&#x540D;();
+}
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x5143;&#x6CE8;&#x89E3;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Target</span>(ElemenType.METHOD)
+<span class="hljs-meta">@Retention</span>(RetentionPolicy.SOURCE)
+<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> Override { }
+<span class="hljs-comment">// @Target &#x6307;&#x5B9A;&#x6CE8;&#x89E3;&#x80FD;&#x5728;&#x54EA;&#x91CC;&#x4F7F;&#x7528;</span>
+    TYPE            &#x7C7B;&#xFF0C;&#x63A5;&#x53E3;
+    FIELD            &#x6210;&#x5458;&#x53D8;&#x91CF;
+    METHOD            &#x6210;&#x5458;&#x65B9;&#x6CD5;
+    PARAMETER        &#x65B9;&#x6CD5;&#x53C2;&#x6570;
+    CONSTRUCTOR        &#x6784;&#x9020;&#x65B9;&#x6CD5;
+    LOCAL_VARIABLE  &#x5C40;&#x90E8;&#x53D8;&#x91CF;
+
+<span class="hljs-comment">// @Retention &#x4FDD;&#x7559;&#x65F6;&#x95F4;&#xFF08;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF09;</span>
+SOURCE            &#x53EA;&#x4F5C;&#x7528;&#x4E8E;&#xFF1A;&#x6E90;&#x7801;&#x9636;&#x6BB5;
+CLASS            &#x53EA;&#x4F5C;&#x7528;&#x4E8E;&#xFF1A;&#x6E90;&#x7801;&#x9636;&#x6BB5;&#x3001;&#x5B57;&#x8282;&#x7801;&#x9636;&#x6BB5;&#x3010;&#x9ED8;&#x8BA4;&#x503C;&#x3011;
+RUNTIME            &#x53EA;&#x4F5C;&#x7528;&#x4E8E;&#xFF1A;&#x6E90;&#x7801;&#x9636;&#x6BB5;&#x3001;&#x5B57;&#x8282;&#x7801;&#x9636;&#x6BB5;&#x3001;&#x8FD0;&#x884C;&#x9636;&#x6BB5;
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x6CE8;&#x89E3;&#x89E3;&#x6790;</p>
+<ul>
+<li>AnnotatedElement&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#x4E86;&#x4E0E;&#x6CE8;&#x89E3;&#x89E3;&#x6790;&#x76F8;&#x5173;&#x7684;&#x65B9;&#x6CD5;</li>
+</ul>
+<p>| &#x65B9;&#x6CD5;&#x540D;                                                       | &#x8BF4;&#x660E;                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| T <strong>getAnnotation</strong>(Class<t> annotationClass)                | &#x6839;&#x636E;&#x6CE8;&#x89E3;&#x7C7B;&#x578B;&#x83B7;&#x5F97;&#x5BF9;&#x5E94;&#x6CE8;&#x89E3;&#x5BF9;&#x8C61;                                 |
+| Annotation[] <strong>getAnnotations</strong>()                            | &#x83B7;&#x5F97;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x4E0A;&#x4F7F;&#x7528;&#x7684;&#x6240;&#x6709;&#x6CE8;&#x89E3;                                 |
+| boolean <strong>isAnnotationPresent</strong>(Class<annotation>annotationClass) | &#x5224;&#x65AD;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x4E86;&#x6307;&#x5B9A;&#x7684;&#x6CE8;&#x89E3;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;&#x5219;&#x8FD4;&#x56DE;true&#xFF0C;&#x5426;&#x5219;false |</annotation></t></p>
+<ul>
+<li>&#x6CE8;&#x89E3;&#x5728;&#x8C01;&#x5934;&#x4E0A;&#x5C31;&#x7528;&#x8C01;&#x6765;&#x89E3;&#x6790;<ul>
+<li>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x4E0A;&#x4F7F;&#x7528;Constructor&#x6765;&#x83B7;&#x53D6;</li>
+<li>&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x4E0A;&#x4F7F;&#x7528;Method&#x6765;&#x83B7;&#x53D6;</li>
+<li>&#x6210;&#x5458;&#x53D8;&#x91CF;&#x4E0A;&#x4F7F;&#x7528;Field&#x6765;&#x83B7;&#x53D6;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x6CE8;&#x89E3;&#x89E3;&#x6790;&#x6848;&#x4F8B;</p>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x6CE8;&#x89E3;&#x89E3;&#x6790;&#x6848;&#x4F8B;</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> NoSuchMethodException </span>{
+    <span class="hljs-comment">//1.&#x83B7;&#x53D6;&#x7C7B;&#x7684;Class&#x5BF9;&#x8C61;</span>
+    Class&lt;Book&gt; cls = Book.class;
+    <span class="hljs-comment">//2.&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+    Method booking = cls.getMethod(<span class="hljs-string">&quot;booking&quot;</span>);
+    <span class="hljs-comment">//3.&#x627E;&#x4E0A;&#x9762;&#x7684;&#x6CE8;&#x89E3; &#x8FD0;&#x884C;&#x671F;&#x95F4;&#x83B7;&#x53D6; &#xFF0C;</span>
+    <span class="hljs-keyword">boolean</span> b = booking.isAnnotationPresent(BookAnno.class);
+    <span class="hljs-keyword">if</span> (b) {
+        BookAnno anno = booking.getAnnotation(BookAnno.class);
+        <span class="hljs-comment">//4.&#x6253;&#x5370;&#x6CE8;&#x89E3;&#x4E0A;&#x7684;&#x5185;&#x5BB9;</span>
+        System.out.println(anno.name() + anno.price() +
+                Arrays.toString(anno.authors()));
+    }
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span> </span>{
+    <span class="hljs-meta">@MyAnno</span>4
+    <span class="hljs-meta">@BookAnno</span>(name = <span class="hljs-string">&quot;&#x8131;&#x53E3;&#x79C0;&#x5DE5;&#x4F5C;&#x624B;&#x518C;&quot;</span>, price = <span class="hljs-number">18.8</span>, authors = {<span class="hljs-string">&quot;&#x674E;&#x8BDE;&quot;</span>, <span class="hljs-string">&quot;&#x738B;&#x5EFA;&#x56FD;&quot;</span>})
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">booking</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;&#x5E74;&#x8F7B;&#x4EBA;&#x5C31;&#x8981;&#x597D;&#x597D;&#x8BFB;&#x4E66;&quot;</span>);
+    }
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x81EA;&#x5B9A;&#x4E49;&#x6CE8;&#x89E3;</span>
+<span class="hljs-meta">@Retention</span>(RetentionPolicy.RUNTIME)  <span class="hljs-comment">//&#x6E90;&#x4EE3;&#x7801;&#x65F6;&#x671F; &#x5B57;&#x8282;&#x7801;&#x65F6;&#x671F; &#x8FD0;&#x884C;&#x65F6;&#x671F;&#x5B58;&#x6D3B;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> BookAnno {
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">name</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">price</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-keyword">public</span> String[] authors();
+}
+</code></pre>
+</li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2022-11-17 22:40 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Day12-网络编程+junit.html" class="navigation navigation-prev " aria-label="Previous page: Day12-网络编程+junit">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Day14-XML+Dom4j+动态代理.html" class="navigation navigation-next " aria-label="Next page: Day14-XML+Dom4j+动态代理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Day13-反射+注解","level":"1.10.25","depth":2,"next":{"title":"Day14-XML+Dom4j+动态代理","level":"1.10.26","depth":2,"path":"Java笔记/Day14-XML+Dom4j+动态代理.md","ref":"Java笔记/Day14-XML+Dom4j+动态代理.md","articles":[]},"previous":{"title":"Day12-网络编程+junit","level":"1.10.24","depth":2,"path":"Java笔记/Day12-网络编程+junit.md","ref":"Java笔记/Day12-网络编程+junit.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://none.org.cn/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"0day计划","language":"zh-hans","links":{"sidebar":{"None's 树洞":"https://none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"Java笔记/Day13-反射+注解.md","mtime":"2022-11-17T14:40:50.581Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T00:23:40.981Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

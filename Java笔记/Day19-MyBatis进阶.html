@@ -1,0 +1,2106 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Day19-MyBatis进阶 · 0day计划</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="None">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Day20-MyBatis高级.html" />
+    
+    
+    <link rel="prev" href="Day18-Maven+MyBatis入门.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://none.org.cn" target="_blank" class="custom-link">None's 树洞</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">《 0day计划 》</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    社工
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../社工/获取位置信息.html">
+            
+                <a href="../社工/获取位置信息.html">
+            
+                    
+                    获取位置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第一阶段-基础篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第一阶段-基础篇/零基础必看课程.html">
+            
+                <a href="../第一阶段-基础篇/零基础必看课程.html">
+            
+                    
+                    零基础必看课程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第一阶段-基础篇/Windows基础.html">
+            
+                <a href="../第一阶段-基础篇/Windows基础.html">
+            
+                    
+                    Windows基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第一阶段-基础篇/数据库基础.html">
+            
+                <a href="../第一阶段-基础篇/数据库基础.html">
+            
+                    
+                    数据库基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第二阶段-Web安全篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                <a href="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                    
+                    2019网络安全训练营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                <a href="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                    
+                    BurpSuite学习使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                <a href="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                    
+                    Web安全攻防学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第六阶段-Python黑客编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                <a href="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                    
+                    Python编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    软考-信息安全工程师
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../软考-信息安全工程师/第一版.html">
+            
+                <a href="../软考-信息安全工程师/第一版.html">
+            
+                    
+                    第一版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    兄弟连Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../兄弟连Linux/Linux系统简介.html">
+            
+                <a href="../兄弟连Linux/Linux系统简介.html">
+            
+                    
+                    Linux系统简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../兄弟连Linux/Linux常用命令.html">
+            
+                <a href="../兄弟连Linux/Linux常用命令.html">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../兄弟连Linux/文本编辑器Vim.html">
+            
+                <a href="../兄弟连Linux/文本编辑器Vim.html">
+            
+                    
+                    文本编辑器Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../兄弟连Linux/软件包管理.html">
+            
+                <a href="../兄弟连Linux/软件包管理.html">
+            
+                    
+                    软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    韩立刚计算机网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../韩立刚计算机网络/概述.html">
+            
+                <a href="../韩立刚计算机网络/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../韩立刚计算机网络/物理层.html">
+            
+                <a href="../韩立刚计算机网络/物理层.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../韩立刚计算机网络/数据链路层.html">
+            
+                <a href="../韩立刚计算机网络/数据链路层.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    韩立刚CCNA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../韩立刚CCNA/计算机网络.html">
+            
+                <a href="../韩立刚CCNA/计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../韩立刚CCNA/TCP&IP.html">
+            
+                <a href="../韩立刚CCNA/TCP&IP.html">
+            
+                    
+                    TCP&IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../韩立刚CCNA/IP地址和子网.html">
+            
+                <a href="../韩立刚CCNA/IP地址和子网.html">
+            
+                    
+                    IP地址和子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../韩立刚CCNA/静态路由.html">
+            
+                <a href="../韩立刚CCNA/静态路由.html">
+            
+                    
+                    静态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../韩立刚CCNA/动态路由.html">
+            
+                <a href="../韩立刚CCNA/动态路由.html">
+            
+                    
+                    动态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../韩立刚CCNA/交换机.html">
+            
+                <a href="../韩立刚CCNA/交换机.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Java笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="01-面试题.html">
+            
+                <a href="01-面试题.html">
+            
+                    
+                    01-面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="02-未归类知识点.html">
+            
+                <a href="02-未归类知识点.html">
+            
+                    
+                    02-未归类知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="基础班day01.html">
+            
+                <a href="基础班day01.html">
+            
+                    
+                    基础班day01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="基础班day02.html">
+            
+                <a href="基础班day02.html">
+            
+                    
+                    基础班day02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="基础班day03.html">
+            
+                <a href="基础班day03.html">
+            
+                    
+                    基础班day03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="基础班day04.html">
+            
+                <a href="基础班day04.html">
+            
+                    
+                    基础班day04
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="基础班day05.html">
+            
+                <a href="基础班day05.html">
+            
+                    
+                    基础班day05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="基础班day06.html">
+            
+                <a href="基础班day06.html">
+            
+                    
+                    基础班day06
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="基础班day07.html">
+            
+                <a href="基础班day07.html">
+            
+                    
+                    基础班day07
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="基础班day08.html">
+            
+                <a href="基础班day08.html">
+            
+                    
+                    基础班day08
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="基础班day09.html">
+            
+                <a href="基础班day09.html">
+            
+                    
+                    基础班day09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="基础班day10.html">
+            
+                <a href="基础班day10.html">
+            
+                    
+                    基础班day10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Day01-Static+继承+权限修饰.html">
+            
+                <a href="Day01-Static+继承+权限修饰.html">
+            
+                    
+                    Day01-Static+继承+权限修饰
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.14" data-path="Day02-抽象+接口+单例.html">
+            
+                <a href="Day02-抽象+接口+单例.html">
+            
+                    
+                    Day02-抽象+接口+单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.15" data-path="Day03-多态+内部类+枚举.html">
+            
+                <a href="Day03-多态+内部类+枚举.html">
+            
+                    
+                    Day03-多态+内部类+枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.16" data-path="Day04-常用API+正则.html">
+            
+                <a href="Day04-常用API+正则.html">
+            
+                    
+                    Day04-常用API+正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.17" data-path="Day05-数据结构+List集合+泛型.html">
+            
+                <a href="Day05-数据结构+List集合+泛型.html">
+            
+                    
+                    Day05-数据结构+List集合+泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.18" data-path="Day06-Set集合+迭代器+增强for.html">
+            
+                <a href="Day06-Set集合+迭代器+增强for.html">
+            
+                    
+                    Day06-Set集合+迭代器+增强for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.19" data-path="Day07-Map集合.html">
+            
+                <a href="Day07-Map集合.html">
+            
+                    
+                    Day07-Map集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.20" data-path="Day08-异常+多线程.html">
+            
+                <a href="Day08-异常+多线程.html">
+            
+                    
+                    Day08-异常+多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.21" data-path="Day09-线程池+Lambda+Stream流.html">
+            
+                <a href="Day09-线程池+Lambda+Stream流.html">
+            
+                    
+                    Day09-线程池+Lambda+Stream流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.22" data-path="Day10-File+IO流.html">
+            
+                <a href="Day10-File+IO流.html">
+            
+                    
+                    Day10-File+IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.23" data-path="Day11-IO流+装饰模式.html">
+            
+                <a href="Day11-IO流+装饰模式.html">
+            
+                    
+                    Day11-IO流+装饰模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.24" data-path="Day12-网络编程+junit.html">
+            
+                <a href="Day12-网络编程+junit.html">
+            
+                    
+                    Day12-网络编程+junit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.25" data-path="Day13-反射+注解.html">
+            
+                <a href="Day13-反射+注解.html">
+            
+                    
+                    Day13-反射+注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.26" data-path="Day14-XML+Dom4j+动态代理.html">
+            
+                <a href="Day14-XML+Dom4j+动态代理.html">
+            
+                    
+                    Day14-XML+Dom4j+动态代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.27" data-path="Day15-MySQL基础.html">
+            
+                <a href="Day15-MySQL基础.html">
+            
+                    
+                    Day15-MySQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.28" data-path="Day16-MySQL高级.html">
+            
+                <a href="Day16-MySQL高级.html">
+            
+                    
+                    Day16-MySQL高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.29" data-path="Day17-JDBC.html">
+            
+                <a href="Day17-JDBC.html">
+            
+                    
+                    Day17-JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.30" data-path="Day18-Maven+MyBatis入门.html">
+            
+                <a href="Day18-Maven+MyBatis入门.html">
+            
+                    
+                    Day18-Maven+MyBatis入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.31" data-path="Day19-MyBatis进阶.html">
+            
+                <a href="Day19-MyBatis进阶.html">
+            
+                    
+                    Day19-MyBatis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.32" data-path="Day20-MyBatis高级.html">
+            
+                <a href="Day20-MyBatis高级.html">
+            
+                    
+                    Day20-MyBatis高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.33" data-path="Day21-HTML5+CSS.html">
+            
+                <a href="Day21-HTML5+CSS.html">
+            
+                    
+                    Day21-HTML5+CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.34" data-path="Day22-JavaScript.html">
+            
+                <a href="Day22-JavaScript.html">
+            
+                    
+                    Day22-JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.35" data-path="Day23-HTTP+Tomcat+Servlet.html">
+            
+                <a href="Day23-HTTP+Tomcat+Servlet.html">
+            
+                    
+                    Day23-HTTP+Tomcat+Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.36" data-path="Day24-Request+Response.html">
+            
+                <a href="Day24-Request+Response.html">
+            
+                    
+                    Day24-Request+Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.37" data-path="Day25-Jsp+MVC.html">
+            
+                <a href="Day25-Jsp+MVC.html">
+            
+                    
+                    Day25-Jsp+MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.38" data-path="Day26-Cookie+Session.html">
+            
+                <a href="Day26-Cookie+Session.html">
+            
+                    
+                    Day26-Cookie+Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.39" data-path="Day27-Filter+Listener.html">
+            
+                <a href="Day27-Filter+Listener.html">
+            
+                    
+                    Day27-Filter+Listener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.40" data-path="Day28-Json+Vue.html">
+            
+                <a href="Day28-Json+Vue.html">
+            
+                    
+                    Day28-Json+Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.41" data-path="Day29-Element.html">
+            
+                <a href="Day29-Element.html">
+            
+                    
+                    Day29-Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.42" data-path="Day30-brand综合案例.html">
+            
+                <a href="Day30-brand综合案例.html">
+            
+                    
+                    Day30-brand综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.43" data-path="Day31~35-Spring.html">
+            
+                <a href="Day31~35-Spring.html">
+            
+                    
+                    Day31~35-Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.44" data-path="Day36-SSM.html">
+            
+                <a href="Day36-SSM.html">
+            
+                    
+                    Day36-SSM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.45" data-path="Day37-Maven高级.html">
+            
+                <a href="Day37-Maven高级.html">
+            
+                    
+                    Day37-Maven高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.46" data-path="Day38-SpringBoot.html">
+            
+                <a href="Day38-SpringBoot.html">
+            
+                    
+                    Day38-SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.47" data-path="Day39-Git.html">
+            
+                <a href="Day39-Git.html">
+            
+                    
+                    Day39-Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.48" data-path="Day40~45-瑞吉点餐.html">
+            
+                <a href="Day40~45-瑞吉点餐.html">
+            
+                    
+                    Day40~45-瑞吉点餐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.49" data-path="Day46~47-Linux.html">
+            
+                <a href="Day46~47-Linux.html">
+            
+                    
+                    Day46~47-Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.50" data-path="Day48-Redis.html">
+            
+                <a href="Day48-Redis.html">
+            
+                    
+                    Day48-Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.51" data-path="Day49~51-瑞吉点餐优化.html">
+            
+                <a href="Day49~51-瑞吉点餐优化.html">
+            
+                    
+                    Day49~51-瑞吉点餐优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.52" data-path="Day52-MyBatisPlus+乐观锁.html">
+            
+                <a href="Day52-MyBatisPlus+乐观锁.html">
+            
+                    
+                    Day52-MyBatisPlus+乐观锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.53" data-path="Day53~54-SpringCloud.html">
+            
+                <a href="Day53~54-SpringCloud.html">
+            
+                    
+                    Day53~54-SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.54" data-path="Day55-Docker.html">
+            
+                <a href="Day55-Docker.html">
+            
+                    
+                    Day55-Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.55" data-path="Day56-RabbitMQ.html">
+            
+                <a href="Day56-RabbitMQ.html">
+            
+                    
+                    Day56-RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.56" data-path="Day57~59-ElasticSearch.html">
+            
+                <a href="Day57~59-ElasticSearch.html">
+            
+                    
+                    Day57~59-ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.57" data-path="Day60-Sentinel.html">
+            
+                <a href="Day60-Sentinel.html">
+            
+                    
+                    Day60-Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.58" data-path="Day61-Seata.html">
+            
+                <a href="Day61-Seata.html">
+            
+                    
+                    Day61-Seata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.59" data-path="Day62~64-黑马商城.html">
+            
+                <a href="Day62~64-黑马商城.html">
+            
+                    
+                    Day62~64-黑马商城
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.60" data-path="Day65-黑马头条.html">
+            
+                <a href="Day65-黑马头条.html">
+            
+                    
+                    Day65-黑马头条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.61" data-path="就业加强-MySQL.html">
+            
+                <a href="就业加强-MySQL.html">
+            
+                    
+                    就业加强-MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    面试必会篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                <a href="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                    
+                    01-面试必会-JAVA基础篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                <a href="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                    
+                    02-面试必会-SSM框架篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                <a href="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                    
+                    03-面试必会-Mysql篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                <a href="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                    
+                    04-面试必会-Redis篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                <a href="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                    
+                    05-面试必会-SpringBoot&SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                <a href="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                    
+                    06-面试必会-MQ篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../面试必会篇/07-面试必须-事物控制.html">
+            
+                <a href="../面试必会篇/07-面试必须-事物控制.html">
+            
+                    
+                    07-面试必须-事物控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Spring系列面试题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Spring系列面试题/面试题.html">
+            
+                <a href="../Spring系列面试题/面试题.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Day19-MyBatis进阶</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="mybatis"><a name="mybatis" class="anchor-navigation-ex-anchor" href="#mybatis"><i class="fa fa-link" aria-hidden="true"></i></a>Mybatis</h4>
+<ul>
+<li><p>&#x590D;&#x5236;&#x6A21;&#x5757;&#x9700;&#x8981;&#x66F4;&#x6539;&#x7684;&#x4E09;&#x4E2A;&#x5730;&#x65B9;</p>
+<p><a href="images/image-20221125210716110.png" data-lightbox="c5c93679-0c48-4fa7-976b-46a37ee4e74a" data-title="image-20221125210716110"><img src="images/image-20221125210716110.png" alt="image-20221125210716110"></a></p>
+</li>
+</ul>
+<h4 id="&#x589E;&#x5220;&#x67E5;&#x6539;"><a name="&#x589E;&#x5220;&#x67E5;&#x6539;" class="anchor-navigation-ex-anchor" href="#&#x589E;&#x5220;&#x67E5;&#x6539;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x589E;&#x5220;&#x67E5;&#x6539;</h4>
+<ul>
+<li><p>&#x53C2;&#x6570;&#x5360;&#x4F4D;&#x7B26;</p>
+<ul>
+<li><code>#{}</code>&#x5148;&#x4F7F;&#x7528;?&#x5360;&#x4F4D;&#xFF0C;&#x6267;&#x884C;sql&#x65F6;&#x5C06;&#x5177;&#x4F53;&#x503C;&#x8D4B;&#x503C;&#x7ED9;?<ul>
+<li>&#x5E95;&#x5C42;&#x4F7F;&#x7528;&#x7684;&#x662F;PreparedStatement&#xFF0C;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;sql&#x6CE8;&#x5165;&#x95EE;&#x9898;&#xFF1B;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x9884;&#x7F16;&#x8BD1;&#xFF0C;&#x63D0;&#x9AD8;sql&#x6267;&#x884C;&#x6548;&#x7387;</li>
+</ul>
+</li>
+<li><code>${}</code>&#x62FC;&#x63A5;sql&#xFF0C;&#x4F1A;&#x5B58;&#x5728;sql&#x6CE8;&#x5165;&#x7684;&#x95EE;&#x9898;<ul>
+<li>&#x5E95;&#x5C42;&#x4F7F;&#x7528;&#x7684;&#x662F;Statement&#xFF0C;&#x53EF;&#x80FD;&#x51FA;&#x73B0;sql&#x6CE8;&#x5165;&#x95EE;&#x9898;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>SQL&#x8BED;&#x53E5;&#x4E2D;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x5904;&#x7406;</p>
+<ul>
+<li>&#x8F6C;&#x4E49;&#x5B57;&#x7B26;</li>
+<li><code>&lt;![CDTA[&#x5185;&#x5BB9;]]&gt;</code></li>
+</ul>
+</li>
+<li><p>&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;<strong>&#x589E;&#x5220;&#x6539;</strong>&#x64CD;&#x4F5C;&#x65F6;&#x9700;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;</p>
+<ul>
+<li>&#x624B;&#x52A8;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;<code>sqlSession.commit();</code></li>
+<li>&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;<code>sqlSession=factory.openSession(true);</code></li>
+</ul>
+</li>
+<li><p>&#x6DFB;&#x52A0;&#x6570;&#x636E;&#x65F6;&#x83B7;&#x53D6;&#x65B0;&#x589E;&#x7684;&#x4E3B;&#x952E;&#x503C;</p>
+<ul>
+<li><code>useGeneratedKeys=&quot;true&quot;</code>&#x4F7F;&#x7528;MySQL&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;</li>
+<li><code>keyProperty=&quot;&#x5C5E;&#x6027;&quot;</code>&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x5C5E;&#x6027;</li>
+</ul>
+</li>
+<li><p>&#x589E;&#x5220;&#x67E5;&#x6539;&#x5BF9;&#x5E94;&#x7684;&#x6807;&#x7B7E;</p>
+<p>| <strong>&#x6807;&#x7B7E;</strong> | <strong>&#x8BF4;&#x660E;</strong>          |
+| -------- | ----------------- |
+| <select> | &#x7F16;&#x5199;&#x67E5;&#x8BE2;&#x7684;SQL&#x8BED;&#x53E5; |
+|  | &#x7F16;&#x5199;&#x6DFB;&#x52A0;&#x7684;SQL&#x8BED;&#x53E5; |
+|  | &#x7F16;&#x5199;&#x4FEE;&#x6539;&#x7684;SQL&#x8BED;&#x53E5; |
+|  | &#x7F16;&#x5199;&#x5220;&#x9664;&#x7684;SQL&#x8BED;&#x53E5; |</select></p>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">//UserMapper.java&#x6587;&#x4EF6;</span>
+<span class="hljs-comment">//&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x7684;&#x7528;&#x6237;</span>
+<span class="hljs-function">List&lt;User&gt; <span class="hljs-title">findAllUsers</span><span class="hljs-params">()</span></span>;
+
+<span class="hljs-comment">//&#x67E5;&#x8BE2;&#x5355;&#x4E2A;&#x7528;&#x6237;</span>
+<span class="hljs-function">User <span class="hljs-title">selectUser</span><span class="hljs-params">(<span class="hljs-keyword">int</span> id)</span></span>;
+
+<span class="hljs-comment">//&#x5220;&#x9664;&#x5355;&#x4E2A;&#x7528;&#x6237;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">deleteUser</span><span class="hljs-params">(<span class="hljs-keyword">int</span> id)</span></span>;
+
+<span class="hljs-comment">//&#x4FEE;&#x6539;&#x7528;&#x6237;&#x4FE1;&#x606F;</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">updateUser</span><span class="hljs-params">(User user)</span></span>;
+
+<span class="hljs-comment">//&#x6DFB;&#x52A0;&#x7528;&#x6237;</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">addUser</span><span class="hljs-params">(User user)</span></span>;
+</code></pre>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- UserMapper.xml&#x6587;&#x4EF6; --&gt;</span>
+<span class="hljs-comment">&lt;!--mapper namespace=&quot;&#x5305;&#x540D;.&#x63A5;&#x53E3;&#x540D;&quot;--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">mapper</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">&quot;cn.org.none.mapper.UserMapper&quot;</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--select id=&quot;&#x65B9;&#x6CD5;&#x540D;&quot; resultType=&quot;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&quot;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;findAllUsers&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;cn.org.none.pojo.User&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- SQL&#x8BED;&#x53E5; --&gt;</span>
+        select * from user;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectUser&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;cn.org.none.pojo.User&quot;</span>&gt;</span>
+        select
+        <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;userSql&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">include</span>&gt;</span>
+        from user where id = #{id};
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">sql</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;userSql&quot;</span>&gt;</span>
+        id,username,birthday,sex,address
+    <span class="hljs-tag">&lt;/<span class="hljs-name">sql</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">delete</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;deleteUser&quot;</span>&gt;</span>
+        &lt;![CDATA[
+        delete from user where id = #{id};
+        ]]&gt;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">delete</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">update</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;updateUser&quot;</span>&gt;</span>
+        &lt;![CDATA[
+        update user set
+        username=#{username},
+        birthday=#{birthday},
+        sex=#{sex},
+        address=#{address}
+        where
+        id = #{id};
+        ]]&gt;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">update</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">insert</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;addUser&quot;</span> <span class="hljs-attr">useGeneratedKeys</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">keyProperty</span>=<span class="hljs-string">&quot;id&quot;</span>&gt;</span>
+    &lt;![CDATA[
+    insert into user
+    values
+    (null,#{username},#{birthday},#{sex},#{address});
+    ]]&gt;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">insert</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestMybatis</span> </span>{
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test01</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+    <span class="hljs-comment">//1.&#x5728;&#x6D4B;&#x8BD5;&#x6848;&#x4F8B;&#x91CC;&#x9762;&#x8BBF;&#x95EE;resoureces&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x6587;&#x4EF6;</span>
+    String resource = <span class="hljs-string">&quot;mybatis-config.xml&quot;</span>;
+    <span class="hljs-comment">//2.&#x8BFB;&#x53D6;&#x6838;&#x5FC3;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x6D41;</span>
+    InputStream inputStream = Resources.getResourceAsStream(resource);
+    <span class="hljs-comment">//3.&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x751F;&#x6210;SqlSession&#x7684;&#x5DE5;&#x5382;&#x7C7B; &#x7C7B;&#x4F3C;&#x4E8E;&#x8FDE;&#x63A5;&#x6C60;</span>
+    SqlSessionFactory sqlSessionFactory = <span class="hljs-keyword">new</span> SqlSessionFactoryBuilder().build(inputStream);
+    <span class="hljs-comment">//4.&#x83B7;&#x53D6;sqlsession &#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;</span>
+    SqlSession sqlSession = sqlSessionFactory.openSession();
+    <span class="hljs-comment">//5.&#x83B7;&#x53D6;&#x6267;&#x884C;&#x5BF9;&#x8C61;</span>
+    UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+    <span class="hljs-comment">//6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+    List&lt;User&gt; allUsers = userMapper.findAllUsers();
+    <span class="hljs-comment">//7.&#x5173;&#x95ED;&#x8D44;&#x6E90;</span>
+    sqlSession.close();
+}
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test02</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+
+    <span class="hljs-comment">//6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+    userMapper.selectUser(<span class="hljs-number">1</span>);
+    <span class="hljs-comment">//7.&#x5173;&#x95ED;&#x8D44;&#x6E90;</span>
+    sqlSession.close();
+}
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test03</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+
+    <span class="hljs-comment">//6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+    userMapper.deleteUser(<span class="hljs-number">3</span>);
+    <span class="hljs-comment">//7.&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;</span>
+    sqlSession.commit();
+    <span class="hljs-comment">//8.&#x5173;&#x95ED;&#x8D44;&#x6E90;</span>
+    sqlSession.close();
+}
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test04</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+
+    <span class="hljs-comment">//6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+    User user = <span class="hljs-keyword">new</span> User(<span class="hljs-number">4</span>, <span class="hljs-string">&quot;&#x725B;&#x9B54;&#x738B;&quot;</span>, Date.valueOf(<span class="hljs-string">&quot;1980-1-1&quot;</span>), <span class="hljs-string">&quot;&#x7537;&quot;</span>, <span class="hljs-string">&quot;&#x592A;&#x4E59;&#x6C5F;&#x5C71;&quot;</span>);
+    <span class="hljs-keyword">int</span> row = userMapper.updateUser(user);
+    System.out.println(<span class="hljs-string">&quot;row = &quot;</span> + row);
+    <span class="hljs-comment">//7.&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;</span>
+    sqlSession.commit();
+    <span class="hljs-comment">//8.&#x5173;&#x95ED;&#x8D44;&#x6E90;</span>
+    sqlSession.close();
+}
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test05</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+
+    <span class="hljs-comment">//6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+    User user = <span class="hljs-keyword">new</span> User(<span class="hljs-number">10086</span>, <span class="hljs-string">&quot;&#x5973;&#x83E9;&#x8428;&quot;</span>, Date.valueOf(<span class="hljs-string">&quot;2000-1-1&quot;</span>), <span class="hljs-string">&quot;&#x5973;&quot;</span>, <span class="hljs-string">&quot;&#x89C2;&#x97F3;&#x5C71;&quot;</span>);
+    System.out.println(<span class="hljs-string">&quot;&#x63D2;&#x5165;&#x524D;&#x7684;ID = &quot;</span> + user.getId());
+    <span class="hljs-keyword">int</span> row = userMapper.addUser(user);
+    System.out.println(<span class="hljs-string">&quot;row = &quot;</span> + row);
+    System.out.println(<span class="hljs-string">&quot;&#x63D2;&#x5165;&#x540E;&#x7684;ID = &quot;</span> + user.getId());
+    <span class="hljs-comment">//7.&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;</span>
+    sqlSession.commit();
+    <span class="hljs-comment">//8.&#x5173;&#x95ED;&#x8D44;&#x6E90;</span>
+    sqlSession.close();
+}
+</code></pre>
+<h4 id="&#x591A;&#x53C2;&#x6570;&#x5904;&#x7406;"><a name="&#x591A;&#x53C2;&#x6570;&#x5904;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x53C2;&#x6570;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x53C2;&#x6570;&#x5904;&#x7406;</h4>
+<ul>
+<li>&#x5173;&#x4E8E;@Param&#x6CE8;&#x89E3;<ul>
+<li>&#x5982;&#x679C;mapper&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x4E0A;<strong>&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;</strong>&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x52A0;@Param&#x6CE8;&#x89E3;&#xFF0C;&#x6620;&#x5C04;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;#{}&#x4E2D;<strong>&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x5199;&#x540D;&#x79F0;</strong>&#xFF0C;&#x5EFA;&#x8BAE;&#x505A;&#x5230;&#x89C1;&#x540D;&#x77E5;&#x610F;</li>
+<li>&#x5982;&#x679C;mapper&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x4E0A;&#x662F;<strong>&#x5B9E;&#x4F53;&#x7C7B;&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;</strong>&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x52A0;@Param&#x6CE8;&#x89E3;&#xFF0C;&#x6620;&#x5C04;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;#{}&#x4E2D;<strong>&#x548C;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x4FDD;&#x6301;&#x4E00;&#x81F4;</strong></li>
+<li>&#x5982;&#x679C;mapper&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x4E0A;&#x662F;<strong>&#x591A;&#x4E2A;&#x53C2;&#x6570;</strong>&#xFF0C;&#x9700;&#x8981;&#x52A0;@Param&#x6CE8;&#x89E3;&#x7ED9;&#x6BCF;&#x4E2A;&#x53C2;&#x6570;&#x8D77;&#x540D;&#x5B57;&#xFF0C;&#x6620;&#x5C04;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;<strong>#{}&#x4E2D;&#x4E66;&#x5199;&#x7684;&#x662F;@Param&#x6CE8;&#x89E3;&#x4E2D;&#x5199;&#x7684;&#x540D;&#x79F0;</strong></li>
+<li>&#x5982;&#x679C;mapper&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x662F;<strong>&#x5355;&#x4E2A;&#x5355;&#x5217;&#x96C6;&#x5408;&#x7C7B;&#x578B;&#x6216;&#x8005;&#x6570;&#x7EC4;&#x7C7B;&#x578B;</strong>&#xFF0C;&#x9700;&#x8981;&#x52A0;@Param&#x6CE8;&#x89E3;&#x7ED9;&#x53C2;&#x6570;&#x8D77;&#x540D;</li>
+<li>&#x5982;&#x679C;mapper&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x662F;<strong>&#x5355;&#x4E2A;map&#x96C6;&#x5408;&#x7C7B;&#x578B;</strong>&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x52A0;@Param&#x6CE8;&#x89E3;&#xFF0C;&#x6620;&#x5C04;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;#{}&#x4E2D;&#x540D;&#x79F0;&#x9700;&#x8981;<strong>&#x548C;map&#x96C6;&#x5408;&#x7684;&#x952E;&#x540D;&#x4FDD;&#x6301;&#x4E00;&#x81F4;</strong></li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x591A;&#x53C2;&#x6570;&#x5904;&#x7406;(&#x9ED8;&#x8BA4;&#x65B9;&#x6848;&#x9700;&#x8981;&#x5BF9;SQL&#x8BED;&#x53E5;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x53EF;&#x8BFB;&#x6027;&#x5DEE;)</span>
+<span class="hljs-comment">//List&lt;User&gt; selectByCondition(String name,String sex);</span>
+<span class="hljs-comment">//&#x65B9;&#x6848;1&#xFF1A;&#x6563;&#x88C5;&#x5904;&#x7406; @Param(&#x201C;&#x5360;&#x4F4D;&#x7B26;&#x201D;)</span>
+<span class="hljs-comment">//List&lt;User&gt; selectByCondition(@Param(&quot;username&quot;)String username, @Param(&quot;sex&quot;)String sex);</span>
+<span class="hljs-comment">//&#x65B9;&#x6848;2&#xFF1A;&#x5BF9;&#x8C61;&#x53C2;&#x6570; &#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x8981;&#x548C;&#x53C2;&#x6570;&#x5360;&#x4F4D;&#x7B26;&#x540D;&#x79F0;&#x4E00;&#x81F4;</span>
+<span class="hljs-comment">//List&lt;User&gt; selectByCondition(User user);</span>
+<span class="hljs-comment">//&#x65B9;&#x6848;3&#xFF1A;Map&#x96C6;&#x5408; Map&#x7684;&#x952E;&#x8981;&#x548C;&#x5360;&#x4F4D;&#x7B26;&#x540D;&#x79F0;&#x4E00;&#x81F4;</span>
+<span class="hljs-function">List&lt;User&gt; <span class="hljs-title">selectByCondition</span><span class="hljs-params">(Map&lt;String, Object&gt; map)</span></span>;
+</code></pre>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectByCondition&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;cn.org.none.pojo.User&quot;</span>&gt;</span>
+    &lt;![CDATA[
+    select * from user where username like #{username} and sex = #{sex};
+    ]]&gt;
+    <span class="hljs-comment">&lt;!-- &#x9ED8;&#x8BA4;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;arg&#x7CFB;&#x5217;&#x4ECE;0&#x5F00;&#x59CB;&#xFF0C;param&#x7CFB;&#x5217;&#x4ECE;1&#x5F00;&#x59CB; --&gt;</span>
+    <span class="hljs-comment">&lt;!-- select * from user where username like #{arg0} and sex = #{arg1};--&gt;</span>
+    <span class="hljs-comment">&lt;!-- select * from user where username like #{param1} and sex = #{param2};--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test06</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+
+    <span class="hljs-comment">//6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+    <span class="hljs-comment">//&#x9ED8;&#x8BA4;&#x65B9;&#x6848;&amp;&#x65B9;&#x6848;1</span>
+    <span class="hljs-comment">//List&lt;User&gt; userList = userMapper.selectByCondition(&quot;%&#x7CBE;%&quot;, &quot;&#x5973;&quot;);</span>
+    <span class="hljs-comment">//&#x65B9;&#x6848;2</span>
+    <span class="hljs-comment">//User user = new User();</span>
+    <span class="hljs-comment">//user.setUsername(&quot;%&#x5973;%&quot;);</span>
+    <span class="hljs-comment">//user.setSex(&quot;&#x5973;&quot;);</span>
+    <span class="hljs-comment">//List&lt;User&gt; userList = userMapper.selectByCondition(user);</span>
+    <span class="hljs-comment">//&#x65B9;&#x6848;3</span>
+    Map&lt;String,Object&gt; map = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+    map.put(<span class="hljs-string">&quot;username&quot;</span>,<span class="hljs-string">&quot;%&#x5973;%&quot;</span>);
+    map.put(<span class="hljs-string">&quot;sex&quot;</span>,<span class="hljs-string">&quot;&#x5973;&quot;</span>);
+    List&lt;User&gt; userList = userMapper.selectByCondition(map);
+    userList.forEach(System.out::println);
+    <span class="hljs-comment">//7.&#x5173;&#x95ED;&#x8D44;&#x6E90;</span>
+    sqlSession.close();
+}
+</code></pre>
+<h4 id="&#x52A8;&#x6001;sql"><a name="&#x52A8;&#x6001;sql" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x6001;sql"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A8;&#x6001;SQL</h4>
+<h4 id="&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;"><a name="&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;</h4>
+<ul>
+<li>where&#x6807;&#x7B7E;<ul>
+<li>&#x81EA;&#x52A8;&#x8865;&#x5168;where&#x5173;&#x952E;&#x5B57;</li>
+<li>&#x53BB;&#x6389;&#x591A;&#x4F59;&#x7684;and&#x548C;or&#x5173;&#x952E;&#x5B57;</li>
+</ul>
+</li>
+<li>if&#x6807;&#x7B7E;<ul>
+<li>&#x5C5E;&#x6027;&#x5185;&#x7684;&#x6761;&#x4EF6;&#x6210;&#x7ACB;&#x65F6;&#xFF0C;&#x5185;&#x5BB9;&#x5219;&#x62FC;&#x63A5;&#x4E3A;SQL&#x8BED;&#x53E5;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x591A;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;</span>
+<span class="hljs-function">List&lt;User&gt; <span class="hljs-title">selectIf</span><span class="hljs-params">(@Param(<span class="hljs-string">&quot;username&quot;</span>)</span> String username, @<span class="hljs-title">Param</span><span class="hljs-params">(<span class="hljs-string">&quot;sex&quot;</span>)</span> String sex)</span>;
+</code></pre>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectIf&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;cn.org.none.pojo.User&quot;</span>&gt;</span>
+    select * from user
+    <span class="hljs-tag">&lt;<span class="hljs-name">where</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;username != null and username !=&apos;&apos;&quot;</span>&gt;</span>
+            username like #{username}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;sex != null and sex != &apos;&apos;&quot;</span>&gt;</span>
+            and sex = #{sex}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">where</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test07</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+
+    <span class="hljs-comment">//6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+    List&lt;User&gt; userList = userMapper.selectIf(<span class="hljs-string">&quot;%&#x7CBE;%&quot;</span>,<span class="hljs-string">&quot;&#x5973;&quot;</span>);
+    userList.forEach(System.out::println);
+    <span class="hljs-comment">//7.&#x5173;&#x95ED;&#x8D44;&#x6E90;</span>
+    sqlSession.close();
+}
+</code></pre>
+<h4 id="&#x4FEE;&#x6539;&#x90E8;&#x5206;&#x5B57;&#x6BB5;&#x6570;&#x636E;"><a name="&#x4FEE;&#x6539;&#x90E8;&#x5206;&#x5B57;&#x6BB5;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;&#x90E8;&#x5206;&#x5B57;&#x6BB5;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x6539;&#x90E8;&#x5206;&#x5B57;&#x6BB5;&#x6570;&#x636E;</h4>
+<ul>
+<li>set&#x6807;&#x7B7E;<ul>
+<li>&#x7528;&#x5728;update&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;set&#x5173;&#x952E;&#x5B57;</li>
+<li>&#x53EF;&#x53BB;&#x6389;SQL&#x8BED;&#x53E5;&#x4E2D;&#x591A;&#x4F59;&#x7684;&#x9017;&#x53F7;</li>
+</ul>
+</li>
+<li>&#x6CE8;&#x610F;&#xFF1A;<ul>
+<li>&#x5F53;&#x6240;&#x6709;&#x53C2;&#x6570;&#x90FD;&#x4E3A;&#x7A7A;&#x65F6;&#xFF0C;SQL&#x8BED;&#x53E5;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x5FC5;&#x8981;&#x53C2;&#x6570;&#x9632;&#x6B62;&#x62A5;&#x9519;</li>
+<li>where&#x8BED;&#x53E5;&#x8981;&#x5728;<set>&#x6807;&#x7B7E;&#x5916;&#x9762;</set></li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x4FEE;&#x6539;&#x90E8;&#x5206;&#x6570;&#x636E;</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">updateIf</span><span class="hljs-params">(User user)</span></span>;
+</code></pre>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">update</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;updateIf&quot;</span>&gt;</span>
+    update user
+    <span class="hljs-tag">&lt;<span class="hljs-name">set</span>&gt;</span>
+        <span class="hljs-comment">&lt;!--&#x6DFB;&#x52A0;&#x65E0;&#x7528;&#x5B57;&#x6BB5;&#x7528;&#x4E8E;&#x89E3;&#x51B3;&#x7A7A;&#x53C2;&#x62A5;&#x9519;--&gt;</span>
+        id = #{id},
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;username != null and username != &apos;&apos;&quot;</span>&gt;</span>
+            username=#{username},
+        <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- &#x65E5;&#x671F;&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x80FD;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x4F5C;&#x6BD4;&#x8F83; --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;birthday != null&quot;</span>&gt;</span>
+            birthday=#{birthday},
+        <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;sex != null and sex != &apos;&apos;&quot;</span>&gt;</span>
+            sex=#{sex},
+        <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;address != null and address != &apos;&apos;&quot;</span>&gt;</span>
+            address=#{address}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">set</span>&gt;</span>
+    where id=#{id}
+<span class="hljs-tag">&lt;/<span class="hljs-name">update</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test08</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+
+    <span class="hljs-comment">//6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+    User user = <span class="hljs-keyword">new</span> User();
+    user.setUsername(<span class="hljs-string">&quot;&#x72D0;&#x72F8;&#x7CBE;&quot;</span>);
+    user.setBirthday(Date.valueOf(<span class="hljs-string">&quot;1999-1-1&quot;</span>));
+    user.setId(<span class="hljs-number">2</span>);
+    <span class="hljs-keyword">int</span> row = userMapper.updateIf(user);
+    System.out.println(<span class="hljs-string">&quot;row = &quot;</span> + row);
+    <span class="hljs-comment">//&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;</span>
+    sqlSession.commit();
+    <span class="hljs-comment">//7.&#x5173;&#x95ED;&#x8D44;&#x6E90;</span>
+    sqlSession.close();
+}
+</code></pre>
+<h4 id="&#x6279;&#x91CF;&#x5220;&#x9664;"><a name="&#x6279;&#x91CF;&#x5220;&#x9664;" class="anchor-navigation-ex-anchor" href="#&#x6279;&#x91CF;&#x5220;&#x9664;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6279;&#x91CF;&#x5220;&#x9664;</h4>
+<ul>
+<li><p>foreach&#x6807;&#x7B7E;</p>
+<p>| foreach&#x6807;&#x7B7E;&#x7684;&#x5C5E;&#x6027; | &#x4F5C;&#x7528;                           |
+| ----------------- | ------------------------------ |
+| collection        | &#x53C2;&#x6570;&#x540D;                         |
+| item              | &#x8BBE;&#x7F6E;&#x53D8;&#x91CF;&#x540D;&#xFF0C;&#x4EE3;&#x8868;&#x6BCF;&#x4E2A;&#x904D;&#x5386;&#x7684;&#x5143;&#x7D20; |
+| separator         | &#x904D;&#x5386;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x7684;&#x5185;&#x5BB9;         |
+| #{&#x53D8;&#x91CF;&#x540D;}         | &#x5148;&#x4F7F;&#x7528;?&#x5360;&#x4F4D;, &#x540E;&#x9762;&#x7ED9;?&#x8D4B;&#x503C;       |
+| open              | &#x5728;&#x904D;&#x5386;&#x524D;&#x6DFB;&#x52A0;&#x4E00;&#x6B21;&#x5B57;&#x7B26;           |
+| close             | &#x5728;&#x904D;&#x5386;&#x540E;&#x6DFB;&#x52A0;&#x4E00;&#x6B21;&#x5B57;&#x7B26;           |</p>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x6279;&#x91CF;&#x5220;&#x9664; collection&#x6807;&#x7B7E;&#x5C5E;&#x6027;&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x6570;&#x7EC4;&#x53EB;array&#xFF0C;&#x96C6;&#x5408;&#x53EB;list</span>
+<span class="hljs-comment">//&#x5982;&#x679C;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x5219;&#x624B;&#x52A8;&#x8FDB;&#x884C;&#x6563;&#x88C5;</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">deleteIf</span><span class="hljs-params">(@Param(<span class="hljs-string">&quot;list&quot;</span>)</span> <span class="hljs-keyword">int</span>[] ids)</span>;
+</code></pre>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">delete</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;deleteIf&quot;</span>&gt;</span>
+    delete from user where id in
+    <span class="hljs-tag">&lt;<span class="hljs-name">foreach</span> <span class="hljs-attr">collection</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">item</span>=<span class="hljs-string">&quot;id&quot;</span> <span class="hljs-attr">open</span>=<span class="hljs-string">&quot;(&quot;</span> <span class="hljs-attr">separator</span>=<span class="hljs-string">&quot;,&quot;</span> <span class="hljs-attr">close</span>=<span class="hljs-string">&quot;)&quot;</span>&gt;</span>
+        #{id}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">foreach</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">delete</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test09</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+
+    <span class="hljs-comment">//6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+    <span class="hljs-keyword">int</span>[] list = {<span class="hljs-number">2</span>,<span class="hljs-number">4</span>};
+    <span class="hljs-keyword">int</span> row = userMapper.deleteIf(list);
+    System.out.println(<span class="hljs-string">&quot;row = &quot;</span> + row);
+    <span class="hljs-comment">//&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;</span>
+    sqlSession.commit();
+    <span class="hljs-comment">//7.&#x5173;&#x95ED;&#x8D44;&#x6E90;</span>
+    sqlSession.close();
+}
+</code></pre>
+<h4 id="&#x6839;&#x636E;&#x6027;&#x522B;&#x67E5;&#x8BE2;&#x7528;&#x6237;"><a name="&#x6839;&#x636E;&#x6027;&#x522B;&#x67E5;&#x8BE2;&#x7528;&#x6237;" class="anchor-navigation-ex-anchor" href="#&#x6839;&#x636E;&#x6027;&#x522B;&#x67E5;&#x8BE2;&#x7528;&#x6237;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6839;&#x636E;&#x6027;&#x522B;&#x67E5;&#x8BE2;&#x7528;&#x6237;</h4>
+<ul>
+<li><p>choose&#x6807;&#x7B7E;</p>
+<p>| choose&#x6807;&#x7B7E;&#x7684;&#x5C5E;&#x6027; | &#x4F5C;&#x7528;                 |
+| ---------------- | -------------------- |
+| when             | &#x5339;&#x914D;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;         |
+| otherwise        | &#x6240;&#x6709;&#x6761;&#x4EF6;&#x4E0D;&#x5339;&#x914D;&#x65F6;&#x6267;&#x884C; |</p>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x6839;&#x636E;&#x6570;&#x5B57;&#x5224;&#x65AD;&#x6027;&#x522B;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;</span>
+<span class="hljs-function">List&lt;User&gt; <span class="hljs-title">selectSex</span><span class="hljs-params">(<span class="hljs-keyword">int</span> sex)</span></span>;
+</code></pre>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectSex&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;cn.org.none.pojo.User&quot;</span>&gt;</span>
+    select * from user
+    <span class="hljs-tag">&lt;<span class="hljs-name">where</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">choose</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">when</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;sex == 1&quot;</span>&gt;</span>
+                sex = &apos;&#x7537;&apos;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">when</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">when</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;sex == 0&quot;</span>&gt;</span>
+                sex = &apos;&#x5973;&apos;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">when</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">otherwise</span>&gt;</span>
+                sex = &apos;&#x5973;&apos;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">otherwise</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">choose</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">where</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Test10</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+
+    <span class="hljs-comment">//6.&#x8C03;&#x7528;&#x65B9;&#x6CD5;</span>
+    List&lt;User&gt; users = userMapper.selectSex(<span class="hljs-number">10</span>);
+    users.forEach(System.out::println);
+    <span class="hljs-comment">//7.&#x5173;&#x95ED;&#x8D44;&#x6E90;</span>
+    sqlSession.close();
+}
+</code></pre>
+<h4 id="&#x63A5;&#x53E3;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF1A;resultmap&#x8F93;&#x51FA;&#x6620;&#x5C04;"><a name="&#x63A5;&#x53E3;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF1A;resultmap&#x8F93;&#x51FA;&#x6620;&#x5C04;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x53E3;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF1A;resultmap&#x8F93;&#x51FA;&#x6620;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A5;&#x53E3;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF1A;resultMap&#x8F93;&#x51FA;&#x6620;&#x5C04;</h4>
+<ul>
+<li><p>&#x5F53;&#x5B57;&#x6BB5;&#x540D;&#x4E0E;&#x5BF9;&#x8C61;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x4E00;&#x81F4;&#x65F6;,MyBatis&#x53EF;&#x4EE5;&#x628A;&#x67E5;&#x8BE2;&#x7684;&#x7ED3;&#x679C;&#x81EA;&#x52A8;&#x5C01;&#x88C5;&#x4E3A;&#x5BF9;&#x8C61;&#xFF1B;&#x4F46;&#x662F;&#x4E0D;&#x4E00;&#x81F4;&#x65F6;&#xFF0C;&#x540D;&#x79F0;&#x4E0D;&#x4E00;&#x81F4;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x5C31;&#x83B7;&#x53D6;&#x4E0D;&#x5230;&#x6570;&#x636E;</p>
+</li>
+<li><p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li><p>&#x65B9;&#x6848;1&#xFF1A;&#x7ED9;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x5BF9;&#x5E94;&#x7684;&#x5B57;&#x6BB5;&#x8D4B;&#x4E88;&#x522B;&#x540D;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;findAllOrders&quot;</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">&quot;OrderMap&quot;</span>&gt;</span>
+     select 
+        o_id oId,
+        user_id userId,
+        number,
+        create_time createTime,
+         note 
+        from tb_order;
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x65B9;&#x6848;2&#xFF1A;&#x5728;<code>mybatis-config.xml</code>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;<code>&lt;settings&gt;</code>&#x6807;&#x7B7E;&#x5185;&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">settings</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x4F7F;&#x7528;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#xFF0C;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x4E0B;&#x5212;&#x7EBF;&#x7684;&#x5B57;&#x6BB5;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x9A7C;&#x5CF0;&#x547D;&#x540D; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;mapUnderscoreToCamelCase&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">settings</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x65B9;&#x6848;3&#xFF1A;resultMap&#x8F93;&#x51FA;&#x6620;&#x5C04;&#xFF08;&#x63A5;&#x53E3;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF09;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">mapper</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">&quot;cn.org.none.mapper.OrderMapper&quot;</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x4F7F;&#x7528;resultMap&#x505A;&#x6620;&#x5C04; --&gt;</span>
+    <span class="hljs-comment">&lt;!--
+    id&#x5C5E;&#x6027;&#xFF1A;&#x8868;&#x793A;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF0C;&#x901A;&#x8FC7;id&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;resultMap
+    type&#x5C5E;&#x6027;&#xFF1A;&#x8981;&#x5C01;&#x88C5;&#x7684;&#x5BF9;&#x8C61;
+    id&#x6807;&#x7B7E;&#xFF1A;&#x7528;&#x6765;&#x505A;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#x7684;&#x6620;&#x5C04;
+    column&#x5C5E;&#x6027;&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B57;&#x6BB5;&#x540D;
+    property&#x5C5E;&#x6027;&#xFF1A;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x540D;
+    result&#x6807;&#x7B7E;&#xFF1A;&#x914D;&#x7F6E;&#x4E3B;&#x952E;&#x4E4B;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x5B57;&#x6BB5;
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">resultMap</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;OrderMap&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;Order&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">column</span>=<span class="hljs-string">&quot;o_id&quot;</span> <span class="hljs-attr">property</span>=<span class="hljs-string">&quot;oId&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">&quot;user_id&quot;</span> <span class="hljs-attr">property</span>=<span class="hljs-string">&quot;userId&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">&quot;creat_time&quot;</span> <span class="hljs-attr">property</span>=<span class="hljs-string">&quot;createTime&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">resultMap</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;getAllOrder&quot;</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">&quot;OrderMap&quot;</span>&gt;</span>
+        select * from tb_order;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">mapper</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2022-11-26 21:18 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Day18-Maven+MyBatis入门.html" class="navigation navigation-prev " aria-label="Previous page: Day18-Maven+MyBatis入门">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Day20-MyBatis高级.html" class="navigation navigation-next " aria-label="Next page: Day20-MyBatis高级">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Day19-MyBatis进阶","level":"1.10.31","depth":2,"next":{"title":"Day20-MyBatis高级","level":"1.10.32","depth":2,"path":"Java笔记/Day20-MyBatis高级.md","ref":"Java笔记/Day20-MyBatis高级.md","articles":[]},"previous":{"title":"Day18-Maven+MyBatis入门","level":"1.10.30","depth":2,"path":"Java笔记/Day18-Maven+MyBatis入门.md","ref":"Java笔记/Day18-Maven+MyBatis入门.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://none.org.cn/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"0day计划","language":"zh-hans","links":{"sidebar":{"None's 树洞":"https://none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"Java笔记/Day19-MyBatis进阶.md","mtime":"2022-11-26T13:18:13.621Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T00:23:40.981Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

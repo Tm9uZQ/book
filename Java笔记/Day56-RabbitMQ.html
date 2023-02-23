@@ -1,0 +1,2304 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Day56-RabbitMQ · 0day计划</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="None">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Day57~59-ElasticSearch.html" />
+    
+    
+    <link rel="prev" href="Day55-Docker.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://none.org.cn" target="_blank" class="custom-link">None's 树洞</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">《 0day计划 》</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    社工
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../社工/获取位置信息.html">
+            
+                <a href="../社工/获取位置信息.html">
+            
+                    
+                    获取位置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第一阶段-基础篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第一阶段-基础篇/零基础必看课程.html">
+            
+                <a href="../第一阶段-基础篇/零基础必看课程.html">
+            
+                    
+                    零基础必看课程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第一阶段-基础篇/Windows基础.html">
+            
+                <a href="../第一阶段-基础篇/Windows基础.html">
+            
+                    
+                    Windows基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第一阶段-基础篇/数据库基础.html">
+            
+                <a href="../第一阶段-基础篇/数据库基础.html">
+            
+                    
+                    数据库基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第二阶段-Web安全篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                <a href="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                    
+                    2019网络安全训练营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                <a href="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                    
+                    BurpSuite学习使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                <a href="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                    
+                    Web安全攻防学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第六阶段-Python黑客编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                <a href="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                    
+                    Python编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    软考-信息安全工程师
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../软考-信息安全工程师/第一版.html">
+            
+                <a href="../软考-信息安全工程师/第一版.html">
+            
+                    
+                    第一版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    兄弟连Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../兄弟连Linux/Linux系统简介.html">
+            
+                <a href="../兄弟连Linux/Linux系统简介.html">
+            
+                    
+                    Linux系统简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../兄弟连Linux/Linux常用命令.html">
+            
+                <a href="../兄弟连Linux/Linux常用命令.html">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../兄弟连Linux/文本编辑器Vim.html">
+            
+                <a href="../兄弟连Linux/文本编辑器Vim.html">
+            
+                    
+                    文本编辑器Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../兄弟连Linux/软件包管理.html">
+            
+                <a href="../兄弟连Linux/软件包管理.html">
+            
+                    
+                    软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    韩立刚计算机网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../韩立刚计算机网络/概述.html">
+            
+                <a href="../韩立刚计算机网络/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../韩立刚计算机网络/物理层.html">
+            
+                <a href="../韩立刚计算机网络/物理层.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../韩立刚计算机网络/数据链路层.html">
+            
+                <a href="../韩立刚计算机网络/数据链路层.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    韩立刚CCNA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../韩立刚CCNA/计算机网络.html">
+            
+                <a href="../韩立刚CCNA/计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../韩立刚CCNA/TCP&IP.html">
+            
+                <a href="../韩立刚CCNA/TCP&IP.html">
+            
+                    
+                    TCP&IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../韩立刚CCNA/IP地址和子网.html">
+            
+                <a href="../韩立刚CCNA/IP地址和子网.html">
+            
+                    
+                    IP地址和子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../韩立刚CCNA/静态路由.html">
+            
+                <a href="../韩立刚CCNA/静态路由.html">
+            
+                    
+                    静态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../韩立刚CCNA/动态路由.html">
+            
+                <a href="../韩立刚CCNA/动态路由.html">
+            
+                    
+                    动态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../韩立刚CCNA/交换机.html">
+            
+                <a href="../韩立刚CCNA/交换机.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Java笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="01-面试题.html">
+            
+                <a href="01-面试题.html">
+            
+                    
+                    01-面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="02-未归类知识点.html">
+            
+                <a href="02-未归类知识点.html">
+            
+                    
+                    02-未归类知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="基础班day01.html">
+            
+                <a href="基础班day01.html">
+            
+                    
+                    基础班day01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="基础班day02.html">
+            
+                <a href="基础班day02.html">
+            
+                    
+                    基础班day02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="基础班day03.html">
+            
+                <a href="基础班day03.html">
+            
+                    
+                    基础班day03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="基础班day04.html">
+            
+                <a href="基础班day04.html">
+            
+                    
+                    基础班day04
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="基础班day05.html">
+            
+                <a href="基础班day05.html">
+            
+                    
+                    基础班day05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="基础班day06.html">
+            
+                <a href="基础班day06.html">
+            
+                    
+                    基础班day06
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="基础班day07.html">
+            
+                <a href="基础班day07.html">
+            
+                    
+                    基础班day07
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="基础班day08.html">
+            
+                <a href="基础班day08.html">
+            
+                    
+                    基础班day08
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="基础班day09.html">
+            
+                <a href="基础班day09.html">
+            
+                    
+                    基础班day09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="基础班day10.html">
+            
+                <a href="基础班day10.html">
+            
+                    
+                    基础班day10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Day01-Static+继承+权限修饰.html">
+            
+                <a href="Day01-Static+继承+权限修饰.html">
+            
+                    
+                    Day01-Static+继承+权限修饰
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.14" data-path="Day02-抽象+接口+单例.html">
+            
+                <a href="Day02-抽象+接口+单例.html">
+            
+                    
+                    Day02-抽象+接口+单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.15" data-path="Day03-多态+内部类+枚举.html">
+            
+                <a href="Day03-多态+内部类+枚举.html">
+            
+                    
+                    Day03-多态+内部类+枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.16" data-path="Day04-常用API+正则.html">
+            
+                <a href="Day04-常用API+正则.html">
+            
+                    
+                    Day04-常用API+正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.17" data-path="Day05-数据结构+List集合+泛型.html">
+            
+                <a href="Day05-数据结构+List集合+泛型.html">
+            
+                    
+                    Day05-数据结构+List集合+泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.18" data-path="Day06-Set集合+迭代器+增强for.html">
+            
+                <a href="Day06-Set集合+迭代器+增强for.html">
+            
+                    
+                    Day06-Set集合+迭代器+增强for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.19" data-path="Day07-Map集合.html">
+            
+                <a href="Day07-Map集合.html">
+            
+                    
+                    Day07-Map集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.20" data-path="Day08-异常+多线程.html">
+            
+                <a href="Day08-异常+多线程.html">
+            
+                    
+                    Day08-异常+多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.21" data-path="Day09-线程池+Lambda+Stream流.html">
+            
+                <a href="Day09-线程池+Lambda+Stream流.html">
+            
+                    
+                    Day09-线程池+Lambda+Stream流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.22" data-path="Day10-File+IO流.html">
+            
+                <a href="Day10-File+IO流.html">
+            
+                    
+                    Day10-File+IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.23" data-path="Day11-IO流+装饰模式.html">
+            
+                <a href="Day11-IO流+装饰模式.html">
+            
+                    
+                    Day11-IO流+装饰模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.24" data-path="Day12-网络编程+junit.html">
+            
+                <a href="Day12-网络编程+junit.html">
+            
+                    
+                    Day12-网络编程+junit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.25" data-path="Day13-反射+注解.html">
+            
+                <a href="Day13-反射+注解.html">
+            
+                    
+                    Day13-反射+注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.26" data-path="Day14-XML+Dom4j+动态代理.html">
+            
+                <a href="Day14-XML+Dom4j+动态代理.html">
+            
+                    
+                    Day14-XML+Dom4j+动态代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.27" data-path="Day15-MySQL基础.html">
+            
+                <a href="Day15-MySQL基础.html">
+            
+                    
+                    Day15-MySQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.28" data-path="Day16-MySQL高级.html">
+            
+                <a href="Day16-MySQL高级.html">
+            
+                    
+                    Day16-MySQL高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.29" data-path="Day17-JDBC.html">
+            
+                <a href="Day17-JDBC.html">
+            
+                    
+                    Day17-JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.30" data-path="Day18-Maven+MyBatis入门.html">
+            
+                <a href="Day18-Maven+MyBatis入门.html">
+            
+                    
+                    Day18-Maven+MyBatis入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.31" data-path="Day19-MyBatis进阶.html">
+            
+                <a href="Day19-MyBatis进阶.html">
+            
+                    
+                    Day19-MyBatis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.32" data-path="Day20-MyBatis高级.html">
+            
+                <a href="Day20-MyBatis高级.html">
+            
+                    
+                    Day20-MyBatis高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.33" data-path="Day21-HTML5+CSS.html">
+            
+                <a href="Day21-HTML5+CSS.html">
+            
+                    
+                    Day21-HTML5+CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.34" data-path="Day22-JavaScript.html">
+            
+                <a href="Day22-JavaScript.html">
+            
+                    
+                    Day22-JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.35" data-path="Day23-HTTP+Tomcat+Servlet.html">
+            
+                <a href="Day23-HTTP+Tomcat+Servlet.html">
+            
+                    
+                    Day23-HTTP+Tomcat+Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.36" data-path="Day24-Request+Response.html">
+            
+                <a href="Day24-Request+Response.html">
+            
+                    
+                    Day24-Request+Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.37" data-path="Day25-Jsp+MVC.html">
+            
+                <a href="Day25-Jsp+MVC.html">
+            
+                    
+                    Day25-Jsp+MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.38" data-path="Day26-Cookie+Session.html">
+            
+                <a href="Day26-Cookie+Session.html">
+            
+                    
+                    Day26-Cookie+Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.39" data-path="Day27-Filter+Listener.html">
+            
+                <a href="Day27-Filter+Listener.html">
+            
+                    
+                    Day27-Filter+Listener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.40" data-path="Day28-Json+Vue.html">
+            
+                <a href="Day28-Json+Vue.html">
+            
+                    
+                    Day28-Json+Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.41" data-path="Day29-Element.html">
+            
+                <a href="Day29-Element.html">
+            
+                    
+                    Day29-Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.42" data-path="Day30-brand综合案例.html">
+            
+                <a href="Day30-brand综合案例.html">
+            
+                    
+                    Day30-brand综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.43" data-path="Day31~35-Spring.html">
+            
+                <a href="Day31~35-Spring.html">
+            
+                    
+                    Day31~35-Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.44" data-path="Day36-SSM.html">
+            
+                <a href="Day36-SSM.html">
+            
+                    
+                    Day36-SSM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.45" data-path="Day37-Maven高级.html">
+            
+                <a href="Day37-Maven高级.html">
+            
+                    
+                    Day37-Maven高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.46" data-path="Day38-SpringBoot.html">
+            
+                <a href="Day38-SpringBoot.html">
+            
+                    
+                    Day38-SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.47" data-path="Day39-Git.html">
+            
+                <a href="Day39-Git.html">
+            
+                    
+                    Day39-Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.48" data-path="Day40~45-瑞吉点餐.html">
+            
+                <a href="Day40~45-瑞吉点餐.html">
+            
+                    
+                    Day40~45-瑞吉点餐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.49" data-path="Day46~47-Linux.html">
+            
+                <a href="Day46~47-Linux.html">
+            
+                    
+                    Day46~47-Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.50" data-path="Day48-Redis.html">
+            
+                <a href="Day48-Redis.html">
+            
+                    
+                    Day48-Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.51" data-path="Day49~51-瑞吉点餐优化.html">
+            
+                <a href="Day49~51-瑞吉点餐优化.html">
+            
+                    
+                    Day49~51-瑞吉点餐优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.52" data-path="Day52-MyBatisPlus+乐观锁.html">
+            
+                <a href="Day52-MyBatisPlus+乐观锁.html">
+            
+                    
+                    Day52-MyBatisPlus+乐观锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.53" data-path="Day53~54-SpringCloud.html">
+            
+                <a href="Day53~54-SpringCloud.html">
+            
+                    
+                    Day53~54-SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.54" data-path="Day55-Docker.html">
+            
+                <a href="Day55-Docker.html">
+            
+                    
+                    Day55-Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.55" data-path="Day56-RabbitMQ.html">
+            
+                <a href="Day56-RabbitMQ.html">
+            
+                    
+                    Day56-RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.56" data-path="Day57~59-ElasticSearch.html">
+            
+                <a href="Day57~59-ElasticSearch.html">
+            
+                    
+                    Day57~59-ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.57" data-path="Day60-Sentinel.html">
+            
+                <a href="Day60-Sentinel.html">
+            
+                    
+                    Day60-Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.58" data-path="Day61-Seata.html">
+            
+                <a href="Day61-Seata.html">
+            
+                    
+                    Day61-Seata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.59" data-path="Day62~64-黑马商城.html">
+            
+                <a href="Day62~64-黑马商城.html">
+            
+                    
+                    Day62~64-黑马商城
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.60" data-path="Day65-黑马头条.html">
+            
+                <a href="Day65-黑马头条.html">
+            
+                    
+                    Day65-黑马头条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.61" data-path="就业加强-MySQL.html">
+            
+                <a href="就业加强-MySQL.html">
+            
+                    
+                    就业加强-MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    面试必会篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                <a href="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                    
+                    01-面试必会-JAVA基础篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                <a href="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                    
+                    02-面试必会-SSM框架篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                <a href="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                    
+                    03-面试必会-Mysql篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                <a href="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                    
+                    04-面试必会-Redis篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                <a href="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                    
+                    05-面试必会-SpringBoot&SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                <a href="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                    
+                    06-面试必会-MQ篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../面试必会篇/07-面试必须-事物控制.html">
+            
+                <a href="../面试必会篇/07-面试必须-事物控制.html">
+            
+                    
+                    07-面试必须-事物控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Spring系列面试题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Spring系列面试题/面试题.html">
+            
+                <a href="../Spring系列面试题/面试题.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Day56-RabbitMQ</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#rabbitmq"><b></b>RabbitMQ</a></li><ul><li><span class="title-icon "></span><a href="#&#x540C;&#x6B65;&#x548C;&#x5F02;&#x6B65;&#x901A;&#x8BAF;"><b></b>&#x540C;&#x6B65;&#x548C;&#x5F02;&#x6B65;&#x901A;&#x8BAF;</a></li><li><span class="title-icon "></span><a href="#rabbitmq&#x90E8;&#x7F72;"><b></b>RabbitMQ&#x90E8;&#x7F72;</a></li><li><span class="title-icon "></span><a href="#rabbitmq&#x6D88;&#x606F;&#x6A21;&#x578B;"><b></b>RabbitMQ&#x6D88;&#x606F;&#x6A21;&#x578B;</a></li><li><span class="title-icon "></span><a href="#&#x539F;&#x751F;rabbitmq&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;"><b></b>&#x539F;&#x751F;RabbitMQ&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#springamqp"><b></b>SpringAMQP</a></li><ul><li><span class="title-icon "></span><a href="#&#x76F8;&#x5173;&#x914D;&#x7F6E;"><b></b>&#x76F8;&#x5173;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x5668;"><b></b>&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x7B80;&#x5355;&#x6A21;&#x578B;"><b></b>&#x7B80;&#x5355;&#x6A21;&#x578B;</a></li><li><span class="title-icon "></span><a href="#&#x961F;&#x5217;&#x6A21;&#x578B;"><b></b>&#x961F;&#x5217;&#x6A21;&#x578B;</a></li><li><span class="title-icon "></span><a href="#&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;"><b></b>&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;</a></li><li><span class="title-icon "></span><a href="#&#x8DEF;&#x7531;&#x6A21;&#x578B;"><b></b>&#x8DEF;&#x7531;&#x6A21;&#x578B;</a></li><li><span class="title-icon "></span><a href="#&#x4E3B;&#x9898;&#x6A21;&#x578B;"><b></b>&#x4E3B;&#x9898;&#x6A21;&#x578B;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="rabbitmq"><a name="rabbitmq" class="anchor-navigation-ex-anchor" href="#rabbitmq"><i class="fa fa-link" aria-hidden="true"></i></a>RabbitMQ</h2>
+<blockquote>
+<p>MQ&#xFF0C;&#x4E2D;&#x6587;&#x662F;&#x6D88;&#x606F;&#x961F;&#x5217;&#xFF08;MessageQueue&#xFF09;&#xFF0C;&#x5B57;&#x9762;&#x6765;&#x770B;&#x5C31;&#x662F;&#x5B58;&#x653E;&#x6D88;&#x606F;&#x7684;&#x961F;&#x5217;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x67B6;&#x6784;&#x4E2D;&#x7684;Broker&#x3002;</p>
+<p>&#x6BD4;&#x8F83;&#x5E38;&#x89C1;&#x7684;MQ&#x5B9E;&#x73B0;&#xFF1A;RabbitMQ&#x3001;RocketMQ&#x3001;Kafka</p>
+</blockquote>
+<p><a href="images/1657501690205.png" data-lightbox="ba861e9c-4ad8-436f-aee4-66555a04e592" data-title="1657501690205"><img src="images/1657501690205.png" alt="1657501690205"></a></p>
+<h3 id="&#x540C;&#x6B65;&#x548C;&#x5F02;&#x6B65;&#x901A;&#x8BAF;"><a name="&#x540C;&#x6B65;&#x548C;&#x5F02;&#x6B65;&#x901A;&#x8BAF;" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x6B65;&#x548C;&#x5F02;&#x6B65;&#x901A;&#x8BAF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540C;&#x6B65;&#x548C;&#x5F02;&#x6B65;&#x901A;&#x8BAF;</h3>
+<ul>
+<li>&#x540C;&#x6B65;&#x901A;&#x8BAF;&#xFF1A;<ul>
+<li>&#x4F18;&#x70B9;&#xFF1A;<ul>
+<li>&#x65F6;&#x6548;&#x6027;&#x5F3A;&#xFF0C;&#x53EF;&#x4EE5;&#x7ACB;&#x5373;&#x5F97;&#x5230;&#x7ED3;&#x679C;</li>
+</ul>
+</li>
+<li>&#x7F3A;&#x70B9;&#xFF1A;<ul>
+<li>&#x8026;&#x5408;&#x5EA6;&#x9AD8;&#xFF1A;&#x6BCF;&#x6B21;&#x52A0;&#x5165;&#x65B0;&#x7684;&#x9700;&#x6C42;&#x90FD;&#x8981;&#x4FEE;&#x6539;&#x539F;&#x6765;&#x7684;&#x4EE3;&#x7801;</li>
+<li>&#x6027;&#x80FD;&#x4E0B;&#x964D;&#xFF1A;&#x8C03;&#x7528;&#x8005;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x54CD;&#x5E94;&#xFF0C;&#x7B49;&#x4E8E;&#x6240;&#x6709;&#x8C03;&#x7528;&#x670D;&#x52A1;&#x7684;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x4E4B;&#x548C;</li>
+<li>&#x8D44;&#x6E90;&#x6D6A;&#x8D39;&#xFF1A;&#x8C03;&#x7528;&#x94FE;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5728;&#x7B49;&#x5F85;&#x54CD;&#x5E94;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E0D;&#x80FD;&#x91CA;&#x653E;&#x8BF7;&#x6C42;&#x5360;&#x7528;&#x7684;&#x8D44;&#x6E90;</li>
+<li>&#x7EA7;&#x8054;&#x5931;&#x8D25;&#xFF1A;&#x5982;&#x679C;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x6240;&#x6709;&#x8C03;&#x7528;&#x65B9;&#x90FD;&#x4F1A;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x5BFC;&#x81F4;&#x6574;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x7FA4;&#x6545;&#x969C;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x5F02;&#x6B65;&#x901A;&#x8BAF;&#xFF1A;<ul>
+<li>&#x4F18;&#x70B9;&#xFF1A;<ul>
+<li><strong>&#x541E;&#x5410;&#x91CF;&#x63D0;&#x5347;</strong>&#xFF1A;&#x65E0;&#x9700;&#x7B49;&#x5F85;&#x8BA2;&#x9605;&#x8005;&#x5904;&#x7406;&#x5B8C;&#x6210;&#xFF0C;&#x54CD;&#x5E94;&#x66F4;&#x5FEB;</li>
+<li>&#x6545;&#x969C;&#x9694;&#x79BB;&#xFF1A;&#x670D;&#x52A1;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x7EA7;&#x8054;&#x95EE;&#x9898;</li>
+<li>&#x8C03;&#x7528;&#x95F4;&#x6CA1;&#x6709;&#x963B;&#x585E;&#xFF0C;&#x4E0D;&#x4F1A;&#x9020;&#x6210;&#x65E0;&#x6548;&#x7684;&#x8D44;&#x6E90;&#x5360;&#x7528;</li>
+<li><strong>&#x8026;&#x5408;&#x5EA6;&#x6781;&#x4F4E;</strong>&#xFF1A;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x90FD;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x63D2;&#x62D4;</li>
+<li><strong>&#x6D41;&#x91CF;&#x524A;&#x5CF0;</strong>&#xFF1A;&#x4E0D;&#x7BA1;&#x53D1;&#x5E03;&#x4E8B;&#x4EF6;&#x7684;&#x6D41;&#x91CF;&#x6CE2;&#x52A8;&#x591A;&#x5927;&#xFF0C;&#x90FD;&#x7531;Broker&#x63A5;&#x6536;&#xFF0C;&#x8BA2;&#x9605;&#x8005;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x901F;&#x5EA6;&#x5904;&#x7406;&#x4E8B;&#x4EF6;</li>
+</ul>
+</li>
+<li>&#x7F3A;&#x70B9;&#xFF1A;<ul>
+<li>&#x67B6;&#x6784;&#x590D;&#x6742;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E1A;&#x52A1;&#x6CA1;&#x6709;&#x660E;&#x663E;&#x7684;&#x6D41;&#x7A0B;&#x7EBF;&#xFF0C;&#x4E0D;&#x597D;&#x7BA1;&#x7406;</li>
+<li>&#x4F9D;&#x8D56;&#x4E8E;Broker&#x7684;&#x53EF;&#x9760;&#x6027;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="rabbitmq&#x90E8;&#x7F72;"><a name="rabbitmq&#x90E8;&#x7F72;" class="anchor-navigation-ex-anchor" href="#rabbitmq&#x90E8;&#x7F72;"><i class="fa fa-link" aria-hidden="true"></i></a>RabbitMQ&#x90E8;&#x7F72;</h3>
+<pre><code class="lang-shell"># &#x62C9;&#x53D6;&#x955C;&#x50CF;
+docker pull rabbitmq:3-management
+
+# &#x90E8;&#x7F72;
+docker run \
+ -e RABBITMQ_DEFAULT_USER=root \
+ -e RABBITMQ_DEFAULT_PASS=root \
+ -v mq-plugins:/plugins \
+ --name mq \
+ --hostname mq \
+ -p 15672:15672 \
+ -p 5672:5672 \
+ -d \
+ rabbitmq:3-management
+</code></pre>
+<h3 id="rabbitmq&#x6D88;&#x606F;&#x6A21;&#x578B;"><a name="rabbitmq&#x6D88;&#x606F;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#rabbitmq&#x6D88;&#x606F;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>RabbitMQ&#x6D88;&#x606F;&#x6A21;&#x578B;</h3>
+<blockquote>
+<p>&#x5B98;&#x65B9;&#x5730;&#x5740;&#xFF1A;<a href="https://www.rabbitmq.com/getstarted.html" target="_blank">https://www.rabbitmq.com/getstarted.html</a></p>
+<ul>
+<li>publisher&#xFF1A;&#x6D88;&#x606F;&#x53D1;&#x5E03;&#x8005;&#xFF0C;&#x5C06;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x5230;&#x961F;&#x5217;queue</li>
+<li>queue&#xFF1A;&#x6D88;&#x606F;&#x961F;&#x5217;&#xFF0C;&#x8D1F;&#x8D23;&#x63A5;&#x53D7;&#x5E76;&#x7F13;&#x5B58;&#x6D88;&#x606F;</li>
+<li>consumer&#xFF1A;&#x8BA2;&#x9605;&#x961F;&#x5217;&#xFF0C;&#x5904;&#x7406;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x6D88;&#x606F;</li>
+</ul>
+</blockquote>
+<ul>
+<li>&#x6D88;&#x606F;&#x6A21;&#x578B;&#xFF1A;<ul>
+<li><strong>&#x7B80;&#x5355;&#x6A21;&#x578B;</strong></li>
+<li><strong>&#x5DE5;&#x4F5C;&#x961F;&#x5217;&#x6A21;&#x578B;</strong>&#xFF1A;Workqueues</li>
+<li><strong>&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;</strong>&#xFF1A;Publish</li>
+<li><strong>&#x8DEF;&#x7531;&#x6A21;&#x578B;</strong>&#xFF1A;Routing</li>
+<li><strong>&#x4E3B;&#x9898;&#x6A21;&#x578B;</strong>&#xFF1A;Topics</li>
+<li>RPC</li>
+<li>Publisher Confirms</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x539F;&#x751F;rabbitmq&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;"><a name="&#x539F;&#x751F;rabbitmq&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x751F;rabbitmq&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x751F;RabbitMQ&#x5B9E;&#x73B0;&#xFF08;&#x4E86;&#x89E3;&#xFF09;</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq.helloworld;
+
+<span class="hljs-keyword">import</span> com.rabbitmq.client.*;
+
+<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="hljs-keyword">import</span> java.util.concurrent.TimeoutException;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ConsumerTest</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException, TimeoutException </span>{
+        <span class="hljs-comment">// 1.&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;</span>
+        ConnectionFactory factory = <span class="hljs-keyword">new</span> ConnectionFactory();
+        <span class="hljs-comment">// 1.1.&#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x53C2;&#x6570;&#xFF0C;&#x5206;&#x522B;&#x662F;&#xFF1A;&#x4E3B;&#x673A;&#x540D;&#x3001;&#x7AEF;&#x53E3;&#x53F7;&#x3001;vhost&#x3001;&#x7528;&#x6237;&#x540D;&#x3001;&#x5BC6;&#x7801;</span>
+        factory.setHost(<span class="hljs-string">&quot;192.168.65.182&quot;</span>);
+        factory.setPort(<span class="hljs-number">5672</span>);
+        factory.setVirtualHost(<span class="hljs-string">&quot;/&quot;</span>);
+        factory.setUsername(<span class="hljs-string">&quot;root&quot;</span>);
+        factory.setPassword(<span class="hljs-string">&quot;root&quot;</span>);
+        <span class="hljs-comment">// 1.2.&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;</span>
+        Connection connection = factory.newConnection();
+
+        <span class="hljs-comment">// 2.&#x521B;&#x5EFA;&#x901A;&#x9053;Channel</span>
+        Channel channel = connection.createChannel();
+
+        <span class="hljs-comment">// 3.&#x521B;&#x5EFA;&#x961F;&#x5217;</span>
+        String queueName = <span class="hljs-string">&quot;simple.queue&quot;</span>;
+        channel.queueDeclare(queueName, <span class="hljs-keyword">false</span>, <span class="hljs-keyword">false</span>, <span class="hljs-keyword">false</span>, <span class="hljs-keyword">null</span>);
+
+        <span class="hljs-comment">// 4.&#x8BA2;&#x9605;&#x6D88;&#x606F;</span>
+        channel.basicConsume(queueName, <span class="hljs-keyword">true</span>, <span class="hljs-keyword">new</span> DefaultConsumer(channel){
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleDelivery</span><span class="hljs-params">(String consumerTag, Envelope envelope,
+                                       AMQP.BasicProperties properties, <span class="hljs-keyword">byte</span>[] body)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+                <span class="hljs-comment">// 5.&#x5904;&#x7406;&#x6D88;&#x606F;</span>
+                String message = <span class="hljs-keyword">new</span> String(body);
+                System.out.println(<span class="hljs-string">&quot;&#x63A5;&#x6536;&#x5230;&#x6D88;&#x606F;&#xFF1A;&#x3010;&quot;</span> + message + <span class="hljs-string">&quot;&#x3011;&quot;</span>);
+            }
+        });
+        System.out.println(<span class="hljs-string">&quot;&#x7B49;&#x5F85;&#x63A5;&#x6536;&#x6D88;&#x606F;&#x3002;&#x3002;&#x3002;&#x3002;&quot;</span>);
+    }
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq.helloworld;
+
+<span class="hljs-keyword">import</span> com.rabbitmq.client.Channel;
+<span class="hljs-keyword">import</span> com.rabbitmq.client.Connection;
+<span class="hljs-keyword">import</span> com.rabbitmq.client.ConnectionFactory;
+<span class="hljs-keyword">import</span> org.junit.Test;
+
+<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="hljs-keyword">import</span> java.util.concurrent.TimeoutException;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PublisherTest</span> </span>{
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testSendMessage</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException, TimeoutException </span>{
+        <span class="hljs-comment">// 1.&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;</span>
+        ConnectionFactory factory = <span class="hljs-keyword">new</span> ConnectionFactory();
+        <span class="hljs-comment">// 1.1.&#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x53C2;&#x6570;&#xFF0C;&#x5206;&#x522B;&#x662F;&#xFF1A;&#x4E3B;&#x673A;&#x540D;&#x3001;&#x7AEF;&#x53E3;&#x53F7;&#x3001;vhost&#x3001;&#x7528;&#x6237;&#x540D;&#x3001;&#x5BC6;&#x7801;</span>
+        factory.setHost(<span class="hljs-string">&quot;192.168.65.182&quot;</span>);
+        factory.setPort(<span class="hljs-number">5672</span>);
+        factory.setVirtualHost(<span class="hljs-string">&quot;/&quot;</span>);
+        factory.setUsername(<span class="hljs-string">&quot;root&quot;</span>);
+        factory.setPassword(<span class="hljs-string">&quot;root&quot;</span>);
+        <span class="hljs-comment">// 1.2.&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;</span>
+        Connection connection = factory.newConnection();
+
+        <span class="hljs-comment">// 2.&#x521B;&#x5EFA;&#x901A;&#x9053;Channel</span>
+        Channel channel = connection.createChannel();
+
+        <span class="hljs-comment">// 3.&#x521B;&#x5EFA;&#x961F;&#x5217;</span>
+        String queueName = <span class="hljs-string">&quot;simple.queue&quot;</span>;
+        channel.queueDeclare(queueName, <span class="hljs-keyword">false</span>, <span class="hljs-keyword">false</span>, <span class="hljs-keyword">false</span>, <span class="hljs-keyword">null</span>);
+
+        <span class="hljs-comment">// 4.&#x53D1;&#x9001;&#x6D88;&#x606F;</span>
+        String message = <span class="hljs-string">&quot;hello, rabbitmq!&quot;</span>;
+        channel.basicPublish(<span class="hljs-string">&quot;&quot;</span>, queueName, <span class="hljs-keyword">null</span>, message.getBytes());
+        System.out.println(<span class="hljs-string">&quot;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x6210;&#x529F;&#xFF1A;&#x3010;&quot;</span> + message + <span class="hljs-string">&quot;&#x3011;&quot;</span>);
+
+        <span class="hljs-comment">// 5.&#x5173;&#x95ED;&#x901A;&#x9053;&#x548C;&#x8FDE;&#x63A5;</span>
+        channel.close();
+        connection.close();
+    }
+}
+</code></pre>
+<h2 id="springamqp"><a name="springamqp" class="anchor-navigation-ex-anchor" href="#springamqp"><i class="fa fa-link" aria-hidden="true"></i></a>SpringAMQP</h2>
+<blockquote>
+<p>SpringAMQP&#x662F;&#x57FA;&#x4E8E;RabbitMQ&#x5C01;&#x88C5;&#x7684;&#x4E00;&#x5957;&#x6A21;&#x677F;&#xFF0C;&#x5E76;&#x4E14;&#x8FD8;&#x5229;&#x7528;SpringBoot&#x5BF9;&#x5176;&#x5B9E;&#x73B0;&#x4E86;&#x81EA;&#x52A8;&#x88C5;&#x914D;&#x3002;</p>
+</blockquote>
+<h3 id="&#x76F8;&#x5173;&#x914D;&#x7F6E;"><a name="&#x76F8;&#x5173;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x76F8;&#x5173;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76F8;&#x5173;&#x914D;&#x7F6E;</h3>
+<ul>
+<li><p>&#x5728;&#x7236;&#x6A21;&#x5757;&#x4E2D;&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!--AMQP&#x4F9D;&#x8D56;&#xFF0C;&#x5305;&#x542B;RabbitMQ--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-amqp<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x53D1;&#x5E03;&#x8005;&#x548C;&#x8BA2;&#x9605;&#x8005;&#x7684;application.yml&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">logging:</span>
+<span class="hljs-attr">  pattern:</span>
+<span class="hljs-attr">    dateformat:</span> MM-dd HH:mm:ss:SSS
+
+<span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  rabbitmq:</span>
+<span class="hljs-attr">    host:</span> <span class="hljs-number">192.168</span><span class="hljs-number">.65</span><span class="hljs-number">.182</span>
+<span class="hljs-attr">    port:</span> <span class="hljs-number">5672</span>
+<span class="hljs-attr">    username:</span> root
+<span class="hljs-attr">    password:</span> root
+<span class="hljs-attr">    virtual-host:</span> /
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x5668;"><a name="&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x5668;</h3>
+<blockquote>
+<p>Spring&#x53D1;&#x9001;&#x6D88;&#x606F;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x91C7;&#x7528;JDK&#x5E8F;&#x5217;&#x5316;&#x5C06;&#x4FE1;&#x606F;&#x53D1;&#x9001;&#x7ED9;MQ&#xFF0C;&#x63A5;&#x6536;&#x6D88;&#x606F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD8;&#x4F1A;&#x628A;&#x5B57;&#x8282;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x4E3A;Java&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5B58;&#x5728; &#x6570;&#x636E;&#x4F53;&#x79EF;&#x8FC7;&#x5927;&#x3001;&#x6709;&#x5B89;&#x5168;&#x6F0F;&#x6D1E;&#x3001;&#x53EF;&#x8BFB;&#x6027;&#x5DEE; &#x7684;&#x95EE;&#x9898;&#x3002;</p>
+</blockquote>
+<h4 id="&#x89E3;&#x51B3;&#x65B9;&#x5F0F;-&#x914D;&#x7F6E;json&#x8F6C;&#x6362;&#x5668;"><a name="&#x89E3;&#x51B3;&#x65B9;&#x5F0F;-&#x914D;&#x7F6E;json&#x8F6C;&#x6362;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x65B9;&#x5F0F;-&#x914D;&#x7F6E;json&#x8F6C;&#x6362;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x65B9;&#x5F0F;-&#x914D;&#x7F6E;JSON&#x8F6C;&#x6362;&#x5668;</h4>
+<ul>
+<li><p>&#x5728;&#x7236;&#x6A21;&#x5757;&#x4E2D;&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.fasterxml.jackson.dataformat<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>jackson-dataformat-xml<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.9.10<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.fasterxml.jackson.core<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>jackson-databind<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.9.10.5<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x53D1;&#x5E03;&#x8005;&#x548C;&#x8BA2;&#x9605;&#x8005;&#x7684;&#x542F;&#x52A8;&#x7C7B;&#x4E2D;&#x90FD;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;Bean</p>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x914D;&#x7F6E;&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x5668;</span>
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> MessageConverter <span class="hljs-title">jsonMessageConverter</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Jackson2JsonMessageConverter();
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x7B80;&#x5355;&#x6A21;&#x578B;"><a name="&#x7B80;&#x5355;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x5355;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B80;&#x5355;&#x6A21;&#x578B;</h3>
+<ul>
+<li><p>&#x6D88;&#x606F;&#x961F;&#x5217;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-meta">@Slf</span>4j
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RabbitConfig</span> </span>{
+
+    <span class="hljs-comment">//=========&#x7B80;&#x5355;&#x6A21;&#x578B;=========</span>
+    <span class="hljs-comment">//&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x540D;&#x5B57;&#x4E3A;simple.queue</span>
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">simpleQueue</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;simple.queue&quot;</span>);
+    }
+</code></pre>
+</li>
+<li><p>&#x76D1;&#x542C;&#x5668;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq.listener;
+
+<span class="hljs-keyword">import</span> lombok.extern.slf4j.Slf4j;
+<span class="hljs-keyword">import</span> org.springframework.amqp.rabbit.annotation.RabbitListener;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Component;
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@Slf</span>4j
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleQueueListener</span> </span>{
+    <span class="hljs-comment">/**
+     * &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;&#xFF0C;&#x53EA;&#x8981;&#x961F;&#x5217;&#x5217;&#x961F;&#x91CC;&#x9762;&#x6709;&#x6D88;&#x606F;&#xFF0C;&#x5C31;&#x4F1A;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;
+     * &#x5E76;&#x4E14;&#x628A;&#x961F;&#x5217;&#x7684;&#x6D88;&#x606F;&#x7684;&#x5185;&#x5BB9;&#x4F20;&#x9012;&#x7ED9;&#x65B9;&#x6CD5;&#x7684;&#x5F62;&#x53C2;message
+     */</span>
+    <span class="hljs-comment">//=========&#x7B80;&#x5355;&#x6A21;&#x578B;=========</span>
+    <span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;simple.queue&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">listener</span><span class="hljs-params">(String message)</span> </span>{
+        log.info(<span class="hljs-string">&quot;simple.listener&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF1A;&quot;</span> + message);
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x6D88;&#x606F;&#x53D1;&#x5E03;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq;
+
+<span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
+<span class="hljs-keyword">import</span> org.springframework.amqp.rabbit.core.RabbitTemplate;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.boot.test.context.SpringBootTest;
+
+<span class="hljs-meta">@SpringBootTest</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleQueueSend</span> </span>{
+
+    <span class="hljs-comment">//&#x4F7F;&#x7528;springAMQP&#x4E00;&#x5B9A;&#x8981;&#x521B;&#x5EFA;&#x6838;&#x5FC3;&#x7C7B;</span>
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> RabbitTemplate rabbitTemplate;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span></span>{
+        String message = <span class="hljs-string">&quot;&#x7B80;&#x5355;&#x6A21;&#x578B;&#x751F;&#x4EA7;&#x7684;&#x6D88;&#x606F;&quot;</span>;
+        String queueName = <span class="hljs-string">&quot;simple.queue&quot;</span>;
+
+        rabbitTemplate.convertAndSend(queueName,message);
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x961F;&#x5217;&#x6A21;&#x578B;"><a name="&#x961F;&#x5217;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x961F;&#x5217;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x961F;&#x5217;&#x6A21;&#x578B;</h3>
+<blockquote>
+<p>&#x591A;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x7ED1;&#x5B9A;&#x5230;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x540C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x53EA;&#x4F1A;&#x88AB;&#x4E00;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x5904;&#x7406;</p>
+</blockquote>
+<p><a href="images/image-20210717164238910.png" data-lightbox="9d602d5e-e446-475c-8d14-b2e50a3f9acc" data-title="image-20210717164238910"><img src="images/image-20210717164238910.png" alt="image-20210717164238910"></a></p>
+<ul>
+<li><p>&#x6D88;&#x606F;&#x961F;&#x5217;</p>
+<pre><code class="lang-java">    <span class="hljs-comment">//=========&#x961F;&#x5217;&#x6A21;&#x578B;=========</span>
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">workQueue</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;work.queue&quot;</span>);
+    }
+</code></pre>
+</li>
+<li><p>&#x76D1;&#x542C;&#x5668;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq.listener;
+
+<span class="hljs-keyword">import</span> lombok.extern.slf4j.Slf4j;
+<span class="hljs-keyword">import</span> org.springframework.amqp.rabbit.annotation.RabbitListener;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Component;
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@Slf</span>4j
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WorkQueueListener</span> </span>{
+
+    <span class="hljs-comment">//=========&#x961F;&#x5217;&#x6A21;&#x578B;=========</span>
+    <span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;work.queue&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">listener1</span><span class="hljs-params">(String message)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>{
+        log.info(<span class="hljs-string">&quot;work.listener1&#x6D88;&#x8D39;&#x7684;&#x6D88;&#x606F;&#xFF1A;&quot;</span> + message);
+        Thread.sleep(<span class="hljs-number">500</span>);
+    }
+
+    <span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;work.queue&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">listener2</span><span class="hljs-params">(String message)</span></span>{
+        log.info(<span class="hljs-string">&quot;work.listener2&#x6D88;&#x8D39;&#x7684;&#x6D88;&#x606F;&#xFF1A;&quot;</span> + message);
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x6D88;&#x606F;&#x53D1;&#x5E03;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq;
+
+<span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
+<span class="hljs-keyword">import</span> org.springframework.amqp.rabbit.core.RabbitTemplate;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.boot.test.context.SpringBootTest;
+
+<span class="hljs-meta">@SpringBootTest</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WorkQueueSend</span> </span>{
+
+    <span class="hljs-comment">//&#x4F7F;&#x7528;springAMQP&#x4E00;&#x5B9A;&#x8981;&#x521B;&#x5EFA;&#x6838;&#x5FC3;&#x7C7B;</span>
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> RabbitTemplate rabbitTemplate;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
+        String message = <span class="hljs-string">&quot;&#x961F;&#x5217;&#x6A21;&#x578B;&#x751F;&#x4EA7;&#x7684;&#x6D88;&#x606F;&quot;</span>;
+        String queueName = <span class="hljs-string">&quot;work.queue&quot;</span>;
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">10</span>; i++) {
+            rabbitTemplate.convertAndSend(queueName, i + <span class="hljs-string">&quot;:&quot;</span> + message);
+        }
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x80FD;&#x8005;&#x591A;&#x52B3;</p>
+<pre><code class="lang-yml"><span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x662F;&#x8F6E;&#x8BE2;&#x6D88;&#x8D39;&#x6D88;&#x606F;&#x961F;&#x5217;</span>
+<span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  rabbitmq:</span>
+<span class="hljs-attr">    listener:</span>
+<span class="hljs-attr">      simple:</span>
+<span class="hljs-attr">        prefetch:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># &#x6BCF;&#x6B21;&#x53EA;&#x80FD;&#x83B7;&#x53D6;&#x4E00;&#x6761;&#x6D88;&#x606F;&#xFF0C;&#x5904;&#x7406;&#x5B8C;&#x6210;&#x624D;&#x80FD;&#x83B7;&#x53D6;&#x4E0B;&#x4E00;&#x4E2A;&#x6D88;&#x606F;</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;"><a name="&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;</h3>
+<blockquote>
+<p>Exchange&#xFF08;&#x4EA4;&#x6362;&#x673A;&#xFF09;&#xFF1A;&#x53EA;&#x8D1F;&#x8D23;&#x8F6C;&#x53D1;&#x6D88;&#x606F;&#xFF0C;&#x4E0D;&#x5177;&#x5907;&#x5B58;&#x50A8;&#x6D88;&#x606F;&#x7684;&#x80FD;&#x529B;&#x3002;</p>
+<p>&#x4EA4;&#x6362;&#x673A;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ul>
+<li>Fanout&#xFF1A;&#x5E7F;&#x64AD;&#xFF0C;&#x5C06;&#x6D88;&#x606F;&#x4EA4;&#x7ED9;&#x6240;&#x6709;&#x7ED1;&#x5B9A;&#x5230;&#x4EA4;&#x6362;&#x673A;&#x7684;&#x961F;&#x5217;</li>
+<li>Direct&#xFF1A;&#x5B9A;&#x5411;&#xFF0C;&#x628A;&#x6D88;&#x606F;&#x4EA4;&#x7ED9;&#x7B26;&#x5408;&#x6307;&#x5B9A;routing key &#x7684;&#x961F;&#x5217;</li>
+<li>Topic&#xFF1A;&#x901A;&#x914D;&#x7B26;&#xFF0C;&#x628A;&#x6D88;&#x606F;&#x4EA4;&#x7ED9;&#x7B26;&#x5408;routing pattern&#xFF08;&#x8DEF;&#x7531;&#x6A21;&#x5F0F;&#xFF09; &#x7684;&#x961F;&#x5217;</li>
+</ul>
+</blockquote>
+<p><a href="images/image-20210717165438225.png" data-lightbox="613f6231-6d14-4657-a68d-7abe4267508b" data-title="image-20210717165438225"><img src="images/image-20210717165438225.png" alt="image-20210717165438225"></a></p>
+<ul>
+<li><p>&#x6D88;&#x606F;&#x961F;&#x5217;</p>
+<pre><code class="lang-java">    <span class="hljs-comment">//=========&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;=========</span>
+
+    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5E7F;&#x64AD;&#x4EA4;&#x6362;&#x673A;</span>
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> FanoutExchange <span class="hljs-title">fanoutExchange</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> FanoutExchange(<span class="hljs-string">&quot;fanout.exchange&quot;</span>);
+    }
+
+    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x4E24;&#x4E2A;&#x961F;&#x5217;</span>
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">fanoutQueue1</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;fanout.queue1&quot;</span>);
+    }
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">fanoutQueue2</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;fanout.queue2&quot;</span>);
+    }
+
+    <span class="hljs-comment">//&#x628A;&#x961F;&#x5217;&#x7ED1;&#x5B9A;&#x5230;&#x4EA4;&#x6362;&#x673A;&#x4E0A;</span>
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Binding <span class="hljs-title">bindingQueue1</span><span class="hljs-params">(FanoutExchange fanoutExchange, Queue fanoutQueue1)</span> </span>{
+        <span class="hljs-keyword">return</span> BindingBuilder.bind(fanoutQueue1).to(fanoutExchange);
+    }
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Binding <span class="hljs-title">bindingQueue2</span><span class="hljs-params">(FanoutExchange fanoutExchange, Queue fanoutQueue2)</span> </span>{
+        <span class="hljs-keyword">return</span> BindingBuilder.bind(fanoutQueue2).to(fanoutExchange);
+    }
+</code></pre>
+</li>
+<li><p>&#x76D1;&#x542C;&#x5668;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq.listener;
+
+<span class="hljs-keyword">import</span> lombok.extern.slf4j.Slf4j;
+<span class="hljs-keyword">import</span> org.springframework.amqp.rabbit.annotation.RabbitListener;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Component;
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@Slf</span>4j
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FanoutQueueListener</span> </span>{
+
+    <span class="hljs-comment">//=========&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;=========</span>
+    <span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;fanout.queue1&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">listener1</span><span class="hljs-params">(String message)</span></span>{
+        log.info(<span class="hljs-string">&quot;fanout.listener1&#x6D88;&#x8D39;&#x7684;&#x6D88;&#x606F;&#xFF1A;&quot;</span> + message);
+    }
+
+    <span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;fanout.queue2&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">listener2</span><span class="hljs-params">(String message)</span></span>{
+        log.info(<span class="hljs-string">&quot;fanout.listener2&#x6D88;&#x8D39;&#x7684;&#x6D88;&#x606F;&#xFF1A;&quot;</span> + message);
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x6D88;&#x606F;&#x53D1;&#x5E03;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq;
+
+<span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
+<span class="hljs-keyword">import</span> org.springframework.amqp.rabbit.core.RabbitTemplate;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.boot.test.context.SpringBootTest;
+
+<span class="hljs-meta">@SpringBootTest</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FanoutQueueSend</span> </span>{
+
+    <span class="hljs-comment">//&#x4F7F;&#x7528;springAMQP&#x4E00;&#x5B9A;&#x8981;&#x521B;&#x5EFA;&#x6838;&#x5FC3;&#x7C7B;</span>
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> RabbitTemplate rabbitTemplate;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
+        String message = <span class="hljs-string">&quot;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;&#x751F;&#x4EA7;&#x7684;&#x6D88;&#x606F;&quot;</span>;
+        String exchangeName = <span class="hljs-string">&quot;fanout.exchange&quot;</span>;
+
+        <span class="hljs-comment">//&#x53C2;&#x6570;&#x4E00;&#xFF1A;&#x4EA4;&#x6362;&#x673A; &#x53C2;&#x6570;&#x4E8C;&#xFF1A;&#x8DEF;&#x7531;key , &#x53C2;&#x6570;&#x4E09;&#xFF1A;&#x6D88;&#x606F;</span>
+        rabbitTemplate.convertAndSend(exchangeName, <span class="hljs-string">&quot;&quot;</span>, message);
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x8DEF;&#x7531;&#x6A21;&#x578B;"><a name="&#x8DEF;&#x7531;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x8DEF;&#x7531;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DEF;&#x7531;&#x6A21;&#x578B;</h3>
+<blockquote>
+<p>Direct&#xFF1A;&#x5B9A;&#x5411;&#xFF0C;&#x628A;&#x6D88;&#x606F;&#x4EA4;&#x7ED9;&#x7B26;&#x5408;&#x6307;&#x5B9A;routing key &#x7684;&#x961F;&#x5217;</p>
+</blockquote>
+<p><a href="images/image-20210717170041447.png" data-lightbox="630c3d98-4abb-4e5c-8631-c86d16ae9e70" data-title="image-20210717170041447"><img src="images/image-20210717170041447.png" alt="image-20210717170041447"></a></p>
+<ul>
+<li><p>&#x6D88;&#x606F;&#x961F;&#x5217;</p>
+<pre><code class="lang-java">    <span class="hljs-comment">//=========&#x8DEF;&#x7531;&#x6A21;&#x578B;=========</span>
+    <span class="hljs-comment">//&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;@Bean&#x5B9E;&#x73B0;</span>
+    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x4EA4;&#x6362;&#x673A;</span>
+    <span class="hljs-comment">/*@Bean
+    public DirectExchange directExchange(){
+        return new DirectExchange(&quot;direct.exchange&quot;);
+    }
+
+    //&#x5B9A;&#x4E49;&#x4E24;&#x4E2A;&#x961F;&#x5217;
+    @Bean
+    public Queue directQueue1(){
+        return new Queue(&quot;direct.queue1&quot;);
+    }
+    @Bean
+    public Queue directQueue2(){
+        return new Queue(&quot;direct.queue2&quot;);
+    }
+
+    //&#x628A;&#x961F;&#x5217;&#x7ED1;&#x5B9A;&#x5230;&#x4EA4;&#x6362;&#x673A;&#x4E0A;
+    @Bean
+    public Binding bindingQueue3(DirectExchange directExchange, Queue directQueue1){
+        return BindingBuilder.bind(directQueue1).to(directExchange).with(&quot;user&quot;);
+    }
+    @Bean
+    public Binding bindingQueue4(DirectExchange directExchange, Queue directQueue2){
+        return BindingBuilder.bind(directQueue2).to(directExchange).with(&quot;order&quot;);
+    }*/</span>
+
+    <span class="hljs-comment">//&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;@RabbitListener&#x6CE8;&#x89E3;&#x5B9E;&#x73B0;</span>
+    <span class="hljs-comment">/**
+     * QueueBinding&#x6CE8;&#x89E3;&#x7684;&#x4F5C;&#x7528;&#xFF1A;
+     * 1. &#x5728;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x5982;&#x679C;&#x53D1;&#x73B0;rabbitmq&#x91CC;&#x9762;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x4EA4;&#x6362;&#x673A;&#x3001;&#x961F;&#x5217;&#xFF0C;&#x5C31;&#x4F1A;&#x9A6C;&#x4E0A;&#x521B;&#x5EFA;&#x4EA4;&#x6362;&#x673A;&#x4E0E;&#x961F;&#x5217;
+     * 2. &#x5982;&#x679C;Rabbitmq&#x4E2D;&#x4E00;&#x65E6;&#x5B58;&#x5728;&#x5BF9;&#x5E94;&#x4EA4;&#x6362;&#x673A;&#x4E0E;&#x961F;&#x5217;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x53EA;&#x6709;&#x76D1;&#x542C;&#x961F;&#x5217;&#x7684;&#x4F5C;&#x7528;&#x3002;
+     */</span>
+    <span class="hljs-meta">@RabbitListener</span>(bindings = {
+            <span class="hljs-meta">@QueueBinding</span>(
+                    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x4EA4;&#x6362;&#x673A;</span>
+                    exchange = <span class="hljs-meta">@Exchange</span>(name = <span class="hljs-string">&quot;direct.exchange&quot;</span>, type = ExchangeTypes.DIRECT),
+                    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x961F;&#x5217;</span>
+                    value = <span class="hljs-meta">@org</span>.springframework.amqp.rabbit.annotation.Queue(<span class="hljs-string">&quot;direct.queue1&quot;</span>),
+                    <span class="hljs-comment">//&#x8DEF;&#x7531;key</span>
+                    key = <span class="hljs-string">&quot;user&quot;</span>
+            )
+    })
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">directListener1</span><span class="hljs-params">(String message)</span> </span>{
+        log.info(<span class="hljs-string">&quot;direct.listener1&#x6D88;&#x8D39;&#x7684;&#x6D88;&#x606F;&#xFF1A;&quot;</span> + message);
+    }
+
+    <span class="hljs-meta">@RabbitListener</span>(bindings = {
+            <span class="hljs-meta">@QueueBinding</span>(
+                    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x4EA4;&#x6362;&#x673A;</span>
+                    exchange = <span class="hljs-meta">@Exchange</span>(name = <span class="hljs-string">&quot;direct.exchange&quot;</span>, type = ExchangeTypes.DIRECT),
+                    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x961F;&#x5217;</span>
+                    value = <span class="hljs-meta">@org</span>.springframework.amqp.rabbit.annotation.Queue(<span class="hljs-string">&quot;direct.queue2&quot;</span>),
+                    <span class="hljs-comment">//&#x8DEF;&#x7531;key</span>
+                    key = <span class="hljs-string">&quot;order&quot;</span>
+            )
+    })
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">directListener2</span><span class="hljs-params">(String message)</span> </span>{
+        log.info(<span class="hljs-string">&quot;direct.listener2&#x6D88;&#x8D39;&#x7684;&#x6D88;&#x606F;&#xFF1A;&quot;</span> + message);
+    }
+</code></pre>
+</li>
+<li><p>&#x76D1;&#x542C;&#x5668;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq.listener;
+
+<span class="hljs-keyword">import</span> lombok.extern.slf4j.Slf4j;
+<span class="hljs-keyword">import</span> org.springframework.amqp.rabbit.annotation.RabbitListener;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Component;
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@Slf</span>4j
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DirectQueueListener</span> </span>{
+
+    <span class="hljs-comment">//=========&#x8DEF;&#x7531;&#x6A21;&#x578B;=========</span>
+    <span class="hljs-comment">//&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;@Bean&#x5B9E;&#x73B0;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x624D;&#x9700;&#x8981;&#x5355;&#x72EC;&#x5199;listener</span>
+    <span class="hljs-comment">//&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;@RabbitListener&#x6CE8;&#x89E3;&#x5B9E;&#x73B0;&#x4E0D;&#x9700;&#x8981;&#x5355;&#x72EC;&#x5199;</span>
+<span class="hljs-comment">/*    @RabbitListener(queues = &quot;direct.queue1&quot;)
+    public void listener1(String message){
+        log.info(&quot;direct.listener1&#x6D88;&#x8D39;&#x7684;&#x6D88;&#x606F;&#xFF1A;&quot; + message);
+    }
+
+    @RabbitListener(queues = &quot;direct.queue2&quot;)
+    public void listener2(String message){
+        log.info(&quot;direct.listener2&#x6D88;&#x8D39;&#x7684;&#x6D88;&#x606F;&#xFF1A;&quot; + message);
+    }*/</span>
+}
+</code></pre>
+</li>
+<li><p>&#x6D88;&#x606F;&#x53D1;&#x5E03;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq;
+
+<span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
+<span class="hljs-keyword">import</span> org.springframework.amqp.rabbit.core.RabbitTemplate;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.boot.test.context.SpringBootTest;
+
+<span class="hljs-meta">@SpringBootTest</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DirectQueueSend</span> </span>{
+
+    <span class="hljs-comment">//&#x4F7F;&#x7528;springAMQP&#x4E00;&#x5B9A;&#x8981;&#x521B;&#x5EFA;&#x6838;&#x5FC3;&#x7C7B;</span>
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> RabbitTemplate rabbitTemplate;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
+        String message = <span class="hljs-string">&quot;&#x8DEF;&#x7531;&#x6A21;&#x578B;&#x751F;&#x4EA7;&#x7684;user&#x6D88;&#x606F;&quot;</span>;
+        String exchangeName = <span class="hljs-string">&quot;direct.exchange&quot;</span>;
+        String routingKey = <span class="hljs-string">&quot;user&quot;</span>;
+
+        <span class="hljs-comment">//&#x53C2;&#x6570;&#x4E00;&#xFF1A;&#x4EA4;&#x6362;&#x673A; &#x53C2;&#x6570;&#x4E8C;&#xFF1A;&#x8DEF;&#x7531;key , &#x53C2;&#x6570;&#x4E09;&#xFF1A;&#x6D88;&#x606F;</span>
+        rabbitTemplate.convertAndSend(exchangeName, routingKey, message);
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x4E3B;&#x9898;&#x6A21;&#x578B;"><a name="&#x4E3B;&#x9898;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x4E3B;&#x9898;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3B;&#x9898;&#x6A21;&#x578B;</h3>
+<p><a href="images/image-20210717170705380.png" data-lightbox="2d2ef95a-3ead-46c1-b233-28d2df58853c" data-title="image-20210717170705380"><img src="images/image-20210717170705380.png" alt="image-20210717170705380"></a></p>
+<p><code>Routingkey</code> &#x4E00;&#x822C;&#x90FD;&#x662F;&#x6709;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5355;&#x8BCD;&#x7EC4;&#x6210;&#xFF0C;&#x591A;&#x4E2A;&#x5355;&#x8BCD;&#x4E4B;&#x95F4;&#x4EE5;&#x201D;.&#x201D;&#x5206;&#x5272;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A; <code>item.insert</code></p>
+<p> &#x901A;&#x914D;&#x7B26;&#x89C4;&#x5219;&#xFF1A;</p>
+<p><code>#</code>&#xFF1A;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8BCD;</p>
+<p><code>*</code>&#xFF1A;&#x5339;&#x914D;&#x4E0D;&#x591A;&#x4E0D;&#x5C11;&#x6070;&#x597D;1&#x4E2A;&#x8BCD;</p>
+<p>&#x4E3E;&#x4F8B;&#xFF1A;</p>
+<p><code>item.#</code>&#xFF1A;&#x80FD;&#x591F;&#x5339;&#x914D;<code>item.spu.insert</code> &#x6216;&#x8005; <code>item.spu</code></p>
+<p><code>item.*</code>&#xFF1A;&#x53EA;&#x80FD;&#x5339;&#x914D;<code>item.spu</code></p>
+<ul>
+<li><p>&#x6D88;&#x606F;&#x961F;&#x5217;</p>
+<pre><code class="lang-java">    <span class="hljs-comment">//=========&#x4E3B;&#x9898;&#x6A21;&#x578B;=========</span>
+    <span class="hljs-meta">@RabbitListener</span>(bindings = {
+            <span class="hljs-meta">@QueueBinding</span>(
+                    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x4EA4;&#x6362;&#x673A;</span>
+                    exchange = <span class="hljs-meta">@Exchange</span>(name = <span class="hljs-string">&quot;topic.exchange&quot;</span>, type = ExchangeTypes.TOPIC),
+                    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x961F;&#x5217;</span>
+                    value = <span class="hljs-meta">@org</span>.springframework.amqp.rabbit.annotation.Queue(<span class="hljs-string">&quot;topic.queue1&quot;</span>),
+                    <span class="hljs-comment">//&#x8DEF;&#x7531;key</span>
+                    key = <span class="hljs-string">&quot;work.#&quot;</span>
+            )
+    })
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">topicListener1</span><span class="hljs-params">(String message)</span> </span>{
+        log.info(<span class="hljs-string">&quot;topic.listener1&#x6D88;&#x8D39;&#x7684;&#x6D88;&#x606F;&#xFF1A;&quot;</span> + message);
+    }
+
+    <span class="hljs-meta">@RabbitListener</span>(bindings = {
+            <span class="hljs-meta">@QueueBinding</span>(
+                    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x4EA4;&#x6362;&#x673A;</span>
+                    exchange = <span class="hljs-meta">@Exchange</span>(name = <span class="hljs-string">&quot;topic.exchange&quot;</span>,type = ExchangeTypes.TOPIC),
+                    <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x961F;&#x5217;</span>
+                    value = <span class="hljs-meta">@org</span>.springframework.amqp.rabbit.annotation.Queue(<span class="hljs-string">&quot;topic.queue2&quot;</span>),
+                    key = <span class="hljs-string">&quot;work.*&quot;</span>
+            )
+    })
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">topicListener2</span><span class="hljs-params">(String message)</span></span>{
+        log.info(<span class="hljs-string">&quot;topic.listener2&#x6D88;&#x8D39;&#x7684;&#x6D88;&#x606F;&#xFF1A;&quot;</span> + message);
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x6D88;&#x606F;&#x53D1;&#x5E03;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.mq;
+
+<span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
+<span class="hljs-keyword">import</span> org.springframework.amqp.rabbit.core.RabbitTemplate;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.boot.test.context.SpringBootTest;
+
+<span class="hljs-meta">@SpringBootTest</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TopicQueueSend</span> </span>{
+
+    <span class="hljs-comment">//&#x4F7F;&#x7528;springAMQP&#x4E00;&#x5B9A;&#x8981;&#x521B;&#x5EFA;&#x6838;&#x5FC3;&#x7C7B;</span>
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> RabbitTemplate rabbitTemplate;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
+        String message = <span class="hljs-string">&quot;&#x4E3B;&#x9898;&#x6A21;&#x578B;&#x751F;&#x4EA7;&#x7684;&#x6D88;&#x606F;&quot;</span>;
+        String exchangeName = <span class="hljs-string">&quot;topic.exchange&quot;</span>;
+        String routingKey = <span class="hljs-string">&quot;work.SZ.top100&quot;</span>;
+
+        <span class="hljs-comment">//&#x53C2;&#x6570;&#x4E00;&#xFF1A;&#x4EA4;&#x6362;&#x673A; &#x53C2;&#x6570;&#x4E8C;&#xFF1A;&#x8DEF;&#x7531;key , &#x53C2;&#x6570;&#x4E09;&#xFF1A;&#x6D88;&#x606F;</span>
+        rabbitTemplate.convertAndSend(exchangeName, routingKey, message);
+    }
+}
+</code></pre>
+</li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2023-01-31 21:25 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Day55-Docker.html" class="navigation navigation-prev " aria-label="Previous page: Day55-Docker">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Day57~59-ElasticSearch.html" class="navigation navigation-next " aria-label="Next page: Day57~59-ElasticSearch">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Day56-RabbitMQ","level":"1.10.55","depth":2,"next":{"title":"Day57~59-ElasticSearch","level":"1.10.56","depth":2,"path":"Java笔记/Day57~59-ElasticSearch.md","ref":"Java笔记/Day57~59-ElasticSearch.md","articles":[]},"previous":{"title":"Day55-Docker","level":"1.10.54","depth":2,"path":"Java笔记/Day55-Docker.md","ref":"Java笔记/Day55-Docker.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://none.org.cn/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"0day计划","language":"zh-hans","links":{"sidebar":{"None's 树洞":"https://none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"Java笔记/Day56-RabbitMQ.md","mtime":"2023-01-31T13:25:01.201Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T00:23:40.981Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

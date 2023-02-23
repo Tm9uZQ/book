@@ -1136,7 +1136,7 @@ def outer():
     return inner     #返回了inner函数的地址
 
 inn = outer()        #全局变量指向了一个内部函数
-inn()
+inn()                #输出1
 ```
 
 

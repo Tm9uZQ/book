@@ -1,0 +1,3206 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Day53~54-SpringCloud · 0day计划</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="None">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Day55-Docker.html" />
+    
+    
+    <link rel="prev" href="Day52-MyBatisPlus+乐观锁.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://none.org.cn" target="_blank" class="custom-link">None's 树洞</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">《 0day计划 》</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    社工
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../社工/获取位置信息.html">
+            
+                <a href="../社工/获取位置信息.html">
+            
+                    
+                    获取位置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第一阶段-基础篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第一阶段-基础篇/零基础必看课程.html">
+            
+                <a href="../第一阶段-基础篇/零基础必看课程.html">
+            
+                    
+                    零基础必看课程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第一阶段-基础篇/Windows基础.html">
+            
+                <a href="../第一阶段-基础篇/Windows基础.html">
+            
+                    
+                    Windows基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第一阶段-基础篇/数据库基础.html">
+            
+                <a href="../第一阶段-基础篇/数据库基础.html">
+            
+                    
+                    数据库基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第二阶段-Web安全篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                <a href="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                    
+                    2019网络安全训练营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                <a href="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                    
+                    BurpSuite学习使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                <a href="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                    
+                    Web安全攻防学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第六阶段-Python黑客编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                <a href="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                    
+                    Python编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    软考-信息安全工程师
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../软考-信息安全工程师/第一版.html">
+            
+                <a href="../软考-信息安全工程师/第一版.html">
+            
+                    
+                    第一版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    兄弟连Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../兄弟连Linux/Linux系统简介.html">
+            
+                <a href="../兄弟连Linux/Linux系统简介.html">
+            
+                    
+                    Linux系统简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../兄弟连Linux/Linux常用命令.html">
+            
+                <a href="../兄弟连Linux/Linux常用命令.html">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../兄弟连Linux/文本编辑器Vim.html">
+            
+                <a href="../兄弟连Linux/文本编辑器Vim.html">
+            
+                    
+                    文本编辑器Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../兄弟连Linux/软件包管理.html">
+            
+                <a href="../兄弟连Linux/软件包管理.html">
+            
+                    
+                    软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    韩立刚计算机网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../韩立刚计算机网络/概述.html">
+            
+                <a href="../韩立刚计算机网络/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../韩立刚计算机网络/物理层.html">
+            
+                <a href="../韩立刚计算机网络/物理层.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../韩立刚计算机网络/数据链路层.html">
+            
+                <a href="../韩立刚计算机网络/数据链路层.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    韩立刚CCNA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../韩立刚CCNA/计算机网络.html">
+            
+                <a href="../韩立刚CCNA/计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../韩立刚CCNA/TCP&IP.html">
+            
+                <a href="../韩立刚CCNA/TCP&IP.html">
+            
+                    
+                    TCP&IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../韩立刚CCNA/IP地址和子网.html">
+            
+                <a href="../韩立刚CCNA/IP地址和子网.html">
+            
+                    
+                    IP地址和子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../韩立刚CCNA/静态路由.html">
+            
+                <a href="../韩立刚CCNA/静态路由.html">
+            
+                    
+                    静态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../韩立刚CCNA/动态路由.html">
+            
+                <a href="../韩立刚CCNA/动态路由.html">
+            
+                    
+                    动态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../韩立刚CCNA/交换机.html">
+            
+                <a href="../韩立刚CCNA/交换机.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Java笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="01-面试题.html">
+            
+                <a href="01-面试题.html">
+            
+                    
+                    01-面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="02-未归类知识点.html">
+            
+                <a href="02-未归类知识点.html">
+            
+                    
+                    02-未归类知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="基础班day01.html">
+            
+                <a href="基础班day01.html">
+            
+                    
+                    基础班day01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="基础班day02.html">
+            
+                <a href="基础班day02.html">
+            
+                    
+                    基础班day02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="基础班day03.html">
+            
+                <a href="基础班day03.html">
+            
+                    
+                    基础班day03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="基础班day04.html">
+            
+                <a href="基础班day04.html">
+            
+                    
+                    基础班day04
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="基础班day05.html">
+            
+                <a href="基础班day05.html">
+            
+                    
+                    基础班day05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="基础班day06.html">
+            
+                <a href="基础班day06.html">
+            
+                    
+                    基础班day06
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="基础班day07.html">
+            
+                <a href="基础班day07.html">
+            
+                    
+                    基础班day07
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="基础班day08.html">
+            
+                <a href="基础班day08.html">
+            
+                    
+                    基础班day08
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="基础班day09.html">
+            
+                <a href="基础班day09.html">
+            
+                    
+                    基础班day09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="基础班day10.html">
+            
+                <a href="基础班day10.html">
+            
+                    
+                    基础班day10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Day01-Static+继承+权限修饰.html">
+            
+                <a href="Day01-Static+继承+权限修饰.html">
+            
+                    
+                    Day01-Static+继承+权限修饰
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.14" data-path="Day02-抽象+接口+单例.html">
+            
+                <a href="Day02-抽象+接口+单例.html">
+            
+                    
+                    Day02-抽象+接口+单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.15" data-path="Day03-多态+内部类+枚举.html">
+            
+                <a href="Day03-多态+内部类+枚举.html">
+            
+                    
+                    Day03-多态+内部类+枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.16" data-path="Day04-常用API+正则.html">
+            
+                <a href="Day04-常用API+正则.html">
+            
+                    
+                    Day04-常用API+正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.17" data-path="Day05-数据结构+List集合+泛型.html">
+            
+                <a href="Day05-数据结构+List集合+泛型.html">
+            
+                    
+                    Day05-数据结构+List集合+泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.18" data-path="Day06-Set集合+迭代器+增强for.html">
+            
+                <a href="Day06-Set集合+迭代器+增强for.html">
+            
+                    
+                    Day06-Set集合+迭代器+增强for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.19" data-path="Day07-Map集合.html">
+            
+                <a href="Day07-Map集合.html">
+            
+                    
+                    Day07-Map集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.20" data-path="Day08-异常+多线程.html">
+            
+                <a href="Day08-异常+多线程.html">
+            
+                    
+                    Day08-异常+多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.21" data-path="Day09-线程池+Lambda+Stream流.html">
+            
+                <a href="Day09-线程池+Lambda+Stream流.html">
+            
+                    
+                    Day09-线程池+Lambda+Stream流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.22" data-path="Day10-File+IO流.html">
+            
+                <a href="Day10-File+IO流.html">
+            
+                    
+                    Day10-File+IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.23" data-path="Day11-IO流+装饰模式.html">
+            
+                <a href="Day11-IO流+装饰模式.html">
+            
+                    
+                    Day11-IO流+装饰模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.24" data-path="Day12-网络编程+junit.html">
+            
+                <a href="Day12-网络编程+junit.html">
+            
+                    
+                    Day12-网络编程+junit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.25" data-path="Day13-反射+注解.html">
+            
+                <a href="Day13-反射+注解.html">
+            
+                    
+                    Day13-反射+注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.26" data-path="Day14-XML+Dom4j+动态代理.html">
+            
+                <a href="Day14-XML+Dom4j+动态代理.html">
+            
+                    
+                    Day14-XML+Dom4j+动态代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.27" data-path="Day15-MySQL基础.html">
+            
+                <a href="Day15-MySQL基础.html">
+            
+                    
+                    Day15-MySQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.28" data-path="Day16-MySQL高级.html">
+            
+                <a href="Day16-MySQL高级.html">
+            
+                    
+                    Day16-MySQL高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.29" data-path="Day17-JDBC.html">
+            
+                <a href="Day17-JDBC.html">
+            
+                    
+                    Day17-JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.30" data-path="Day18-Maven+MyBatis入门.html">
+            
+                <a href="Day18-Maven+MyBatis入门.html">
+            
+                    
+                    Day18-Maven+MyBatis入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.31" data-path="Day19-MyBatis进阶.html">
+            
+                <a href="Day19-MyBatis进阶.html">
+            
+                    
+                    Day19-MyBatis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.32" data-path="Day20-MyBatis高级.html">
+            
+                <a href="Day20-MyBatis高级.html">
+            
+                    
+                    Day20-MyBatis高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.33" data-path="Day21-HTML5+CSS.html">
+            
+                <a href="Day21-HTML5+CSS.html">
+            
+                    
+                    Day21-HTML5+CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.34" data-path="Day22-JavaScript.html">
+            
+                <a href="Day22-JavaScript.html">
+            
+                    
+                    Day22-JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.35" data-path="Day23-HTTP+Tomcat+Servlet.html">
+            
+                <a href="Day23-HTTP+Tomcat+Servlet.html">
+            
+                    
+                    Day23-HTTP+Tomcat+Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.36" data-path="Day24-Request+Response.html">
+            
+                <a href="Day24-Request+Response.html">
+            
+                    
+                    Day24-Request+Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.37" data-path="Day25-Jsp+MVC.html">
+            
+                <a href="Day25-Jsp+MVC.html">
+            
+                    
+                    Day25-Jsp+MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.38" data-path="Day26-Cookie+Session.html">
+            
+                <a href="Day26-Cookie+Session.html">
+            
+                    
+                    Day26-Cookie+Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.39" data-path="Day27-Filter+Listener.html">
+            
+                <a href="Day27-Filter+Listener.html">
+            
+                    
+                    Day27-Filter+Listener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.40" data-path="Day28-Json+Vue.html">
+            
+                <a href="Day28-Json+Vue.html">
+            
+                    
+                    Day28-Json+Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.41" data-path="Day29-Element.html">
+            
+                <a href="Day29-Element.html">
+            
+                    
+                    Day29-Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.42" data-path="Day30-brand综合案例.html">
+            
+                <a href="Day30-brand综合案例.html">
+            
+                    
+                    Day30-brand综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.43" data-path="Day31~35-Spring.html">
+            
+                <a href="Day31~35-Spring.html">
+            
+                    
+                    Day31~35-Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.44" data-path="Day36-SSM.html">
+            
+                <a href="Day36-SSM.html">
+            
+                    
+                    Day36-SSM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.45" data-path="Day37-Maven高级.html">
+            
+                <a href="Day37-Maven高级.html">
+            
+                    
+                    Day37-Maven高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.46" data-path="Day38-SpringBoot.html">
+            
+                <a href="Day38-SpringBoot.html">
+            
+                    
+                    Day38-SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.47" data-path="Day39-Git.html">
+            
+                <a href="Day39-Git.html">
+            
+                    
+                    Day39-Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.48" data-path="Day40~45-瑞吉点餐.html">
+            
+                <a href="Day40~45-瑞吉点餐.html">
+            
+                    
+                    Day40~45-瑞吉点餐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.49" data-path="Day46~47-Linux.html">
+            
+                <a href="Day46~47-Linux.html">
+            
+                    
+                    Day46~47-Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.50" data-path="Day48-Redis.html">
+            
+                <a href="Day48-Redis.html">
+            
+                    
+                    Day48-Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.51" data-path="Day49~51-瑞吉点餐优化.html">
+            
+                <a href="Day49~51-瑞吉点餐优化.html">
+            
+                    
+                    Day49~51-瑞吉点餐优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.52" data-path="Day52-MyBatisPlus+乐观锁.html">
+            
+                <a href="Day52-MyBatisPlus+乐观锁.html">
+            
+                    
+                    Day52-MyBatisPlus+乐观锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.53" data-path="Day53~54-SpringCloud.html">
+            
+                <a href="Day53~54-SpringCloud.html">
+            
+                    
+                    Day53~54-SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.54" data-path="Day55-Docker.html">
+            
+                <a href="Day55-Docker.html">
+            
+                    
+                    Day55-Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.55" data-path="Day56-RabbitMQ.html">
+            
+                <a href="Day56-RabbitMQ.html">
+            
+                    
+                    Day56-RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.56" data-path="Day57~59-ElasticSearch.html">
+            
+                <a href="Day57~59-ElasticSearch.html">
+            
+                    
+                    Day57~59-ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.57" data-path="Day60-Sentinel.html">
+            
+                <a href="Day60-Sentinel.html">
+            
+                    
+                    Day60-Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.58" data-path="Day61-Seata.html">
+            
+                <a href="Day61-Seata.html">
+            
+                    
+                    Day61-Seata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.59" data-path="Day62~64-黑马商城.html">
+            
+                <a href="Day62~64-黑马商城.html">
+            
+                    
+                    Day62~64-黑马商城
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.60" data-path="Day65-黑马头条.html">
+            
+                <a href="Day65-黑马头条.html">
+            
+                    
+                    Day65-黑马头条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.61" data-path="就业加强-MySQL.html">
+            
+                <a href="就业加强-MySQL.html">
+            
+                    
+                    就业加强-MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    面试必会篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                <a href="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                    
+                    01-面试必会-JAVA基础篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                <a href="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                    
+                    02-面试必会-SSM框架篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                <a href="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                    
+                    03-面试必会-Mysql篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                <a href="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                    
+                    04-面试必会-Redis篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                <a href="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                    
+                    05-面试必会-SpringBoot&SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                <a href="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                    
+                    06-面试必会-MQ篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../面试必会篇/07-面试必须-事物控制.html">
+            
+                <a href="../面试必会篇/07-面试必须-事物控制.html">
+            
+                    
+                    07-面试必须-事物控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Spring系列面试题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Spring系列面试题/面试题.html">
+            
+                <a href="../Spring系列面试题/面试题.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Day53~54-SpringCloud</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#springcloud"><b></b>SpringCloud</a></li><ul><li><span class="title-icon "></span><a href="#&#x5FAE;&#x670D;&#x52A1;"><b></b>&#x5FAE;&#x670D;&#x52A1;</a></li><li><span class="title-icon "></span><a href="#&#x670D;&#x52A1;&#x62C6;&#x5206;"><b></b>&#x670D;&#x52A1;&#x62C6;&#x5206;</a></li><li><span class="title-icon "></span><a href="#&#x8FDC;&#x7A0B;&#x8C03;&#x7528;"><b></b>&#x8FDC;&#x7A0B;&#x8C03;&#x7528;</a></li><li><span class="title-icon "></span><a href="#eureka&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;"><b></b>Eureka&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;</a></li><li><span class="title-icon "></span><a href="#ribbon&#x8D1F;&#x8F7D;&#x5747;&#x8861;"><b></b>Ribbon&#x8D1F;&#x8F7D;&#x5747;&#x8861;</a></li><li><span class="title-icon "></span><a href="#nacos&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;"><b></b>Nacos&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;</a></li><li><span class="title-icon "></span><a href="#nacos&#x4E0E;eureka&#x7684;&#x533A;&#x522B;"><b></b>Nacos&#x4E0E;Eureka&#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#nacos&#x914D;&#x7F6E;&#x7BA1;&#x7406;"><b></b>Nacos&#x914D;&#x7F6E;&#x7BA1;&#x7406;</a></li><li><span class="title-icon "></span><a href="#feign&#x8FDC;&#x7A0B;&#x8C03;&#x7528;"><b></b>Feign&#x8FDC;&#x7A0B;&#x8C03;&#x7528;</a></li><li><span class="title-icon "></span><a href="#gateway&#x670D;&#x52A1;&#x7F51;&#x5173;"><b></b>GateWay&#x670D;&#x52A1;&#x7F51;&#x5173;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="springcloud"><a name="springcloud" class="anchor-navigation-ex-anchor" href="#springcloud"><i class="fa fa-link" aria-hidden="true"></i></a>SpringCloud</h2>
+<blockquote>
+<p>SpringCloud&#x96C6;&#x6210;&#x4E86;&#x5404;&#x79CD;&#x5FAE;&#x670D;&#x52A1;&#x529F;&#x80FD;==&#x7EC4;&#x4EF6;==&#xFF0C;==&#x5E76;&#x57FA;&#x4E8E;SpringBoot&#x5B9E;&#x73B0;&#x4E86;&#x8FD9;&#x4E9B;&#x7EC4;&#x4EF6;&#x7684;&#x81EA;&#x52A8;&#x88C5;&#x914D;==&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x4F9B;&#x4E86;&#x826F;&#x597D;&#x7684;&#x5F00;&#x7BB1;&#x5373;&#x7528;&#x4F53;&#x9A8C;&#x3002;SpringCloud&#x5E95;&#x5C42;&#x662F;&#x4F9D;&#x8D56;&#x4E8E;SpringBoot&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x7248;&#x672C;&#x7684;&#x517C;&#x5BB9;&#x5173;&#x7CFB;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x5355;&#x4F53;&#x67B6;&#x6784;&#xFF1A;&#x5C06;&#x4E1A;&#x52A1;&#x7684;&#x6240;&#x6709;&#x529F;&#x80FD;&#x96C6;&#x4E2D;&#x5728;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x4E2D;&#x5F00;&#x53D1;&#xFF0C;&#x6253;&#x6210;&#x4E00;&#x4E2A;&#x5305;&#x90E8;&#x7F72;&#x3002;</p>
+<ul>
+<li>&#x4F18;&#x70B9;&#xFF1A;&#x67B6;&#x6784;&#x7B80;&#x5355;&#xFF0C;&#x90E8;&#x7F72;&#x6210;&#x672C;&#x4F4E;&#xFF1B;</li>
+<li>&#x7F3A;&#x70B9;&#xFF1A;<ul>
+<li>&#x8026;&#x5408;&#x5EA6;&#x9AD8;</li>
+<li>&#x65E0;&#x6CD5;&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x5757;&#x8FDB;&#x884C;&#x9488;&#x5BF9;&#x6027;&#x6027;&#x80FD;&#x4F18;&#x5316;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x53EA;&#x80FD;&#x6574;&#x4F53;&#x4E00;&#x8D77;&#x63D0;&#x9AD8;</li>
+<li>&#x5355;&#x70B9;&#x5BB9;&#x9519;&#x7387;&#x4F4E;&#xFF0C;&#x5E76;&#x53D1;&#x80FD;&#x529B;&#x5DEE;&#xFF0C;&#x5168;&#x90E8;&#x529F;&#x80FD;&#x96C6;&#x4E2D;&#x5728;&#x4E00;&#x4E2A;&#x5DE5;&#x7A0B;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E8E;&#x5927;&#x578B;&#x9879;&#x76EE;&#x4E0D;&#x6613;&#x5F00;&#x53D1;&#x3001;&#x6269;&#x5C55;&#x53CA;&#x7EF4;&#x62A4;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x67B6;&#x6784;&#xFF1A;&#x6839;&#x636E;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x5BF9;&#x7CFB;&#x7EDF;&#x505A;&#x62C6;&#x5206;&#xFF0C;&#x6BCF;&#x4E2A;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x4F5C;&#x4E3A;&#x72EC;&#x7ACB;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#xFF0C;&#x79F0;&#x4E3A;&#x4E00;&#x4E2A;&#x670D;&#x52A1;</p>
+<ul>
+<li>&#x5206;&#x5E03;&#x5F0F;&#xFF1A; &#x628A;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#x62C6;&#x5206;n&#x4E2A;&#x4E8B;&#x60C5;&#x6765;&#x505A;&#xFF0C;n&#x4E2A;&#x4E8B;&#x60C5;&#x5408;&#x8D77;&#x6765;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x9879;&#x76EE;</li>
+<li>&#x96C6;&#x7FA4;&#xFF1A; &#x591A;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#x4E00;&#x6837;</li>
+<li>&#x5206;&#x5E03;&#x5F0F;&#x67B6;&#x6784;&#x7684;&#x4F18;&#x7F3A;&#x70B9;<ul>
+<li>&#x4F18;&#x70B9;&#xFF1A;&#x964D;&#x4F4E;&#x670D;&#x52A1;&#x8026;&#x5408;&#xFF0C;&#x6709;&#x5229;&#x4E8E;&#x670D;&#x52A1;&#x5347;&#x7EA7;&#x548C;&#x62D3;&#x5C55;</li>
+<li>&#x7F3A;&#x70B9;&#xFF1A;&#x670D;&#x52A1;&#x8C03;&#x7528;&#x5173;&#x7CFB;&#x9519;&#x7EFC;&#x590D;&#x6742;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5FAE;&#x670D;&#x52A1;"><a name="&#x5FAE;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x5FAE;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FAE;&#x670D;&#x52A1;</h3>
+<p>&#x5FAE;&#x670D;&#x52A1;&#x662F;&#x4E00;&#x79CD;&#x7ECF;&#x8FC7;&#x826F;&#x597D;&#x67B6;&#x6784;&#x8BBE;&#x8BA1;&#x7684;<strong>&#x5206;&#x5E03;&#x5F0F;</strong>&#x67B6;&#x6784;&#x65B9;&#x6848;&#xFF0C;&#x5FAE;&#x670D;&#x52A1;&#x67B6;&#x6784;&#x7279;&#x5F81;&#xFF1A;</p>
+<p>&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x67B6;&#x6784;&#x7279;&#x5F81;&#xFF1A;</p>
+<ul>
+<li><strong>&#x5355;&#x4E00;&#x804C;&#x8D23;</strong>&#xFF1A;&#x5FAE;&#x670D;&#x52A1;&#x62C6;&#x5206;&#x7C92;&#x5EA6;&#x66F4;&#x5C0F;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x90FD;&#x5BF9;&#x5E94;&#x552F;&#x4E00;&#x7684;&#x4E1A;&#x52A1;</li>
+<li><strong>&#x81EA;&#x6CBB;</strong>&#xFF1A;&#x56E2;&#x961F;&#x72EC;&#x7ACB;&#x3001;&#x6280;&#x672F;&#x72EC;&#x7ACB;&#x3001;&#x6570;&#x636E;&#x72EC;&#x7ACB;&#x3001;&#x72EC;&#x7ACB;&#x90E8;&#x7F72;&#x548C;&#x4EA4;&#x4ED8;</li>
+<li><strong>&#x9762;&#x5411;&#x670D;&#x52A1;</strong>&#xFF1A;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x7EDF;&#x4E00;&#x6807;&#x51C6;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x4E0E;&#x8BED;&#x8A00;&#x548C;&#x6280;&#x672F;&#x65E0;&#x5173;</li>
+<li><strong>&#x9694;&#x79BB;&#x6027;&#x5F3A;</strong>&#xFF1A;&#x670D;&#x52A1;&#x8C03;&#x7528;&#x505A;&#x597D;&#x9694;&#x79BB;&#x3001;&#x5BB9;&#x9519;&#x3001;&#x964D;&#x7EA7;&#xFF0C;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x7EA7;&#x8054;&#x95EE;&#x9898;</li>
+</ul>
+<ul>
+<li><p>&#x5FAE;&#x670D;&#x52A1;&#x6280;&#x672F;&#x5BF9;&#x6BD4;</p>
+<p>|                | Dubbo               | SpringCloud              | SpringCloudAlibaba       |
+| -------------- | ------------------- | ------------------------ | ------------------------ |
+| &#x6CE8;&#x518C;&#x4E2D;&#x5FC3;       | zookeeper&#x3001;Redis    | Eureka&#x3001;Consul           | Nacos&#x3001;Eureka            |
+| &#x670D;&#x52A1;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;   | Dubbo&#x534F;&#x8BAE;           | Feign&#xFF08;http&#x534F;&#x8BAE;&#xFF09;        | Dubbo&#x3001;Feign             |
+| &#x914D;&#x7F6E;&#x4E2D;&#x5FC3;       | &#x65E0;                  | SpringCloudConfig        | SpringCloudConfig&#x3001;Nacos |
+| &#x670D;&#x52A1;&#x7F51;&#x5173;       | &#x65E0;                  | SpringCloudGateway&#x3001;Zuul | SpringCloudGateway&#x3001;Zuul |
+| &#x670D;&#x52A1;&#x76D1;&#x63A7;&#x548C;&#x4FDD;&#x62A4; | dubbo-admin&#xFF0C;&#x529F;&#x80FD;&#x5F31; | Hystrix                  | Sentinel                 |</p>
+</li>
+</ul>
+<h3 id="&#x670D;&#x52A1;&#x62C6;&#x5206;"><a name="&#x670D;&#x52A1;&#x62C6;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x670D;&#x52A1;&#x62C6;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x670D;&#x52A1;&#x62C6;&#x5206;</h3>
+<ul>
+<li>&#x62C6;&#x5206;&#x539F;&#x5219;<ul>
+<li>&#x4E0D;&#x540C;&#x5FAE;&#x670D;&#x52A1;&#xFF0C;&#x4E0D;&#x8981;&#x91CD;&#x590D;&#x5F00;&#x53D1;&#x76F8;&#x540C;&#x4E1A;&#x52A1;</li>
+<li>&#x5FAE;&#x670D;&#x52A1;&#x6570;&#x636E;&#x72EC;&#x7ACB;&#xFF0C;&#x4E0D;&#x8981;&#x8BBF;&#x95EE;&#x5176;&#x4ED6;&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x6570;&#x636E;&#x5E93;</li>
+<li>&#x5FAE;&#x670D;&#x52A1;&#x53EF;&#x4EE5;&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x4E1A;&#x52A1;&#x66B4;&#x9732;&#x4E3A;&#x63A5;&#x53E3;&#xFF0C;&#x4F9B;&#x5176;&#x4ED6;&#x5FAE;&#x670D;&#x52A1;&#x8C03;&#x7528;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x8FDC;&#x7A0B;&#x8C03;&#x7528;"><a name="&#x8FDC;&#x7A0B;&#x8C03;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x8FDC;&#x7A0B;&#x8C03;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDC;&#x7A0B;&#x8C03;&#x7528;</h3>
+<p><a href="images/image-20210713213312278.png" data-lightbox="28ab0c33-9e6f-4094-8f1f-4114030063d8" data-title="image-20210713213312278"><img src="images/image-20210713213312278.png" alt="image-20210713213312278"></a></p>
+<blockquote>
+<p>&#x80CC;&#x666F;&#xFF1A;&#x9700;&#x8981;&#x5728;order-service&#x4E2D;&#x5411;user-service&#x53D1;&#x8D77;&#x4E00;&#x4E2A;http&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x8C03;&#x7528;<code>http://localhost:8081/user/{userId}</code>&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;</p>
+</blockquote>
+<p>&#x5B9E;&#x73B0;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ul>
+<li><p>&#x5728;order-service&#x670D;&#x52A1;&#x7684;&#x542F;&#x52A8;&#x7C7B;&#x4E2D;&#x6CE8;&#x518C;RestTemplate</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.order;
+
+<span class="hljs-keyword">import</span> org.mybatis.spring.annotation.MapperScan;
+<span class="hljs-keyword">import</span> org.springframework.boot.SpringApplication;
+<span class="hljs-keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;
+<span class="hljs-keyword">import</span> org.springframework.context.annotation.Bean;
+<span class="hljs-keyword">import</span> org.springframework.web.client.RestTemplate;
+
+<span class="hljs-meta">@MapperScan</span>(<span class="hljs-string">&quot;cn.itcast.order.mapper&quot;</span>)
+<span class="hljs-meta">@SpringBootApplication</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OrderApplication</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        SpringApplication.run(OrderApplication.class, args);
+    }
+
+     <span class="hljs-comment">/**
+     * &#x63D0;&#x4F9B;&#x8FDC;&#x7A0B;Http&#x670D;&#x52A1;
+     */</span>
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> RestTemplate <span class="hljs-title">restTemplate</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> RestTemplate();
+    }
+}
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x4F7F;&#x7528;getForObject&#x65B9;&#x6CD5;&#xFF0C;&#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OrderService</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> OrderMapper orderMapper;
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> RestTemplate restTemplate;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Order <span class="hljs-title">queryOrderById</span><span class="hljs-params">(Long orderId)</span> </span>{
+        <span class="hljs-comment">// 1.&#x6839;&#x636E;id&#x67E5;&#x8BE2;&#x8BA2;&#x5355;</span>
+        Order order = orderMapper.findById(orderId);
+        <span class="hljs-comment">//&#x53D1;&#x8D77;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x6A21;&#x5757;</span>
+        User user = restTemplate.getForObject(<span class="hljs-string">&quot;http://localhost:8081/user/&quot;</span> + order.getUserId(), User.class);
+        order.setUser(user);
+        <span class="hljs-comment">// 4.&#x8FD4;&#x56DE;</span>
+        <span class="hljs-keyword">return</span> order;
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="eureka&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;"><a name="eureka&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;" class="anchor-navigation-ex-anchor" href="#eureka&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;"><i class="fa fa-link" aria-hidden="true"></i></a>Eureka&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;</h3>
+<p><a href="images/image-20210713220104956.png" data-lightbox="da050be2-597d-43a9-9d23-5077444bf844" data-title="image-20210713220104956"><img src="images/image-20210713220104956.png" alt="image-20210713220104956"></a></p>
+<h4 id="&#x642D;&#x5EFA;eureka-server"><a name="&#x642D;&#x5EFA;eureka-server" class="anchor-navigation-ex-anchor" href="#&#x642D;&#x5EFA;eureka-server"><i class="fa fa-link" aria-hidden="true"></i></a>&#x642D;&#x5EFA;Eureka-server</h4>
+<ul>
+<li><p>&#x5728;&#x7236;&#x5DE5;&#x7A0B;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B50;&#x6A21;&#x5757;</p>
+</li>
+<li><p>&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- &#x6DFB;&#x52A0;eureka&#x670D;&#x52A1;&#x7AEF; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-server<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x5199;&#x542F;&#x52A8;&#x7C7B;&#xFF0C;&#x6DFB;&#x52A0;<code>@EnableEurekaServer</code>&#x6CE8;&#x89E3;&#xFF0C;&#x5F00;&#x542F;Eureka&#x7684;&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;&#x529F;&#x80FD;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.eureka;
+
+<span class="hljs-keyword">import</span> org.springframework.boot.SpringApplication;
+<span class="hljs-keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;
+<span class="hljs-keyword">import</span> org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+<span class="hljs-meta">@SpringBootApplication</span>
+<span class="hljs-meta">@EnableEurekaServer</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EurekaApplication</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        SpringApplication.run(EurekaApplication.class, args);
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x5199;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-yml"><span class="hljs-comment"># &#x670D;&#x52A1;&#x5668;&#x7AEF;&#x53E3;&#x53F7;</span>
+<span class="hljs-attr">server:</span>
+<span class="hljs-attr">  port:</span> <span class="hljs-number">10086</span>
+
+<span class="hljs-comment"># &#x670D;&#x52A1;&#x5668;&#x540D;&#x79F0;</span>
+<span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  application:</span>
+<span class="hljs-attr">    name:</span> euraka-server
+
+<span class="hljs-comment"># &#x6CE8;&#x518C;&#x4E2D;&#x5FC3;&#x670D;&#x52A1;&#x7684;&#x7F51;&#x5740;</span>
+<span class="hljs-attr">eureka:</span>
+<span class="hljs-attr">  client:</span>
+<span class="hljs-attr">    service-url:</span>
+<span class="hljs-attr">      defaultZone:</span> http://<span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">10086</span>/eureka
+</code></pre>
+</li>
+<li><p>&#x542F;&#x52A8;&#x670D;&#x52A1;</p>
+<ul>
+<li>&#x542F;&#x52A8;&#x5FAE;&#x670D;&#x52A1;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#xFF1A;<a href="http://127.0.0.1:10086" target="_blank">http://127.0.0.1:10086</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x670D;&#x52A1;&#x6CE8;&#x518C;"><a name="&#x670D;&#x52A1;&#x6CE8;&#x518C;" class="anchor-navigation-ex-anchor" href="#&#x670D;&#x52A1;&#x6CE8;&#x518C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x670D;&#x52A1;&#x6CE8;&#x518C;</h4>
+<ul>
+<li><p>&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- &#x6CE8;&#x518C;eureka&#x5BA2;&#x6237;&#x7AEF; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x5199;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-yml"><span class="hljs-comment"># &#x5199;&#x5728;spring&#x7684;&#x914D;&#x7F6E;&#x90E8;&#x5206;&#x4E2D;</span>
+<span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  application:</span>
+<span class="hljs-attr">    name:</span> user-server
+<span class="hljs-comment"># &#x6307;&#x5B9A;eureka&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x8BBF;&#x95EE;&#x5730;&#x5740;</span>
+<span class="hljs-attr">eureka:</span>
+<span class="hljs-attr">  client:</span>
+<span class="hljs-attr">    service-url:</span>
+<span class="hljs-attr">      defaultZone:</span> http://<span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">10086</span>/eureka
+</code></pre>
+</li>
+<li><p>&#x6A21;&#x62DF;&#x591A;&#x4E2A;user-server&#x5B9E;&#x4F8B;</p>
+<ul>
+<li>&#x4FEE;&#x6539;server.port&#x53C2;&#x6570;</li>
+</ul>
+<pre><code class="lang-yml"><span class="hljs-comment"># &#x52A8;&#x6001;&#x7AEF;&#x53E3;</span>
+<span class="hljs-attr">server:</span>
+<span class="hljs-attr">  port:</span> ${port:<span class="hljs-number">8081</span>}
+</code></pre>
+<ul>
+<li>&#x7F16;&#x8F91;VM options&#x53C2;&#x6570;<code>-Dport=8082</code></li>
+</ul>
+</li>
+<li><p>&#x5148;&#x5F00;&#x542F;Eureka&#x670D;&#x52A1;&#x5668;&#x7AEF;&#xFF0C;&#x518D;&#x5F00;&#x542F;&#x5BA2;&#x6237;&#x7AEF;</p>
+</li>
+</ul>
+<h4 id="&#x670D;&#x52A1;&#x53D1;&#x73B0;"><a name="&#x670D;&#x52A1;&#x53D1;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#x670D;&#x52A1;&#x53D1;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x670D;&#x52A1;&#x53D1;&#x73B0;</h4>
+<blockquote>
+<p>&#x5C06;order-service&#x7684;&#x903B;&#x8F91;&#x4FEE;&#x6539;&#xFF1A;&#x5411;eureka-server&#x62C9;&#x53D6;user-server&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5B9E;&#x73B0;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x5BFC;&#x5165;&#x4F9D;&#x8D56;&#xFF08;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#x3001;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x7EDF;&#x4E00;&#x90FD;&#x5C01;&#x88C5;&#x5728;eureka-client&#x4F9D;&#x8D56;&#x4E2D;&#xFF09;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- eureka&#x5BA2;&#x6237;&#x7AEF; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x5199;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-yml"><span class="hljs-comment"># &#x5199;&#x5728;spring&#x7684;&#x914D;&#x7F6E;&#x90E8;&#x5206;&#x4E2D;</span>
+<span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  application:</span>
+<span class="hljs-attr">    name:</span> order-server
+<span class="hljs-comment"># &#x6307;&#x5B9A;eureka&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x8BBF;&#x95EE;&#x5730;&#x5740;</span>
+<span class="hljs-attr">eureka:</span>
+<span class="hljs-attr">  client:</span>
+<span class="hljs-attr">    service-url:</span>
+<span class="hljs-attr">      defaultZone:</span> http://<span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">10086</span>/eureka
+</code></pre>
+</li>
+<li><p>&#x670D;&#x52A1;&#x62C9;&#x53D6;&#x4E0E;&#x8D1F;&#x8F7D;&#x5747;&#x8861;</p>
+<ul>
+<li>&#x7ED9;RestTemplate&#x8FD9;&#x4E2A;Bean&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;@LoadBalanced&#x6CE8;&#x89E3;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-meta">@MapperScan</span>(<span class="hljs-string">&quot;cn.itcast.order.mapper&quot;</span>)
+<span class="hljs-meta">@SpringBootApplication</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OrderApplication</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        SpringApplication.run(OrderApplication.class, args);
+    }
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-meta">@LoadBalanced</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> RestTemplate <span class="hljs-title">restTemplate</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> RestTemplate();
+    }
+}
+</code></pre>
+<ul>
+<li>&#x4FEE;&#x6539;&#x8BBF;&#x95EE;&#x7684;url&#x8DEF;&#x5F84;&#xFF0C;<strong>&#x7528;&#x670D;&#x52A1;&#x540D;&#x4EE3;&#x66FF;ip&#x3001;&#x7AEF;&#x53E3;</strong>&#xFF0C;spring&#x4F1A;&#x81EA;&#x52A8;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x4ECE;eureka-server&#x7AEF;&#xFF0C;&#x6839;&#x636E;user-service&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x540D;&#x79F0;&#xFF0C;&#x83B7;&#x53D6;&#x5B9E;&#x4F8B;&#x5217;&#x8868;&#xFF0C;&#x800C;&#x540E;&#x5B8C;&#x6210;&#x8D1F;&#x8F7D;&#x5747;&#x8861;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OrderService</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> OrderMapper orderMapper;
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> RestTemplate restTemplate;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Order <span class="hljs-title">queryOrderById</span><span class="hljs-params">(Long orderId)</span> </span>{
+        <span class="hljs-comment">// 1.&#x67E5;&#x8BE2;&#x8BA2;&#x5355;</span>
+        Order order = orderMapper.findById(orderId);
+        <span class="hljs-comment">//&#x8C03;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x6A21;&#x5757;</span>
+        User user = restTemplate.getForObject(<span class="hljs-string">&quot;http://user-server/user/&quot;</span> + order.getUserId(), User.class);
+        order.setUser(user);
+        <span class="hljs-comment">// 4.&#x8FD4;&#x56DE;</span>
+        <span class="hljs-keyword">return</span> order;
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="ribbon&#x8D1F;&#x8F7D;&#x5747;&#x8861;"><a name="ribbon&#x8D1F;&#x8F7D;&#x5747;&#x8861;" class="anchor-navigation-ex-anchor" href="#ribbon&#x8D1F;&#x8F7D;&#x5747;&#x8861;"><i class="fa fa-link" aria-hidden="true"></i></a>Ribbon&#x8D1F;&#x8F7D;&#x5747;&#x8861;</h3>
+<h4 id="&#x539F;&#x7406;"><a name="&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x7406;</h4>
+<ul>
+<li><p>SpringCloud&#x5E95;&#x5C42;&#x5176;&#x5B9E;&#x662F;&#x5229;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;Ribbon&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x6765;&#x5B9E;&#x73B0;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x529F;&#x80FD;&#x7684;</p>
+<p><a href="images/image-20210713224517686.png" data-lightbox="8b8bbddf-c1b7-4032-86ec-d7a421cd8e12" data-title="image-20210713224517686"><img src="images/image-20210713224517686.png" alt="image-20210713224517686"></a></p>
+</li>
+<li><p>SpringCloudRibbon&#x7684;&#x5E95;&#x5C42;&#x91C7;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x62E6;&#x622A;&#x5668;&#xFF0C;&#x62E6;&#x622A;&#x4E86;RestTemplate&#x53D1;&#x51FA;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x5BF9;&#x5730;&#x5740;&#x505A;&#x4E86;&#x4FEE;&#x6539;&#x3002;&#x57FA;&#x672C;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>loadBalanceInterceptor&#x62E6;&#x622A;&#x6211;&#x4EEC;&#x8BF7;&#x6C42;&#x7684;url&#x5730;&#x5740;</li>
+<li>RibbonLoadBalancerClient&#x4F1A;&#x4ECE;&#x8BF7;&#x6C42;url&#x4E2D;&#x83B7;&#x53D6;&#x670D;&#x52A1;&#x540D;&#x79F0;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;userservice</li>
+<li>DynamicServerListLoadBanancer&#x6839;&#x636E;&#x670D;&#x52A1;&#x540D;&#x79F0;&#x5230;eureka&#x62C9;&#x53D6;&#x670D;&#x52A1;&#x5217;&#x8868;</li>
+<li>&#x6839;&#x636E;&#x6839;&#x63A5;&#x53E3;IRule&#x914D;&#x7F6E;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;&#xFF0C;&#x9009;&#x62E9;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x670D;&#x52A1;</li>
+<li>RibbonLoadBalancerClient&#x4FEE;&#x6539;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF0C;&#x7528;localhost:8081&#x66FF;&#x4EE3;userservice&#xFF0C;&#x5F97;&#x5230;<a href="http://localhost:8081/user/1&#xFF0C;&#x53D1;&#x8D77;&#x771F;&#x5B9E;&#x8BF7;&#x6C42;" target="_blank">http://localhost:8081/user/1&#xFF0C;&#x53D1;&#x8D77;&#x771F;&#x5B9E;&#x8BF7;&#x6C42;</a></li>
+</ul>
+<p><a href="images/image-20210713224724673.png" data-lightbox="e64b8942-1e6f-4c6f-84b8-5ed659b48d05" data-title="image-20210713224724673"><img src="images/image-20210713224724673.png" alt="image-20210713224724673"></a></p>
+</li>
+</ul>
+<h4 id="&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;"><a name="&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;" class="anchor-navigation-ex-anchor" href="#&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x5185;&#x7F6E;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x89C4;&#x5219;&#x7C7B;</th>
+<th>&#x89C4;&#x5219;&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RoundRobinRule</td>
+<td>&#x8F6E;&#x8BE2;&#x89C4;&#x5219;&#xFF1A;&#x7B80;&#x5355;&#x8F6E;&#x8BE2;&#x670D;&#x52A1;&#x5217;&#x8868;&#x6765;&#x9009;&#x62E9;&#x670D;&#x52A1;&#x5668;&#x3002;&#x5B83;&#x662F;Ribbon&#x9ED8;&#x8BA4;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x89C4;&#x5219;&#x3002;</td>
+</tr>
+<tr>
+<td>AvailabilityFilteringRule</td>
+<td>&#x53EF;&#x7528;&#x6027;&#x8FC7;&#x6EE4;&#x89C4;&#x5219;&#xFF1A;&#x5BF9;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x5FFD;&#x7565;&#xFF1A;   <br>&#xFF08;1&#xFF09;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x5982;&#x679C;3&#x6B21;&#x8FDE;&#x63A5;&#x5931;&#x8D25;&#xFF0C;&#x8FD9;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x5C31;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x201C;&#x77ED;&#x8DEF;&#x201D;&#x72B6;&#x6001;&#x3002;&#x77ED;&#x8DEF;&#x72B6;&#x6001;&#x5C06;&#x6301;&#x7EED;30&#x79D2;&#xFF0C;&#x5982;&#x679C;&#x518D;&#x6B21;&#x8FDE;&#x63A5;&#x5931;&#x8D25;&#xFF0C;&#x77ED;&#x8DEF;&#x7684;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x5C31;&#x4F1A;&#x51E0;&#x4F55;&#x7EA7;&#x5730;&#x589E;&#x52A0;&#x3002;  <br>&#xFF08;2&#xFF09;&#x5E76;&#x53D1;&#x6570;&#x8FC7;&#x9AD8;&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x6570;&#x8FC7;&#x9AD8;&#xFF0C;&#x914D;&#x7F6E;&#x4E86;AvailabilityFilteringRule&#x89C4;&#x5219;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x4E5F;&#x4F1A;&#x5C06;&#x5176;&#x5FFD;&#x7565;&#x3002;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x6570;&#x7684;&#x4E0A;&#x9650;&#xFF0C;&#x53EF;&#x4EE5;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x7684;<code>&lt;clientName&gt;.&lt;clientConfigNameSpace&gt;.ActiveConnectionsLimit</code>&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>WeightedResponseTimeRule</td>
+<td>&#x54CD;&#x5E94;&#x6743;&#x91CD;&#x65F6;&#x95F4;&#x89C4;&#x5219;&#xFF1A;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x8D4B;&#x4E88;&#x4E00;&#x4E2A;&#x6743;&#x91CD;&#x503C;&#x3002;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x8D8A;&#x957F;&#xFF0C;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6743;&#x91CD;&#x5C31;&#x8D8A;&#x5C0F;&#x3002;&#x8FD9;&#x4E2A;&#x89C4;&#x5219;&#x4F1A;&#x968F;&#x673A;&#x9009;&#x62E9;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8FD9;&#x4E2A;&#x6743;&#x91CD;&#x503C;&#x4F1A;&#x5F71;&#x54CD;&#x670D;&#x52A1;&#x5668;&#x7684;&#x9009;&#x62E9;&#x3002;</td>
+</tr>
+<tr>
+<td><strong>ZoneAvoidanceRule</strong></td>
+<td>&#x89C4;&#x907F;&#x533A;&#x57DF;&#x89C4;&#x5219;&#xFF1A;&#x4EE5;&#x533A;&#x57DF;&#x53EF;&#x7528;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E3A;&#x57FA;&#x7840;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x5668;&#x7684;&#x9009;&#x62E9;&#x3002;&#x4F7F;&#x7528;Zone&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x5206;&#x7C7B;&#xFF0C;&#x8FD9;&#x4E2A;Zone&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x4E00;&#x4E2A;&#x673A;&#x623F;&#x3001;&#x4E00;&#x4E2A;&#x673A;&#x67B6;&#x7B49;&#x3002;&#x800C;&#x540E;&#x518D;&#x5BF9;Zone&#x5185;&#x7684;&#x591A;&#x4E2A;&#x670D;&#x52A1;&#x505A;==&#x8F6E;&#x8BE2;==&#x3002;</td>
+</tr>
+<tr>
+<td>BestAvailableRule</td>
+<td>&#x6700;&#x53EF;&#x7528;&#x89C4;&#x5219;&#xFF1A;&#x5FFD;&#x7565;&#x90A3;&#x4E9B;&#x77ED;&#x8DEF;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5E76;&#x9009;&#x62E9;&#x5E76;&#x53D1;&#x6570;&#x8F83;&#x4F4E;&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;</td>
+</tr>
+<tr>
+<td>RandomRule</td>
+<td>&#x968F;&#x673A;&#x89C4;&#x5219;&#xFF1A;&#x968F;&#x673A;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;</td>
+</tr>
+<tr>
+<td>RetryRule</td>
+<td>&#x91CD;&#x8BD5;&#x5B9E;&#x73B0;&#xFF1A;&#x91CD;&#x8BD5;&#x673A;&#x5236;&#x7684;&#x9009;&#x62E9;&#x903B;&#x8F91;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x81EA;&#x5B9A;&#x4E49;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;</h4>
+<p>&#xFF08;&#x4E00;&#x822C;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x89C4;&#x5219;&#xFF0C;&#x4E0D;&#x505A;&#x4FEE;&#x6539;&#xFF09;</p>
+<ul>
+<li><p>&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;&#x7F16;&#x7801;&#x65B9;&#x5F0F;&#xFF08;&#x5168;&#x5C40;&#xFF09;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@MapperScan</span>(<span class="hljs-string">&quot;cn.itcast.order.mapper&quot;</span>)
+<span class="hljs-meta">@SpringBootApplication</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OrderApplication</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        SpringApplication.run(OrderApplication.class, args);
+    }
+
+    <span class="hljs-comment">/**
+     * &#x63D0;&#x4F9B;&#x8FDC;&#x7A0B;Http&#x670D;&#x52A1;
+     */</span>
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-meta">@LoadBalanced</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> RestTemplate <span class="hljs-title">restTemplate</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> RestTemplate();
+    }
+
+    <span class="hljs-comment">/**
+     * &#x81EA;&#x5B9A;&#x4E49;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF1A;
+     * &#x65B9;&#x5F0F;&#x4E00;&#xFF1A;&#x7F16;&#x7801;&#x65B9;&#x5F0F;&#xFF08;&#x5168;&#x5C40;&#xFF09;&#xFF0C;&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x65B9;&#x5F0F;&#xFF08;&#x53EF;&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x7684;&#x5FAE;&#x670D;&#x52A1;&#xFF09;
+     * &#x81EA;&#x5B9A;&#x4E49;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF1A;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#x5168;&#x5C40;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x65E0;&#x8BBA;&#x4EE5;&#x540E;&#x8BBF;&#x95EE;&#x54EA;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x90FD;&#x4F7F;&#x7528;&#x968F;&#x673A;&#x7684;&#x65B9;&#x5F0F;
+     * &#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x9009;&#x62E9;&#x65B9;&#x5F0F;&#x4E8C;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x6CE8;&#x91CA;&#x6389;&#x65B9;&#x5F0F;&#x4E00;
+     */</span>
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> IRule <span class="hljs-title">iRule</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> RandomRule();<span class="hljs-comment">//&#x4F7F;&#x7528;&#x968F;&#x673A;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x89C4;&#x5219;</span>
+    }
+}
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x65B9;&#x5F0F;&#xFF08;&#x53EF;&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x7684;&#x5FAE;&#x670D;&#x52A1;&#xFF09;</p>
+<pre><code class="lang-yml"><span class="hljs-comment"># &#x7ED9;&#x67D0;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x914D;&#x7F6E;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x89C4;&#x5219;&#xFF0C;&#x53EA;&#x5BF9;&#x8FD9;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x8D77;&#x4F5C;&#x7528;</span>
+<span class="hljs-attr">user-server:</span> <span class="hljs-comment"># &#x6307;&#x5B9A;&#x7684;&#x5FAE;&#x670D;&#x52A1;</span>
+<span class="hljs-attr">  ribbon:</span>
+    <span class="hljs-comment"># &#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x89C4;&#x5219;&#x7684;&#x7C7B;&#x5168;&#x540D;</span>
+<span class="hljs-attr">    NFLoadBalancerRuleClassName:</span> com.alibaba.cloud.nacos.ribbon.NacosRule
+</code></pre>
+</li>
+</ul>
+<h4 id="&#x9965;&#x997F;&#x52A0;&#x8F7D;"><a name="&#x9965;&#x997F;&#x52A0;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#&#x9965;&#x997F;&#x52A0;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9965;&#x997F;&#x52A0;&#x8F7D;</h4>
+<p>Ribbon&#x9ED8;&#x8BA4;&#x662F;&#x91C7;&#x7528;&#x61D2;&#x52A0;&#x8F7D;&#xFF0C;&#x5373;&#x7B2C;&#x4E00;&#x6B21;&#x8BBF;&#x95EE;&#x65F6;&#x624D;&#x4F1A;&#x53BB;&#x521B;&#x5EFA;LoadBalanceClient&#xFF0C;&#x4F7F;&#x5F97;&#x7B2C;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;&#x4F1A;&#x5F88;&#x957F;&#x3002;&#x9965;&#x997F;&#x52A0;&#x8F7D;&#x7684;&#x4F5C;&#x7528;&#xFF1A; &#x542F;&#x52A8;&#x670D;&#x52A1;&#x5668;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x53BB;&#x62C9;&#x53D6;&#x670D;&#x52A1;&#x5217;&#x8868;&#xFF0C;&#x7F29;&#x77ED;&#x7B2C;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
+<ul>
+<li><p>&#x914D;&#x7F6E;&#x5F00;&#x542F;&#x9965;&#x997F;&#x52A0;&#x8F7D;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">ribbon:</span>
+<span class="hljs-attr">  eager-load:</span>
+<span class="hljs-attr">    enabled:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># &#x5F00;&#x542F;&#x9965;&#x997F;&#x52A0;&#x8F7D;</span>
+    <span class="hljs-comment"># &#x6307;&#x5B9A;&#x5FAE;&#x670D;&#x52A1;</span>
+<span class="hljs-attr">    clients:</span>
+<span class="hljs-bullet">      -</span> user-server <span class="hljs-comment"># clients&#x662F;&#x4E00;&#x4E2A;List&#x96C6;&#x5408;&#x3002;&#x5982;&#x679C;&#x8981;&#x914D;&#x7F6E;&#x591A;&#x4E2A;&#x670D;&#x52A1;&#x540D;&#x5B57;&#xFF0C;&#x5219;&#x6362;&#x4E00;&#x884C;&#x3002;&#x7528;-&#x505A;&#x4E3A;&#x524D;&#x7F00;&#xFF0C;&#x6BCF;&#x884C;&#x5199;&#x4E00;&#x4E2A;</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="nacos&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;"><a name="nacos&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;" class="anchor-navigation-ex-anchor" href="#nacos&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;"><i class="fa fa-link" aria-hidden="true"></i></a>Nacos&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;</h3>
+<blockquote>
+<p><a href="https://nacos.io/" target="_blank">Nacos</a>&#x662F;&#x963F;&#x91CC;&#x5DF4;&#x5DF4;&#x7684;&#x4EA7;&#x54C1;&#xFF0C;&#x73B0;&#x5728;&#x662F;<a href="https://spring.io/projects/spring-cloud" target="_blank">SpringCloud</a>&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x3002;&#x76F8;&#x6BD4;<a href="https://github.com/Netflix/eureka" target="_blank">Eureka</a>&#x529F;&#x80FD;&#x66F4;&#x52A0;&#x4E30;&#x5BCC;&#xFF0C;&#x5728;&#x56FD;&#x5185;&#x53D7;&#x6B22;&#x8FCE;&#x7A0B;&#x5EA6;&#x8F83;&#x9AD8;&#x3002;</p>
+</blockquote>
+<h4 id="&#x642D;&#x5EFA;nacos"><a name="&#x642D;&#x5EFA;nacos" class="anchor-navigation-ex-anchor" href="#&#x642D;&#x5EFA;nacos"><i class="fa fa-link" aria-hidden="true"></i></a>&#x642D;&#x5EFA;Nacos</h4>
+<p><strong>&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</strong></p>
+<ul>
+<li><p>&#x5728;cloud-demo<strong>&#x7236;&#x5DE5;&#x7A0B;</strong>&#x7684;pom&#x6587;&#x4EF6;&#x4E2D;&#x7684;<code>&lt;dependencyManagement&gt;</code>&#x4E2D;&#x5F15;&#x5165;SpringCloudAlibaba&#x7684;&#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- springcloud&#x963F;&#x91CC;&#x5DF4;&#x5DF4;&#x7236;&#x6A21;&#x5757; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alibaba.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-alibaba-dependencies<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.2.6.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>pom<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>import<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x7136;&#x540E;&#x5728;<strong>&#x5B50;&#x5DE5;&#x7A0B;</strong>user-service&#x548C;order-service&#x4E2D;&#x7684;pom&#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x5165;nacos-discovery&#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- nacos --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alibaba.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-nacos-discovery<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x5B50;&#x5DE5;&#x7A0B;&#x6CE8;&#x91CA;&#x6389;eureka&#x7684;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<p><strong>&#x914D;&#x7F6E;Nacos&#x5730;&#x5740;</strong></p>
+<ul>
+<li><p>&#x5728;user-service&#x548C;order-service&#x7684;application.yml&#x4E2D;<strong>&#x6DFB;&#x52A0;nacos&#x5730;&#x5740;</strong>&#xFF1A;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    nacos:</span>
+<span class="hljs-attr">      server-addr:</span> localhost:<span class="hljs-number">8848</span>
+</code></pre>
+</li>
+<li><p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x6CE8;&#x91CA;&#x6389;eureka&#x7684;&#x5730;&#x5740;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">eureka:</span>
+<span class="hljs-attr">  client:</span>
+<span class="hljs-attr">    service-url:</span>
+<span class="hljs-attr">      defaultZone:</span> http://<span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">10086</span>/eureka
+</code></pre>
+</li>
+</ul>
+<p><strong>&#x91CD;&#x542F;&#x5FAE;&#x670D;&#x52A1;&#x540E;&#xFF0C;&#x767B;&#x5F55;nacos&#x7BA1;&#x7406;&#x9875;&#x9762;</strong></p>
+<h4 id="&#x670D;&#x52A1;&#x5206;&#x7EA7;&#x6A21;&#x578B;&#xFF08;&#x96C6;&#x7FA4;&#xFF09;"><a name="&#x670D;&#x52A1;&#x5206;&#x7EA7;&#x6A21;&#x578B;&#xFF08;&#x96C6;&#x7FA4;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x670D;&#x52A1;&#x5206;&#x7EA7;&#x6A21;&#x578B;&#xFF08;&#x96C6;&#x7FA4;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x670D;&#x52A1;&#x5206;&#x7EA7;&#x6A21;&#x578B;&#xFF08;&#x96C6;&#x7FA4;&#xFF09;</h4>
+<blockquote>
+<p>&#x5FAE;&#x670D;&#x52A1;&#x4E92;&#x76F8;&#x8BBF;&#x95EE;&#x65F6;&#xFF0C;&#x5E94;&#x8BE5;&#x5C3D;&#x53EF;&#x80FD;&#x8BBF;&#x95EE;&#x540C;&#x96C6;&#x7FA4;&#x5B9E;&#x4F8B;&#xFF0C;&#x56E0;&#x4E3A;&#x672C;&#x5730;&#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#x3002;&#x5F53;&#x672C;&#x96C6;&#x7FA4;&#x5185;&#x4E0D;&#x53EF;&#x7528;&#x65F6;&#xFF0C;&#x624D;&#x8BBF;&#x95EE;&#x5176;&#x5B83;&#x96C6;&#x7FA4;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#xFF0C;&#x4FEE;&#x6539;order-service&#x548C;user-service&#x7684;application.yml&#x6587;&#x4EF6;&#xFF0C;&#x6DFB;&#x52A0;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#xFF0C; &#x653E;&#x5728;HZ&#x8FD9;&#x4E2A;&#x96C6;&#x7FA4;&#x4E2D;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    nacos:</span>
+<span class="hljs-attr">      server-addr:</span> localhost:<span class="hljs-number">8848</span>
+<span class="hljs-attr">      discovery:</span>
+<span class="hljs-attr">        cluster-name:</span> HZ <span class="hljs-comment"># &#x96C6;&#x7FA4;&#x540D;&#x79F0;</span>
+</code></pre>
+</li>
+<li><p>&#x6A21;&#x62DF;&#x96C6;&#x7FA4;&#xFF0C;user-service&#x7684;8081&#x548C;8082&#x5728;HZ&#x96C6;&#x7FA4;&#xFF0C;8083&#x5728;GZ&#x96C6;&#x7FA4;&#xFF08;VM options&#x8BBE;&#x7F6E;&#xFF09;</p>
+<pre><code>-Dport=8083
+-Dspring.cloud.nacos.discovery.cluster-name=SZ
+</code></pre></li>
+<li><p>&#x914D;&#x7F6E;&#x540C;&#x96C6;&#x7FA4;&#x4F18;&#x5148;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;&#xFF0C;&#x4FEE;&#x6539;<strong>order-service</strong>&#x7684;application.yml&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x89C4;&#x5219;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">user-server:</span>
+<span class="hljs-attr">  ribbon:</span>
+<span class="hljs-attr">    NFLoadBalancerRuleClassName:</span> com.alibaba.cloud.nacos.ribbon.NacosRule <span class="hljs-comment"># &#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x89C4;&#x5219;</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="&#x6743;&#x91CD;&#x914D;&#x7F6E;"><a name="&#x6743;&#x91CD;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x6743;&#x91CD;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6743;&#x91CD;&#x914D;&#x7F6E;</h4>
+<ul>
+<li>&#x5728;nacos&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x627E;&#x5230;userservice&#x7684;&#x5B9E;&#x4F8B;&#x5217;&#x8868;&#xFF0C;&#x70B9;&#x51FB;&#x7F16;&#x8F91;&#xFF0C;&#x5373;&#x53EF;&#x4FEE;&#x6539;&#x6743;&#x91CD;&#xFF0C;&#x6743;&#x91CD;&#x8D8A;&#x5927;&#x5219;&#x8BBF;&#x95EE;&#x9891;&#x7387;&#x8D8A;&#x9AD8;&#x3002;</li>
+</ul>
+<h4 id="&#x73AF;&#x5883;&#x9694;&#x79BB;"><a name="&#x73AF;&#x5883;&#x9694;&#x79BB;" class="anchor-navigation-ex-anchor" href="#&#x73AF;&#x5883;&#x9694;&#x79BB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x73AF;&#x5883;&#x9694;&#x79BB;</h4>
+<blockquote>
+<p>&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x7BA1;&#x7406;&#xFF0C;Nacos&#x63D0;&#x4F9B;&#x4E86;namespace&#x6765;&#x5B9E;&#x73B0;&#x73AF;&#x5883;&#x9694;&#x79BB;&#x529F;&#x80FD;&#x3002;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x79DF;&#x6237;&#x7EA7;&#x522B;&#x7684;&#x9694;&#x79BB;&#xFF0C;&#x6211;&#x4EEC;&#x6700;&#x5E38;&#x7528;&#x7684;&#x5C31;&#x662F;&#x4E0D;&#x540C;&#x73AF;&#x5883;&#x6BD4;&#x5982;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#xFF0C;&#x7EBF;&#x4E0A;&#x73AF;&#x5883;&#x8FDB;&#x884C;&#x9694;&#x79BB;&#x3002;&#x4E0D;&#x540C;namespace&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x9694;&#x79BB;&#xFF0C;&#x5373;&#x4E0D;&#x540C;namespace&#x7684;&#x670D;&#x52A1;&#x4E92;&#x76F8;&#x4E0D;&#x53EF;&#x89C1;.</p>
+</blockquote>
+<ul>
+<li><p>&#x521B;&#x5EFA;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x5728;nacos&#x63A7;&#x5236;&#x53F0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x7136;&#x540E;&#x590D;&#x5236;&#x547D;&#x540D;&#x7A7A;&#x95F4;ID</p>
+</li>
+<li><p>&#x7ED9;&#x5FAE;&#x670D;&#x52A1;&#x914D;&#x7F6E;namespace&#xFF0C;&#x4FEE;&#x6539;order-service&#x548C;user-service&#x7684;application.yml&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    nacos:</span>
+<span class="hljs-attr">      server-addr:</span> localhost:<span class="hljs-number">8848</span>
+<span class="hljs-attr">      discovery:</span>
+<span class="hljs-attr">        cluster-name:</span> HZ
+<span class="hljs-attr">        namespace:</span> <span class="hljs-number">492</span>a7d5d<span class="hljs-bullet">-237</span>b<span class="hljs-bullet">-46</span>a1-a99a-fa8e98e4b0f9 <span class="hljs-comment"># &#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x586B;ID</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="&#x6C38;&#x4E45;&#x5B9E;&#x4F8B;"><a name="&#x6C38;&#x4E45;&#x5B9E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x6C38;&#x4E45;&#x5B9E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6C38;&#x4E45;&#x5B9E;&#x4F8B;</h4>
+<ul>
+<li><p>Nacos&#x7684;&#x670D;&#x52A1;&#x5B9E;&#x4F8B;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#x7C7B;&#x578B;</p>
+<ul>
+<li>&#x4E34;&#x65F6;&#x5B9E;&#x4F8B;&#xFF1A;<strong>&#x9ED8;&#x8BA4;&#x7C7B;&#x578B;</strong>&#x3002;&#x5982;&#x679C;&#x5B9E;&#x4F8B;&#x5B95;&#x673A;&#x8D85;&#x8FC7;&#x4E00;&#x5B9A;&#x65F6;&#x95F4;&#xFF0C;&#x4F1A;&#x4ECE;&#x670D;&#x52A1;&#x5217;&#x8868;&#x5254;&#x9664;</li>
+<li>&#x975E;&#x4E34;&#x65F6;&#x5B9E;&#x4F8B;&#xFF1A;&#x4E5F;&#x53EB;&#x6C38;&#x4E45;&#x5B9E;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x5B9E;&#x4F8B;&#x5B95;&#x673A;&#xFF0C;&#x4E0D;&#x4F1A;&#x4ECE;&#x670D;&#x52A1;&#x5217;&#x8868;&#x5254;&#x9664;</li>
+</ul>
+</li>
+<li><p>&#x914D;&#x7F6E;&#x6C38;&#x4E45;&#x5B9E;&#x4F8B;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    nacos:</span>
+<span class="hljs-attr">      discovery:</span>
+<span class="hljs-attr">        ephemeral:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x4E3A;&#x6C38;&#x4E45;&#x5B9E;&#x4F8B;</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="nacos&#x4E0E;eureka&#x7684;&#x533A;&#x522B;"><a name="nacos&#x4E0E;eureka&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#nacos&#x4E0E;eureka&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>Nacos&#x4E0E;Eureka&#x7684;&#x533A;&#x522B;</h3>
+<ul>
+<li>&#x5171;&#x540C;&#x70B9;<ul>
+<li>&#x90FD;&#x652F;&#x6301;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x3001;&#x62C9;&#x53D6;</li>
+<li>&#x90FD;&#x652F;&#x6301;&#x5FC3;&#x8DF3;&#x65B9;&#x5F0F;&#x505A;&#x5065;&#x5EB7;&#x68C0;&#x6D4B;</li>
+</ul>
+</li>
+<li>&#x4E0D;&#x540C;&#x70B9;<ul>
+<li>Nacos&#x6709;&#x4E34;&#x65F6;&#x5B9E;&#x4F8B;&#x4E0E;&#x975E;&#x4E34;&#x65F6;&#x5B9E;&#x4F8B;&#xFF0C; Eureka&#x662F;&#x6CA1;&#x6709;&#x4E34;&#x65F6;&#x5B9E;&#x4F8B;&#x6982;&#x5FF5;<ul>
+<li>&#x4E34;&#x65F6;&#x5B9E;&#x4F8B;&#x91C7;&#x7528;&#x5FC3;&#x8DF3;&#x6A21;&#x5F0F;&#xFF0C;&#x6C38;&#x4E45;&#x5B9E;&#x4F8B;&#x91C7;&#x7528;&#x4E3B;&#x52A8;&#x68C0;&#x6D4B;&#x6A21;&#x5F0F;</li>
+<li>&#x4E34;&#x65F6;&#x5B9E;&#x4F8B;&#x5FC3;&#x8DF3;&#x4E0D;&#x6B63;&#x5E38;&#x4F1A;&#x88AB;&#x5254;&#x9664;&#xFF0C;&#x6C38;&#x4E45;&#x5B9E;&#x4F8B;&#x5219;&#x4E0D;&#x4F1A;&#x88AB;&#x5254;&#x9664;</li>
+</ul>
+</li>
+<li>Nacos&#x4E0D;&#x5355;&#x5355;&#x652F;&#x6301;&#x670D;&#x52A1;&#x7684;&#x62C9;&#x53D6;&#xFF0C;&#x8FD8;&#x652F;&#x6301;&#x670D;&#x52A1;&#x7684;&#x4E3B;&#x52A8;&#x63A8;&#x9001;&#xFF1B;Eureka&#x53EA;&#x80FD;&#x652F;&#x6301;&#x670D;&#x52A1;&#x62C9;&#x53D6;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x4E3B;&#x52A8;&#x63A8;&#x9001;</li>
+</ul>
+</li>
+</ul>
+<h3 id="nacos&#x914D;&#x7F6E;&#x7BA1;&#x7406;"><a name="nacos&#x914D;&#x7F6E;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#nacos&#x914D;&#x7F6E;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>Nacos&#x914D;&#x7F6E;&#x7BA1;&#x7406;</h3>
+<h4 id="&#x7EDF;&#x4E00;&#x914D;&#x7F6E;&#x7BA1;&#x7406;"><a name="&#x7EDF;&#x4E00;&#x914D;&#x7F6E;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x7EDF;&#x4E00;&#x914D;&#x7F6E;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EDF;&#x4E00;&#x914D;&#x7F6E;&#x7BA1;&#x7406;</h4>
+<ul>
+<li>Nacos&#x914D;&#x7F6E;&#x4E2D;&#x5FC3;&#x4F5C;&#x7528;<ul>
+<li>&#x914D;&#x7F6E;&#x7684;&#x6570;&#x636E;&#x652F;&#x6301;&#x52A8;&#x6001;&#x66F4;&#x65B0;</li>
+<li>&#x96C6;&#x4E2D;&#x7BA1;&#x7406;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</li>
+<li>&#x652F;&#x6301;&#x4E0D;&#x540C;&#x73AF;&#x5883;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</li>
+</ul>
+</li>
+</ul>
+<p><a href="images/image-20210714164856664.png" data-lightbox="b326d9c8-3ecb-406c-84b3-de18afe496d6" data-title="image-20210714164856664"><img src="images/image-20210714164856664.png" alt="image-20210714164856664"></a></p>
+<ul>
+<li>&#x62C9;&#x53D6;Nacos&#x4E2D;&#x7BA1;&#x7406;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x4E0E;&#x672C;&#x5730;&#x7684;application.yml&#x914D;&#x7F6E;&#x5408;&#x5E76;&#x3002;Spring&#x5F15;&#x5165;&#x4E86;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;bootstrap.yaml&#x6587;&#x4EF6;&#xFF0C;&#x4F1A;&#x5728;application.yml&#x4E4B;&#x524D;&#x88AB;&#x8BFB;&#x53D6;</li>
+</ul>
+<p><a href="images/image-20211119171739510.png" data-lightbox="847aade7-e1e2-4860-bb21-ad7239365509" data-title="image-20211119171739510"><img src="images/image-20211119171739510.png" alt="image-20211119171739510"></a></p>
+<ul>
+<li><p>&#x5B9E;&#x73B0;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ul>
+<li><p>&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!--nacos&#x914D;&#x7F6E;&#x7BA1;&#x7406;&#x4F9D;&#x8D56;--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alibaba.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-nacos-config<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x5728;application.yml&#x540C;&#x7EA7;&#x76EE;&#x5F55;&#x4E0B;&#x6DFB;&#x52A0;bootstrap.yaml&#x6587;&#x4EF6;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  application:</span>
+<span class="hljs-attr">    name:</span> userservice <span class="hljs-comment"># &#x670D;&#x52A1;&#x540D;&#x79F0;&#xFF0C;&#x6CE8;&#xFF1A;&#x8981;&#x4E0E;&#x6587;&#x4EF6;&#x540D;&#x4E00;&#x81F4;</span>
+<span class="hljs-attr">  profiles:</span>
+<span class="hljs-attr">    active:</span> dev <span class="hljs-comment">#&#x73AF;&#x5883;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;&#x5F00;&#x53D1;&#x73AF;&#x5883;dev</span>
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    nacos:</span>
+<span class="hljs-attr">      server-addr:</span> localhost:<span class="hljs-number">8848</span> <span class="hljs-comment"># Nacos&#x5730;&#x5740;</span>
+<span class="hljs-attr">      config:</span>
+<span class="hljs-attr">        file-extension:</span> yaml <span class="hljs-comment"># &#x6587;&#x4EF6;&#x540E;&#x7F00;&#x540D;</span>
+</code></pre>
+</li>
+<li><p>&#x53BB;&#x9664;application.yml&#x4E2D;&#x91CD;&#x590D;&#x7684;&#x914D;&#x7F6E;</p>
+</li>
+<li><p>&#x8BFB;&#x53D6;Nacos&#x4E2D;&#x7684;pattern.dateformat&#x914D;&#x7F6E;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.user.web;
+
+<span class="hljs-keyword">import</span> cn.itcast.user.pojo.User;
+<span class="hljs-keyword">import</span> cn.itcast.user.service.UserService;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Value;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.*;
+
+<span class="hljs-keyword">import</span> java.time.LocalDateTime;
+<span class="hljs-keyword">import</span> java.time.format.DateTimeFormatter;
+
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/user&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserController</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> UserService userService;
+
+    <span class="hljs-meta">@Value</span>(<span class="hljs-string">&quot;${pattern.dateformat}&quot;</span>)
+    <span class="hljs-keyword">private</span> String dateformat;
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;now&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">now</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> LocalDateTime.now().format(DateTimeFormatter.ofPattern(dateformat));
+    }
+
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x70ED;&#x66F4;&#x65B0;&#x914D;&#x7F6E;"><a name="&#x70ED;&#x66F4;&#x65B0;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x70ED;&#x66F4;&#x65B0;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x70ED;&#x66F4;&#x65B0;&#x914D;&#x7F6E;</h4>
+<h5 id="&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;&#x5728;value&#x6CE8;&#x5165;&#x7684;&#x53D8;&#x91CF;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x4E0A;&#x6DFB;&#x52A0;&#x6CE8;&#x89E3;refreshscope"><a name="&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;&#x5728;value&#x6CE8;&#x5165;&#x7684;&#x53D8;&#x91CF;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x4E0A;&#x6DFB;&#x52A0;&#x6CE8;&#x89E3;refreshscope" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;&#x5728;value&#x6CE8;&#x5165;&#x7684;&#x53D8;&#x91CF;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x4E0A;&#x6DFB;&#x52A0;&#x6CE8;&#x89E3;refreshscope"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;&#x5728;@Value&#x6CE8;&#x5165;&#x7684;&#x53D8;&#x91CF;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x4E0A;&#x6DFB;&#x52A0;&#x6CE8;&#x89E3;@RefreshScope</h5>
+<pre><code class="lang-java"><span class="hljs-meta">@Slf</span>4j
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/user&quot;</span>)
+<span class="hljs-meta">@RefreshScope</span> <span class="hljs-comment">//&#x542F;&#x52A8;&#x70ED;&#x66F4;&#x65B0;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserController</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> UserService userService;
+
+    <span class="hljs-meta">@Value</span>(<span class="hljs-string">&quot;${pattern.dateformat}&quot;</span>)
+    <span class="hljs-keyword">private</span> String dateformat;
+</code></pre>
+<h5 id="&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x4F7F;&#x7528;configurationproperties&#x6CE8;&#x89E3;"><a name="&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x4F7F;&#x7528;configurationproperties&#x6CE8;&#x89E3;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x4F7F;&#x7528;configurationproperties&#x6CE8;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x4F7F;&#x7528;@ConfigurationProperties&#x6CE8;&#x89E3;</h5>
+<ul>
+<li><p>&#x53BB;&#x6389;@RefreshScope&#x6CE8;&#x89E3;&#x548C;@Value&#x6CE8;&#x89E3;</p>
+</li>
+<li><p>&#x5728;user-service&#x670D;&#x52A1;&#x7684;config&#x5305;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7C7B;</p>
+<ul>
+<li>&#x6DFB;&#x52A0;@Component&#x6CE8;&#x89E3;&#x548C;@Data&#x6CE8;&#x89E3;</li>
+<li>&#x6DFB;&#x52A0;@ConfigurationProperties&#x6CE8;&#x89E3;</li>
+<li>&#x5728;&#x7C7B;&#x4E2D;&#x6DFB;&#x52A0;&#x76F8;&#x5E94;&#x5C5E;&#x6027;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.user.config;
+
+<span class="hljs-keyword">import</span> lombok.Data;
+<span class="hljs-keyword">import</span> org.springframework.boot.context.properties.ConfigurationProperties;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Component;
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@Data</span> <span class="hljs-comment">//@ConfigurationProperties&#x6CE8;&#x89E3;&#x4F9D;&#x8D56;&#x4E8E;setter&#x65B9;&#x6CD5;</span>
+<span class="hljs-meta">@ConfigurationProperties</span>(prefix = <span class="hljs-string">&quot;pattern&quot;</span>) <span class="hljs-comment">//&#x4E00;&#x822C;&#x8BE5;&#x6CE8;&#x89E3;&#x90FD;&#x4F1A;&#x914D;&#x5408;prefix&#x524D;&#x7F00;&#x540D;&#x53BB;&#x4F7F;&#x7528;&#xFF0C;&#x901A;&#x77E5;springcloud&#x7ED9;&#x5C5E;&#x6027;&#x540D;&#x4E0E;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E00;&#x81F4;&#x7684;&#x5C5E;&#x6027;&#x6CE8;&#x5165;&#x503C;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PatternProperties</span> </span>{
+    <span class="hljs-keyword">private</span> String dateformat;
+    <span class="hljs-keyword">private</span> String envSharedValue;
+    <span class="hljs-keyword">private</span> String name;
+}
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x5728;Controller&#x7C7B;&#x4E2D;&#x4F7F;&#x7528;@Autowired&#x6CE8;&#x5165;&#x8FD9;&#x4E2A;&#x7C7B;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Slf</span>4j
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/user&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserController</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> UserService userService;
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> PatternProperties patternProperties;
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/now&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">now</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> LocalDateTime.now().format(DateTimeFormatter.ofPattern(patternProperties.getDateformat()));
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h5 id="&#x65B9;&#x5F0F;&#x4E09;&#xFF1A;&#x4F7F;&#x7528;configurationproperties&#x4E0E;enableconfigurataion&#x6CE8;&#x89E3;&#x52A0;&#x8F7D;"><a name="&#x65B9;&#x5F0F;&#x4E09;&#xFF1A;&#x4F7F;&#x7528;configurationproperties&#x4E0E;enableconfigurataion&#x6CE8;&#x89E3;&#x52A0;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x5F0F;&#x4E09;&#xFF1A;&#x4F7F;&#x7528;configurationproperties&#x4E0E;enableconfigurataion&#x6CE8;&#x89E3;&#x52A0;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x5F0F;&#x4E09;&#xFF1A;&#x4F7F;&#x7528;@ConfigurationProperties&#x4E0E;@EnableConfigurataion&#x6CE8;&#x89E3;&#x52A0;&#x8F7D;</h5>
+<ul>
+<li><p>&#x914D;&#x7F6E;&#x7C7B;&#x4E2D;&#x4E0D;&#x4F7F;&#x7528;@Component&#x6CE8;&#x89E3;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.user.config;
+
+<span class="hljs-keyword">import</span> lombok.Data;
+<span class="hljs-keyword">import</span> org.springframework.boot.context.properties.ConfigurationProperties;
+
+<span class="hljs-meta">@Data</span> <span class="hljs-comment">//@ConfigurationProperties&#x6CE8;&#x89E3;&#x4F9D;&#x8D56;&#x4E8E;setter&#x65B9;&#x6CD5;</span>
+<span class="hljs-meta">@ConfigurationProperties</span>(prefix = <span class="hljs-string">&quot;pattern&quot;</span>) <span class="hljs-comment">//&#x4E00;&#x822C;&#x8BE5;&#x6CE8;&#x89E3;&#x90FD;&#x4F1A;&#x914D;&#x5408;prefix&#x524D;&#x7F00;&#x540D;&#x53BB;&#x4F7F;&#x7528;&#xFF0C;&#x901A;&#x77E5;springcloud&#x7ED9;&#x5C5E;&#x6027;&#x540D;&#x4E0E;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E00;&#x81F4;&#x7684;&#x5C5E;&#x6027;&#x6CE8;&#x5165;&#x503C;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PatternProperties</span> </span>{
+    <span class="hljs-keyword">private</span> String dateformat;
+    <span class="hljs-keyword">private</span> String envSharedValue;
+    <span class="hljs-keyword">private</span> String name;
+}
+</code></pre>
+</li>
+<li><p>Contrller&#x7C7B;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Slf</span>4j
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/user&quot;</span>)
+<span class="hljs-meta">@EnableConfigurationProperties</span>(PatternProperties.class)<span class="hljs-comment">//&#x8BE5;&#x8BED;&#x53E5;&#x7684;&#x6548;&#x679C;&#x5176;&#x5B9E;&#x4E0E;@Component&#x5728;&#x6CE8;&#x89E3;&#x7684;&#x6548;&#x679C;&#x662F;&#x4E00;&#x6837;&#x7684;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserController</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> UserService userService;
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> PatternProperties patternProperties;
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/now&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">now</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> LocalDateTime.now().format(DateTimeFormatter.ofPattern(patternProperties.getDateformat()));
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h4 id="&#x914D;&#x7F6E;&#x5171;&#x4EAB;"><a name="&#x914D;&#x7F6E;&#x5171;&#x4EAB;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x5171;&#x4EAB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x5171;&#x4EAB;</h4>
+<ul>
+<li><p>&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;userservice.yaml&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;dev&#xFF0C;&#x8FD8;&#x662F;test&#x73AF;&#x5883;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x5230;envSharedValue&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x503C;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">pattern:</span> 
+<span class="hljs-attr">  envSharedValue:</span> &#x516C;&#x5171;&#x914D;&#x7F6E;
+</code></pre>
+</li>
+<li><p>&#x914D;&#x7F6E;&#x5171;&#x4EAB;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF1A;&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x73AF;&#x5883;&#x7684;&#x6700;&#x9AD8;&#xFF0C;&#x5171;&#x4EAB;&#x73AF;&#x5883;&#x7B2C;&#x4E8C;&#xFF0C;&#x672C;&#x5730;&#x7684;&#x7B2C;&#x4E09;</p>
+<ul>
+<li>&#x670D;&#x52A1;&#x540D;-profile.yaml &gt; &#x670D;&#x52A1;&#x540D;&#x79F0;.yaml &gt; &#x672C;&#x5730;&#x914D;&#x7F6E;</li>
+</ul>
+</li>
+</ul>
+<h4 id="nacos&#x96C6;&#x7FA4;"><a name="nacos&#x96C6;&#x7FA4;" class="anchor-navigation-ex-anchor" href="#nacos&#x96C6;&#x7FA4;"><i class="fa fa-link" aria-hidden="true"></i></a>Nacos&#x96C6;&#x7FA4;</h4>
+<blockquote>
+<p>nacos&#x96C6;&#x7FA4;&#x6570;&#x636E;&#x5171;&#x4EAB;&#x662F;&#x57FA;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x5B9E;&#x73B0;</p>
+</blockquote>
+<ul>
+<li><p>&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;&#xFF0C;==&#x6CE8;&#xFF1A;&#x8981;&#x4F7F;&#x7528;mysql5.7&#x4EE5;&#x4E0A;&#x7684;&#x7248;&#x672C;&#xFF0C;5.5&#x8FD0;&#x884C;&#x4E0D;&#x4E86;&#x3002;==</p>
+<p>```mysql
+CREATE DATABASE IF NOT EXISTS nacos;
+USE nacos;</p>
+<p>CREATE TABLE <code>config_info</code> (
+  <code>id</code> bigint(20) NOT NULL AUTO_INCREMENT COMMENT &apos;id&apos;,
+  <code>data_id</code> varchar(255) NOT NULL COMMENT &apos;data_id&apos;,
+  <code>group_id</code> varchar(255) DEFAULT NULL,
+  <code>content</code> longtext NOT NULL COMMENT &apos;content&apos;,
+  <code>md5</code> varchar(32) DEFAULT NULL COMMENT &apos;md5&apos;,
+  <code>gmt_create</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+  <code>gmt_modified</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+  <code>src_user</code> text COMMENT &apos;source user&apos;,
+  <code>src_ip</code> varchar(50) DEFAULT NULL COMMENT &apos;source ip&apos;,
+  <code>app_name</code> varchar(128) DEFAULT NULL,
+  <code>tenant_id</code> varchar(128) DEFAULT &apos;&apos; COMMENT &apos;&#x79DF;&#x6237;&#x5B57;&#x6BB5;&apos;,
+  <code>c_desc</code> varchar(256) DEFAULT NULL,
+  <code>c_use</code> varchar(64) DEFAULT NULL,
+  <code>effect</code> varchar(64) DEFAULT NULL,
+  <code>type</code> varchar(64) DEFAULT NULL,
+  <code>c_schema</code> text,
+  PRIMARY KEY (<code>id</code>),
+  UNIQUE KEY <code>uk_configinfo_datagrouptenant</code> (<code>data_id</code>,<code>group_id</code>,<code>tenant_id</code>)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT=&apos;config_info&apos;;</p>
+<p>/<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+/<em>   &#x6570;&#x636E;&#x5E93;&#x5168;&#x540D; = nacos   </em>/
+/<em>   &#x8868;&#x540D;&#x79F0; = config_info_aggr   </em>/
+/<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+CREATE TABLE <code>config_info_aggr</code> (
+  <code>id</code> bigint(20) NOT NULL AUTO_INCREMENT COMMENT &apos;id&apos;,
+  <code>data_id</code> varchar(255) NOT NULL COMMENT &apos;data_id&apos;,
+  <code>group_id</code> varchar(255) NOT NULL COMMENT &apos;group_id&apos;,
+  <code>datum_id</code> varchar(255) NOT NULL COMMENT &apos;datum_id&apos;,
+  <code>content</code> longtext NOT NULL COMMENT &apos;&#x5185;&#x5BB9;&apos;,
+  <code>gmt_modified</code> datetime NOT NULL COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+  <code>app_name</code> varchar(128) DEFAULT NULL,
+  <code>tenant_id</code> varchar(128) DEFAULT &apos;&apos; COMMENT &apos;&#x79DF;&#x6237;&#x5B57;&#x6BB5;&apos;,
+  PRIMARY KEY (<code>id</code>),
+  UNIQUE KEY <code>uk_configinfoaggr_datagrouptenantdatum</code> (<code>data_id</code>,<code>group_id</code>,<code>tenant_id</code>,<code>datum_id</code>)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT=&apos;&#x589E;&#x52A0;&#x79DF;&#x6237;&#x5B57;&#x6BB5;&apos;;</p>
+</li>
+</ul>
+<p>  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  /<em>   &#x6570;&#x636E;&#x5E93;&#x5168;&#x540D; = nacos   </em>/
+  /<em>   &#x8868;&#x540D;&#x79F0; = config_info_beta   </em>/
+  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  CREATE TABLE <code>config_info_beta</code> (
+    <code>id</code> bigint(20) NOT NULL AUTO_INCREMENT COMMENT &apos;id&apos;,
+    <code>data_id</code> varchar(255) NOT NULL COMMENT &apos;data_id&apos;,
+    <code>group_id</code> varchar(128) NOT NULL COMMENT &apos;group_id&apos;,
+    <code>app_name</code> varchar(128) DEFAULT NULL COMMENT &apos;app_name&apos;,
+    <code>content</code> longtext NOT NULL COMMENT &apos;content&apos;,
+    <code>beta_ips</code> varchar(1024) DEFAULT NULL COMMENT &apos;betaIps&apos;,
+    <code>md5</code> varchar(32) DEFAULT NULL COMMENT &apos;md5&apos;,
+    <code>gmt_create</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+    <code>gmt_modified</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+    <code>src_user</code> text COMMENT &apos;source user&apos;,
+    <code>src_ip</code> varchar(50) DEFAULT NULL COMMENT &apos;source ip&apos;,
+    <code>tenant_id</code> varchar(128) DEFAULT &apos;&apos; COMMENT &apos;&#x79DF;&#x6237;&#x5B57;&#x6BB5;&apos;,
+    PRIMARY KEY (<code>id</code>),
+    UNIQUE KEY <code>uk_configinfobeta_datagrouptenant</code> (<code>data_id</code>,<code>group_id</code>,<code>tenant_id</code>)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT=&apos;config_info_beta&apos;;</p>
+<p>  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  /<em>   &#x6570;&#x636E;&#x5E93;&#x5168;&#x540D; = nacos   </em>/
+  /<em>   &#x8868;&#x540D;&#x79F0; = config_info_tag   </em>/
+  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  CREATE TABLE <code>config_info_tag</code> (
+    <code>id</code> bigint(20) NOT NULL AUTO_INCREMENT COMMENT &apos;id&apos;,
+    <code>data_id</code> varchar(255) NOT NULL COMMENT &apos;data_id&apos;,
+    <code>group_id</code> varchar(128) NOT NULL COMMENT &apos;group_id&apos;,
+    <code>tenant_id</code> varchar(128) DEFAULT &apos;&apos; COMMENT &apos;tenant_id&apos;,
+    <code>tag_id</code> varchar(128) NOT NULL COMMENT &apos;tag_id&apos;,
+    <code>app_name</code> varchar(128) DEFAULT NULL COMMENT &apos;app_name&apos;,
+    <code>content</code> longtext NOT NULL COMMENT &apos;content&apos;,
+    <code>md5</code> varchar(32) DEFAULT NULL COMMENT &apos;md5&apos;,
+    <code>gmt_create</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+    <code>gmt_modified</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+    <code>src_user</code> text COMMENT &apos;source user&apos;,
+    <code>src_ip</code> varchar(50) DEFAULT NULL COMMENT &apos;source ip&apos;,
+    PRIMARY KEY (<code>id</code>),
+    UNIQUE KEY <code>uk_configinfotag_datagrouptenanttag</code> (<code>data_id</code>,<code>group_id</code>,<code>tenant_id</code>,<code>tag_id</code>)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT=&apos;config_info_tag&apos;;</p>
+<p>  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  /<em>   &#x6570;&#x636E;&#x5E93;&#x5168;&#x540D; = nacos   </em>/
+  /<em>   &#x8868;&#x540D;&#x79F0; = config_tags_relation   </em>/
+  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  CREATE TABLE <code>config_tags_relation</code> (
+    <code>id</code> bigint(20) NOT NULL COMMENT &apos;id&apos;,
+    <code>tag_name</code> varchar(128) NOT NULL COMMENT &apos;tag_name&apos;,
+    <code>tag_type</code> varchar(64) DEFAULT NULL COMMENT &apos;tag_type&apos;,
+    <code>data_id</code> varchar(255) NOT NULL COMMENT &apos;data_id&apos;,
+    <code>group_id</code> varchar(128) NOT NULL COMMENT &apos;group_id&apos;,
+    <code>tenant_id</code> varchar(128) DEFAULT &apos;&apos; COMMENT &apos;tenant_id&apos;,
+    <code>nid</code> bigint(20) NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (<code>nid</code>),
+    UNIQUE KEY <code>uk_configtagrelation_configidtag</code> (<code>id</code>,<code>tag_name</code>,<code>tag_type</code>),
+    KEY <code>idx_tenant_id</code> (<code>tenant_id</code>)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT=&apos;config_tag_relation&apos;;</p>
+<p>  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  /<em>   &#x6570;&#x636E;&#x5E93;&#x5168;&#x540D; = nacos   </em>/
+  /<em>   &#x8868;&#x540D;&#x79F0; = group_capacity   </em>/
+  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  CREATE TABLE <code>group_capacity</code> (
+    <code>id</code> bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT &apos;&#x4E3B;&#x952E;ID&apos;,
+    <code>group_id</code> varchar(128) NOT NULL DEFAULT &apos;&apos; COMMENT &apos;Group ID&#xFF0C;&#x7A7A;&#x5B57;&#x7B26;&#x8868;&#x793A;&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&apos;,
+    <code>quota</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x914D;&#x989D;&#xFF0C;0&#x8868;&#x793A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&apos;,
+    <code>usage</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x4F7F;&#x7528;&#x91CF;&apos;,
+    <code>max_size</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x5355;&#x4E2A;&#x914D;&#x7F6E;&#x5927;&#x5C0F;&#x4E0A;&#x9650;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x5B57;&#x8282;&#xFF0C;0&#x8868;&#x793A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&apos;,
+    <code>max_aggr_count</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x805A;&#x5408;&#x5B50;&#x914D;&#x7F6E;&#x6700;&#x5927;&#x4E2A;&#x6570;&#xFF0C;&#xFF0C;0&#x8868;&#x793A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&apos;,
+    <code>max_aggr_size</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x5355;&#x4E2A;&#x805A;&#x5408;&#x6570;&#x636E;&#x7684;&#x5B50;&#x914D;&#x7F6E;&#x5927;&#x5C0F;&#x4E0A;&#x9650;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x5B57;&#x8282;&#xFF0C;0&#x8868;&#x793A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&apos;,
+    <code>max_history_count</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x6700;&#x5927;&#x53D8;&#x66F4;&#x5386;&#x53F2;&#x6570;&#x91CF;&apos;,
+    <code>gmt_create</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+    <code>gmt_modified</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+    PRIMARY KEY (<code>id</code>),
+    UNIQUE KEY <code>uk_group_id</code> (<code>group_id</code>)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT=&apos;&#x96C6;&#x7FA4;&#x3001;&#x5404;Group&#x5BB9;&#x91CF;&#x4FE1;&#x606F;&#x8868;&apos;;</p>
+<p>  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  /<em>   &#x6570;&#x636E;&#x5E93;&#x5168;&#x540D; = nacos   </em>/
+  /<em>   &#x8868;&#x540D;&#x79F0; = his_config_info   </em>/
+  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  CREATE TABLE <code>his_config_info</code> (
+    <code>id</code> bigint(64) unsigned NOT NULL,
+    <code>nid</code> bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+    <code>data_id</code> varchar(255) NOT NULL,
+    <code>group_id</code> varchar(128) NOT NULL,
+    <code>app_name</code> varchar(128) DEFAULT NULL COMMENT &apos;app_name&apos;,
+    <code>content</code> longtext NOT NULL,
+    <code>md5</code> varchar(32) DEFAULT NULL,
+    <code>gmt_create</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    <code>gmt_modified</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    <code>src_user</code> text,
+    <code>src_ip</code> varchar(50) DEFAULT NULL,
+    <code>op_type</code> char(10) DEFAULT NULL,
+    <code>tenant_id</code> varchar(128) DEFAULT &apos;&apos; COMMENT &apos;&#x79DF;&#x6237;&#x5B57;&#x6BB5;&apos;,
+    PRIMARY KEY (<code>nid</code>),
+    KEY <code>idx_gmt_create</code> (<code>gmt_create</code>),
+    KEY <code>idx_gmt_modified</code> (<code>gmt_modified</code>),
+    KEY <code>idx_did</code> (<code>data_id</code>)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT=&apos;&#x591A;&#x79DF;&#x6237;&#x6539;&#x9020;&apos;;</p>
+<p>  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  /<em>   &#x6570;&#x636E;&#x5E93;&#x5168;&#x540D; = nacos   </em>/
+  /<em>   &#x8868;&#x540D;&#x79F0; = tenant_capacity   </em>/
+  /<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>**</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>/
+  CREATE TABLE <code>tenant_capacity</code> (
+    <code>id</code> bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT &apos;&#x4E3B;&#x952E;ID&apos;,
+    <code>tenant_id</code> varchar(128) NOT NULL DEFAULT &apos;&apos; COMMENT &apos;Tenant ID&apos;,
+    <code>quota</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x914D;&#x989D;&#xFF0C;0&#x8868;&#x793A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&apos;,
+    <code>usage</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x4F7F;&#x7528;&#x91CF;&apos;,
+    <code>max_size</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x5355;&#x4E2A;&#x914D;&#x7F6E;&#x5927;&#x5C0F;&#x4E0A;&#x9650;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x5B57;&#x8282;&#xFF0C;0&#x8868;&#x793A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&apos;,
+    <code>max_aggr_count</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x805A;&#x5408;&#x5B50;&#x914D;&#x7F6E;&#x6700;&#x5927;&#x4E2A;&#x6570;&apos;,
+    <code>max_aggr_size</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x5355;&#x4E2A;&#x805A;&#x5408;&#x6570;&#x636E;&#x7684;&#x5B50;&#x914D;&#x7F6E;&#x5927;&#x5C0F;&#x4E0A;&#x9650;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x5B57;&#x8282;&#xFF0C;0&#x8868;&#x793A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&apos;,
+    <code>max_history_count</code> int(10) unsigned NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;&#x6700;&#x5927;&#x53D8;&#x66F4;&#x5386;&#x53F2;&#x6570;&#x91CF;&apos;,
+    <code>gmt_create</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+    <code>gmt_modified</code> datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+    PRIMARY KEY (<code>id</code>),
+    UNIQUE KEY <code>uk_tenant_id</code> (<code>tenant_id</code>)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT=&apos;&#x79DF;&#x6237;&#x5BB9;&#x91CF;&#x4FE1;&#x606F;&#x8868;&apos;;</p>
+<p>  CREATE TABLE <code>tenant_info</code> (
+    <code>id</code> bigint(20) NOT NULL AUTO_INCREMENT COMMENT &apos;id&apos;,
+    <code>kp</code> varchar(128) NOT NULL COMMENT &apos;kp&apos;,
+    <code>tenant_id</code> varchar(128) default &apos;&apos; COMMENT &apos;tenant_id&apos;,
+    <code>tenant_name</code> varchar(128) default &apos;&apos; COMMENT &apos;tenant_name&apos;,
+    <code>tenant_desc</code> varchar(256) DEFAULT NULL COMMENT &apos;tenant_desc&apos;,
+    <code>create_source</code> varchar(32) DEFAULT NULL COMMENT &apos;create_source&apos;,
+    <code>gmt_create</code> bigint(20) NOT NULL COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+    <code>gmt_modified</code> bigint(20) NOT NULL COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+    PRIMARY KEY (<code>id</code>),
+    UNIQUE KEY <code>uk_tenant_info_kptenantid</code> (<code>kp</code>,<code>tenant_id</code>),
+    KEY <code>idx_tenant_id</code> (<code>tenant_id</code>)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT=&apos;tenant_info&apos;;</p>
+<p>  CREATE TABLE <code>users</code> (
+      <code>username</code> varchar(50) NOT NULL PRIMARY KEY,
+      <code>password</code> varchar(500) NOT NULL,
+      <code>enabled</code> boolean NOT NULL
+  );</p>
+<p>  CREATE TABLE <code>roles</code> (
+      <code>username</code> varchar(50) NOT NULL,
+      <code>role</code> varchar(50) NOT NULL,
+      UNIQUE INDEX <code>idx_user_role</code> (<code>username</code> ASC, <code>role</code> ASC) USING BTREE
+  );</p>
+<p>  CREATE TABLE <code>permissions</code> (
+      <code>role</code> varchar(50) NOT NULL,
+      <code>resource</code> varchar(255) NOT NULL,
+      <code>action</code> varchar(8) NOT NULL,
+      UNIQUE INDEX <code>uk_role_permission</code> (<code>role</code>,<code>resource</code>,<code>action</code>) USING BTREE
+  );</p>
+<p>  INSERT INTO users (username, password, enabled) VALUES (&apos;nacos&apos;, &apos;$2a$10$EuWPZHzz32dJN7jexM34MOeYirDdFAZm2kuWj7VEOJhhZkDrxfvUu&apos;, TRUE);</p>
+<p>  INSERT INTO roles (username, role) VALUES (&apos;nacos&apos;, &apos;ROLE_ADMIN&apos;);</p>
+<pre><code>
+
+
+- &#x914D;&#x7F6E;Nacos
+
+  - &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x540D;&#x4E3A;&#xFF1A;nacos-cluster
+
+  - &#x8FDB;&#x5165;&#x76EE;&#x5F55;nacos-cluster&#x76EE;&#x5F55;&#xFF0C;&#x91CD;&#x65B0;&#x89E3;&#x538B;&#x5B89;&#x88C5;&#x4E00;&#x4EFD;&#x65B0;&#x7684;nacos
+
+  - &#x8FDB;&#x5165;nacos&#x7684;conf&#x76EE;&#x5F55;&#xFF0C;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;cluster.conf.example&#xFF0C;&#x91CD;&#x547D;&#x540D;&#x4E3A;cluster.conf&#xFF0C;&#x7F16;&#x5199;&#x96C6;&#x7FA4;IP
+</code></pre><pre><code>127.0.0.1:8845
+127.0.0.1:8846
+127.0.0.1:8847
+```
+</code></pre><ul>
+<li><p>&#x4FEE;&#x6539;application.properties&#x6587;&#x4EF6;&#xFF0C;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x5730;&#x5740;&#x3001;&#x7528;&#x6237;&#x540D;&#x3001;&#x5BC6;&#x7801;</p>
+<p><a href="images/1657245287062.png" data-lightbox="b4a6d74e-4b8c-427f-8ad9-127fd530cfc2" data-title="1657245287062"><img src="images/1657245287062.png" alt="1657245287062"></a></p>
+<pre><code class="lang-properties">server.port=8845
+
+nacos.inetutils.ip-address=127.0.0.1
+
+#*************** Config Module Related Configurations ***************#
+# mysql&#x7684;&#x6570;&#x636E;&#x5E93;&#x96C6;&#x7FA4;
+spring.datasource.platform=mysql
+# &#x6570;&#x636E;&#x5E93;&#x7684;&#x6570;&#x91CF;
+db.num=1
+# &#x8FDE;&#x63A5;&#x5B57;&#x7B26;&#x4E32;
+db.url.0=jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&amp;connectTimeout=1000&amp;socketTimeout=3000&amp;autoReconnect=true&amp;useUnicode=true&amp;useSSL=false&amp;serverTimezone=UTC
+# &#x7528;&#x6237;&#x540D;
+db.user.0=root
+# &#x5BC6;&#x7801;
+db.password.0=root
+</code></pre>
+</li>
+<li><p>&#x5C06;nacos&#x6539;&#x540D;&#x6210;nacos1&#xFF0C;&#x5E76;&#x4E14;&#x590D;&#x5236;&#x4E24;&#x4EFD;&#xFF0C;&#x5206;&#x522B;&#x547D;&#x540D;&#x4E3A;&#xFF1A;nacos2&#x3001;nacos3&#x3002;&#x4FEE;&#x6539;application.properties&#x6587;&#x4EF6;&#x4E2D;&#x7684;server.port</p>
+</li>
+<li><p>&#x542F;&#x52A8;&#x4E09;&#x53F0;Nacos</p>
+</li>
+</ul>
+<h5 id="nginx&#x53CD;&#x5411;&#x4EE3;&#x7406;"><a name="nginx&#x53CD;&#x5411;&#x4EE3;&#x7406;" class="anchor-navigation-ex-anchor" href="#nginx&#x53CD;&#x5411;&#x4EE3;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>Nginx&#x53CD;&#x5411;&#x4EE3;&#x7406;</h5>
+<ul>
+<li><p>&#x4FEE;&#x6539;conf/nginx.conf&#x6587;&#x4EF6;</p>
+<pre><code class="lang-nginx"><span class="hljs-attribute">upstream</span> nacos-cluster {
+    <span class="hljs-attribute">server</span> <span class="hljs-number">127.0.0.1:8845</span>;
+    <span class="hljs-attribute">server</span> <span class="hljs-number">127.0.0.1:8846</span>;
+    <span class="hljs-attribute">server</span> <span class="hljs-number">127.0.0.1:8847</span>;
+}
+
+<span class="hljs-section">server</span> {
+    <span class="hljs-attribute">listen</span>       <span class="hljs-number">80</span>;
+    <span class="hljs-attribute">server_name</span>  localhost;
+
+    <span class="hljs-attribute">location</span> / {
+        <span class="hljs-attribute">proxy_pass</span> http://nacos-cluster;
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x542F;&#x52A8;Nginx&#x670D;&#x52A1;&#x5668;</p>
+</li>
+<li><p>&#x4FEE;&#x6539;userservice&#x670D;&#x52A1;&#x7684;bootstrap.yaml&#x6587;&#x4EF6;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    nacos:</span>
+<span class="hljs-attr">      server-addr:</span> localhost:<span class="hljs-number">80</span> <span class="hljs-comment"># &#x53CD;&#x5411;&#x4EE3;&#x7406;&#x540E;&#x7684;Nacos&#x5730;&#x5740;</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="feign&#x8FDC;&#x7A0B;&#x8C03;&#x7528;"><a name="feign&#x8FDC;&#x7A0B;&#x8C03;&#x7528;" class="anchor-navigation-ex-anchor" href="#feign&#x8FDC;&#x7A0B;&#x8C03;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>Feign&#x8FDC;&#x7A0B;&#x8C03;&#x7528;</h3>
+<blockquote>
+<p>&#x4F7F;&#x7528;RestTemplate&#x53D1;&#x8D77;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#xFF0C;&#x4EE3;&#x7801;&#x53EF;&#x8BFB;&#x6027;&#x5DEE;&#xFF0C;&#x7F16;&#x7A0B;&#x4F53;&#x9A8C;&#x4E0D;&#x7EDF;&#x4E00;&#xFF0C;&#x53C2;&#x6570;&#x590D;&#x6742;URL&#x96BE;&#x4EE5;&#x7EF4;&#x62A4;</p>
+<p>Feign&#x662F;&#x4E00;&#x4E2A;&#x58F0;&#x660E;&#x5F0F;&#x7684;http&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#x4F18;&#x96C5;&#x7684;&#x5B9E;&#x73B0;http&#x8BF7;&#x6C42;&#x7684;&#x53D1;&#x9001;</p>
+</blockquote>
+<h4 id="feign-api"><a name="feign-api" class="anchor-navigation-ex-anchor" href="#feign-api"><i class="fa fa-link" aria-hidden="true"></i></a>Feign-api</h4>
+<blockquote>
+<p>&#x5C06;Feign&#x7684;Client&#x62BD;&#x53D6;&#x4E3A;&#x72EC;&#x7ACB;&#x6A21;&#x5757;&#xFF0C;&#x5E76;&#x4E14;&#x628A;&#x63A5;&#x53E3;&#x6709;&#x5173;&#x7684;POJO&#x3001;&#x9ED8;&#x8BA4;&#x7684;Feign&#x914D;&#x7F6E;&#x90FD;&#x653E;&#x5230;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x6240;&#x6709;&#x5FAE;&#x670D;&#x52A1;&#x5F15;&#x7528;&#x8BE5;&#x4F9D;&#x8D56;&#x5305;&#xFF0C;&#x5373;&#x53EF;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x5355;&#x72EC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;feign-api&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x7EE7;&#x627F;&#x7236;&#x6A21;&#x5757;</p>
+<p><a href="images/image-20230201211857480.png" data-lightbox="56e73298-72f0-476f-b9a3-8065eba5cd12" data-title="image-20230201211857480"><img src="images/image-20230201211857480.png" alt="image-20230201211857480"></a></p>
+</li>
+<li><p>&#x5BFC;&#x5165;feign&#x7684;starter&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-openfeign<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x5176;&#x4ED6;&#x9700;&#x8981;&#x4F7F;&#x7528;feign-api&#x7684;&#x5FAE;&#x670D;&#x52A1;&#xFF0C;&#x9700;&#x8981;&#x5728;pom&#x4E2D;&#x5BFC;&#x5165;&#x8BE5;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>cn.itcast.demo<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>feign-api<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<h5 id="&#x89E3;&#x51B3;&#x5305;&#x626B;&#x63CF;&#x95EE;&#x9898;"><a name="&#x89E3;&#x51B3;&#x5305;&#x626B;&#x63CF;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x5305;&#x626B;&#x63CF;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x5305;&#x626B;&#x63CF;&#x95EE;&#x9898;</h5>
+<blockquote>
+<p>UserClient&#x73B0;&#x5728;&#x5728;<strong>cn.itcast.feign.client</strong>&#x5305;&#x4E0B;&#xFF0C;&#x800C;order-service&#x7684;@EnableFeignClients&#x6CE8;&#x89E3;&#x9ED8;&#x8BA4;&#x626B;&#x63CF;&#x7684;&#x662F;<strong>cn.itcast.order</strong>&#x5305;&#x548C;&#x5B83;&#x7684;&#x5B50;&#x5305;&#xFF0C;&#x4E0D;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7236;&#x5305;&#x4E2D;&#xFF0C;&#x65E0;&#x6CD5;&#x626B;&#x63CF;&#x5230;UserClient&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;&#x6307;&#x5B9A;Feign&#x5E94;&#x8BE5;&#x626B;&#x63CF;&#x7684;&#x5305;&#xFF0C;&#x5BF9;&#x6574;&#x4E2A;&#x5305;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x63A5;&#x53E3;&#x751F;&#x6210;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@EnableFeignClients</span>(basePackages = <span class="hljs-string">&quot;cn.itcast.feign.client&quot;</span>)
+</code></pre>
+</li>
+<li><p>&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x7684;Client&#x63A5;&#x53E3;&#xFF0C;&#x5BF9;&#x6307;&#x5B9A;&#x7684;&#x63A5;&#x53E3;&#x751F;&#x6210;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@EnableFeignClients</span>(clients = {UserClient.class})
+</code></pre>
+</li>
+</ul>
+<h4 id="feign&#x66FF;&#x4EE3;resttemplate"><a name="feign&#x66FF;&#x4EE3;resttemplate" class="anchor-navigation-ex-anchor" href="#feign&#x66FF;&#x4EE3;resttemplate"><i class="fa fa-link" aria-hidden="true"></i></a>Feign&#x66FF;&#x4EE3;RestTemplate</h4>
+<ul>
+<li><p>&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!--feign--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-openfeign<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x6DFB;&#x52A0;&#x6CE8;&#x89E3;&#xFF0C;&#x5728;order-service&#x7684;<strong>&#x542F;&#x52A8;&#x7C7B;</strong>&#x6DFB;&#x52A0;==<strong>@EnableFeignClients</strong>==&#x6CE8;&#x89E3;&#x5F00;&#x542F;Feign&#x7684;&#x529F;&#x80FD;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@MapperScan</span>(<span class="hljs-string">&quot;cn.itcast.order.mapper&quot;</span>)
+<span class="hljs-meta">@SpringBootApplication</span>
+<span class="hljs-meta">@EnableFeignClients</span>(basePackages = <span class="hljs-string">&quot;cn.itcast.feign.client&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OrderApplication</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        SpringApplication.run(OrderApplication.class, args);
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x6CE8;&#x91CA;&#x6389;RestTemplate&#x7684;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-meta">@LoadBalanced</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> RestTemplate <span class="hljs-title">restTemplate</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> RestTemplate();
+}
+</code></pre>
+</li>
+</ul>
+<h4 id="&#x7F16;&#x5199;feign&#x5BA2;&#x6237;&#x7AEF;"><a name="&#x7F16;&#x5199;feign&#x5BA2;&#x6237;&#x7AEF;" class="anchor-navigation-ex-anchor" href="#&#x7F16;&#x5199;feign&#x5BA2;&#x6237;&#x7AEF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F16;&#x5199;Feign&#x5BA2;&#x6237;&#x7AEF;</h4>
+<ul>
+<li><p>&#x5728;feign-api&#x7684;&#x6A21;&#x5757;&#x4E0B;&#x521B;&#x5EFA;client&#x5305;</p>
+</li>
+<li><p>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;==<strong>&#x63A5;&#x53E3;</strong>==&#xFF0C;&#x6307;&#x5B9A;&#x670D;&#x52A1;&#x540D;&#x5B57;<code>userservice</code>&#x3001;&#x8BBF;&#x95EE;&#x5730;&#x5740;<code>/user/{id}</code>&#x3001;&#x65B9;&#x6CD5;&#x53C2;&#x6570;<code>id</code>&#x7684;&#x6CE8;&#x5165;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.feign.client;
+
+<span class="hljs-keyword">import</span> cn.itcast.feign.config.DefaultFeignConfiguration;
+<span class="hljs-keyword">import</span> cn.itcast.feign.pojo.User;
+<span class="hljs-keyword">import</span> org.springframework.cloud.openfeign.FeignClient;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.PathVariable;
+
+<span class="hljs-meta">@FeignClient</span>(value = <span class="hljs-string">&quot;userservice&quot;</span>,configuration = FeignConfiguration.class)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">UserClient</span> </span>{
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/user/{id}&quot;</span>) 
+    <span class="hljs-function"><span class="hljs-keyword">public</span> User <span class="hljs-title">queryById</span><span class="hljs-params">(@PathVariable(<span class="hljs-string">&quot;id&quot;</span>)</span> Long id)</span>;
+
+}
+</code></pre>
+</li>
+<li><p>&#x4FEE;&#x6539;OrderCOntroller&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F7F;&#x7528;feign&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x53BB;&#x8C03;&#x7528;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.order.web;
+
+<span class="hljs-keyword">import</span> cn.itcast.feign.client.UserClient;
+<span class="hljs-keyword">import</span> cn.itcast.feign.pojo.User;
+<span class="hljs-keyword">import</span> cn.itcast.order.pojo.Order;
+<span class="hljs-keyword">import</span> cn.itcast.order.service.OrderService;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.PathVariable;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RestController;
+
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;order&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OrderController</span> </span>{
+
+   <span class="hljs-meta">@Autowired</span>
+   <span class="hljs-keyword">private</span> OrderService orderService;
+
+   <span class="hljs-comment">//&#x6CE8;&#x610F;&#xFF1A; &#x8FD9;&#x91CC;&#x6CE8;&#x5165;&#x7684;&#x662F;feign&#x63A5;&#x53E3;&#x7684;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#xFF0C;feign&#x63A5;&#x53E3;&#x7684;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#x7531;springcloud&#x5E2E;&#x4F60;&#x751F;&#x6210;&#x3002;</span>
+   <span class="hljs-meta">@Autowired</span>(required = <span class="hljs-keyword">false</span>)
+   <span class="hljs-keyword">private</span> UserClient userClient;
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;{orderId}&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Order <span class="hljs-title">queryOrderByUserId</span><span class="hljs-params">(@PathVariable(<span class="hljs-string">&quot;orderId&quot;</span>)</span> Long orderId) </span>{
+        <span class="hljs-comment">// 1.&#x6839;&#x636E;id&#x67E5;&#x8BE2;&#x8BA2;&#x5355;&#x5E76;&#x8FD4;&#x56DE;</span>
+        Order order = orderService.queryOrderById(orderId);
+        <span class="hljs-comment">//2. &#x4F7F;&#x7528;&#x7528;&#x6237;&#x7684;id&#x8C03;&#x7528;user&#x7CFB;&#x7EDF;&#xFF0C;&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x7684;&#x5BF9;&#x8C61;</span>
+        <span class="hljs-comment">//&#x4F7F;&#x7528;feign&#x63A5;&#x53E3;&#x66FF;&#x4EE3;&#x4E86;restTemplate&#xFF0C;&#x4F46;&#x662F;&#x5E95;&#x5C42;&#x662F;&#x4E00;&#x6837;&#x7684;</span>
+        <span class="hljs-comment">//User user = restTemplate.getForObject(&quot;http://userservice/user/&quot; + order.getUserId(), User.class);</span>
+        User user = userClient.findById(order.getUserId());
+        <span class="hljs-comment">//3 &#x628A;User&#x5BF9;&#x8C61;&#x5C01;&#x88C5;&#x5230;Order</span>
+        order.setUser(user);
+        <span class="hljs-keyword">return</span> order;
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h4 id="&#x81EA;&#x5B9A;&#x4E49;&#x65E5;&#x5FD7;&#x914D;&#x7F6E;"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x65E5;&#x5FD7;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x65E5;&#x5FD7;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;&#x65E5;&#x5FD7;&#x914D;&#x7F6E;</h4>
+<blockquote>
+<p>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x5C31;&#x80FD;&#x6EE1;&#x8DB3;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x7684;@Bean&#x8986;&#x76D6;&#x9ED8;&#x8BA4;Bean&#x5373;&#x53EF;&#x3002;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x4F5C;&#x7528;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>feign.Logger.Level</strong></td>
+<td>&#x4FEE;&#x6539;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;</td>
+<td>&#x5305;&#x542B;&#x56DB;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x7EA7;&#x522B;&#xFF1A;<strong>NONE</strong>(&#x9ED8;&#x8BA4;)&#x3001;<strong>BASIC</strong>(&#x8BB0;&#x5F55;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x53D1;&#x51FA;&#x3001;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x7ED3;&#x675F;)&#x3001;<strong>HEADERS</strong>&#xFF08;&#x5728;basic&#x57FA;&#x7840;&#x8FD8;&#x8BB0;&#x5F55;&#x8BF7;&#x6C42;&#x5934;&#x4FE1;&#x606F;&#xFF09;&#x3001;<strong>FULL</strong>(&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x7684;&#x4FE1;&#x606F;)</td>
+</tr>
+<tr>
+<td>feign.codec.Decoder</td>
+<td>&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x7684;&#x89E3;&#x6790;&#x5668;</td>
+<td>http&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x7684;&#x7ED3;&#x679C;&#x505A;&#x89E3;&#x6790;&#xFF0C;&#x4F8B;&#x5982;&#x89E3;&#x6790;json&#x5B57;&#x7B26;&#x4E32;&#x4E3A;java&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>feign.codec.Encoder</td>
+<td>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x7F16;&#x7801;</td>
+<td>&#x5C06;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x7F16;&#x7801;&#xFF0C;&#x4FBF;&#x4E8E;&#x901A;&#x8FC7;http&#x8BF7;&#x6C42;&#x53D1;&#x9001;</td>
+</tr>
+<tr>
+<td>feign.Contract</td>
+<td>&#x652F;&#x6301;&#x7684;&#x6CE8;&#x89E3;&#x683C;&#x5F0F;</td>
+<td>&#x9ED8;&#x8BA4;&#x662F;SpringMVC&#x7684;&#x6CE8;&#x89E3;</td>
+</tr>
+<tr>
+<td>feign.Retryer</td>
+<td>&#x5931;&#x8D25;&#x91CD;&#x8BD5;&#x673A;&#x5236;</td>
+<td>&#x8BF7;&#x6C42;&#x5931;&#x8D25;&#x7684;&#x91CD;&#x8BD5;&#x673A;&#x5236;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x6CA1;&#x6709;&#xFF0C;&#x4E0D;&#x8FC7;&#x4F1A;&#x4F7F;&#x7528;Ribbon&#x7684;&#x91CD;&#x8BD5;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x65E5;&#x5FD7;&#x7EA7;&#x522B;<ul>
+<li>NONE&#xFF1A;&#x4E0D;&#x8BB0;&#x5F55;&#x4EFB;&#x4F55;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x662F;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</li>
+<li>BASIC&#xFF1A;&#x4EC5;&#x8BB0;&#x5F55;&#x8BF7;&#x6C42;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;URL&#x4EE5;&#x53CA;&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;&#x548C;&#x6267;&#x884C;&#x65F6;&#x95F4;</li>
+<li>HEADERS&#xFF1A;&#x5728;BASIC&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x989D;&#x5916;&#x8BB0;&#x5F55;&#x4E86;&#x8BF7;&#x6C42;&#x548C;&#x54CD;&#x5E94;&#x7684;&#x5934;&#x4FE1;&#x606F;</li>
+<li>FULL&#xFF1A;&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x8BF7;&#x6C42;&#x548C;&#x54CD;&#x5E94;&#x7684;&#x660E;&#x7EC6;&#xFF0C;&#x5305;&#x62EC;&#x5934;&#x4FE1;&#x606F;&#x3001;&#x8BF7;&#x6C42;&#x4F53;&#x3001;&#x5143;&#x6570;&#x636E;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h5 id="&#x4EE5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;"><a name="&#x4EE5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x4EE5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;</h5>
+<ul>
+<li><p>&#x57FA;&#x4E8E;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4FEE;&#x6539;feign&#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;<strong>&#x5355;&#x4E2A;</strong>&#x8981;&#x8C03;&#x7528;&#x7684;&#x670D;&#x52A1;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">feign:</span>  
+<span class="hljs-attr">  client:</span>
+<span class="hljs-attr">    config:</span> 
+<span class="hljs-attr">      userservice:</span>  <span class="hljs-comment"># &#x9488;&#x5BF9;&#x67D0;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x914D;&#x7F6E;</span>
+<span class="hljs-attr">        loggerLevel:</span> BASIC <span class="hljs-comment"># &#x65E5;&#x5FD7;&#x7EA7;&#x522B;</span>
+</code></pre>
+</li>
+<li><p>&#x4E5F;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;<strong>&#x6240;&#x6709;&#x670D;&#x52A1;</strong></p>
+<pre><code class="lang-yml"><span class="hljs-attr">feign:</span>  
+<span class="hljs-attr">  client:</span>
+<span class="hljs-attr">    config:</span> 
+<span class="hljs-attr">      default:</span> <span class="hljs-comment"># &#x8FD9;&#x91CC;&#x7528;default&#x5C31;&#x662F;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5199;&#x670D;&#x52A1;&#x540D;&#x79F0;&#xFF0C;&#x5219;&#x662F;&#x9488;&#x5BF9;&#x67D0;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x914D;&#x7F6E;</span>
+<span class="hljs-attr">        loggerLevel:</span> FULL <span class="hljs-comment"># &#x65E5;&#x5FD7;&#x7EA7;&#x522B;</span>
+</code></pre>
+</li>
+</ul>
+<h5 id="&#x4EE5;&#x4EE3;&#x7801;&#x7684;&#x65B9;&#x5F0F;"><a name="&#x4EE5;&#x4EE3;&#x7801;&#x7684;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x4EE5;&#x4EE3;&#x7801;&#x7684;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE5;&#x4EE3;&#x7801;&#x7684;&#x65B9;&#x5F0F;</h5>
+<ul>
+<li><p>&#x5728;config&#x5305;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;FeignConfiguration&#x7C7B;&#xFF0C;&#x58F0;&#x660E;&#x4E00;&#x4E2A;Logger.Level&#x7684;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.order.config;
+
+<span class="hljs-keyword">import</span> feign.Logger;
+<span class="hljs-keyword">import</span> org.springframework.context.annotation.Bean;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FeignConfiguration</span> </span>{
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-keyword">public</span> Logger.<span class="hljs-function">Level <span class="hljs-title">loggerLevel</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// &#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x4E3A;BASIC&#xFF0C;&#x8FD9;&#x662F;&#x4E2A;&#x679A;&#x4E3E;&#x7C7B;&#x578B;</span>
+        <span class="hljs-keyword">return</span> Logger.Level.BASIC;
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x5982;&#x679C;&#x8981;<strong>&#x5C40;&#x90E8;&#x751F;&#x6548;</strong>&#xFF0C;&#x5219;&#x628A;&#x5B83;&#x653E;&#x5230;UserClient&#x63A5;&#x53E3;&#x5BF9;&#x5E94;&#x7684;@FeignClient&#x8FD9;&#x4E2A;&#x6CE8;&#x89E3;&#x4E2D;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@FeignClient</span>(value = <span class="hljs-string">&quot;userservice&quot;</span>, configuration = FeignConfiguration.class)
+</code></pre>
+</li>
+<li><p>&#x5982;&#x679C;&#x8981;<strong>&#x5168;&#x5C40;&#x751F;&#x6548;</strong>&#xFF0C;&#x5C06;&#x5176;&#x653E;&#x5230;&#x542F;&#x52A8;&#x7C7B;&#x7684;@EnableFeignClients&#x8FD9;&#x4E2A;&#x6CE8;&#x89E3;&#x4E2D;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@EnableFeignClients</span>(defaultConfiguration = FeignConfiguration.class)
+</code></pre>
+</li>
+</ul>
+<h4 id="feign&#x4F18;&#x5316;&#xFF08;&#x8FDE;&#x63A5;&#x6C60;&#xFF09;"><a name="feign&#x4F18;&#x5316;&#xFF08;&#x8FDE;&#x63A5;&#x6C60;&#xFF09;" class="anchor-navigation-ex-anchor" href="#feign&#x4F18;&#x5316;&#xFF08;&#x8FDE;&#x63A5;&#x6C60;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>Feign&#x4F18;&#x5316;&#xFF08;&#x8FDE;&#x63A5;&#x6C60;&#xFF09;</h4>
+<blockquote>
+<p>Feign&#x5E95;&#x5C42;&#x53D1;&#x8D77;http&#x8BF7;&#x6C42;&#xFF0C;&#x4F9D;&#x8D56;&#x4E8E;&#x5176;&#x5B83;&#x7684;&#x6846;&#x67B6;&#x3002;&#x5176;&#x5E95;&#x5C42;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x73B0;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li>URLConnection&#xFF1A;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x8FDE;&#x63A5;&#x6C60;&#x3002;&#x6BCF;&#x6B21;&#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x8981;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF0C;&#x7ED3;&#x675F;&#x8FDE;&#x63A5;&#x8FD8;&#x8981;&#x56DB;&#x6B21;&#x6325;&#x624B;&#x3002;</li>
+<li>Apache HttpClient &#xFF1A;&#x652F;&#x6301;&#x8FDE;&#x63A5;&#x6C60;</li>
+<li>OKHttp&#xFF1A;&#x652F;&#x6301;&#x8FDE;&#x63A5;&#x6C60;</li>
+</ul>
+</blockquote>
+<h5 id="&#x914D;&#x7F6E;&#x8FDE;&#x63A5;&#x6C60;"><a name="&#x914D;&#x7F6E;&#x8FDE;&#x63A5;&#x6C60;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x8FDE;&#x63A5;&#x6C60;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x8FDE;&#x63A5;&#x6C60;</h5>
+<ul>
+<li><p>&#x5728;application.yml&#x4E2D;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#xFF08;&#x9ED8;&#x8BA4;&#x662F;&#x5F00;&#x542F;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x7B97;&#x6CA1;&#x6709;&#x914D;&#x7F6E;&#x4E5F;&#x4F1A;&#x4E00;&#x4E9B;&#x9ED8;&#x8BA4;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF09;</p>
+<ul>
+<li>&#x8BF4;&#x660E;&#xFF1A;&#x6BCF;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5FAE;&#x670D;&#x52A1;&#x8FDE;&#x63A5;&#x8DEF;&#x5F84;&#x662F;&#x4E0D;&#x540C;&#x7684;&#xFF0C;&#x5982;&#xFF1A;&#x8BBF;&#x95EE;user-service&#x8FD9;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x5C31;&#x662F;&#x4E00;&#x6761;&#x8DEF;&#x5F84;&#xFF0C;&#x6700;&#x591A;&#x6709;50&#x4E2A;&#x8FDE;&#x63A5;&#x3002;&#x901A;&#x5E38;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570;&#x9664;&#x4EE5;&#x4E00;&#x5171;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#xFF0C;&#x5219;&#x6BCF;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x5E73;&#x5747;&#x5360;&#x7528;&#x591A;&#x5C11;&#x4E2A;&#x8FDE;&#x63A5;&#x3002;&#x540E;&#x671F;&#x53EF;&#x518D;&#x6839;&#x636E;&#x8BBF;&#x95EE;&#x6027;&#x80FD;&#x7684;&#x53D8;&#x5316;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#x3002;</li>
+</ul>
+<pre><code class="lang-yml"><span class="hljs-attr">feign:</span>
+<span class="hljs-attr">  httpclient:</span>
+<span class="hljs-attr">    enabled:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># &#x5F00;&#x542F;feign&#x5BF9;HttpClient&#x7684;&#x652F;&#x6301;</span>
+<span class="hljs-attr">    max-connections:</span> <span class="hljs-number">200</span> <span class="hljs-comment"># &#x6700;&#x5927;&#x7684;&#x8FDE;&#x63A5;&#x6570;</span>
+<span class="hljs-attr">    max-connections-per-route:</span> <span class="hljs-number">50</span> <span class="hljs-comment"># &#x6BCF;&#x4E2A;&#x8DEF;&#x5F84;&#x7684;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570;</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="gateway&#x670D;&#x52A1;&#x7F51;&#x5173;"><a name="gateway&#x670D;&#x52A1;&#x7F51;&#x5173;" class="anchor-navigation-ex-anchor" href="#gateway&#x670D;&#x52A1;&#x7F51;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a>GateWay&#x670D;&#x52A1;&#x7F51;&#x5173;</h3>
+<blockquote>
+<p>Gateway&#x7F51;&#x5173;&#x662F;&#x6240;&#x6709;&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x7EDF;&#x4E00;&#x5165;&#x53E3;</p>
+<p>&#x7F51;&#x5173;&#x7684;<strong>&#x6838;&#x5FC3;&#x529F;&#x80FD;&#x7279;&#x6027;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x8BF7;&#x6C42;&#x8DEF;&#x7531;</li>
+<li>&#x6743;&#x9650;&#x63A7;&#x5236;</li>
+<li>&#x9650;&#x6D41;</li>
+</ul>
+</blockquote>
+<p><a href="images/image-20210714210131152.png" data-lightbox="a6c3a6c6-b5df-4c38-8586-5564223b47c6" data-title="image-20210714210131152"><img src="images/image-20210714210131152.png" alt="image-20210714210131152"></a></p>
+<h4 id="&#x642D;&#x5EFA;&#x7F51;&#x5173;"><a name="&#x642D;&#x5EFA;&#x7F51;&#x5173;" class="anchor-navigation-ex-anchor" href="#&#x642D;&#x5EFA;&#x7F51;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x642D;&#x5EFA;&#x7F51;&#x5173;</h4>
+<ul>
+<li><p>&#x5355;&#x72EC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;gateway&#x6A21;&#x5757;&#xFF0C;&#x7EE7;&#x627F;&#x7236;&#x6A21;&#x5757;</p>
+</li>
+<li><p>&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!--&#x7F51;&#x5173;--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-gateway<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<span class="hljs-comment">&lt;!--nacos&#x670D;&#x52A1;&#x53D1;&#x73B0;&#x4F9D;&#x8D56;--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alibaba.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-nacos-discovery<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x5199;&#x542F;&#x52A8;&#x7C7B;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.gateway;
+
+<span class="hljs-keyword">import</span> org.springframework.boot.SpringApplication;
+<span class="hljs-keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;
+
+<span class="hljs-meta">@SpringBootApplication</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GatewayApplication</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        SpringApplication.run(GatewayApplication.class, args);
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x5728;application.yml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x5199;&#x57FA;&#x7840;&#x914D;&#x7F6E;&#x548C;&#x8DEF;&#x7531;&#x89C4;&#x5219;</p>
+<ul>
+<li>&#x8DEF;&#x7531;&#x89C4;&#x5219;&#xFF1A;&#x5C06;&#x7B26;&#x5408;<code>Path</code> &#x89C4;&#x5219;&#x7684;&#x4E00;&#x5207;&#x8BF7;&#x6C42;&#xFF0C;&#x90FD;&#x4EE3;&#x7406;&#x5230; <code>uri</code>&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x7684;&#x5730;&#x5740;</li>
+</ul>
+<pre><code class="lang-yml"><span class="hljs-attr">server:</span>
+<span class="hljs-attr">  port:</span> <span class="hljs-number">10010</span>
+<span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  application:</span>
+<span class="hljs-attr">    name:</span> gateway
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    gateway:</span>
+<span class="hljs-attr">      routes:</span>
+<span class="hljs-attr">        - id:</span> userservicegateway  <span class="hljs-comment">#&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x7684;id&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x968F;&#x610F;&#x7684;&#x3002;</span>
+<span class="hljs-attr">          uri:</span> lb://userservice  <span class="hljs-comment"># &#x4F7F;&#x7528;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF0C;&#x628A;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;userservice&#x8FD9;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x91CC;&#x9762;&#x53BB;&#x3002;lb&#x662F;LoadBalanced&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7684;&#x7F29;&#x5199;</span>
+<span class="hljs-attr">          predicates:</span>
+<span class="hljs-bullet">            -</span> Path=/user/**  <span class="hljs-comment"># &#x65AD;&#x8A00;&#xFF08;&#x5982;&#x679C;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x7684;&#x8DEF;&#x5F84;&#x662F;&#xFF1A; /user/&#x4E0B;&#x9762;&#x7684;&#x4EFB;&#x610F;&#x8DEF;&#x5F84;&#xFF0C;&#x6211;&#x5C31;&#x628A;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x8DEF;&#x7531;&#x5230;lb://userservice&#x8FD9;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x91CC;&#x9762;&#xFF09;</span>
+<span class="hljs-attr">        - id:</span> orderservicegateway
+<span class="hljs-attr">          uri:</span> lb://orderservice
+<span class="hljs-attr">          predicates:</span>
+<span class="hljs-bullet">            -</span> Path=/order/**
+<span class="hljs-attr">    nacos:</span>
+<span class="hljs-attr">      server-addr:</span> localhost:<span class="hljs-number">80</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="&#x65AD;&#x8A00;&#x5DE5;&#x5382;"><a name="&#x65AD;&#x8A00;&#x5DE5;&#x5382;" class="anchor-navigation-ex-anchor" href="#&#x65AD;&#x8A00;&#x5DE5;&#x5382;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65AD;&#x8A00;&#x5DE5;&#x5382;</h4>
+<p>&#x50CF;&#x8FD9;&#x6837;&#x7684;&#x65AD;&#x8A00;&#x5DE5;&#x5382;&#x5728;SpringCloudGateway&#x8FD8;&#x6709;&#x5341;&#x51E0;&#x4E2A;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x793A;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>After</td>
+<td>&#x662F;&#x67D0;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#x540E;&#x7684;&#x8BF7;&#x6C42;</td>
+<td>-  After=2037-01-20T17:42:47.789-07:00[Asia/Shanghai]</td>
+</tr>
+<tr>
+<td>Before</td>
+<td>&#x662F;&#x67D0;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#x4E4B;&#x524D;&#x7684;&#x8BF7;&#x6C42;</td>
+<td>-  Before=2031-04-13T15:14:47.433+08:00[Asia/Shanghai]</td>
+</tr>
+<tr>
+<td>Between</td>
+<td>&#x662F;&#x67D0;&#x4E24;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#x4E4B;&#x524D;&#x7684;&#x8BF7;&#x6C42;</td>
+<td>-  Between=2037-01-20T17:42:47.789-07:00[Asia/Shanghai],  2037-01-21T17:42:47.789-07:00[Asia/Shanghai]</td>
+</tr>
+<tr>
+<td>Cookie</td>
+<td>&#x8BF7;&#x6C42;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x67D0;&#x4E9B;cookie</td>
+<td>- Cookie=chocolate, ch.p</td>
+</tr>
+<tr>
+<td>Header</td>
+<td>&#x8BF7;&#x6C42;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x67D0;&#x4E9B;header</td>
+<td>- Header=X-Request-Id, \d+</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>&#x8BF7;&#x6C42;&#x5FC5;&#x987B;&#x662F;&#x8BBF;&#x95EE;&#x67D0;&#x4E2A;host&#xFF08;&#x57DF;&#x540D;&#xFF09;</td>
+<td>-  Host=<strong>.somehost.org,</strong>.anotherhost.org</td>
+</tr>
+<tr>
+<td>Method</td>
+<td>&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x5FC5;&#x987B;&#x662F;&#x6307;&#x5B9A;&#x65B9;&#x5F0F;</td>
+<td>- Method=GET,POST</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>&#x8BF7;&#x6C42;&#x8DEF;&#x5F84;&#x5FC5;&#x987B;&#x7B26;&#x5408;&#x6307;&#x5B9A;&#x89C4;&#x5219;</td>
+<td>- Path=/red/{segment},/blue/**<br>&#x591A;&#x4E2A;&#x8DEF;&#x5F84;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;<br>&#x901A;&#x8FC7;&#x5927;&#x62EC;&#x53F7;&#x83B7;&#x53D6;&#x8DEF;&#x5F84;&#x7684;{&#x53C2;&#x6570;}&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>Query</td>
+<td>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x6307;&#x5B9A;&#x53C2;&#x6570;</td>
+<td>- Query=name, Jack&#x6216;&#x8005;-  Query=name</td>
+</tr>
+<tr>
+<td>RemoteAddr</td>
+<td>&#x8BF7;&#x6C42;&#x8005;&#x7684;ip&#x5FC5;&#x987B;&#x662F;&#x6307;&#x5B9A;&#x8303;&#x56F4;</td>
+<td>- RemoteAddr=192.168.1.1/24</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>&#x6743;&#x91CD;&#x5904;&#x7406;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>&#x8BBE;&#x7F6E;&#x4E3A;&#x5728;&#x67D0;&#x4E2A;&#x65F6;&#x95F4;&#x6BB5;&#x5185;&#x624D;&#x80FD;&#x8BBF;&#x95EE;</p>
+<pre><code>predicates:
+  - Between=2023-01-29T20:52:00.789-07:00[Asia/Shanghai],  2023-01-29T20:53:00.789-07:00[Asia/Shanghai]
+</code></pre></li>
+</ul>
+<h4 id="&#x8FC7;&#x6EE4;&#x5668;&#x5DE5;&#x5382;"><a name="&#x8FC7;&#x6EE4;&#x5668;&#x5DE5;&#x5382;" class="anchor-navigation-ex-anchor" href="#&#x8FC7;&#x6EE4;&#x5668;&#x5DE5;&#x5382;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FC7;&#x6EE4;&#x5668;&#x5DE5;&#x5382;</h4>
+<p>Spring&#x63D0;&#x4F9B;&#x4E86;31&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x8DEF;&#x7531;&#x8FC7;&#x6EE4;&#x5668;&#x5DE5;&#x5382;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x540D;&#x79F0;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AddRequestHeader</td>
+<td>&#x7ED9;&#x5F53;&#x524D;&#x8BF7;&#x6C42;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5934;</td>
+</tr>
+<tr>
+<td>RemoveRequestHeader</td>
+<td>&#x79FB;&#x9664;&#x8BF7;&#x6C42;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5934;</td>
+</tr>
+<tr>
+<td>AddResponseHeader</td>
+<td>&#x7ED9;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#x5934;</td>
+</tr>
+<tr>
+<td>RemoveResponseHeader</td>
+<td>&#x4ECE;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x4E2D;&#x79FB;&#x9664;&#x6709;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#x5934;</td>
+</tr>
+<tr>
+<td>RequestRateLimiter</td>
+<td>&#x9650;&#x5236;&#x8BF7;&#x6C42;&#x7684;&#x6D41;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x8BF7;&#x6C42;&#x5934;&#x8FC7;&#x6EE4;&#x5668;"><a name="&#x8BF7;&#x6C42;&#x5934;&#x8FC7;&#x6EE4;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x8BF7;&#x6C42;&#x5934;&#x8FC7;&#x6EE4;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BF7;&#x6C42;&#x5934;&#x8FC7;&#x6EE4;&#x5668;</h5>
+<ul>
+<li><p>&#x7ED9;&#x6240;&#x6709;&#x8FDB;&#x5165;userservice&#x7684;&#x8BF7;&#x6C42;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5934;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  application:</span>
+<span class="hljs-attr">    name:</span> gateway
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    nacos:</span>
+<span class="hljs-attr">      server-addr:</span> localhost:<span class="hljs-number">80</span>
+<span class="hljs-attr">    gateway:</span>
+<span class="hljs-attr">      routes:</span> <span class="hljs-comment">#&#x914D;&#x7F6E;&#x8DEF;&#x5F84;</span>
+<span class="hljs-attr">        - id:</span> userservice  <span class="hljs-comment"># &#x8FD9;&#x4E2A;&#x8DEF;&#x7531;&#x7684;id&#x53EA;&#x8981;&#x552F;&#x4E00;&#x5373;&#x53EF;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4E0E;&#x670D;&#x52A1;&#x540D;&#x79F0;&#x4E00;&#x81F4;</span>
+<span class="hljs-attr">          uri:</span> lb://userservice  <span class="hljs-comment"># lb  loadBalance&#xFF0C;</span>
+<span class="hljs-attr">          predicates:</span>  <span class="hljs-comment"># &#x5B9A;&#x4E49;&#x65AD;&#x8A00;</span>
+<span class="hljs-bullet">            -</span> Path=/user/**
+<span class="hljs-bullet">            -</span> After=<span class="hljs-number">2022</span><span class="hljs-bullet">-01</span><span class="hljs-bullet">-15</span>T15:<span class="hljs-number">00</span>:<span class="hljs-number">00.789</span><span class="hljs-bullet">-07</span>:<span class="hljs-number">00</span>[Asia/Shanghai]
+<span class="hljs-attr">          filters:</span>
+<span class="hljs-bullet">            -</span> AddRequestHeader=name,zhangsan  <span class="hljs-comment"># &#x7ED9;/user/&#x8DEF;&#x5F84;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x90FD;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5934;name=zhangsan</span>
+</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;@RequestHeader&#x6CE8;&#x89E3;&#x5728;&#x65B9;&#x6CD5;&#x4E2D;&#x83B7;&#x53D6;&#x540D;&#x4E3A;name&#x7684;&#x8BF7;&#x6C42;&#x5934;&#xFF0C;<strong>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x5934;&#x800C;&#x62A5;&#x9519;&#xFF0C;&#x5C06;&#x5B83;required&#x8BBE;&#x7F6E;&#x4E3A;false</strong></p>
+<pre><code class="lang-java"><span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/header&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">header</span><span class="hljs-params">(@RequestHeader(name = <span class="hljs-string">&quot;name&quot;</span>,required = <span class="hljs-keyword">false</span>)</span> String truth)</span>{
+    <span class="hljs-keyword">return</span> name;
+}
+</code></pre>
+</li>
+</ul>
+<h5 id="&#x9ED8;&#x8BA4;&#x8FC7;&#x6EE4;&#x5668;"><a name="&#x9ED8;&#x8BA4;&#x8FC7;&#x6EE4;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x9ED8;&#x8BA4;&#x8FC7;&#x6EE4;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9ED8;&#x8BA4;&#x8FC7;&#x6EE4;&#x5668;</h5>
+<ul>
+<li><p>&#x5982;&#x679C;&#x8981;&#x5BF9;&#x6240;&#x6709;&#x7684;&#x8DEF;&#x7531;&#x90FD;&#x751F;&#x6548;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5C06;&#x8FC7;&#x6EE4;&#x5668;&#x5DE5;&#x5382;&#x5199;&#x5230;default-filters&#x4E0B;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">    cloud:</span>
+<span class="hljs-attr">    gateway:</span>
+<span class="hljs-attr">      routes:</span>
+<span class="hljs-attr">        - id:</span> userservice
+<span class="hljs-attr">          uri:</span> lb://userservice
+<span class="hljs-attr">          predicates:</span>
+<span class="hljs-bullet">            -</span> Path=/user/**
+<span class="hljs-bullet">            -</span> After=<span class="hljs-number">2022</span><span class="hljs-bullet">-01</span><span class="hljs-bullet">-14</span>T22:<span class="hljs-number">42</span>:<span class="hljs-number">00.789</span><span class="hljs-bullet">-07</span>:<span class="hljs-number">00</span>[Asia/Shanghai]
+<span class="hljs-attr">      default-filters:</span>
+<span class="hljs-bullet">        -</span> AddRequestHeader=name,lisi <span class="hljs-comment"># &#x7ED9;&#x6BCF;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x90FD;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5934;name=lisi</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x5668;"><a name="&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x5668;</h4>
+<ul>
+<li>&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x5668;&#x7684;&#x4F5C;&#x7528;&#x4E5F;&#x662F;&#x5904;&#x7406;&#x4E00;&#x5207;&#x8FDB;&#x5165;&#x7F51;&#x5173;&#x7684;&#x8BF7;&#x6C42;&#x548C;&#x5FAE;&#x670D;&#x52A1;&#x54CD;&#x5E94;&#xFF0C;&#x4E0E;GatewayFilter&#x7684;&#x4F5C;&#x7528;&#x4E00;&#x6837;&#x3002;&#x533A;&#x522B;&#x5728;&#x4E8E;GatewayFilter&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x5B9A;&#x4E49;&#xFF0C;&#x5904;&#x7406;&#x903B;&#x8F91;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF1B;<strong>&#x800C;GlobalFilter&#x7684;&#x903B;&#x8F91;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x5199;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</strong>&#x3002;</li>
+</ul>
+<ul>
+<li><p>&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x62E6;&#x622A;&#x8BF7;&#x6C42;&#xFF0C;&#x5224;&#x65AD;&#x8BF7;&#x6C42;&#x7684;&#x53C2;&#x6570;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x4E0B;&#x9762;&#x6761;&#x4EF6;&#x3002;&#x5728;gateway&#x4E2D;cn.itcast.gateway.filters&#x5305;&#x4E0B;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x8FC7;&#x6EE4;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.filter;
+
+<span class="hljs-keyword">import</span> org.springframework.cloud.gateway.filter.GatewayFilterChain;
+<span class="hljs-keyword">import</span> org.springframework.cloud.gateway.filter.GlobalFilter;
+<span class="hljs-keyword">import</span> org.springframework.core.annotation.Order;
+<span class="hljs-keyword">import</span> org.springframework.http.HttpStatus;
+<span class="hljs-keyword">import</span> org.springframework.http.server.reactive.ServerHttpRequest;
+<span class="hljs-keyword">import</span> org.springframework.http.server.reactive.ServerHttpResponse;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Component;
+<span class="hljs-keyword">import</span> org.springframework.util.MultiValueMap;
+<span class="hljs-keyword">import</span> org.springframework.web.server.ServerWebExchange;
+<span class="hljs-keyword">import</span> reactor.core.publisher.Mono;
+
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-comment">/*
+&#x9700;&#x6C42;&#xFF1A; &#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x5E26;&#x6709;&#x4E00;&#x4E2A;authorization&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x8FC7;&#x6765;&#xFF0C;&#x5E76;&#x4E14;&#x503C;&#x662F;admin&#x3002;&#x5426;&#x5219;&#x4E0D;&#x653E;&#x884C;
+ */</span>
+<span class="hljs-meta">@Order</span>(-<span class="hljs-number">1</span>)  <span class="hljs-comment">//&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x5668;&#x7684;&#x65F6;&#x5019;&#xFF0C;order&#x7684;&#x6570;&#x503C;&#x8D8A;&#x5C0F;&#x5C31;&#x4F1A;&#x8D8A;&#x4F18;&#x5148;&#x6267;&#x884C;</span>
+<span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuthorizeFilter</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">GlobalFilter</span> </span>{
+
+    <span class="hljs-comment">/**
+     * &#x5728;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x91CC;&#x9762;&#x5C31;&#x53EF;&#x4EE5;&#x575A;&#x6301;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x8BF7;&#x6C42;&#x662F;&#x5426;&#x5E26;&#x6709;&#x4F60;&#x6307;&#x5B9A;&#x7684;&#x6807;&#x8BC6;&#x8FC7;&#x6765;&#xFF0C;&#x505A;&#x8EAB;&#x4EFD;&#x7684;&#x9A8C;&#x8BC1;
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Mono&lt;Void&gt; <span class="hljs-title">filter</span><span class="hljs-params">(ServerWebExchange exchange, GatewayFilterChain chain)</span> </span>{
+        <span class="hljs-comment">//1. &#x5F97;&#x5230;request&#x4E0E;response&#x5BF9;&#x8C61;&#x3001;</span>
+        ServerHttpRequest request = exchange.getRequest();
+        ServerHttpResponse response = exchange.getResponse();
+
+        <span class="hljs-comment">//2. &#x5F97;&#x5230;authorization&#x7684;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF0C;&#x5224;&#x65AD;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x7684;&#x503C;&#x662F;&#x5426;&#x4E3A;admin&#xFF0C;&#x5982;&#x679C;&#x662F;&#x653E;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x884C;&#x62E6;&#x622A;&#x3002;</span>
+        MultiValueMap&lt;String, String&gt; params = request.getQueryParams(); <span class="hljs-comment">//&#x6240;&#x6709;&#x7684;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x90FD;&#x5305;&#x542B;&#x5728;&#x4E86;&#x8BE5;map&#x91CC;&#x9762;</span>
+        String token = params.getFirst(<span class="hljs-string">&quot;authorization&quot;</span>);
+        <span class="hljs-keyword">if</span>(<span class="hljs-string">&quot;admin&quot;</span>.equals(token)){
+            <span class="hljs-comment">//&#x653E;&#x884C;</span>
+            <span class="hljs-keyword">return</span> chain.filter(exchange);
+        }<span class="hljs-keyword">else</span>{
+            response.setStatusCode(HttpStatus.UNAUTHORIZED); <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x72B6;&#x6001;&#x7801;&#x662F;401&#xFF0C;&#x4EE3;&#x8868;&#x6CA1;&#x6709;&#x8BBF;&#x95EE;&#x7684;&#x6743;&#x9650;</span>
+            <span class="hljs-comment">//&#x4E0D;&#x653E;&#x884C;&#xFF0C;&#x63D0;&#x524D;&#x7ED9;&#x54CD;&#x5E94;</span>
+            <span class="hljs-keyword">return</span> response.setComplete();
+        }
+
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h5 id="&#x8FC7;&#x6EE4;&#x5668;&#x6267;&#x884C;&#x987A;&#x5E8F;"><a name="&#x8FC7;&#x6EE4;&#x5668;&#x6267;&#x884C;&#x987A;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#&#x8FC7;&#x6EE4;&#x5668;&#x6267;&#x884C;&#x987A;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FC7;&#x6EE4;&#x5668;&#x6267;&#x884C;&#x987A;&#x5E8F;</h5>
+<blockquote>
+<p>&#x4E09;&#x7C7B;&#x8FC7;&#x6EE4;&#x5668;&#xFF1A;DefaultFilter&#x3001;&#x8DEF;&#x7531;&#x8FC7;&#x6EE4;&#x5668;&#x3001;GlobalFilter</p>
+</blockquote>
+<p><a href="images/image-20210714214228409.png" data-lightbox="b6624ff9-42d3-4070-ae2d-19b79931bc07" data-title="image-20210714214228409"><img src="images/image-20210714214228409.png" alt="image-20210714214228409"></a></p>
+<ul>
+<li>&#x6BCF;&#x4E00;&#x4E2A;&#x8FC7;&#x6EE4;&#x5668;&#x90FD;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;int&#x7C7B;&#x578B;&#x7684;order&#x503C;&#xFF0C;<strong>order&#x503C;&#x8D8A;&#x5C0F;&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#x8D8A;&#x9AD8;&#xFF0C;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x8D8A;&#x9760;&#x524D;</strong>&#x3002;<ul>
+<li>GlobalFilter&#x901A;&#x8FC7;&#x5B9E;&#x73B0;Ordered&#x63A5;&#x53E3;&#xFF0C;&#x6216;&#x8005;&#x6DFB;&#x52A0;@Order&#x6CE8;&#x89E3;&#x6765;&#x6307;&#x5B9A;order&#x503C;&#xFF0C;&#x7531;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x6307;&#x5B9A;</li>
+<li>&#x8DEF;&#x7531;&#x8FC7;&#x6EE4;&#x5668;(&#x5C40;&#x90E8;)&#x548C;defaultFilter(&#x5168;&#x5C40;)&#xFF0C;&#x5B83;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x9ED8;&#x8BA4;&#x662F;&#x6309;&#x7167;&#x58F0;&#x660E;&#x987A;&#x5E8F;&#x4ECE;1&#x9012;&#x589E;&#x3002;</li>
+<li>&#x6267;&#x884C;&#x7684;&#x987A;&#x5E8F; defaultFilter &gt; &#x8DEF;&#x7531;&#x8FC7;&#x6EE4;&#x5668;(&#x5C40;&#x90E8;) &gt; GlobalFilter&#x7684;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x8DE8;&#x57DF;&#x95EE;&#x9898;"><a name="&#x8DE8;&#x57DF;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x8DE8;&#x57DF;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DE8;&#x57DF;&#x95EE;&#x9898;</h4>
+<p>&#x8DE8;&#x57DF;&#xFF1A;&#x57DF;&#x540D;&#x4E0D;&#x4E00;&#x81F4;&#x5C31;&#x662F;&#x8DE8;&#x57DF;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li>&#x57DF;&#x540D;&#x4E0D;&#x540C;&#xFF1A; www.taobao.com &#x548C;  www.jd.com </li>
+<li>&#x7AEF;&#x53E3;&#x4E0D;&#x540C;&#xFF1A;localhost:8080&#x548C;localhost:8081</li>
+<li>&#x534F;&#x8BAE;&#x4E0D;&#x540C;&#xFF1A;<a href="https://localhost:8080&#x548C;http://localhost:8080" target="_blank">https://localhost:8080&#x548C;http://localhost:8080</a></li>
+</ul>
+<p>&#x8DE8;&#x57DF;&#x95EE;&#x9898;&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x7981;&#x6B62;&#x8BF7;&#x6C42;&#x7684;&#x53D1;&#x8D77;&#x8005;&#x4E0E;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x751F;&#x8DE8;&#x57DF;==ajax&#x8BF7;&#x6C42;==&#xFF0C;&#x8BF7;&#x6C42;&#x88AB;&#x6D4F;&#x89C8;&#x5668;&#x62E6;&#x622A;&#x7684;&#x95EE;&#x9898;</p>
+<h5 id="&#x89E3;&#x51B3;&#x8DE8;&#x57DF;&#x95EE;&#x9898;"><a name="&#x89E3;&#x51B3;&#x8DE8;&#x57DF;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x8DE8;&#x57DF;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x8DE8;&#x57DF;&#x95EE;&#x9898;</h5>
+<blockquote>
+<p>&#x56E0;&#x4E3A;&#x6240;&#x6709;&#x7684;&#x5FAE;&#x670D;&#x52A1;&#x90FD;&#x8981;&#x7ECF;&#x8FC7;&#x7F51;&#x5173;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x6BCF;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x90FD;&#x53BB;&#x5904;&#x7406;&#xFF0C;&#x5728;&#x7F51;&#x5173;&#x4E2D;&#x5904;&#x7406;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<p>CORS&#x65B9;&#x6848;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x5411;&#x670D;&#x52A1;&#x5668;&#x8BE2;&#x95EE;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x672C;&#x6B21;&#x8BF7;&#x6C42;&#x8DE8;&#x57DF;&#xFF0C;&#x8FD9;&#x6B21;&#x8BE2;&#x95EE;&#x662F;options&#x8BF7;&#x6C42;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x8BA9;options&#x8BF7;&#x6C42;&#x901A;&#x8FC7;&#x3002;&#x4F46;&#x5982;&#x679C;&#x6BCF;&#x6B21;&#x8DE8;&#x57DF;&#x8BF7;&#x6C42;&#x90FD;&#x8BE2;&#x95EE;&#xFF0C;&#x5219;&#x4F1A;&#x5BFC;&#x81F4;&#x6027;&#x80FD;&#x4E0B;&#x964D;&#xFF0C;&#x4E8E;&#x662F;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x671F;&#xFF0C;&#x5728;&#x6709;&#x6548;&#x671F;&#x5185;&#x7684;&#x8BF7;&#x6C42;&#x4E0D;&#x518D;&#x6BCF;&#x6B21;&#x8BE2;&#x95EE;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x5141;&#x8BB8;&#x8DE8;&#x57DF;&#x8BF7;&#x6C42;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x5728;gateway&#x670D;&#x52A1;&#x7684;application.yml&#x6587;&#x4EF6;&#x4E2D;&#x8FDB;&#x884C;&#x914D;&#x7F6E;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    gateway:</span>
+      <span class="hljs-comment"># &#x5168;&#x5C40;&#x7684;&#x8DE8;&#x57DF;&#x5904;&#x7406;</span>
+<span class="hljs-attr">      globalcors:</span> 
+<span class="hljs-attr">        add-to-simple-url-handler-mapping:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># &#x89E3;&#x51B3;options&#x8BF7;&#x6C42;&#x88AB;&#x62E6;&#x622A;&#x95EE;&#x9898;</span>
+<span class="hljs-attr">        corsConfigurations:</span>
+          <span class="hljs-string">&apos;[/**]&apos;</span>:   <span class="hljs-comment"># &#x54EA;&#x4E9B;&#x8BBF;&#x95EE;&#x5730;&#x5740;&#x505A;&#x8DE8;&#x57DF;&#x5904;&#x7406;</span>
+<span class="hljs-attr">            allowedOrigins:</span> <span class="hljs-comment"># &#x5141;&#x8BB8;&#x54EA;&#x4E9B;&#x7F51;&#x7AD9;&#x7684;&#x8DE8;&#x57DF;&#x8BF7;&#x6C42; </span>
+<span class="hljs-bullet">              -</span> <span class="hljs-string">&quot;http://localhost:8080&quot;</span>
+<span class="hljs-attr">            allowedMethods:</span> <span class="hljs-comment"># &#x5141;&#x8BB8;&#x7684;&#x8DE8;&#x57DF;ajax&#x7684;&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;</span>
+<span class="hljs-bullet">              -</span> <span class="hljs-string">&quot;GET&quot;</span>
+<span class="hljs-bullet">              -</span> <span class="hljs-string">&quot;POST&quot;</span>
+<span class="hljs-bullet">              -</span> <span class="hljs-string">&quot;DELETE&quot;</span>
+<span class="hljs-bullet">              -</span> <span class="hljs-string">&quot;PUT&quot;</span>
+<span class="hljs-bullet">              -</span> <span class="hljs-string">&quot;OPTIONS&quot;</span>
+<span class="hljs-attr">            allowedHeaders:</span> <span class="hljs-string">&quot;*&quot;</span> <span class="hljs-comment"># &#x5141;&#x8BB8;&#x5728;&#x8BF7;&#x6C42;&#x4E2D;&#x643A;&#x5E26;&#x7684;&#x5934;&#x4FE1;&#x606F;</span>
+<span class="hljs-attr">            allowCredentials:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># &#x662F;&#x5426;&#x5141;&#x8BB8;&#x643A;&#x5E26;cookie</span>
+<span class="hljs-attr">            maxAge:</span> <span class="hljs-number">360000</span>  <span class="hljs-comment"># &#x8FD9;&#x6B21;&#x8DE8;&#x57DF;&#x68C0;&#x6D4B;&#x7684;&#x6709;&#x6548;&#x671F;</span>
+</code></pre>
+</li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2023-02-09 14:27 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Day52-MyBatisPlus+乐观锁.html" class="navigation navigation-prev " aria-label="Previous page: Day52-MyBatisPlus+乐观锁">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Day55-Docker.html" class="navigation navigation-next " aria-label="Next page: Day55-Docker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Day53~54-SpringCloud","level":"1.10.53","depth":2,"next":{"title":"Day55-Docker","level":"1.10.54","depth":2,"path":"Java笔记/Day55-Docker.md","ref":"Java笔记/Day55-Docker.md","articles":[]},"previous":{"title":"Day52-MyBatisPlus+乐观锁","level":"1.10.52","depth":2,"path":"Java笔记/Day52-MyBatisPlus+乐观锁.md","ref":"Java笔记/Day52-MyBatisPlus+乐观锁.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://none.org.cn/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"0day计划","language":"zh-hans","links":{"sidebar":{"None's 树洞":"https://none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"Java笔记/Day53~54-SpringCloud.md","mtime":"2023-02-09T06:27:08.551Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T00:23:40.981Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,2054 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Day60-Sentinel · 0day计划</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="None">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Day61-Seata.html" />
+    
+    
+    <link rel="prev" href="Day57~59-ElasticSearch.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://none.org.cn" target="_blank" class="custom-link">None's 树洞</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">《 0day计划 》</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    社工
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../社工/获取位置信息.html">
+            
+                <a href="../社工/获取位置信息.html">
+            
+                    
+                    获取位置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第一阶段-基础篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第一阶段-基础篇/零基础必看课程.html">
+            
+                <a href="../第一阶段-基础篇/零基础必看课程.html">
+            
+                    
+                    零基础必看课程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第一阶段-基础篇/Windows基础.html">
+            
+                <a href="../第一阶段-基础篇/Windows基础.html">
+            
+                    
+                    Windows基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第一阶段-基础篇/数据库基础.html">
+            
+                <a href="../第一阶段-基础篇/数据库基础.html">
+            
+                    
+                    数据库基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第二阶段-Web安全篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                <a href="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                    
+                    2019网络安全训练营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                <a href="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                    
+                    BurpSuite学习使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                <a href="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                    
+                    Web安全攻防学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第六阶段-Python黑客编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                <a href="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                    
+                    Python编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    软考-信息安全工程师
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../软考-信息安全工程师/第一版.html">
+            
+                <a href="../软考-信息安全工程师/第一版.html">
+            
+                    
+                    第一版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    兄弟连Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../兄弟连Linux/Linux系统简介.html">
+            
+                <a href="../兄弟连Linux/Linux系统简介.html">
+            
+                    
+                    Linux系统简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../兄弟连Linux/Linux常用命令.html">
+            
+                <a href="../兄弟连Linux/Linux常用命令.html">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../兄弟连Linux/文本编辑器Vim.html">
+            
+                <a href="../兄弟连Linux/文本编辑器Vim.html">
+            
+                    
+                    文本编辑器Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../兄弟连Linux/软件包管理.html">
+            
+                <a href="../兄弟连Linux/软件包管理.html">
+            
+                    
+                    软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    韩立刚计算机网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../韩立刚计算机网络/概述.html">
+            
+                <a href="../韩立刚计算机网络/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../韩立刚计算机网络/物理层.html">
+            
+                <a href="../韩立刚计算机网络/物理层.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../韩立刚计算机网络/数据链路层.html">
+            
+                <a href="../韩立刚计算机网络/数据链路层.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    韩立刚CCNA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../韩立刚CCNA/计算机网络.html">
+            
+                <a href="../韩立刚CCNA/计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../韩立刚CCNA/TCP&IP.html">
+            
+                <a href="../韩立刚CCNA/TCP&IP.html">
+            
+                    
+                    TCP&IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../韩立刚CCNA/IP地址和子网.html">
+            
+                <a href="../韩立刚CCNA/IP地址和子网.html">
+            
+                    
+                    IP地址和子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../韩立刚CCNA/静态路由.html">
+            
+                <a href="../韩立刚CCNA/静态路由.html">
+            
+                    
+                    静态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../韩立刚CCNA/动态路由.html">
+            
+                <a href="../韩立刚CCNA/动态路由.html">
+            
+                    
+                    动态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../韩立刚CCNA/交换机.html">
+            
+                <a href="../韩立刚CCNA/交换机.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Java笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="01-面试题.html">
+            
+                <a href="01-面试题.html">
+            
+                    
+                    01-面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="02-未归类知识点.html">
+            
+                <a href="02-未归类知识点.html">
+            
+                    
+                    02-未归类知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="基础班day01.html">
+            
+                <a href="基础班day01.html">
+            
+                    
+                    基础班day01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="基础班day02.html">
+            
+                <a href="基础班day02.html">
+            
+                    
+                    基础班day02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="基础班day03.html">
+            
+                <a href="基础班day03.html">
+            
+                    
+                    基础班day03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="基础班day04.html">
+            
+                <a href="基础班day04.html">
+            
+                    
+                    基础班day04
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="基础班day05.html">
+            
+                <a href="基础班day05.html">
+            
+                    
+                    基础班day05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="基础班day06.html">
+            
+                <a href="基础班day06.html">
+            
+                    
+                    基础班day06
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="基础班day07.html">
+            
+                <a href="基础班day07.html">
+            
+                    
+                    基础班day07
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="基础班day08.html">
+            
+                <a href="基础班day08.html">
+            
+                    
+                    基础班day08
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="基础班day09.html">
+            
+                <a href="基础班day09.html">
+            
+                    
+                    基础班day09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="基础班day10.html">
+            
+                <a href="基础班day10.html">
+            
+                    
+                    基础班day10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Day01-Static+继承+权限修饰.html">
+            
+                <a href="Day01-Static+继承+权限修饰.html">
+            
+                    
+                    Day01-Static+继承+权限修饰
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.14" data-path="Day02-抽象+接口+单例.html">
+            
+                <a href="Day02-抽象+接口+单例.html">
+            
+                    
+                    Day02-抽象+接口+单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.15" data-path="Day03-多态+内部类+枚举.html">
+            
+                <a href="Day03-多态+内部类+枚举.html">
+            
+                    
+                    Day03-多态+内部类+枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.16" data-path="Day04-常用API+正则.html">
+            
+                <a href="Day04-常用API+正则.html">
+            
+                    
+                    Day04-常用API+正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.17" data-path="Day05-数据结构+List集合+泛型.html">
+            
+                <a href="Day05-数据结构+List集合+泛型.html">
+            
+                    
+                    Day05-数据结构+List集合+泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.18" data-path="Day06-Set集合+迭代器+增强for.html">
+            
+                <a href="Day06-Set集合+迭代器+增强for.html">
+            
+                    
+                    Day06-Set集合+迭代器+增强for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.19" data-path="Day07-Map集合.html">
+            
+                <a href="Day07-Map集合.html">
+            
+                    
+                    Day07-Map集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.20" data-path="Day08-异常+多线程.html">
+            
+                <a href="Day08-异常+多线程.html">
+            
+                    
+                    Day08-异常+多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.21" data-path="Day09-线程池+Lambda+Stream流.html">
+            
+                <a href="Day09-线程池+Lambda+Stream流.html">
+            
+                    
+                    Day09-线程池+Lambda+Stream流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.22" data-path="Day10-File+IO流.html">
+            
+                <a href="Day10-File+IO流.html">
+            
+                    
+                    Day10-File+IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.23" data-path="Day11-IO流+装饰模式.html">
+            
+                <a href="Day11-IO流+装饰模式.html">
+            
+                    
+                    Day11-IO流+装饰模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.24" data-path="Day12-网络编程+junit.html">
+            
+                <a href="Day12-网络编程+junit.html">
+            
+                    
+                    Day12-网络编程+junit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.25" data-path="Day13-反射+注解.html">
+            
+                <a href="Day13-反射+注解.html">
+            
+                    
+                    Day13-反射+注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.26" data-path="Day14-XML+Dom4j+动态代理.html">
+            
+                <a href="Day14-XML+Dom4j+动态代理.html">
+            
+                    
+                    Day14-XML+Dom4j+动态代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.27" data-path="Day15-MySQL基础.html">
+            
+                <a href="Day15-MySQL基础.html">
+            
+                    
+                    Day15-MySQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.28" data-path="Day16-MySQL高级.html">
+            
+                <a href="Day16-MySQL高级.html">
+            
+                    
+                    Day16-MySQL高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.29" data-path="Day17-JDBC.html">
+            
+                <a href="Day17-JDBC.html">
+            
+                    
+                    Day17-JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.30" data-path="Day18-Maven+MyBatis入门.html">
+            
+                <a href="Day18-Maven+MyBatis入门.html">
+            
+                    
+                    Day18-Maven+MyBatis入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.31" data-path="Day19-MyBatis进阶.html">
+            
+                <a href="Day19-MyBatis进阶.html">
+            
+                    
+                    Day19-MyBatis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.32" data-path="Day20-MyBatis高级.html">
+            
+                <a href="Day20-MyBatis高级.html">
+            
+                    
+                    Day20-MyBatis高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.33" data-path="Day21-HTML5+CSS.html">
+            
+                <a href="Day21-HTML5+CSS.html">
+            
+                    
+                    Day21-HTML5+CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.34" data-path="Day22-JavaScript.html">
+            
+                <a href="Day22-JavaScript.html">
+            
+                    
+                    Day22-JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.35" data-path="Day23-HTTP+Tomcat+Servlet.html">
+            
+                <a href="Day23-HTTP+Tomcat+Servlet.html">
+            
+                    
+                    Day23-HTTP+Tomcat+Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.36" data-path="Day24-Request+Response.html">
+            
+                <a href="Day24-Request+Response.html">
+            
+                    
+                    Day24-Request+Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.37" data-path="Day25-Jsp+MVC.html">
+            
+                <a href="Day25-Jsp+MVC.html">
+            
+                    
+                    Day25-Jsp+MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.38" data-path="Day26-Cookie+Session.html">
+            
+                <a href="Day26-Cookie+Session.html">
+            
+                    
+                    Day26-Cookie+Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.39" data-path="Day27-Filter+Listener.html">
+            
+                <a href="Day27-Filter+Listener.html">
+            
+                    
+                    Day27-Filter+Listener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.40" data-path="Day28-Json+Vue.html">
+            
+                <a href="Day28-Json+Vue.html">
+            
+                    
+                    Day28-Json+Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.41" data-path="Day29-Element.html">
+            
+                <a href="Day29-Element.html">
+            
+                    
+                    Day29-Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.42" data-path="Day30-brand综合案例.html">
+            
+                <a href="Day30-brand综合案例.html">
+            
+                    
+                    Day30-brand综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.43" data-path="Day31~35-Spring.html">
+            
+                <a href="Day31~35-Spring.html">
+            
+                    
+                    Day31~35-Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.44" data-path="Day36-SSM.html">
+            
+                <a href="Day36-SSM.html">
+            
+                    
+                    Day36-SSM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.45" data-path="Day37-Maven高级.html">
+            
+                <a href="Day37-Maven高级.html">
+            
+                    
+                    Day37-Maven高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.46" data-path="Day38-SpringBoot.html">
+            
+                <a href="Day38-SpringBoot.html">
+            
+                    
+                    Day38-SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.47" data-path="Day39-Git.html">
+            
+                <a href="Day39-Git.html">
+            
+                    
+                    Day39-Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.48" data-path="Day40~45-瑞吉点餐.html">
+            
+                <a href="Day40~45-瑞吉点餐.html">
+            
+                    
+                    Day40~45-瑞吉点餐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.49" data-path="Day46~47-Linux.html">
+            
+                <a href="Day46~47-Linux.html">
+            
+                    
+                    Day46~47-Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.50" data-path="Day48-Redis.html">
+            
+                <a href="Day48-Redis.html">
+            
+                    
+                    Day48-Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.51" data-path="Day49~51-瑞吉点餐优化.html">
+            
+                <a href="Day49~51-瑞吉点餐优化.html">
+            
+                    
+                    Day49~51-瑞吉点餐优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.52" data-path="Day52-MyBatisPlus+乐观锁.html">
+            
+                <a href="Day52-MyBatisPlus+乐观锁.html">
+            
+                    
+                    Day52-MyBatisPlus+乐观锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.53" data-path="Day53~54-SpringCloud.html">
+            
+                <a href="Day53~54-SpringCloud.html">
+            
+                    
+                    Day53~54-SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.54" data-path="Day55-Docker.html">
+            
+                <a href="Day55-Docker.html">
+            
+                    
+                    Day55-Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.55" data-path="Day56-RabbitMQ.html">
+            
+                <a href="Day56-RabbitMQ.html">
+            
+                    
+                    Day56-RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.56" data-path="Day57~59-ElasticSearch.html">
+            
+                <a href="Day57~59-ElasticSearch.html">
+            
+                    
+                    Day57~59-ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.57" data-path="Day60-Sentinel.html">
+            
+                <a href="Day60-Sentinel.html">
+            
+                    
+                    Day60-Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.58" data-path="Day61-Seata.html">
+            
+                <a href="Day61-Seata.html">
+            
+                    
+                    Day61-Seata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.59" data-path="Day62~64-黑马商城.html">
+            
+                <a href="Day62~64-黑马商城.html">
+            
+                    
+                    Day62~64-黑马商城
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.60" data-path="Day65-黑马头条.html">
+            
+                <a href="Day65-黑马头条.html">
+            
+                    
+                    Day65-黑马头条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.61" data-path="就业加强-MySQL.html">
+            
+                <a href="就业加强-MySQL.html">
+            
+                    
+                    就业加强-MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    面试必会篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                <a href="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                    
+                    01-面试必会-JAVA基础篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                <a href="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                    
+                    02-面试必会-SSM框架篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                <a href="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                    
+                    03-面试必会-Mysql篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                <a href="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                    
+                    04-面试必会-Redis篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                <a href="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                    
+                    05-面试必会-SpringBoot&SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                <a href="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                    
+                    06-面试必会-MQ篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../面试必会篇/07-面试必须-事物控制.html">
+            
+                <a href="../面试必会篇/07-面试必须-事物控制.html">
+            
+                    
+                    07-面试必须-事物控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Spring系列面试题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Spring系列面试题/面试题.html">
+            
+                <a href="../Spring系列面试题/面试题.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Day60-Sentinel</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x96EA;&#x5D29;&#x95EE;&#x9898;"><b></b>&#x96EA;&#x5D29;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#sentinel"><b></b>Sentinel</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;sentinel"><b></b>&#x5B89;&#x88C5;Sentinel</a></li><li><span class="title-icon "></span><a href="#&#x5FAE;&#x670D;&#x52A1;&#x6574;&#x5408;sentinel"><b></b>&#x5FAE;&#x670D;&#x52A1;&#x6574;&#x5408;Sentinel</a></li><li><span class="title-icon "></span><a href="#&#x6D41;&#x91CF;&#x63A7;&#x5236;"><b></b>&#x6D41;&#x91CF;&#x63A7;&#x5236;</a></li><li><span class="title-icon "></span><a href="#&#x7EBF;&#x7A0B;&#x9694;&#x79BB;&#x7194;&#x65AD;&#x964D;&#x7EA7;"><b></b>&#x7EBF;&#x7A0B;&#x9694;&#x79BB;&amp;&#x7194;&#x65AD;&#x964D;&#x7EA7;</a></li><li><span class="title-icon "></span><a href="#&#x6388;&#x6743;&#x89C4;&#x5219;"><b></b>&#x6388;&#x6743;&#x89C4;&#x5219;</a></li><li><span class="title-icon "></span><a href="#&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7ED3;&#x679C;"><b></b>&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7ED3;&#x679C;</a></li><li><span class="title-icon "></span><a href="#&#x89C4;&#x5219;&#x6301;&#x4E45;&#x5316;"><b></b>&#x89C4;&#x5219;&#x6301;&#x4E45;&#x5316;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x96EA;&#x5D29;&#x95EE;&#x9898;"><a name="&#x96EA;&#x5D29;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x96EA;&#x5D29;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x96EA;&#x5D29;&#x95EE;&#x9898;</h2>
+<blockquote>
+<p>&#x5FAE;&#x670D;&#x52A1;&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x8C03;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x8C03;&#x7528;&#x94FE;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x6545;&#x969C;&#xFF0C;&#x5F15;&#x8D77;&#x6574;&#x4E2A;&#x94FE;&#x8DEF;&#x90FD;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+</blockquote>
+<ul>
+<li>&#x89E3;&#x51B3;&#x96EA;&#x5D29;&#x95EE;&#x9898;&#x7684;&#x5E38;&#x89C1;&#x65B9;&#x5F0F;&#xFF1A;<ul>
+<li>&#x907F;&#x514D;&#x56E0;<strong>&#x77AC;&#x95F4;&#x9AD8;&#x5E76;&#x53D1;</strong>&#x6D41;&#x91CF;&#x800C;&#x5BFC;&#x81F4;&#xFF08;&#x9884;&#x9632;&#x63AA;&#x65BD;&#xFF09;<ul>
+<li><strong>&#x6D41;&#x91CF;&#x63A7;&#x5236;</strong>&#xFF1A;&#x9650;&#x5236;&#x4E1A;&#x52A1;&#x8BBF;&#x95EE;&#x7684;QPS&#xFF0C;&#x907F;&#x514D;&#x670D;&#x52A1;&#x56E0;&#x6D41;&#x91CF;&#x7684;&#x7A81;&#x589E;&#x800C;&#x6545;&#x969C;</li>
+</ul>
+</li>
+<li>&#x907F;&#x514D;&#x56E0;<strong>&#x670D;&#x52A1;&#x6545;&#x969C;</strong>&#x800C;&#x5BFC;&#x81F4;&#xFF08;&#x8865;&#x6551;&#x63AA;&#x65BD;&#xFF09;<ul>
+<li><strong>&#x8D85;&#x65F6;&#x5904;&#x7406;</strong>&#xFF1A;&#x8BBE;&#x5B9A;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#xFF0C;&#x8BF7;&#x6C42;&#x8D85;&#x8FC7;&#x4E00;&#x5B9A;&#x65F6;&#x95F4;&#x6CA1;&#x6709;&#x54CD;&#x5E94;&#x5C31;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</li>
+<li><strong>&#x7EBF;&#x7A0B;&#x9694;&#x79BB;</strong>&#xFF08;&#x8231;&#x58C1;&#x6A21;&#x5F0F;&#xFF09;&#xFF1A;&#x9650;&#x5B9A;&#x6BCF;&#x4E2A;&#x4E1A;&#x52A1;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x7EBF;&#x7A0B;&#x6570;&#xFF0C;&#x907F;&#x514D;&#x8017;&#x5C3D;&#x6574;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x8D44;&#x6E90;</li>
+<li><strong>&#x7194;&#x65AD;&#x964D;&#x7EA7;</strong>&#xFF1A;&#x7531;<strong>&#x65AD;&#x8DEF;&#x5668;</strong>&#x7EDF;&#x8BA1;&#x4E1A;&#x52A1;&#x6267;&#x884C;&#x7684;&#x5F02;&#x5E38;&#x6BD4;&#x4F8B;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x51FA;&#x9608;&#x503C;&#x5219;&#x4F1A;<strong>&#x7194;&#x65AD;</strong>&#x8BE5;&#x4E1A;&#x52A1;&#xFF0C;&#x62E6;&#x622A;&#x8BBF;&#x95EE;&#x8BE5;&#x4E1A;&#x52A1;&#x7684;&#x4E00;&#x5207;&#x8BF7;&#x6C42;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="sentinel"><a name="sentinel" class="anchor-navigation-ex-anchor" href="#sentinel"><i class="fa fa-link" aria-hidden="true"></i></a>Sentinel</h2>
+<ul>
+<li><p>&#x670D;&#x52A1;&#x4FDD;&#x62A4;&#x6280;&#x672F;&#x5BF9;&#x6BD4;</p>
+<p>|                  | Sentinel                                       | Hystrix                       |
+| ---------------- | ---------------------------------------------- | ----------------------------- |
+| <strong>&#x9694;&#x79BB;&#x7B56;&#x7565;</strong>     | &#x4FE1;&#x53F7;&#x91CF;&#x9694;&#x79BB;                                     | &#x7EBF;&#x7A0B;&#x6C60;&#x9694;&#x79BB;/&#x4FE1;&#x53F7;&#x91CF;&#x9694;&#x79BB;         |
+| <strong>&#x7194;&#x65AD;&#x964D;&#x7EA7;&#x7B56;&#x7565;</strong> | &#x57FA;&#x4E8E;&#x6162;&#x8C03;&#x7528;&#x6BD4;&#x4F8B;&#x6216;&#x5F02;&#x5E38;&#x6BD4;&#x4F8B;                       | &#x57FA;&#x4E8E;&#x5931;&#x8D25;&#x6BD4;&#x7387;                  |
+| &#x5B9E;&#x65F6;&#x6307;&#x6807;&#x5B9E;&#x73B0;     | &#x6ED1;&#x52A8;&#x7A97;&#x53E3;                                       | &#x6ED1;&#x52A8;&#x7A97;&#x53E3;&#xFF08;&#x57FA;&#x4E8E; RxJava&#xFF09;       |
+| &#x89C4;&#x5219;&#x914D;&#x7F6E;         | &#x652F;&#x6301;&#x591A;&#x79CD;&#x6570;&#x636E;&#x6E90;                                 | &#x652F;&#x6301;&#x591A;&#x79CD;&#x6570;&#x636E;&#x6E90;                |
+| &#x6269;&#x5C55;&#x6027;           | &#x591A;&#x4E2A;&#x6269;&#x5C55;&#x70B9;                                     | &#x63D2;&#x4EF6;&#x7684;&#x5F62;&#x5F0F;                    |
+| &#x57FA;&#x4E8E;&#x6CE8;&#x89E3;&#x7684;&#x652F;&#x6301;   | &#x652F;&#x6301;                                           | &#x652F;&#x6301;                          |
+| <strong>&#x9650;&#x6D41;</strong>         | &#x57FA;&#x4E8E; QPS&#xFF0C;&#x652F;&#x6301;&#x57FA;&#x4E8E;&#x8C03;&#x7528;&#x5173;&#x7CFB;&#x7684;&#x9650;&#x6D41;               | &#x6709;&#x9650;&#x7684;&#x652F;&#x6301;                    |
+| <strong>&#x6D41;&#x91CF;&#x6574;&#x5F62;</strong>     | &#x652F;&#x6301;&#x6162;&#x542F;&#x52A8;&#x3001;&#x5300;&#x901F;&#x6392;&#x961F;&#x6A21;&#x5F0F;                       | &#x4E0D;&#x652F;&#x6301;                        |
+| &#x7CFB;&#x7EDF;&#x81EA;&#x9002;&#x5E94;&#x4FDD;&#x62A4;   | &#x652F;&#x6301;                                           | &#x4E0D;&#x652F;&#x6301;                        |
+| <strong>&#x63A7;&#x5236;&#x53F0;</strong>       | &#x5F00;&#x7BB1;&#x5373;&#x7528;&#xFF0C;&#x53EF;&#x914D;&#x7F6E;&#x89C4;&#x5219;&#x3001;&#x67E5;&#x770B;&#x79D2;&#x7EA7;&#x76D1;&#x63A7;&#x3001;&#x673A;&#x5668;&#x53D1;&#x73B0;&#x7B49; | &#x4E0D;&#x5B8C;&#x5584;                        |
+| &#x5E38;&#x89C1;&#x6846;&#x67B6;&#x7684;&#x9002;&#x914D;   | Servlet&#x3001;Spring Cloud&#x3001;Dubbo&#x3001;gRPC  &#x7B49;         | Servlet&#x3001;Spring Cloud Netflix |</p>
+</li>
+</ul>
+<h3 id="&#x5B89;&#x88C5;sentinel"><a name="&#x5B89;&#x88C5;sentinel" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;sentinel"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;Sentinel</h3>
+<blockquote>
+<p><a href="https://github.com/alibaba/Sentinel/releases" target="_blank">https://github.com/alibaba/Sentinel/releases</a></p>
+</blockquote>
+<ul>
+<li><p>&#x5C06;jar&#x5305;&#x653E;&#x5230;&#x4EFB;&#x610F;&#x975E;&#x4E2D;&#x6587;&#x76EE;&#x5F55;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-sh">java -jar sentinel-dashboard-1.8.4.jar
+</code></pre>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x7AEF;&#x53E3;</p>
+<pre><code class="lang-sh">java -Dserver.port=8090 -jar sentinel-dashboard-1.8.4.jar
+</code></pre>
+<p>| &#x914D;&#x7F6E;&#x9879;                           | &#x9ED8;&#x8BA4;&#x503C;   | &#x8BF4;&#x660E;       |
+| -------------------------------- | -------- | ---------- |
+| server.port                      | 8080     | &#x670D;&#x52A1;&#x7AEF;&#x53E3;   |
+| sentinel.dashboard.auth.username | sentinel | &#x9ED8;&#x8BA4;&#x7528;&#x6237;&#x540D; |
+| sentinel.dashboard.auth.password | sentinel | &#x9ED8;&#x8BA4;&#x5BC6;&#x7801;   |</p>
+</li>
+<li><p>&#x8BBF;&#x95EE;<a href="http://localhost:8080&#x9875;&#x9762;&#x767B;&#x5F55;&#xFF0C;&#x8D26;&#x53F7;&#x548C;&#x5BC6;&#x7801;&#x9ED8;&#x8BA4;&#x90FD;&#x662F;&#xFF1A;sentinel" target="_blank">http://localhost:8080&#x9875;&#x9762;&#x767B;&#x5F55;&#xFF0C;&#x8D26;&#x53F7;&#x548C;&#x5BC6;&#x7801;&#x9ED8;&#x8BA4;&#x90FD;&#x662F;&#xFF1A;sentinel</a></p>
+</li>
+</ul>
+<h3 id="&#x5FAE;&#x670D;&#x52A1;&#x6574;&#x5408;sentinel"><a name="&#x5FAE;&#x670D;&#x52A1;&#x6574;&#x5408;sentinel" class="anchor-navigation-ex-anchor" href="#&#x5FAE;&#x670D;&#x52A1;&#x6574;&#x5408;sentinel"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FAE;&#x670D;&#x52A1;&#x6574;&#x5408;Sentinel</h3>
+<ul>
+<li><p>&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!--sentinel--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alibaba.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-sentinel<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x5185;&#x5BB9;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  cloud:</span> 
+<span class="hljs-attr">    sentinel:</span>
+<span class="hljs-attr">      transport:</span>
+<span class="hljs-attr">        dashboard:</span> localhost:<span class="hljs-number">8080</span>
+<span class="hljs-attr">      web-context-unify:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># &#x5173;&#x95ED;context&#x6574;&#x5408;</span>
+</code></pre>
+</li>
+<li><p>&#x8BBF;&#x95EE;&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x4EFB;&#x610F;&#x7AEF;&#x70B9;&#xFF0C;&#x8FD9;&#x6837;&#x624D;&#x80FD;&#x89E6;&#x53D1;sentinel&#x7684;&#x76D1;&#x63A7;</p>
+</li>
+</ul>
+<h3 id="&#x6D41;&#x91CF;&#x63A7;&#x5236;"><a name="&#x6D41;&#x91CF;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x6D41;&#x91CF;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D41;&#x91CF;&#x63A7;&#x5236;</h3>
+<blockquote>
+<p>&#x5F53;&#x8BF7;&#x6C42;&#x8FDB;&#x5165;&#x5FAE;&#x670D;&#x52A1;&#x65F6;&#xFF0C;&#x9996;&#x5148;&#x4F1A;&#x8BBF;&#x95EE;DispatcherServlet&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x5165;Controller&#x3001;Service&#x3001;Mapper&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x4E2A;&#x8C03;&#x7528;&#x94FE;&#x5C31;&#x53EB;&#x505A;<strong>&#x7C07;&#x70B9;&#x94FE;&#x8DEF;</strong>&#x3002;&#x7C07;&#x70B9;&#x94FE;&#x8DEF;&#x4E2D;&#x88AB;&#x76D1;&#x63A7;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x5C31;&#x662F;&#x4E00;&#x4E2A;<strong>&#x8D44;&#x6E90;</strong>&#x3002;</p>
+<p>Sentinel&#x9ED8;&#x8BA4;&#x53EA;&#x6807;&#x8BB0;Controller&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x4E3A;&#x8D44;&#x6E90;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x6807;&#x8BB0;&#x5176;&#x5B83;&#x65B9;&#x6CD5;&#xFF0C;&#x9700;&#x8981;&#x5229;&#x7528;<code>@SentinelResource(&quot;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x8BC6;&quot;)</code>&#x6CE8;&#x89E3;&#x3002;</p>
+<p>Sentinel&#x9ED8;&#x8BA4;&#x4F1A;&#x5C06;Controller&#x65B9;&#x6CD5;&#x505A;context&#x6574;&#x5408;&#xFF0C;&#x5BFC;&#x81F4;&#x94FE;&#x8DEF;&#x6A21;&#x5F0F;&#x7684;&#x6D41;&#x63A7;&#x5931;&#x6548;&#xFF0C;&#x9700;&#x8981;&#x4FEE;&#x6539;application.yml&#xFF0C;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x3002;</p>
+</blockquote>
+<h4 id="&#x6D41;&#x63A7;&#x6A21;&#x5F0F;"><a name="&#x6D41;&#x63A7;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x6D41;&#x63A7;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D41;&#x63A7;&#x6A21;&#x5F0F;</h4>
+<ul>
+<li><p><strong>&#x76F4;&#x63A5;</strong>&#xFF1A;&#x7EDF;&#x8BA1;&#x5F53;&#x524D;&#x8D44;&#x6E90;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x89E6;&#x53D1;&#x9608;&#x503C;&#x65F6;&#x5BF9;&#x5F53;&#x524D;&#x8D44;&#x6E90;&#x76F4;&#x63A5;&#x9650;&#x6D41;</p>
+</li>
+<li><p><strong>&#x5173;&#x8054;</strong>&#xFF1A;&#x7EDF;&#x8BA1;&#x4E0E;&#x5F53;&#x524D;&#x8D44;&#x6E90;&#x76F8;&#x5173;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#xFF0C;&#x89E6;&#x53D1;&#x9608;&#x503C;&#x65F6;&#xFF0C;&#x5BF9;&#x5F53;&#x524D;&#x8D44;&#x6E90;&#x9650;&#x6D41;</p>
+<ul>
+<li>&#x4E24;&#x4E2A;&#x6709;&#x7ADE;&#x4E89;&#x5173;&#x7CFB;&#x7684;&#x8D44;&#x6E90;</li>
+<li>&#x4E00;&#x4E2A;&#x4F18;&#x5148;&#x7EA7;&#x8F83;&#x9AD8;&#xFF08;&#x4E0D;&#x9650;&#x6D41;&#xFF09;&#xFF0C;&#x4E00;&#x4E2A;&#x4F18;&#x5148;&#x7EA7;&#x4F4E;&#xFF08;&#x9650;&#x6D41;&#xFF09;</li>
+<li>&#x5982;&#x4E0B;&#x56FE;&#xFF1A;&#x5BF9;/order/query&#x7AEF;&#x70B9;&#x8FDB;&#x884C;&#x9650;&#x6D41;&#xFF0C;&#x5F53;/update&#x8D44;&#x6E90;&#x8BBF;&#x95EE;&#x91CF;&#x89E6;&#x53D1;&#x9608;&#x503C;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x5BF9;/query&#x8D44;&#x6E90;&#x9650;&#x6D41;&#xFF0C;&#x907F;&#x514D;&#x5F71;&#x54CD;update</li>
+</ul>
+<p><a href="images/image-20210716102103814.png" data-lightbox="2496ba8d-a4cc-417c-9c5c-7da3fcfe74f6" data-title="image-20210716102103814"><img src="images/image-20210716102103814.png" alt="image-20210716102103814"></a></p>
+</li>
+</ul>
+<ul>
+<li><p><strong>&#x94FE;&#x8DEF;</strong>&#xFF1A;&#x7EDF;&#x8BA1;&#x4ECE;&#x6307;&#x5B9A;&#x94FE;&#x8DEF;&#x8BBF;&#x95EE;&#x5230;&#x672C;&#x8D44;&#x6E90;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x89E6;&#x53D1;&#x9608;&#x503C;&#x65F6;&#xFF0C;&#x5BF9;&#x6307;&#x5B9A;&#x94FE;&#x8DEF;&#x9650;&#x6D41;</p>
+<ul>
+<li><p>==&#x6CE8;&#x610F;&#xFF1A;==Sentinel&#x9ED8;&#x8BA4;&#x4F1A;&#x5C06;Controller&#x65B9;&#x6CD5;&#x505A;context&#x6574;&#x5408;&#xFF0C;&#x5BFC;&#x81F4;&#x94FE;&#x8DEF;&#x6A21;&#x5F0F;&#x7684;&#x6D41;&#x63A7;&#x5931;&#x6548;&#xFF0C;&#x9700;&#x8981;&#x4FEE;&#x6539;application.yml</p>
+</li>
+<li><p>&#x5982;&#x4E0B;&#x56FE;&#xFF1A;&#x53EA;&#x7EDF;&#x8BA1;&#x4ECE;/order/query&#x8FDB;&#x5165;/goods&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x8D85;&#x51FA;&#x9608;&#x503C;&#x5219;&#x88AB;&#x9650;&#x6D41;</p>
+<p><a href="images/image-20210716105408723.png" data-lightbox="01041982-ad34-4da8-afe9-e7a498f75201" data-title="image-20210716105408723"><img src="images/image-20210716105408723.png" alt="image-20210716105408723"></a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x6D41;&#x63A7;&#x6548;&#x679C;"><a name="&#x6D41;&#x63A7;&#x6548;&#x679C;" class="anchor-navigation-ex-anchor" href="#&#x6D41;&#x63A7;&#x6548;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D41;&#x63A7;&#x6548;&#x679C;</h4>
+<ul>
+<li><strong>&#x5FEB;&#x901F;&#x5931;&#x8D25;</strong>&#xFF1A;QPS&#x8D85;&#x8FC7;&#x9608;&#x503C;&#x65F6;&#xFF0C;&#x62D2;&#x7EDD;&#x65B0;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x5E76;&#x629B;&#x51FA;FlowException&#x5F02;&#x5E38;</li>
+<li><strong>warm up</strong>&#xFF1A;&#x9884;&#x70ED;&#x6A21;&#x5F0F;&#xFF0C;&#x5BF9;&#x8D85;&#x51FA;&#x9608;&#x503C;&#x7684;&#x8BF7;&#x6C42;&#x540C;&#x6837;&#x662F;&#x62D2;&#x7EDD;&#x5E76;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x4F46;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x9608;&#x503C;&#x4F1A;&#x52A8;&#x6001;&#x53D8;&#x5316;&#xFF0C;&#x4ECE;&#x4E00;&#x4E2A;&#x8F83;&#x5C0F;&#x503C;&#x9010;&#x6E10;&#x589E;&#x52A0;&#x5230;&#x6700;&#x5927;&#x9608;&#x503C;</li>
+<li><strong>&#x6392;&#x961F;&#x7B49;&#x5F85;</strong>&#xFF1A;&#x53EF;&#x4EE5;&#x4F7F;&#x5F97;QPS&#x4F1A;&#x53D8;&#x7684;&#x5F88;&#x5E73;&#x6ED1;&#xFF0C;&#x8BF7;&#x6C42;&#x4F1A;&#x8FDB;&#x5165;&#x961F;&#x5217;&#xFF0C;&#x6309;&#x7167;&#x9608;&#x503C;&#x5141;&#x8BB8;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x4F9D;&#x6B21;&#x6267;&#x884C;&#x8BF7;&#x6C42;&#xFF1B;&#x5982;&#x679C;&#x8BF7;&#x6C42;&#x9884;&#x671F;&#x7B49;&#x5F85;&#x65F6;&#x957F;&#x5927;&#x4E8E;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#xFF0C;&#x76F4;&#x63A5;&#x62D2;&#x7EDD;</li>
+</ul>
+<h4 id="&#x70ED;&#x70B9;&#x53C2;&#x6570;&#x9650;&#x6D41;"><a name="&#x70ED;&#x70B9;&#x53C2;&#x6570;&#x9650;&#x6D41;" class="anchor-navigation-ex-anchor" href="#&#x70ED;&#x70B9;&#x53C2;&#x6570;&#x9650;&#x6D41;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x70ED;&#x70B9;&#x53C2;&#x6570;&#x9650;&#x6D41;</h4>
+<blockquote>
+<p>&#x5728;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x53EF;&#x80FD;&#x90E8;&#x5206;&#x5546;&#x54C1;&#x662F;&#x70ED;&#x70B9;&#x5546;&#x54C1;&#xFF0C;&#x4F8B;&#x5982;&#x79D2;&#x6740;&#x5546;&#x54C1;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x8FD9;&#x90E8;&#x5206;&#x5546;&#x54C1;&#x7684;QPS&#x9650;&#x5236;&#x4E0E;&#x5176;&#x5B83;&#x5546;&#x54C1;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x9AD8;&#x4E00;&#x4E9B;&#x3002;&#x90A3;&#x5C31;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x70ED;&#x70B9;&#x53C2;&#x6570;&#x9650;&#x6D41;&#x3002;</p>
+<p>==&#x6CE8;&#x610F;==&#xFF1A;sentinel&#x70B9;&#x51FB;&#x7C07;&#x70B9;&#x94FE;&#x8DEF;&#x7684;&#x53F3;&#x4FA7;&#x6DFB;&#x52A0;&#x70ED;&#x70B9;&#x5B58;&#x5728;bug&#xFF0C;&#x9700;&#x8981;&#x70B9;&#x51FB;&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x4E2D;<strong>&#x70ED;&#x70B9;&#x89C4;&#x5219;</strong>&#x83DC;&#x5355;&#x521B;&#x5EFA;</p>
+</blockquote>
+<p><strong>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</strong>&#xFF1A;&#x70ED;&#x70B9;&#x53C2;&#x6570;&#x9650;&#x6D41;&#x5BF9;&#x9ED8;&#x8BA4;&#x7684;SpringMVC&#x8D44;&#x6E90;&#x65E0;&#x6548;&#xFF0C;&#x9700;&#x8981;&#x5229;&#x7528;<code>@SentinelResource(&quot;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x8BC6;&quot;)</code>&#x6CE8;&#x89E3;&#x6807;&#x8BB0;&#x8D44;&#x6E90;</p>
+<p><a href="images/image-20230207113032441.png" data-lightbox="65d7b818-7108-4d14-9c47-2568afbb4e02" data-title="image-20230207113032441"><img src="images/image-20230207113032441.png" alt="image-20230207113032441"></a></p>
+<ul>
+<li><p>&#x4F8B;&#x5982;&#xFF1A;&#x7ED9;/order/{orderId}&#x8FD9;&#x4E2A;&#x8D44;&#x6E90;&#x6DFB;&#x52A0;&#x70ED;&#x70B9;&#x53C2;&#x6570;&#x9650;&#x6D41;</p>
+<ul>
+<li>&#x9ED8;&#x8BA4;QPS&#x4E3A;2</li>
+<li>102&#x53C2;&#x6570;QPS&#x4E3A;4</li>
+<li>103&#x53C2;&#x6570;QPS&#x4E3A;10</li>
+</ul>
+<p><a href="images/image-20210716120536714.png" data-lightbox="25c48a7f-1932-47ef-b061-ff3d6e3919d8" data-title="image-20210716120536714"><img src="images/image-20210716120536714.png" alt="image-20210716120536714"></a></p>
+</li>
+</ul>
+<h3 id="&#x7EBF;&#x7A0B;&#x9694;&#x79BB;&#x7194;&#x65AD;&#x964D;&#x7EA7;"><a name="&#x7EBF;&#x7A0B;&#x9694;&#x79BB;&#x7194;&#x65AD;&#x964D;&#x7EA7;" class="anchor-navigation-ex-anchor" href="#&#x7EBF;&#x7A0B;&#x9694;&#x79BB;&#x7194;&#x65AD;&#x964D;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EBF;&#x7A0B;&#x9694;&#x79BB;&amp;&#x7194;&#x65AD;&#x964D;&#x7EA7;</h3>
+<blockquote>
+<p>&#x4E0D;&#x7BA1;&#x662F;&#x7EBF;&#x7A0B;&#x9694;&#x79BB;&#x8FD8;&#x662F;&#x7194;&#x65AD;&#x964D;&#x7EA7;&#xFF0C;&#x90FD;&#x662F;&#x5BF9;<strong>&#x5BA2;&#x6237;&#x7AEF;</strong>&#xFF08;&#x8C03;&#x7528;&#x65B9;&#xFF09;&#x7684;&#x4FDD;&#x62A4;&#x3002;&#x9700;&#x8981;&#x5728;<strong>&#x8C03;&#x7528;&#x65B9;</strong>&#x53D1;&#x8D77;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x65F6;&#x505A;&#x7EBF;&#x7A0B;&#x9694;&#x79BB;&#x3001;&#x6216;&#x8005;&#x670D;&#x52A1;&#x7194;&#x65AD;&#x3002;</p>
+</blockquote>
+<h4 id="feignclient&#x6574;&#x5408;sentinel"><a name="feignclient&#x6574;&#x5408;sentinel" class="anchor-navigation-ex-anchor" href="#feignclient&#x6574;&#x5408;sentinel"><i class="fa fa-link" aria-hidden="true"></i></a>FeignClient&#x6574;&#x5408;Sentinel</h4>
+<blockquote>
+<p>&#x800C;&#x6211;&#x4EEC;&#x7684;&#x5FAE;&#x670D;&#x52A1;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x90FD;&#x662F;&#x57FA;&#x4E8E;Feign&#x6765;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C06;Feign&#x4E0E;Sentinel&#x6574;&#x5408;&#xFF0C;&#x5728;Feign&#x91CC;&#x9762;&#x5B9E;&#x73B0;&#x7EBF;&#x7A0B;&#x9694;&#x79BB;&#x548C;&#x670D;&#x52A1;&#x7194;&#x65AD;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#xFF0C;&#x5F00;&#x542F;sentinel&#x529F;&#x80FD;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">feign:</span>
+<span class="hljs-attr">  sentinel:</span>
+<span class="hljs-attr">    enabled:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># &#x5F00;&#x542F;feign&#x5BF9;sentinel&#x7684;&#x652F;&#x6301;</span>
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x5199;&#x5931;&#x8D25;&#x964D;&#x7EA7;&#x903B;&#x8F91;</p>
+<ul>
+<li>&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;FallbackClass&#xFF0C;&#x65E0;&#x6CD5;&#x5BF9;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x7684;&#x5F02;&#x5E38;&#x505A;&#x5904;&#x7406;</li>
+<li>&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;<strong>FallbackFactory</strong>&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x7684;&#x5F02;&#x5E38;&#x505A;&#x5904;&#x7406;</li>
+</ul>
+</li>
+<li><p>&#x5931;&#x8D25;&#x964D;&#x7EA7;&#x515C;&#x5E95;&#x5B9E;&#x73B0;&#x6B65;&#x9AA4;</p>
+<ul>
+<li><p>&#x6B65;&#x9AA4;&#x4E00;&#xFF1A;&#x5728;feign-api&#x9879;&#x76EE;&#x7684;fallback&#x5305;&#x4E2D;&#x5B9A;&#x4E49;&#x7C7B;&#xFF0C;&#x5B9E;&#x73B0;FallbackFactory==&#x3010;&#x6CE8;&#x610F;&#x6CDB;&#x578B;&#x3011;==</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.feign.fallback;
+
+<span class="hljs-keyword">import</span> cn.itcast.feign.client.UserClient;
+<span class="hljs-keyword">import</span> cn.itcast.feign.pojo.User;
+<span class="hljs-keyword">import</span> feign.hystrix.FallbackFactory;
+<span class="hljs-keyword">import</span> lombok.extern.slf4j.Slf4j;
+
+<span class="hljs-meta">@Slf</span>4j
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserClientFallbackFactory</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FallbackFactory</span>&lt;<span class="hljs-title">UserClient</span>&gt; </span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> UserClient <span class="hljs-title">create</span><span class="hljs-params">(Throwable throwable)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> UserClient() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> User <span class="hljs-title">queryById</span><span class="hljs-params">(Long id)</span> </span>{
+                log.error(<span class="hljs-string">&quot;&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x5F02;&#x5E38;&quot;</span>, throwable);
+                <span class="hljs-comment">//&#x4F7F;&#x5F97;&#x7528;&#x6237;&#x4FA7;&#x4E0D;&#x518D;&#x663E;&#x793A;&#x62A5;&#x9519;&#xFF0C;&#x800C;&#x662F;&#x663E;&#x793A;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x4E2D;&#x7684;user&#x4E3A;null</span>
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> User();
+            }
+        };
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x6B65;&#x9AA4;&#x4E8C;&#xFF1A;&#x5728;feign-api&#x9879;&#x76EE;&#x7684;config&#x5305;&#x4E2D;FeignConfiguration&#x7C7B;&#x4E2D;&#x5C06;UserClientFallbackFactory&#x6CE8;&#x518C;&#x4E3A;&#x4E00;&#x4E2A;Bean</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> UserClientFallbackFactory <span class="hljs-title">userClientFallbackFactory</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-comment">//&#x5931;&#x8D25;&#x964D;&#x7EA7;&#x903B;&#x8F91;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> UserClientFallbackFactory();
+}
+</code></pre>
+</li>
+<li><p>&#x6B65;&#x9AA4;&#x4E09;&#xFF1A;&#x5728;feign-api&#x9879;&#x76EE;&#x4E2D;&#x7684;UserClient&#x63A5;&#x53E3;&#x4E2D;&#x4F7F;&#x7528;UserClientFallbackFactory</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.feign.client;
+
+<span class="hljs-keyword">import</span> cn.itcast.feign.config.FeignConfiguration;
+<span class="hljs-keyword">import</span> cn.itcast.feign.fallback.UserClientFallbackFactory;
+<span class="hljs-keyword">import</span> cn.itcast.feign.pojo.User;
+<span class="hljs-keyword">import</span> org.springframework.cloud.openfeign.FeignClient;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.PathVariable;
+
+<span class="hljs-meta">@FeignClient</span>(value = <span class="hljs-string">&quot;userservice&quot;</span>, <span class="hljs-comment">//&#x6307;&#x5B9A;&#x670D;&#x52A1;&#x540D;&#x79F0;</span>
+        configuration = FeignConfiguration.class, <span class="hljs-comment">//&#x5C40;&#x90E8;&#x8BBE;&#x7F6E;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;</span>
+        fallbackFactory = UserClientFallbackFactory.class) <span class="hljs-comment">//&#x5931;&#x8D25;&#x964D;&#x7EA7;&#x5904;&#x7406;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">UserClient</span> </span>{
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/user/{id}&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> User <span class="hljs-title">queryById</span><span class="hljs-params">(@PathVariable(<span class="hljs-string">&quot;id&quot;</span>)</span> Long id)</span>;
+
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x7EBF;&#x7A0B;&#x9694;&#x79BB;"><a name="&#x7EBF;&#x7A0B;&#x9694;&#x79BB;" class="anchor-navigation-ex-anchor" href="#&#x7EBF;&#x7A0B;&#x9694;&#x79BB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EBF;&#x7A0B;&#x9694;&#x79BB;</h4>
+<ul>
+<li>&#x7EBF;&#x7A0B;&#x9694;&#x79BB;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#xFF1A;<ul>
+<li>&#x7EBF;&#x7A0B;&#x6C60;&#x9694;&#x79BB;&#xFF1A;&#x7ED9;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x8C03;&#x7528;&#x4E1A;&#x52A1;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6C60;&#xFF0C;&#x5229;&#x7528;<strong>&#x7EBF;&#x7A0B;&#x6C60;</strong>&#x672C;&#x8EAB;&#x5B9E;&#x73B0;&#x9694;&#x79BB;&#x6548;&#x679C;<ul>
+<li>&#x4F18;&#x70B9;&#xFF1A;&#x652F;&#x6301;&#x81EA;&#x52A8;&#x8D85;&#x65F6;&#x3001;&#x652F;&#x6301;&#x5F02;&#x6B65;&#x8C03;&#x7528;</li>
+<li>&#x7F3A;&#x70B9;&#xFF1A;&#x7EBF;&#x7A0B;&#x7684;&#x989D;&#x5916;&#x5F00;&#x9500;&#x6BD4;&#x8F83;&#x5927;</li>
+<li>&#x573A;&#x666F;&#xFF1A;&#x4F4E;&#x6247;&#x51FA;</li>
+</ul>
+</li>
+<li>&#x4FE1;&#x53F7;&#x91CF;&#x9694;&#x79BB;&#xFF08;<strong>Sentinel&#x9ED8;&#x8BA4;&#x91C7;&#x7528;</strong>&#xFF09;&#xFF1A;&#x4E0D;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x6C60;&#xFF0C;&#x800C;&#x662F;&#x8BA1;&#x6570;&#x5668;&#x6A21;&#x5F0F;&#xFF0C;&#x8BB0;&#x5F55;&#x4E1A;&#x52A1;&#x4F7F;&#x7528;&#x7684;<strong>&#x7EBF;&#x7A0B;&#x6570;&#x91CF;</strong>&#xFF0C;&#x8FBE;&#x5230;&#x4FE1;&#x53F7;&#x91CF;&#x4E0A;&#x9650;&#x65F6;&#xFF0C;&#x7981;&#x6B62;&#x65B0;&#x7684;&#x8BF7;&#x6C42;<ul>
+<li>&#x4F18;&#x70B9;&#xFF1A;&#x8F7B;&#x91CF;&#x7EA7;&#xFF0C;&#x65E0;&#x989D;&#x5916;&#x5F00;&#x9500;</li>
+<li>&#x7F3A;&#x70B9;&#xFF1A;&#x4E0D;&#x652F;&#x6301;&#x4E3B;&#x52A8;&#x8D85;&#x65F6;&#x3001;&#x4E0D;&#x652F;&#x6301;&#x5F02;&#x6B65;&#x8C03;&#x7528;</li>
+<li>&#x573A;&#x666F;&#xFF1A;&#x9AD8;&#x9891;&#x8C03;&#x7528;&#x3001;&#x9AD8;&#x6247;&#x51FA;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x7194;&#x65AD;&#x964D;&#x7EA7;"><a name="&#x7194;&#x65AD;&#x964D;&#x7EA7;" class="anchor-navigation-ex-anchor" href="#&#x7194;&#x65AD;&#x964D;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7194;&#x65AD;&#x964D;&#x7EA7;</h4>
+<ul>
+<li>&#x65AD;&#x8DEF;&#x5668;&#x7194;&#x65AD;&#x7B56;&#x7565;&#x6709;&#x4E09;&#x79CD;&#xFF1A;<strong>&#x6162;&#x8C03;&#x7528;&#x3001;&#x5F02;&#x5E38;&#x6BD4;&#x4F8B;&#x3001;&#x5F02;&#x5E38;&#x6570;</strong><ul>
+<li><strong>&#x6162;&#x8C03;&#x7528;</strong>&#xFF1A;&#x4E1A;&#x52A1;&#x7684;<strong>&#x54CD;&#x5E94;&#x65F6;&#x957F;</strong>&#xFF08;RT&#xFF09;&#x5927;&#x4E8E;&#x6307;&#x5B9A;&#x65F6;&#x957F;&#x7684;&#x8BF7;&#x6C42;&#x8BA4;&#x5B9A;&#x4E3A;&#x6162;&#x8C03;&#x7528;&#x8BF7;&#x6C42;&#x3002;&#x5728;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5185;&#xFF0C;&#x5982;&#x679C;&#x8BF7;&#x6C42;&#x6570;&#x91CF;&#x8D85;&#x8FC7;&#x8BBE;&#x5B9A;&#x7684;&#x6700;&#x5C0F;&#x6570;&#x91CF;&#xFF0C;&#x6162;&#x8C03;&#x7528;&#x6BD4;&#x4F8B;&#x5927;&#x4E8E;&#x8BBE;&#x5B9A;&#x7684;&#x9608;&#x503C;&#xFF0C;&#x5219;&#x89E6;&#x53D1;&#x7194;&#x65AD;&#x3002;</li>
+<li><strong>&#x5F02;&#x5E38;&#x6BD4;&#x4F8B;&amp;&#x5F02;&#x5E38;&#x6570;</strong>&#xFF1A;&#x7EDF;&#x8BA1;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5185;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x8C03;&#x7528;&#x6B21;&#x6570;&#x8D85;&#x8FC7;&#x6307;&#x5B9A;&#x8BF7;&#x6C42;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x51FA;&#x73B0;<strong>&#x5F02;&#x5E38;</strong>&#x7684;&#x6BD4;&#x4F8B;&#x8FBE;&#x5230;&#x8BBE;&#x5B9A;&#x7684;&#x6BD4;&#x4F8B;&#x9608;&#x503C;&#xFF08;&#x6216;&#x8D85;&#x8FC7;&#x6307;&#x5B9A;&#x5F02;&#x5E38;&#x6570;&#xFF09;&#xFF0C;&#x5219;&#x89E6;&#x53D1;&#x7194;&#x65AD;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p><a href="images/image-20210716130958518.png" data-lightbox="62840eb1-9d12-4442-b8b5-150cf82b39b5" data-title="image-20210716130958518"><img src="images/image-20210716130958518.png" alt="image-20210716130958518"></a></p>
+<ul>
+<li>&#x72B6;&#x6001;&#x673A;&#x7684;&#x4E09;&#x4E2A;&#x72B6;&#x6001;<ul>
+<li>closed&#xFF1A;&#x5173;&#x95ED;&#x72B6;&#x6001;&#xFF0C;&#x65AD;&#x8DEF;&#x5668;&#x653E;&#x884C;&#x6240;&#x6709;&#x8BF7;&#x6C42;&#xFF0C;&#x5E76;&#x5F00;&#x59CB;&#x7EDF;&#x8BA1;&#x5F02;&#x5E38;&#x6BD4;&#x4F8B;&#x3001;&#x6162;&#x8BF7;&#x6C42;&#x6BD4;&#x4F8B;&#x3002;&#x8D85;&#x8FC7;&#x9608;&#x503C;&#x5219;&#x5207;&#x6362;&#x5230;open&#x72B6;&#x6001;</li>
+<li>open&#xFF1A;&#x6253;&#x5F00;&#x72B6;&#x6001;&#xFF0C;&#x670D;&#x52A1;&#x8C03;&#x7528;&#x88AB;<strong>&#x7194;&#x65AD;</strong>&#xFF0C;&#x8BBF;&#x95EE;&#x88AB;&#x7194;&#x65AD;&#x670D;&#x52A1;&#x7684;&#x8BF7;&#x6C42;&#x4F1A;&#x88AB;&#x62D2;&#x7EDD;&#xFF0C;&#x5FEB;&#x901F;&#x5931;&#x8D25;&#xFF0C;&#x76F4;&#x63A5;&#x8D70;&#x964D;&#x7EA7;&#x903B;&#x8F91;&#x3002;Open&#x72B6;&#x6001;5&#x79D2;&#x540E;&#x4F1A;&#x8FDB;&#x5165;half-open&#x72B6;&#x6001;</li>
+<li>half-open&#xFF1A;&#x534A;&#x5F00;&#x72B6;&#x6001;&#xFF0C;&#x653E;&#x884C;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#xFF0C;&#x6839;&#x636E;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x6765;&#x5224;&#x65AD;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x64CD;&#x4F5C;<ul>
+<li>&#x8BF7;&#x6C42;&#x6210;&#x529F;&#xFF1A;&#x5219;&#x5207;&#x6362;&#x5230;closed&#x72B6;&#x6001;</li>
+<li>&#x8BF7;&#x6C42;&#x5931;&#x8D25;&#xFF1A;&#x5219;&#x5207;&#x6362;&#x5230;open&#x72B6;&#x6001;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x6388;&#x6743;&#x89C4;&#x5219;"><a name="&#x6388;&#x6743;&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#&#x6388;&#x6743;&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6388;&#x6743;&#x89C4;&#x5219;</h3>
+<blockquote>
+<p>&#x6388;&#x6743;&#x89C4;&#x5219;&#x53EF;&#x4EE5;&#x5BF9;&#x8C03;&#x7528;&#x65B9;&#x7684;&#x6765;&#x6E90;&#x505A;&#x63A7;&#x5236;&#xFF0C;&#x6709;&#x767D;&#x540D;&#x5355;&#x548C;&#x9ED1;&#x540D;&#x5355;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;</p>
+</blockquote>
+<ul>
+<li><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;sentinel&#x4E0D;&#x7BA1;&#x8BF7;&#x6C42;&#x8005;&#x4ECE;&#x54EA;&#x91CC;&#x6765;&#xFF0C;&#x8BF7;&#x6C42;&#x8005;&#x7684;origin&#x8FD4;&#x56DE;&#x503C;&#x6C38;&#x8FDC;&#x662F;default&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;<code>RequestOriginParser</code>&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#xFF0C;&#x8BA9;<strong>&#x4E0D;&#x540C;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7684;origin</strong>&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.order.sentinel;
+
+<span class="hljs-keyword">import</span> com.alibaba.csp.sentinel.adapter.spring.webmvc.callback.RequestOriginParser;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Component;
+<span class="hljs-keyword">import</span> org.springframework.util.StringUtils;
+
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeaderOriginParser</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">RequestOriginParser</span> </span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">parseOrigin</span><span class="hljs-params">(HttpServletRequest request)</span> </span>{
+        <span class="hljs-comment">// 1.&#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x5934;</span>
+        String origin = request.getHeader(<span class="hljs-string">&quot;origin&quot;</span>);
+        <span class="hljs-comment">// 2.&#x975E;&#x7A7A;&#x5224;&#x65AD;</span>
+        <span class="hljs-keyword">if</span> (StringUtils.isEmpty(origin)) {
+            origin = <span class="hljs-string">&quot;blank&quot;</span>;
+        }
+        <span class="hljs-keyword">return</span> origin;
+    }
+}
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x6DFB;&#x52A0;&#x7F51;&#x5173;&#x914D;&#x7F6E;&#xFF0C;&#x8BA9;<strong>&#x6240;&#x6709;&#x4ECE;gateway&#x8DEF;&#x7531;&#x5230;&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x8BF7;&#x6C42;&#x90FD;&#x5E26;&#x4E0A;origin&#x5934;</strong></p>
+<pre><code class="lang-yml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    gateway:</span>
+      <span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x8FC7;&#x6EE4;&#x5668;&#xFF08;&#x5BF9;&#x6240;&#x6709;&#x8BF7;&#x6C42;&#x6709;&#x6548;&#xFF09;</span>
+<span class="hljs-attr">      default-filters:</span>
+        <span class="hljs-comment"># &#x7ED9;&#x6240;&#x6709;&#x7ECF;&#x8FC7;&#x7F51;&#x5173;&#x7684;&#x8BF7;&#x6C42;&#x6DFB;&#x52A0;gateway&#x8BF7;&#x6C42;&#x5934;</span>
+<span class="hljs-bullet">        -</span> AddRequestHeader=origin,gateway
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x5728;sentinel&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6388;&#x6743;&#x89C4;&#x5219;&#xFF0C;&#x653E;&#x884C;origin&#x503C;&#x4E3A;gateway&#x7684;&#x8BF7;&#x6C42;</p>
+<p><a href="images/image-20210716153301069.png" data-lightbox="6a3bbeb8-956f-4679-b924-486fb1b2d641" data-title="image-20210716153301069"><img src="images/image-20210716153301069.png" alt="image-20210716153301069"></a></p>
+</li>
+</ul>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7ED3;&#x679C;"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7ED3;&#x679C;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7ED3;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7ED3;&#x679C;</h3>
+<blockquote>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53D1;&#x751F;&#x9650;&#x6D41;&#x3001;&#x964D;&#x7EA7;&#x3001;&#x6388;&#x6743;&#x62E6;&#x622A;&#x65F6;&#xFF0C;&#x90FD;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x5230;&#x8C03;&#x7528;&#x65B9;&#x3002;&#x5F02;&#x5E38;&#x7ED3;&#x679C;&#x90FD;&#x662F;flow limmiting&#xFF08;&#x9650;&#x6D41;&#xFF09;&#x3002;&#x8FD9;&#x6837;&#x4E0D;&#x591F;&#x53CB;&#x597D;&#xFF0C;&#x65E0;&#x6CD5;&#x5F97;&#x77E5;&#x662F;&#x9650;&#x6D41;&#x8FD8;&#x662F;&#x964D;&#x7EA7;&#x8FD8;&#x662F;&#x6388;&#x6743;&#x62E6;&#x622A;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x9ED8;&#x8BA4;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x88AB;&#x9650;&#x6D41;&#x3001;&#x964D;&#x7EA7;&#x3001;&#x6388;&#x6743;&#x62E6;&#x622A;&#x65F6;&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;&#xFF1A;BlockException&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x5B50;&#x7C7B;</p>
+<p>| &#x5F02;&#x5E38;                 | &#x8BF4;&#x660E;               |
+| -------------------- | ------------------ |
+| FlowException        | &#x9650;&#x6D41;&#x5F02;&#x5E38;           |
+| ParamFlowException   | &#x70ED;&#x70B9;&#x53C2;&#x6570;&#x9650;&#x6D41;&#x7684;&#x5F02;&#x5E38; |
+| DegradeException     | &#x964D;&#x7EA7;&#x5F02;&#x5E38;           |
+| AuthorityException   | &#x6388;&#x6743;&#x89C4;&#x5219;&#x5F02;&#x5E38;       |
+| SystemBlockException | &#x7CFB;&#x7EDF;&#x89C4;&#x5219;&#x5F02;&#x5E38;       |</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x5982;&#x679C;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x65F6;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x9700;&#x8981;&#x5B9E;&#x73B0;BlockExceptionHandler&#x63A5;&#x53E3;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.order.sentinel;
+
+<span class="hljs-keyword">import</span> com.alibaba.csp.sentinel.adapter.spring.webmvc.callback.BlockExceptionHandler;
+<span class="hljs-keyword">import</span> com.alibaba.csp.sentinel.slots.block.BlockException;
+<span class="hljs-keyword">import</span> com.alibaba.csp.sentinel.slots.block.authority.AuthorityException;
+<span class="hljs-keyword">import</span> com.alibaba.csp.sentinel.slots.block.degrade.DegradeException;
+<span class="hljs-keyword">import</span> com.alibaba.csp.sentinel.slots.block.flow.FlowException;
+<span class="hljs-keyword">import</span> com.alibaba.csp.sentinel.slots.block.flow.param.ParamFlowException;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Component;
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SentinelExceptionHandler</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">BlockExceptionHandler</span> </span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handle</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response, BlockException e)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+
+        String msg = <span class="hljs-string">&quot;&#x672A;&#x77E5;&#x5F02;&#x5E38;&quot;</span>;
+        <span class="hljs-keyword">int</span> status = <span class="hljs-number">429</span>; <span class="hljs-comment">//&#x8BF7;&#x6C42;&#x8FC7;&#x591A;</span>
+
+        <span class="hljs-keyword">if</span> (e <span class="hljs-keyword">instanceof</span> FlowException) {
+            msg = <span class="hljs-string">&quot;&#x8BF7;&#x6C42;&#x88AB;&#x9650;&#x6D41;&#x4E86;&quot;</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (e <span class="hljs-keyword">instanceof</span> ParamFlowException) {
+            msg = <span class="hljs-string">&quot;&#x8BF7;&#x6C42;&#x88AB;&#x70ED;&#x70B9;&#x53C2;&#x6570;&#x9650;&#x6D41;&quot;</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (e <span class="hljs-keyword">instanceof</span> DegradeException) {
+            msg = <span class="hljs-string">&quot;&#x8BF7;&#x6C42;&#x88AB;&#x964D;&#x7EA7;&#x4E86;&quot;</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (e <span class="hljs-keyword">instanceof</span> AuthorityException) {
+            msg = <span class="hljs-string">&quot;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x8BBF;&#x95EE;&quot;</span>;
+            status = <span class="hljs-number">401</span>;
+        }
+
+        <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x5F02;&#x5E38;&#x4FE1;&#x606F;</span>
+        <span class="hljs-comment">//{&quot;msg&quot;:&quot;msg&quot;,&quot;status&quot;:&quot;status&quot;}</span>
+        response.setContentType(<span class="hljs-string">&quot;application/json;charset=utf-8&quot;</span>);
+        response.setStatus(status);
+        response.getWriter().write(<span class="hljs-string">&quot;{\&quot;msg\&quot;:\&quot;&quot;</span>+msg+<span class="hljs-string">&quot;\&quot;,\&quot;status\&quot;:\&quot;&quot;</span>+status+<span class="hljs-string">&quot;\&quot;}&quot;</span>);
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x89C4;&#x5219;&#x6301;&#x4E45;&#x5316;"><a name="&#x89C4;&#x5219;&#x6301;&#x4E45;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x89C4;&#x5219;&#x6301;&#x4E45;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89C4;&#x5219;&#x6301;&#x4E45;&#x5316;</h3>
+<blockquote>
+<p>sentinel&#x7684;&#x6240;&#x6709;&#x89C4;&#x5219;&#x90FD;&#x662F;&#x5185;&#x5B58;&#x5B58;&#x50A8;&#xFF0C;&#x91CD;&#x542F;&#x540E;&#x6240;&#x6709;&#x89C4;&#x5219;&#x90FD;&#x4F1A;&#x4E22;&#x5931;&#x3002;&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x786E;&#x4FDD;&#x8FD9;&#x4E9B;&#x89C4;&#x5219;&#x7684;&#x6301;&#x4E45;&#x5316;&#xFF0C;&#x907F;&#x514D;&#x4E22;&#x5931;</p>
+</blockquote>
+<ul>
+<li><p>sentinel&#x652F;&#x6301;&#x4E09;&#x79CD;&#x89C4;&#x5219;&#x7BA1;&#x7406;&#x6A21;&#x5F0F;</p>
+<p>| &#x63A8;&#x9001;&#x6A21;&#x5F0F;                                                     | &#x8BF4;&#x660E;                                                         | &#x4F18;&#x70B9;                         | &#x7F3A;&#x70B9;                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ |
+| <a href="https://github.com/alibaba/Sentinel/wiki/&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;-Sentinel" target="_blank">&#x539F;&#x59CB;&#x6A21;&#x5F0F;</a> | API &#x5C06;&#x89C4;&#x5219;&#x63A8;&#x9001;&#x81F3;&#x5BA2;&#x6237;&#x7AEF;&#x5E76;&#x76F4;&#x63A5;&#x66F4;&#x65B0;&#x5230;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x6269;&#x5C55;&#x5199;&#x6570;&#x636E;&#x6E90;&#xFF08;<a href="https://github.com/alibaba/Sentinel/wiki/&#x52A8;&#x6001;&#x89C4;&#x5219;&#x6269;&#x5C55;" target="_blank">WritableDataSource</a>&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x5C31;&#x662F;&#x8FD9;&#x79CD; | &#x7B80;&#x5355;&#xFF0C;&#x65E0;&#x4EFB;&#x4F55;&#x4F9D;&#x8D56;             | &#x4E0D;&#x4FDD;&#x8BC1;&#x4E00;&#x81F4;&#x6027;&#xFF1B;&#x89C4;&#x5219;&#x4FDD;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x91CD;&#x542F;&#x5373;&#x6D88;&#x5931;&#x3002;&#x4E25;&#x91CD;&#x4E0D;&#x5EFA;&#x8BAE;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883; |
+| <a href="https://github.com/alibaba/Sentinel/wiki/&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;-Sentinel" target="_blank">Pull   </a><a href="https://github.com/alibaba/Sentinel/wiki/&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;-Sentinel" target="_blank">&#x6A21;&#x5F0F;</a> | &#x6269;&#x5C55;&#x5199;&#x6570;&#x636E;&#x6E90;&#xFF08;<a href="https://github.com/alibaba/Sentinel/wiki/&#x52A8;&#x6001;&#x89C4;&#x5219;&#x6269;&#x5C55;" target="_blank">WritableDataSource</a>&#xFF09;&#xFF0C;  &#x5BA2;&#x6237;&#x7AEF;&#x4E3B;&#x52A8;&#x5411;&#x67D0;&#x4E2A;&#x89C4;&#x5219;&#x7BA1;&#x7406;&#x4E2D;&#x5FC3;&#x5B9A;&#x671F;&#x8F6E;&#x8BE2;&#x62C9;&#x53D6;&#x89C4;&#x5219;&#xFF0C;&#x8FD9;&#x4E2A;&#x89C4;&#x5219;&#x4E2D;&#x5FC3;&#x53EF;&#x4EE5;&#x662F; RDBMS&#x3001;&#x6587;&#x4EF6; &#x7B49; | &#x7B80;&#x5355;&#xFF0C;&#x65E0;&#x4EFB;&#x4F55;&#x4F9D;&#x8D56;&#xFF1B;&#x89C4;&#x5219;&#x6301;&#x4E45;&#x5316; | &#x4E0D;&#x4FDD;&#x8BC1;&#x4E00;&#x81F4;&#x6027;&#xFF1B;&#x5B9E;&#x65F6;&#x6027;&#x4E0D;&#x4FDD;&#x8BC1;&#xFF0C;&#x62C9;&#x53D6;&#x8FC7;&#x4E8E;&#x9891;&#x7E41;&#x4E5F;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x6027;&#x80FD;&#x95EE;&#x9898;&#x3002; |
+| <strong><a href="https://github.com/alibaba/Sentinel/wiki/&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;-Sentinel" target="_blank">Push   </a><a href="https://github.com/alibaba/Sentinel/wiki/&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;-Sentinel" target="_blank">&#x6A21;&#x5F0F;</a></strong> | &#x6269;&#x5C55;&#x8BFB;&#x6570;&#x636E;&#x6E90;&#xFF08;<a href="https://github.com/alibaba/Sentinel/wiki/&#x52A8;&#x6001;&#x89C4;&#x5219;&#x6269;&#x5C55;" target="_blank">ReadableDataSource</a>&#xFF09;&#xFF0C;&#x89C4;&#x5219;&#x4E2D;&#x5FC3;&#x7EDF;&#x4E00;&#x63A8;&#x9001;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x8FC7;&#x6CE8;&#x518C;&#x76D1;&#x542C;&#x5668;&#x7684;&#x65B9;&#x5F0F;&#x65F6;&#x523B;&#x76D1;&#x542C;&#x53D8;&#x5316;&#xFF0C;&#x6BD4;&#x5982;&#x4F7F;&#x7528;  Nacos&#x3001;Zookeeper  &#x7B49;&#x914D;&#x7F6E;&#x4E2D;&#x5FC3;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x6709;&#x66F4;&#x597D;&#x7684;&#x5B9E;&#x65F6;&#x6027;&#x548C;&#x4E00;&#x81F4;&#x6027;&#x4FDD;&#x8BC1;&#x3002;<strong>&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E0B;&#x4E00;&#x822C;&#x91C7;&#x7528;</strong>  <strong>push</strong>  <strong>&#x6A21;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x6E90;&#x3002;</strong> | &#x89C4;&#x5219;&#x6301;&#x4E45;&#x5316;&#xFF1B;&#x4E00;&#x81F4;&#x6027;&#xFF1B;         | &#x5F15;&#x5165;&#x7B2C;&#x4E09;&#x65B9;&#x4F9D;&#x8D56;                                               |</p>
+</li>
+</ul>
+<h4 id="&#x5B9E;&#x73B0;push&#x6A21;&#x5F0F;&#x6301;&#x4E45;&#x5316;"><a name="&#x5B9E;&#x73B0;push&#x6A21;&#x5F0F;&#x6301;&#x4E45;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;push&#x6A21;&#x5F0F;&#x6301;&#x4E45;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;push&#x6A21;&#x5F0F;&#x6301;&#x4E45;&#x5316;</h4>
+<ul>
+<li><p>&#x5BFC;&#x5165;sentinel&#x76D1;&#x542C;nacos&#x7684;&#x4F9D;&#x8D56;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alibaba.csp<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>sentinel-datasource-nacos<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x5FAE;&#x670D;&#x52A1;&#x4E2D;&#x914D;&#x7F6E;nacos&#x5730;&#x5740;&#x53CA;&#x76D1;&#x542C;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">spring:</span>
+<span class="hljs-attr">  cloud:</span>
+<span class="hljs-attr">    sentinel:</span>
+<span class="hljs-attr">      datasource:</span>
+<span class="hljs-attr">        flow:</span>
+<span class="hljs-attr">          nacos:</span>
+<span class="hljs-attr">            server-addr:</span> localhost:<span class="hljs-number">8848</span> <span class="hljs-comment"># nacos&#x5730;&#x5740;</span>
+<span class="hljs-attr">            dataId:</span> orderservice-flow-rules <span class="hljs-comment"># &#x5728;nacos&#x91CC;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x540D;&#x79F0;</span>
+<span class="hljs-attr">            groupId:</span> SENTINEL_GROUP
+<span class="hljs-attr">            rule-type:</span> flow <span class="hljs-comment"># &#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#xFF1A;degrade&#x3001;authority&#x3001;param-flow</span>
+</code></pre>
+</li>
+<li><p>&#x542F;&#x52A8;sentinel</p>
+<pre><code class="lang-sh">java -jar sentinel-dashboard.jar
+</code></pre>
+</li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2023-02-07 17:26 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Day57~59-ElasticSearch.html" class="navigation navigation-prev " aria-label="Previous page: Day57~59-ElasticSearch">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Day61-Seata.html" class="navigation navigation-next " aria-label="Next page: Day61-Seata">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Day60-Sentinel","level":"1.10.57","depth":2,"next":{"title":"Day61-Seata","level":"1.10.58","depth":2,"path":"Java笔记/Day61-Seata.md","ref":"Java笔记/Day61-Seata.md","articles":[]},"previous":{"title":"Day57~59-ElasticSearch","level":"1.10.56","depth":2,"path":"Java笔记/Day57~59-ElasticSearch.md","ref":"Java笔记/Day57~59-ElasticSearch.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://none.org.cn/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"0day计划","language":"zh-hans","links":{"sidebar":{"None's 树洞":"https://none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"Java笔记/Day60-Sentinel.md","mtime":"2023-02-07T09:26:22.750Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T00:23:40.981Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

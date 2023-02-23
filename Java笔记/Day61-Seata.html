@@ -1,0 +1,2259 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Day61-Seata · 0day计划</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="None">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Day62~64-黑马商城.html" />
+    
+    
+    <link rel="prev" href="Day60-Sentinel.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://none.org.cn" target="_blank" class="custom-link">None's 树洞</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">《 0day计划 》</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    社工
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../社工/获取位置信息.html">
+            
+                <a href="../社工/获取位置信息.html">
+            
+                    
+                    获取位置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第一阶段-基础篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第一阶段-基础篇/零基础必看课程.html">
+            
+                <a href="../第一阶段-基础篇/零基础必看课程.html">
+            
+                    
+                    零基础必看课程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第一阶段-基础篇/Windows基础.html">
+            
+                <a href="../第一阶段-基础篇/Windows基础.html">
+            
+                    
+                    Windows基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第一阶段-基础篇/数据库基础.html">
+            
+                <a href="../第一阶段-基础篇/数据库基础.html">
+            
+                    
+                    数据库基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第二阶段-Web安全篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                <a href="../第二阶段-Web安全篇/2019网络安全训练营.html">
+            
+                    
+                    2019网络安全训练营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                <a href="../第二阶段-Web安全篇/BurpSuite学习使用.html">
+            
+                    
+                    BurpSuite学习使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                <a href="../第二阶段-Web安全篇/Web安全攻防学习.html">
+            
+                    
+                    Web安全攻防学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第六阶段-Python黑客编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                <a href="../第六阶段-Python黑客编程/Python编程基础.html">
+            
+                    
+                    Python编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    软考-信息安全工程师
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../软考-信息安全工程师/第一版.html">
+            
+                <a href="../软考-信息安全工程师/第一版.html">
+            
+                    
+                    第一版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    兄弟连Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../兄弟连Linux/Linux系统简介.html">
+            
+                <a href="../兄弟连Linux/Linux系统简介.html">
+            
+                    
+                    Linux系统简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../兄弟连Linux/Linux常用命令.html">
+            
+                <a href="../兄弟连Linux/Linux常用命令.html">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../兄弟连Linux/文本编辑器Vim.html">
+            
+                <a href="../兄弟连Linux/文本编辑器Vim.html">
+            
+                    
+                    文本编辑器Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../兄弟连Linux/软件包管理.html">
+            
+                <a href="../兄弟连Linux/软件包管理.html">
+            
+                    
+                    软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    韩立刚计算机网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../韩立刚计算机网络/概述.html">
+            
+                <a href="../韩立刚计算机网络/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../韩立刚计算机网络/物理层.html">
+            
+                <a href="../韩立刚计算机网络/物理层.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../韩立刚计算机网络/数据链路层.html">
+            
+                <a href="../韩立刚计算机网络/数据链路层.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    韩立刚CCNA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../韩立刚CCNA/计算机网络.html">
+            
+                <a href="../韩立刚CCNA/计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../韩立刚CCNA/TCP&IP.html">
+            
+                <a href="../韩立刚CCNA/TCP&IP.html">
+            
+                    
+                    TCP&IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../韩立刚CCNA/IP地址和子网.html">
+            
+                <a href="../韩立刚CCNA/IP地址和子网.html">
+            
+                    
+                    IP地址和子网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../韩立刚CCNA/静态路由.html">
+            
+                <a href="../韩立刚CCNA/静态路由.html">
+            
+                    
+                    静态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../韩立刚CCNA/动态路由.html">
+            
+                <a href="../韩立刚CCNA/动态路由.html">
+            
+                    
+                    动态路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../韩立刚CCNA/交换机.html">
+            
+                <a href="../韩立刚CCNA/交换机.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Java笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="01-面试题.html">
+            
+                <a href="01-面试题.html">
+            
+                    
+                    01-面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="02-未归类知识点.html">
+            
+                <a href="02-未归类知识点.html">
+            
+                    
+                    02-未归类知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="基础班day01.html">
+            
+                <a href="基础班day01.html">
+            
+                    
+                    基础班day01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="基础班day02.html">
+            
+                <a href="基础班day02.html">
+            
+                    
+                    基础班day02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="基础班day03.html">
+            
+                <a href="基础班day03.html">
+            
+                    
+                    基础班day03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="基础班day04.html">
+            
+                <a href="基础班day04.html">
+            
+                    
+                    基础班day04
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="基础班day05.html">
+            
+                <a href="基础班day05.html">
+            
+                    
+                    基础班day05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="基础班day06.html">
+            
+                <a href="基础班day06.html">
+            
+                    
+                    基础班day06
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="基础班day07.html">
+            
+                <a href="基础班day07.html">
+            
+                    
+                    基础班day07
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="基础班day08.html">
+            
+                <a href="基础班day08.html">
+            
+                    
+                    基础班day08
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="基础班day09.html">
+            
+                <a href="基础班day09.html">
+            
+                    
+                    基础班day09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="基础班day10.html">
+            
+                <a href="基础班day10.html">
+            
+                    
+                    基础班day10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="Day01-Static+继承+权限修饰.html">
+            
+                <a href="Day01-Static+继承+权限修饰.html">
+            
+                    
+                    Day01-Static+继承+权限修饰
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.14" data-path="Day02-抽象+接口+单例.html">
+            
+                <a href="Day02-抽象+接口+单例.html">
+            
+                    
+                    Day02-抽象+接口+单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.15" data-path="Day03-多态+内部类+枚举.html">
+            
+                <a href="Day03-多态+内部类+枚举.html">
+            
+                    
+                    Day03-多态+内部类+枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.16" data-path="Day04-常用API+正则.html">
+            
+                <a href="Day04-常用API+正则.html">
+            
+                    
+                    Day04-常用API+正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.17" data-path="Day05-数据结构+List集合+泛型.html">
+            
+                <a href="Day05-数据结构+List集合+泛型.html">
+            
+                    
+                    Day05-数据结构+List集合+泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.18" data-path="Day06-Set集合+迭代器+增强for.html">
+            
+                <a href="Day06-Set集合+迭代器+增强for.html">
+            
+                    
+                    Day06-Set集合+迭代器+增强for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.19" data-path="Day07-Map集合.html">
+            
+                <a href="Day07-Map集合.html">
+            
+                    
+                    Day07-Map集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.20" data-path="Day08-异常+多线程.html">
+            
+                <a href="Day08-异常+多线程.html">
+            
+                    
+                    Day08-异常+多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.21" data-path="Day09-线程池+Lambda+Stream流.html">
+            
+                <a href="Day09-线程池+Lambda+Stream流.html">
+            
+                    
+                    Day09-线程池+Lambda+Stream流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.22" data-path="Day10-File+IO流.html">
+            
+                <a href="Day10-File+IO流.html">
+            
+                    
+                    Day10-File+IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.23" data-path="Day11-IO流+装饰模式.html">
+            
+                <a href="Day11-IO流+装饰模式.html">
+            
+                    
+                    Day11-IO流+装饰模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.24" data-path="Day12-网络编程+junit.html">
+            
+                <a href="Day12-网络编程+junit.html">
+            
+                    
+                    Day12-网络编程+junit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.25" data-path="Day13-反射+注解.html">
+            
+                <a href="Day13-反射+注解.html">
+            
+                    
+                    Day13-反射+注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.26" data-path="Day14-XML+Dom4j+动态代理.html">
+            
+                <a href="Day14-XML+Dom4j+动态代理.html">
+            
+                    
+                    Day14-XML+Dom4j+动态代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.27" data-path="Day15-MySQL基础.html">
+            
+                <a href="Day15-MySQL基础.html">
+            
+                    
+                    Day15-MySQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.28" data-path="Day16-MySQL高级.html">
+            
+                <a href="Day16-MySQL高级.html">
+            
+                    
+                    Day16-MySQL高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.29" data-path="Day17-JDBC.html">
+            
+                <a href="Day17-JDBC.html">
+            
+                    
+                    Day17-JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.30" data-path="Day18-Maven+MyBatis入门.html">
+            
+                <a href="Day18-Maven+MyBatis入门.html">
+            
+                    
+                    Day18-Maven+MyBatis入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.31" data-path="Day19-MyBatis进阶.html">
+            
+                <a href="Day19-MyBatis进阶.html">
+            
+                    
+                    Day19-MyBatis进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.32" data-path="Day20-MyBatis高级.html">
+            
+                <a href="Day20-MyBatis高级.html">
+            
+                    
+                    Day20-MyBatis高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.33" data-path="Day21-HTML5+CSS.html">
+            
+                <a href="Day21-HTML5+CSS.html">
+            
+                    
+                    Day21-HTML5+CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.34" data-path="Day22-JavaScript.html">
+            
+                <a href="Day22-JavaScript.html">
+            
+                    
+                    Day22-JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.35" data-path="Day23-HTTP+Tomcat+Servlet.html">
+            
+                <a href="Day23-HTTP+Tomcat+Servlet.html">
+            
+                    
+                    Day23-HTTP+Tomcat+Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.36" data-path="Day24-Request+Response.html">
+            
+                <a href="Day24-Request+Response.html">
+            
+                    
+                    Day24-Request+Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.37" data-path="Day25-Jsp+MVC.html">
+            
+                <a href="Day25-Jsp+MVC.html">
+            
+                    
+                    Day25-Jsp+MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.38" data-path="Day26-Cookie+Session.html">
+            
+                <a href="Day26-Cookie+Session.html">
+            
+                    
+                    Day26-Cookie+Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.39" data-path="Day27-Filter+Listener.html">
+            
+                <a href="Day27-Filter+Listener.html">
+            
+                    
+                    Day27-Filter+Listener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.40" data-path="Day28-Json+Vue.html">
+            
+                <a href="Day28-Json+Vue.html">
+            
+                    
+                    Day28-Json+Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.41" data-path="Day29-Element.html">
+            
+                <a href="Day29-Element.html">
+            
+                    
+                    Day29-Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.42" data-path="Day30-brand综合案例.html">
+            
+                <a href="Day30-brand综合案例.html">
+            
+                    
+                    Day30-brand综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.43" data-path="Day31~35-Spring.html">
+            
+                <a href="Day31~35-Spring.html">
+            
+                    
+                    Day31~35-Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.44" data-path="Day36-SSM.html">
+            
+                <a href="Day36-SSM.html">
+            
+                    
+                    Day36-SSM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.45" data-path="Day37-Maven高级.html">
+            
+                <a href="Day37-Maven高级.html">
+            
+                    
+                    Day37-Maven高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.46" data-path="Day38-SpringBoot.html">
+            
+                <a href="Day38-SpringBoot.html">
+            
+                    
+                    Day38-SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.47" data-path="Day39-Git.html">
+            
+                <a href="Day39-Git.html">
+            
+                    
+                    Day39-Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.48" data-path="Day40~45-瑞吉点餐.html">
+            
+                <a href="Day40~45-瑞吉点餐.html">
+            
+                    
+                    Day40~45-瑞吉点餐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.49" data-path="Day46~47-Linux.html">
+            
+                <a href="Day46~47-Linux.html">
+            
+                    
+                    Day46~47-Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.50" data-path="Day48-Redis.html">
+            
+                <a href="Day48-Redis.html">
+            
+                    
+                    Day48-Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.51" data-path="Day49~51-瑞吉点餐优化.html">
+            
+                <a href="Day49~51-瑞吉点餐优化.html">
+            
+                    
+                    Day49~51-瑞吉点餐优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.52" data-path="Day52-MyBatisPlus+乐观锁.html">
+            
+                <a href="Day52-MyBatisPlus+乐观锁.html">
+            
+                    
+                    Day52-MyBatisPlus+乐观锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.53" data-path="Day53~54-SpringCloud.html">
+            
+                <a href="Day53~54-SpringCloud.html">
+            
+                    
+                    Day53~54-SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.54" data-path="Day55-Docker.html">
+            
+                <a href="Day55-Docker.html">
+            
+                    
+                    Day55-Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.55" data-path="Day56-RabbitMQ.html">
+            
+                <a href="Day56-RabbitMQ.html">
+            
+                    
+                    Day56-RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.56" data-path="Day57~59-ElasticSearch.html">
+            
+                <a href="Day57~59-ElasticSearch.html">
+            
+                    
+                    Day57~59-ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.57" data-path="Day60-Sentinel.html">
+            
+                <a href="Day60-Sentinel.html">
+            
+                    
+                    Day60-Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.58" data-path="Day61-Seata.html">
+            
+                <a href="Day61-Seata.html">
+            
+                    
+                    Day61-Seata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.59" data-path="Day62~64-黑马商城.html">
+            
+                <a href="Day62~64-黑马商城.html">
+            
+                    
+                    Day62~64-黑马商城
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.60" data-path="Day65-黑马头条.html">
+            
+                <a href="Day65-黑马头条.html">
+            
+                    
+                    Day65-黑马头条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.61" data-path="就业加强-MySQL.html">
+            
+                <a href="就业加强-MySQL.html">
+            
+                    
+                    就业加强-MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    面试必会篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                <a href="../面试必会篇/01-面试必会-JAVA基础篇.html">
+            
+                    
+                    01-面试必会-JAVA基础篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                <a href="../面试必会篇/02-面试必会-SSM框架篇.html">
+            
+                    
+                    02-面试必会-SSM框架篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                <a href="../面试必会篇/03-面试必会-Mysql篇.html">
+            
+                    
+                    03-面试必会-Mysql篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                <a href="../面试必会篇/04-面试必会-Redis篇.html">
+            
+                    
+                    04-面试必会-Redis篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                <a href="../面试必会篇/05-面试必会-SpringBoot&SpringCloud.html">
+            
+                    
+                    05-面试必会-SpringBoot&SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                <a href="../面试必会篇/06-面试必会-MQ篇.html">
+            
+                    
+                    06-面试必会-MQ篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../面试必会篇/07-面试必须-事物控制.html">
+            
+                <a href="../面试必会篇/07-面试必须-事物控制.html">
+            
+                    
+                    07-面试必须-事物控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Spring系列面试题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Spring系列面试题/面试题.html">
+            
+                <a href="../Spring系列面试题/面试题.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Day61-Seata</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;"><b></b>&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;</a></li><ul><li><span class="title-icon "></span><a href="#cap&#x5B9A;&#x7406;"><b></b>CAP&#x5B9A;&#x7406;</a></li><li><span class="title-icon "></span><a href="#base&#x7406;&#x8BBA;"><b></b>BASE&#x7406;&#x8BBA;</a></li><li><span class="title-icon "></span><a href="#&#x89E3;&#x51B3;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x7684;&#x601D;&#x8DEF;"><b></b>&#x89E3;&#x51B3;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x7684;&#x601D;&#x8DEF;</a></li></ul><li><span class="title-icon "></span><a href="#seata"><b></b>Seata</a></li><ul><li><span class="title-icon "></span><a href="#&#x56DB;&#x79CD;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5BF9;&#x6BD4;"><b></b>&#x56DB;&#x79CD;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5BF9;&#x6BD4;</a></li><li><span class="title-icon "></span><a href="#&#x5FAE;&#x670D;&#x52A1;&#x96C6;&#x6210;seata"><b></b>&#x5FAE;&#x670D;&#x52A1;&#x96C6;&#x6210;Seata</a></li><li><span class="title-icon "></span><a href="#xa&#x6A21;&#x5F0F;"><b></b>XA&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#at&#x6A21;&#x5F0F;"><b></b>AT&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#tcc&#x6A21;&#x5F0F;"><b></b>TCC&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#saga&#x6A21;&#x5F0F;"><b></b>Saga&#x6A21;&#x5F0F;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;"><a name="&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;</h2>
+<ul>
+<li><p>&#x672C;&#x5730;&#x4E8B;&#x52A1;</p>
+<ul>
+<li>ACID<ul>
+<li>&#x539F;&#x5B50;&#x6027;&#xFF1A;&#x4E8B;&#x52A1;&#x662F;&#x4E0D;&#x53EF;&#x5206;&#x5272;&#x7684;&#x6700;&#x5C0F;&#x64CD;&#x4F5C;&#x5355;&#x4F4D;&#xFF0C;&#x8981;&#x4E48;&#x540C;&#x65F6;&#x6210;&#x529F;&#xFF0C;&#x8981;&#x4E48;&#x540C;&#x65F6;&#x5931;&#x8D25;</li>
+<li>&#x4E00;&#x81F4;&#x6027;&#xFF1A;&#x4F7F;&#x5F97;&#x6570;&#x636E;&#x5E93;&#x4ECE;&#x4E00;&#x79CD;&#x6B63;&#x786E;&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x6210;&#x53E6;&#x4E00;&#x79CD;&#x6B63;&#x786E;&#x72B6;&#x6001;</li>
+<li>&#x9694;&#x79BB;&#x6027;&#xFF1A;&#x5728;&#x4E8B;&#x52A1;&#x6B63;&#x786E;&#x63D0;&#x4EA4;&#x4E4B;&#x524D;&#xFF0C;&#x4E0D;&#x5141;&#x8BB8;&#x628A;&#x8BE5;&#x4E8B;&#x52A1;&#x5BF9;&#x6570;&#x636E;&#x7684;&#x4EFB;&#x4F55;&#x6539;&#x53D8;&#x63D0;&#x4F9B;&#x7ED9;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x4E8B;&#x52A1;</li>
+<li>&#x6301;&#x4E45;&#x6027;&#xFF1A;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x505A;&#x7684;&#x4E00;&#x5207;&#x4FEE;&#x6539;&#x5C06;&#x6C38;&#x4E45;&#x4FDD;&#x5B58;&#xFF0C;&#x4E0D;&#x8BBA;&#x662F;&#x5426;&#x51FA;&#x73B0;&#x6545;&#x969C;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;</p>
+<ul>
+<li>&#x8DE8; <strong>&#x6570;&#x636E;&#x6E90;</strong> &#x6216; <strong>&#x670D;&#x52A1;</strong> &#x7684;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x3002;&#x5728;&#x6570;&#x636E;&#x5E93;&#x6C34;&#x5E73;&#x62C6;&#x5206;&#x3001;&#x670D;&#x52A1;&#x5782;&#x76F4;&#x62C6;&#x5206;&#x4E4B;&#x540E;&#xFF0C;&#x4E00;&#x4E2A;&#x4E1A;&#x52A1;&#x64CD;&#x4F5C;&#x901A;&#x5E38;&#x8981;&#x8DE8;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x3001;&#x670D;&#x52A1;&#x624D;&#x80FD;&#x5B8C;&#x6210;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="cap&#x5B9A;&#x7406;"><a name="cap&#x5B9A;&#x7406;" class="anchor-navigation-ex-anchor" href="#cap&#x5B9A;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>CAP&#x5B9A;&#x7406;</h3>
+<blockquote>
+<p>&#x5728;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x7CFB;&#x7EDF;&#x95F4;&#x7684;&#x7F51;&#x7EDC;&#x4E0D;&#x80FD;100%&#x4FDD;&#x8BC1;&#x5065;&#x5EB7;&#xFF0C;&#x4E00;&#x5B9A;&#x4F1A;&#x6709;&#x6545;&#x969C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x800C;&#x670D;&#x52A1;&#x53C8;&#x5FC5;&#x987B;&#x5BF9;&#x5916;&#x4FDD;&#x8BC1;&#x670D;&#x52A1;&#x3002;&#x56E0;&#x6B64;Partition Tolerance&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6B64;&#x65F6;&#x8981;&#x4FDD;&#x8BC1;<strong>&#x4E00;&#x81F4;&#x6027;</strong>&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x7B49;&#x5F85;&#x7F51;&#x7EDC;&#x6062;&#x590D;&#xFF0C;&#x5B8C;&#x6210;&#x6570;&#x636E;&#x540C;&#x6B65;&#x540E;&#xFF0C;&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&#x624D;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#xFF0C;&#x670D;&#x52A1;&#x5904;&#x4E8E;&#x963B;&#x585E;&#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x53EF;&#x7528;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6B64;&#x65F6;&#x8981;&#x4FDD;&#x8BC1;<strong>&#x53EF;&#x7528;&#x6027;</strong>&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x7B49;&#x5F85;&#x7F51;&#x7EDC;&#x6062;&#x590D;&#xFF0C;&#x90A3;&#x5206;&#x533A;&#x4E4B;&#x95F4;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x6570;&#x636E;&#x4E0D;&#x4E00;&#x81F4;&#x3002;</p>
+</blockquote>
+<ul>
+<li>&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x7684;&#x4E09;&#x4E2A;&#x6307;&#x6807;&#xFF0C;&#x4E0D;&#x53EF;&#x80FD;&#x540C;&#x65F6;&#x505A;&#x5230;&#x3002;&#x5728;P&#x4E00;&#x5B9A;&#x8981;&#x4FDD;&#x8BC1;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;A&#x548C;C&#x4E4B;&#x95F4;&#x53EA;&#x80FD;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x3002;<ul>
+<li>Consistency&#xFF1A;&#x4E00;&#x81F4;&#x6027;</li>
+<li>Availability&#xFF1A;&#x53EF;&#x7528;&#x6027;</li>
+<li>Partition tolerance&#xFF1A;&#x5206;&#x533A;&#x5BB9;&#x9519;&#x6027;</li>
+</ul>
+</li>
+</ul>
+<h3 id="base&#x7406;&#x8BBA;"><a name="base&#x7406;&#x8BBA;" class="anchor-navigation-ex-anchor" href="#base&#x7406;&#x8BBA;"><i class="fa fa-link" aria-hidden="true"></i></a>BASE&#x7406;&#x8BBA;</h3>
+<blockquote>
+<p>BASE&#x7406;&#x8BBA;&#x662F;&#x5BF9;CAP&#x7684;&#x4E00;&#x79CD;&#x89E3;&#x51B3;&#x601D;&#x8DEF;&#xFF0C;&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x601D;&#x60F3;&#xFF1A;</p>
+</blockquote>
+<ul>
+<li><strong>Basically Available</strong> <strong>&#xFF08;&#x57FA;&#x672C;&#x53EF;&#x7528;&#xFF09;</strong>&#xFF1A;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x5728;&#x51FA;&#x73B0;&#x6545;&#x969C;&#x65F6;&#xFF0C;&#x5141;&#x8BB8;&#x635F;&#x5931;&#x90E8;&#x5206;&#x53EF;&#x7528;&#x6027;&#xFF0C;&#x5373;&#x4FDD;&#x8BC1;&#x6838;&#x5FC3;&#x53EF;&#x7528;&#x3002;</li>
+<li><strong>Soft State&#xFF08;&#x8F6F;&#x72B6;&#x6001;&#xFF09;&#xFF1A;</strong>&#x5728;&#x4E00;&#x5B9A;&#x65F6;&#x95F4;&#x5185;&#xFF0C;&#x5141;&#x8BB8;&#x51FA;&#x73B0;&#x4E2D;&#x95F4;&#x72B6;&#x6001;&#xFF0C;&#x6BD4;&#x5982;&#x4E34;&#x65F6;&#x7684;&#x4E0D;&#x4E00;&#x81F4;&#x72B6;&#x6001;&#x3002;</li>
+<li><strong>Eventually Consistent&#xFF08;&#x6700;&#x7EC8;&#x4E00;&#x81F4;&#x6027;&#xFF09;</strong>&#xFF1A;&#x867D;&#x7136;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x5F3A;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x8F6F;&#x72B6;&#x6001;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x6700;&#x7EC8;&#x8FBE;&#x5230;&#x6570;&#x636E;&#x4E00;&#x81F4;&#x3002;</li>
+</ul>
+<h3 id="&#x89E3;&#x51B3;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x7684;&#x601D;&#x8DEF;"><a name="&#x89E3;&#x51B3;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x7684;&#x601D;&#x8DEF;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x7684;&#x601D;&#x8DEF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x7684;&#x601D;&#x8DEF;</h3>
+<ul>
+<li><strong>AP&#x6A21;&#x5F0F;</strong>&#xFF1A;&#x5404;&#x5B50;&#x4E8B;&#x52A1;&#x5206;&#x522B;&#x6267;&#x884C;&#x548C;&#x63D0;&#x4EA4;&#xFF0C;&#x5141;&#x8BB8;&#x51FA;&#x73B0;&#x7ED3;&#x679C;<strong>&#x4E34;&#x65F6;&#x4E0D;&#x4E00;&#x81F4;</strong>&#xFF0C;&#x7136;&#x540E;&#x91C7;&#x7528;&#x5F25;&#x8865;&#x63AA;&#x65BD;&#x6062;&#x590D;&#x6570;&#x636E;&#x5373;&#x53EF;&#xFF0C;&#x5B9E;&#x73B0;<strong>&#x6700;&#x7EC8;&#x4E00;&#x81F4;</strong>&#x3002;&#xFF08;&#x8F6F;&#x72B6;&#x6001; + &#x6700;&#x7EC8;&#x4E00;&#x81F4;&#x6027;&#xFF09;</li>
+<li><strong>CP&#x6A21;&#x5F0F;</strong>&#xFF1A;&#x5404;&#x4E2A;&#x5B50;&#x4E8B;&#x52A1;&#x6267;&#x884C;&#x540E;&#x4E92;&#x76F8;&#x7B49;&#x5F85;&#xFF0C;&#x540C;&#x65F6;&#x63D0;&#x4EA4;&#xFF0C;&#x540C;&#x65F6;&#x56DE;&#x6EDA;&#xFF0C;&#x8FBE;&#x6210;<strong>&#x5F3A;&#x4E00;&#x81F4;</strong>&#x3002;&#x4F46;&#x4E8B;&#x52A1;&#x7B49;&#x5F85;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5904;&#x4E8E;<strong>&#x5F31;&#x53EF;&#x7528;</strong>&#x72B6;&#x6001;&#x3002;&#xFF08;&#x57FA;&#x672C;&#x53EF;&#x7528;&#xFF09;</li>
+</ul>
+<h2 id="seata"><a name="seata" class="anchor-navigation-ex-anchor" href="#seata"><i class="fa fa-link" aria-hidden="true"></i></a>Seata</h2>
+<blockquote>
+<p>Seata&#x67B6;&#x6784;&#xFF1A;</p>
+<ul>
+<li><strong>TC (Transaction Coordinator) - &#x4E8B;&#x52A1;&#x534F;&#x8C03;&#x8005;</strong>&#xFF1A;&#x7EF4;&#x62A4;&#x5168;&#x5C40;&#x548C;&#x5206;&#x652F;&#x4E8B;&#x52A1;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x534F;&#x8C03;&#x5168;&#x5C40;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x6216;&#x56DE;&#x6EDA;&#x3002;</li>
+<li><strong>TM (Transaction Manager) - &#x4E8B;&#x52A1;&#x7BA1;&#x7406;&#x5668;</strong>&#xFF1A;&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x4E8B;&#x52A1;&#x7684;&#x8303;&#x56F4;&#x3001;&#x5F00;&#x59CB;&#x5168;&#x5C40;&#x4E8B;&#x52A1;&#x3001;&#x63D0;&#x4EA4;&#x6216;&#x56DE;&#x6EDA;&#x5168;&#x5C40;&#x4E8B;&#x52A1;&#x3002;</li>
+<li><strong>RM (Resource Manager) - &#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;</strong>&#xFF1A;&#x7BA1;&#x7406;&#x5206;&#x652F;&#x4E8B;&#x52A1;&#x5904;&#x7406;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x5411;TC&#x6CE8;&#x518C;&#x5206;&#x652F;&#x4E8B;&#x52A1;&#x548C;&#x62A5;&#x544A;&#x5206;&#x652F;&#x4E8B;&#x52A1;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x9A71;&#x52A8;&#x5206;&#x652F;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x6216;&#x56DE;&#x6EDA;&#x3002;</li>
+</ul>
+</blockquote>
+<h3 id="&#x56DB;&#x79CD;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5BF9;&#x6BD4;"><a name="&#x56DB;&#x79CD;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5BF9;&#x6BD4;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x79CD;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5BF9;&#x6BD4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x79CD;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5BF9;&#x6BD4;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">XA</th>
+<th style="text-align:center">AT</th>
+<th style="text-align:center">TCC</th>
+<th style="text-align:center">SAGA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x4E00;&#x81F4;&#x6027;</td>
+<td style="text-align:center">&#x5F3A;&#x4E00;&#x81F4;</td>
+<td style="text-align:center">&#x5F31;&#x4E00;&#x81F4;</td>
+<td style="text-align:center">&#x5F31;&#x4E00;&#x81F4;</td>
+<td style="text-align:center">&#x6700;&#x7EC8;&#x4E00;&#x81F4;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x9694;&#x79BB;&#x6027;</td>
+<td style="text-align:center">&#x5B8C;&#x5168;&#x9694;&#x79BB;</td>
+<td style="text-align:center">&#x5C45;&#x4E8E;&#x5168;&#x5C40;&#x9501;&#x9694;&#x79BB;</td>
+<td style="text-align:center">&#x57FA;&#x4E8E;&#x8D44;&#x6E90;&#x9884;&#x7559;&#x9694;&#x79BB;</td>
+<td style="text-align:center">&#x65E0;&#x9694;&#x79BB;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x4EE3;&#x7801;&#x4FB5;&#x5165;</td>
+<td style="text-align:center">&#x65E0;</td>
+<td style="text-align:center">&#x65E0;</td>
+<td style="text-align:center">&#x6709;&#xFF0C;&#x8981;&#x7F16;&#x5199;&#x4E09;&#x4E2A;&#x63A5;&#x53E3;</td>
+<td style="text-align:center">&#x6709;&#xFF0C;&#x8981;&#x7F16;&#x5199;&#x72B6;&#x6001;&#x673A;&#x548C;&#x8865;&#x507F;&#x4E1A;&#x52A1;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x6027;&#x80FD;</td>
+<td style="text-align:center">&#x5DEE;</td>
+<td style="text-align:center">&#x597D;</td>
+<td style="text-align:center">&#x975E;&#x5E38;&#x597D;</td>
+<td style="text-align:center">&#x975E;&#x5E38;&#x597D;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x573A;&#x666F;</td>
+<td style="text-align:center">&#x5BF9;&#x4E00;&#x81F4;&#x6027;&#x3001;&#x9694;&#x79BB;&#x6027;&#x8981;&#x6C42;&#x9AD8;&#x7684;&#x4E1A;&#x52A1;</td>
+<td style="text-align:center">- Seata&#x9ED8;&#x8BA4;&#x6A21;&#x5F0F;<br>- &#x57FA;&#x4E8E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5927;&#x591A;&#x6570;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x573A;&#x666F;</td>
+<td style="text-align:center">- &#x5BF9;&#x6027;&#x80FD;&#x8981;&#x6C42;&#x8F83;&#x9AD8;&#x7684;&#x4E8B;&#x52A1;<br>- &#x6709;&#x975E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x53C2;&#x4E0E;&#x7684;&#x4E8B;&#x52A1;</td>
+<td style="text-align:center">- &#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x957F;&#x3001;&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x591A;<br>- &#x53C2;&#x4E0E;&#x8005;&#x5305;&#x542B;&#x5176;&#x4ED6;&#x516C;&#x53F8;&#x6216;&#x9057;&#x7559;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;&#xFF0C;&#x65E0;&#x6CD5;&#x63D0;&#x4F9B;TCC&#x6A21;&#x5F0F;&#x8981;&#x6C42;&#x7684;&#x4E09;&#x4E2A;&#x63A5;&#x53E3;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5FAE;&#x670D;&#x52A1;&#x96C6;&#x6210;seata"><a name="&#x5FAE;&#x670D;&#x52A1;&#x96C6;&#x6210;seata" class="anchor-navigation-ex-anchor" href="#&#x5FAE;&#x670D;&#x52A1;&#x96C6;&#x6210;seata"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FAE;&#x670D;&#x52A1;&#x96C6;&#x6210;Seata</h3>
+<ul>
+<li><p>&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!--seata--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alibaba.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-seata<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">exclusions</span>&gt;</span>
+        <span class="hljs-comment">&lt;!--&#x7248;&#x672C;&#x8F83;&#x4F4E;&#xFF0C;1.3.0&#xFF0C;&#x56E0;&#x6B64;&#x6392;&#x9664;--&gt;</span> 
+        <span class="hljs-tag">&lt;<span class="hljs-name">exclusion</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>seata-spring-boot-starter<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>io.seata<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">exclusion</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">exclusions</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>io.seata<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>seata-spring-boot-starter<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--seata starter &#x91C7;&#x7528;1.5.1&#x7248;&#x672C;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${seata.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x53C2;&#x4E0E;&#x4E8B;&#x52A1;&#x7684;&#x6BCF;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x7684;application.yml&#x4E2D;&#xFF0C;&#x914D;&#x7F6E;TC&#x670D;&#x52A1;&#x4FE1;&#x606F;</p>
+<ul>
+<li>namespace&#x4E3A;&#x7A7A;&#xFF0C;&#x5C31;&#x662F;&#x9ED8;&#x8BA4;&#x7684;public&#xFF0C;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#xFF0C;TC&#x670D;&#x52A1;&#x7684;&#x4FE1;&#x606F;&#x5C31;&#x662F;&#xFF1A;public@DEFAULT_GROUP@seata-tc-server@GZ&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x80FD;&#x786E;&#x5B9A;TC&#x670D;&#x52A1;&#x96C6;&#x7FA4;&#x4E86;&#x3002;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x53BB;Nacos&#x62C9;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x5B9E;&#x4F8B;&#x4FE1;&#x606F;</li>
+</ul>
+<pre><code class="lang-yml"><span class="hljs-attr">seata:</span>
+<span class="hljs-attr">  registry:</span> <span class="hljs-comment"># TC&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x5FAE;&#x670D;&#x52A1;&#x6839;&#x636E;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x53BB;&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;&#x83B7;&#x53D6;tc&#x670D;&#x52A1;&#x5730;&#x5740;</span>
+<span class="hljs-attr">    type:</span> nacos <span class="hljs-comment"># &#x6CE8;&#x518C;&#x4E2D;&#x5FC3;&#x7C7B;&#x578B; nacos</span>
+<span class="hljs-attr">    nacos:</span>
+<span class="hljs-attr">      server-addr:</span> <span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">8848</span> <span class="hljs-comment"># nacos&#x5730;&#x5740;</span>
+<span class="hljs-attr">      namespace:</span> <span class="hljs-string">&quot;&quot;</span> <span class="hljs-comment"># namespace&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;</span>
+<span class="hljs-attr">      group:</span> DEFAULT_GROUP <span class="hljs-comment"># &#x5206;&#x7EC4;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;DEFAULT_GROUP</span>
+<span class="hljs-attr">      application:</span> seata-server <span class="hljs-comment"># seata&#x670D;&#x52A1;&#x540D;&#x79F0;</span>
+<span class="hljs-attr">      username:</span> nacos
+<span class="hljs-attr">      password:</span> nacos
+<span class="hljs-attr">  tx-service-group:</span> seata-demo <span class="hljs-comment"># &#x4E8B;&#x52A1;&#x7EC4;&#x540D;&#x79F0;</span>
+<span class="hljs-attr">  service:</span>
+<span class="hljs-attr">    vgroup-mapping:</span> <span class="hljs-comment"># &#x4E8B;&#x52A1;&#x7EC4;&#x4E0E;cluster&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;</span>
+<span class="hljs-attr">      seata-demo:</span> GZ <span class="hljs-comment"># &#x3010;&#x6CE8;&#x610F;&#x3011;&#x4E8B;&#x52A1;&#x7EC4;&#x540D;&#x79F0;&#x4E00;&#x81F4;</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="xa&#x6A21;&#x5F0F;"><a name="xa&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#xa&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>XA&#x6A21;&#x5F0F;</h3>
+<p><a href="images/image-20210724174424070.png" data-lightbox="ccfb94b7-ba75-45db-a4da-1abdce0c460c" data-title="image-20210724174424070"><img src="images/image-20210724174424070.png" alt="image-20210724174424070"></a></p>
+<h4 id="&#x4F18;&#x7F3A;&#x70B9;"><a name="&#x4F18;&#x7F3A;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x4F18;&#x7F3A;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F18;&#x7F3A;&#x70B9;</h4>
+<ul>
+<li>XA&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x70B9;<ul>
+<li>&#x4E8B;&#x52A1;&#x7684;&#x5F3A;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x6EE1;&#x8DB3;ACID&#x539F;&#x5219;</li>
+<li>&#x5E38;&#x7528;&#x6570;&#x636E;&#x5E93;&#x90FD;&#x652F;&#x6301;&#xFF0C;&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#xFF0C;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x4EE3;&#x7801;&#x4FB5;&#x5165;</li>
+</ul>
+</li>
+<li>XA&#x6A21;&#x5F0F;&#x7684;&#x7F3A;&#x70B9;<ul>
+<li>&#x56E0;&#x4E3A;&#x4E00;&#x9636;&#x6BB5;&#x9700;&#x8981;&#x9501;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x8D44;&#x6E90;&#xFF0C;&#x7B49;&#x5F85;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x7ED3;&#x675F;&#x624D;&#x91CA;&#x653E;&#xFF0C;&#x6027;&#x80FD;&#x8F83;&#x5DEE;</li>
+<li>&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x5B9E;&#x73B0;&#x4E8B;&#x52A1;</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x5B9E;&#x73B0;xa&#x6A21;&#x5F0F;"><a name="&#x5B9E;&#x73B0;xa&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;xa&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;XA&#x6A21;&#x5F0F;</h4>
+<ul>
+<li><p>&#x521B;&#x5EFA;&#x540D;&#x4E3A;<code>seata</code>&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5EFA;&#x7ACB;<code>branch_table</code>&#x548C;<code>global_table</code>&#x4E24;&#x5F20;&#x8868;</p>
+<pre><code class="lang-mysql">SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- &#x5206;&#x652F;&#x4E8B;&#x52A1;&#x8868;
+-- ----------------------------
+DROP TABLE IF EXISTS `branch_table`;
+CREATE TABLE `branch_table`  (
+  `branch_id` bigint(20) NOT NULL,
+  `xid` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `transaction_id` bigint(20) NULL DEFAULT NULL,
+  `resource_group_id` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `resource_id` varchar(256) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `branch_type` varchar(8) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `status` tinyint(4) NULL DEFAULT NULL,
+  `client_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `application_data` varchar(2000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `gmt_create` datetime(6) NULL DEFAULT NULL,
+  `gmt_modified` datetime(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`branch_id`) USING BTREE,
+  INDEX `idx_xid`(`xid`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- &#x5168;&#x5C40;&#x4E8B;&#x52A1;&#x8868;
+-- ----------------------------
+DROP TABLE IF EXISTS `global_table`;
+CREATE TABLE `global_table`  (
+  `xid` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `transaction_id` bigint(20) NULL DEFAULT NULL,
+  `status` tinyint(4) NOT NULL,
+  `application_id` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `transaction_service_group` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `transaction_name` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `timeout` int(11) NULL DEFAULT NULL,
+  `begin_time` bigint(20) NULL DEFAULT NULL,
+  `application_data` varchar(2000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `gmt_create` datetime NULL DEFAULT NULL,
+  `gmt_modified` datetime NULL DEFAULT NULL,
+  PRIMARY KEY (`xid`) USING BTREE,
+  INDEX `idx_gmt_modified_status`(`gmt_modified`, `status`) USING BTREE,
+  INDEX `idx_transaction_id`(`transaction_id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+SET FOREIGN_KEY_CHECKS = 1;
+</code></pre>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x6BCF;&#x4E2A;&#x53C2;&#x4E0E;&#x4E8B;&#x52A1;&#x7684;&#x5FAE;&#x670D;&#x52A1;application.yml&#x6587;&#x4EF6;&#xFF0C;&#x5F00;&#x542F;XA&#x6A21;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">seata:</span>
+<span class="hljs-attr">  data-source-proxy-mode:</span> XA
+</code></pre>
+</li>
+<li><p>&#x5728;&#x53D1;&#x8D77;&#x5168;&#x5C40;&#x4E8B;&#x52A1;&#x7684;&#x5165;&#x53E3;&#x65B9;&#x6CD5;&#x4E0A;&#x6DFB;&#x52A0;<code>@GlobalTransactional</code>&#x6CE8;&#x89E3;</p>
+</li>
+</ul>
+<h3 id="at&#x6A21;&#x5F0F;"><a name="at&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#at&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>AT&#x6A21;&#x5F0F;</h3>
+<p><a href="images/image-20210724175327511.png" data-lightbox="af0e1aa4-07a9-4d8c-b920-17f40c53667a" data-title="image-20210724175327511"><img src="images/image-20210724175327511.png" alt="image-20210724175327511"></a></p>
+<ul>
+<li><p>AT&#x6A21;&#x5F0F;&#x4E0E;XA&#x6A21;&#x5F0F;&#x7684;&#x533A;&#x522B;</p>
+<ul>
+<li>&#x9501;&#xFF1A;XA&#x6A21;&#x5F0F;&#x4E00;&#x9636;&#x6BB5;&#x4E0D;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;&#xFF0C;&#x9501;&#x5B9A;&#x8D44;&#x6E90;&#xFF1B;AT&#x6A21;&#x5F0F;&#x4E00;&#x9636;&#x6BB5;&#x76F4;&#x63A5;&#x63D0;&#x4EA4;&#xFF0C;&#x4E0D;&#x9501;&#x5B9A;&#x8D44;&#x6E90;</li>
+<li>&#x6062;&#x590D;&#x673A;&#x5236;&#xFF1A;XA&#x6A21;&#x5F0F;&#x4F9D;&#x8D56;&#x6570;&#x636E;&#x5E93;&#x673A;&#x5236;&#x5B9E;&#x73B0;&#x56DE;&#x6EDA;&#xFF1B;AT&#x6A21;&#x5F0F;&#x5229;&#x7528;&#x6570;&#x636E;&#x5FEB;&#x7167;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x6062;&#x590D;</li>
+<li>&#x4E00;&#x81F4;&#x6027;&#xFF1A;XA&#x6A21;&#x5F0F;&#x5F3A;&#x4E00;&#x81F4;&#xFF1B;AT&#x6A21;&#x5F0F;&#x6700;&#x7EC8;&#x4E00;&#x81F4;</li>
+</ul>
+</li>
+<li><p>AT&#x6A21;&#x5F0F;&#x7684;&#x5199;&#x9694;&#x79BB;</p>
+<p><a href="images/image-20210724181843029.png" data-lightbox="0edbd40d-5c3b-465b-a25e-0d3fb58fe02b" data-title="image-20210724181843029"><img src="images/image-20210724181843029.png" alt="image-20210724181843029"></a></p>
+</li>
+</ul>
+<h4 id="&#x4F18;&#x7F3A;&#x70B9;_1"><a name="&#x4F18;&#x7F3A;&#x70B9;_1" class="anchor-navigation-ex-anchor" href="#&#x4F18;&#x7F3A;&#x70B9;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F18;&#x7F3A;&#x70B9;</h4>
+<ul>
+<li>AT&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x70B9;<ul>
+<li>&#x4E00;&#x9636;&#x6BB5;&#x5B8C;&#x6210;&#x76F4;&#x63A5;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;&#xFF0C;&#x91CA;&#x653E;&#x6570;&#x636E;&#x5E93;&#x8D44;&#x6E90;&#xFF0C;&#x6027;&#x80FD;&#x6BD4;&#x8F83;&#x597D;</li>
+<li>&#x5229;&#x7528;&#x5168;&#x5C40;&#x9501;&#x5B9E;&#x73B0;&#x8BFB;&#x5199;&#x9694;&#x79BB;</li>
+<li>&#x6CA1;&#x6709;&#x4EE3;&#x7801;&#x4FB5;&#x5165;&#xFF0C;&#x6846;&#x67B6;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x56DE;&#x6EDA;&#x548C;&#x63D0;&#x4EA4;</li>
+</ul>
+</li>
+<li>AT&#x6A21;&#x5F0F;&#x7684;&#x7F3A;&#x70B9;<ul>
+<li>&#x4E24;&#x9636;&#x6BB5;&#x4E4B;&#x95F4;&#x5C5E;&#x4E8E;&#x8F6F;&#x72B6;&#x6001;&#xFF0C;&#x5C5E;&#x4E8E;&#x6700;&#x7EC8;&#x4E00;&#x81F4;</li>
+<li>&#x6846;&#x67B6;&#x7684;&#x5FEB;&#x7167;&#x529F;&#x80FD;&#x4F1A;&#x5F71;&#x54CD;&#x6027;&#x80FD;&#xFF0C;&#x4F46;&#x6BD4;XA&#x6A21;&#x5F0F;&#x8981;&#x597D;&#x5F88;&#x591A;</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x5B9E;&#x73B0;at&#x6A21;&#x5F0F;"><a name="&#x5B9E;&#x73B0;at&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;at&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;AT&#x6A21;&#x5F0F;</h4>
+<ul>
+<li><p>&#x5728;TC&#x670D;&#x52A1;&#x5173;&#x8054;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF08;seata&#xFF09;&#x4E2D;&#xFF0C;&#x6DFB;&#x52A0;<code>lock_table</code>&#x3001;<code>distributed_lock</code>&#x8BB0;&#x5F55;&#x5168;&#x5C40;&#x9501;&#x7684;&#x8868;&#xFF0C;<code>undo_log</code>&#x8868;&#x5BFC;&#x5165;&#x5230;&#x5FAE;&#x670D;&#x52A1;&#x5173;&#x8054;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF08;seata_demo&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-mysql">-- ----------------------------
+--    undo_log&#x8868; &#x8BB0;&#x5F55;&#x6570;&#x636E;&#x5FEB;&#x7167;
+-- ----------------------------
+DROP TABLE IF EXISTS `undo_log`;
+CREATE TABLE `undo_log`  (
+  `branch_id` BIGINT(20) NOT NULL COMMENT &apos;branch transaction id&apos;,
+  `xid` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT &apos;global transaction id&apos;,
+  `context` VARCHAR(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT &apos;undo_log context,such as serialization&apos;,
+  `rollback_info` LONGBLOB NOT NULL COMMENT &apos;rollback info&apos;,
+  `log_status` INT(11) NOT NULL COMMENT &apos;0:normal status,1:defense status&apos;,
+  `log_created` DATETIME(6) NOT NULL COMMENT &apos;create datetime&apos;,
+  `log_modified` DATETIME(6) NOT NULL COMMENT &apos;modify datetime&apos;,
+  UNIQUE INDEX `ux_undo_log`(`xid`, `branch_id`) USING BTREE
+) ENGINE = INNODB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = &apos;AT transaction mode undo table&apos; ROW_FORMAT = COMPACT;
+</code></pre>
+<pre><code class="lang-mysql">SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- &#x5168;&#x5C40;&#x9501;&#x76F8;&#x5173;&#x8868;
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS `lock_table`
+(
+    `row_key`        VARCHAR(128) NOT NULL,
+    `xid`            VARCHAR(128),
+    `transaction_id` BIGINT,
+    `branch_id`      BIGINT       NOT NULL,
+    `resource_id`    VARCHAR(256),
+    `table_name`     VARCHAR(32),
+    `pk`             VARCHAR(36),
+    `status`         TINYINT      NOT NULL DEFAULT &apos;0&apos; COMMENT &apos;0:locked ,1:rollbacking&apos;,
+    `gmt_create`     DATETIME,
+    `gmt_modified`   DATETIME,
+    PRIMARY KEY (`row_key`),
+    KEY `idx_status` (`status`),
+    KEY `idx_branch_id` (`branch_id`),
+    KEY `idx_xid_and_branch_id` (`xid` , `branch_id`)
+) ENGINE = INNODB;
+
+CREATE TABLE IF NOT EXISTS `distributed_lock`
+(
+    `lock_key`       CHAR(20) NOT NULL,
+    `lock_value`     VARCHAR(20) NOT NULL,
+    `expire`         BIGINT,
+    PRIMARY KEY (`lock_key`)
+) ENGINE = INNODB;
+
+INSERT INTO `distributed_lock` (lock_key, lock_value, expire) VALUES (&apos;AsyncCommitting&apos;, &apos; &apos;, 0);
+INSERT INTO `distributed_lock` (lock_key, lock_value, expire) VALUES (&apos;RetryCommitting&apos;, &apos; &apos;, 0);
+INSERT INTO `distributed_lock` (lock_key, lock_value, expire) VALUES (&apos;RetryRollbacking&apos;, &apos; &apos;, 0);
+INSERT INTO `distributed_lock` (lock_key, lock_value, expire) VALUES (&apos;TxTimeoutCheck&apos;, &apos; &apos;, 0);
+</code></pre>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x6BCF;&#x4E2A;&#x53C2;&#x4E0E;&#x4E8B;&#x52A1;&#x7684;&#x5FAE;&#x670D;&#x52A1;application.yml&#x6587;&#x4EF6;&#xFF0C;&#x5F00;&#x542F;AT&#x6A21;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-yml"><span class="hljs-attr">seata:</span>
+<span class="hljs-attr">  data-source-proxy-mode:</span> AT <span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x5C31;&#x662F;AT</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x53D1;&#x8D77;&#x5168;&#x5C40;&#x4E8B;&#x52A1;&#x7684;&#x5165;&#x53E3;&#x65B9;&#x6CD5;&#x4E0A;&#x6DFB;&#x52A0;<code>@GlobalTransactional</code>&#x6CE8;&#x89E3;</p>
+</li>
+</ul>
+<h3 id="tcc&#x6A21;&#x5F0F;"><a name="tcc&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#tcc&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>TCC&#x6A21;&#x5F0F;</h3>
+<blockquote>
+<p>TCC&#x6A21;&#x5F0F;&#x4E0E;AT&#x6A21;&#x5F0F;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#xFF0C;&#x6BCF;&#x9636;&#x6BB5;&#x90FD;&#x662F;&#x72EC;&#x7ACB;&#x4E8B;&#x52A1;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;TCC&#x901A;&#x8FC7;&#x4EBA;&#x5DE5;&#x7F16;&#x7801;&#x6765;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x6062;&#x590D;&#x3002;&#x9700;&#x8981;&#x7ED3;&#x5408;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x5B9E;&#x73B0;&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li><p>Try&#xFF1A;&#x8D44;&#x6E90;&#x7684;&#x68C0;&#x6D4B;&#x548C;&#x51BB;&#x7ED3;</p>
+</li>
+<li><p>Confirm&#xFF1A;&#x5B8C;&#x6210;&#x8D44;&#x6E90;&#x64CD;&#x4F5C;&#x4E1A;&#x52A1;&#xFF1B;&#x8981;&#x6C42; Try &#x6210;&#x529F; Confirm &#x4E00;&#x5B9A;&#x8981;&#x80FD;&#x6210;&#x529F;</p>
+</li>
+<li><p>Cancel&#xFF1A;&#x91CA;&#x653E;&#x51BB;&#x7ED3;&#x8D44;&#x6E90;&#xFF0C;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;try&#x7684;&#x53CD;&#x5411;&#x64CD;&#x4F5C;</p>
+</li>
+</ul>
+</blockquote>
+<p><a href="images/image-20210724182937713.png" data-lightbox="336d6c0f-9654-4084-8581-bca49cb935d5" data-title="image-20210724182937713"><img src="images/image-20210724182937713.png" alt="image-20210724182937713"></a></p>
+<h4 id="&#x4F18;&#x7F3A;&#x70B9;_2"><a name="&#x4F18;&#x7F3A;&#x70B9;_2" class="anchor-navigation-ex-anchor" href="#&#x4F18;&#x7F3A;&#x70B9;_2"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F18;&#x7F3A;&#x70B9;</h4>
+<ul>
+<li>TCC&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x70B9;<ul>
+<li>&#x4E00;&#x9636;&#x6BB5;&#x5B8C;&#x6210;&#x76F4;&#x63A5;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;&#xFF0C;&#x91CA;&#x653E;&#x6570;&#x636E;&#x5E93;&#x8D44;&#x6E90;&#xFF0C;&#x6027;&#x80FD;&#x597D;</li>
+<li>&#x76F8;&#x6BD4;AT&#x6A21;&#x5F0F;&#xFF0C;&#x65E0;&#x9700;&#x751F;&#x6210;&#x5FEB;&#x7167;&#xFF0C;&#x65E0;&#x9700;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x9501;&#xFF0C;&#x6027;&#x80FD;&#x6700;&#x5F3A;</li>
+<li>&#x4F7F;&#x7528;&#x6570;&#x636E;&#x8865;&#x507F;&#x673A;&#x5236;&#xFF0C;&#x4E0D;&#x4F9D;&#x8D56;&#x6570;&#x636E;&#x5E93;&#x4E8B;&#x52A1;</li>
+</ul>
+</li>
+<li>TCC&#x6A21;&#x5F0F;&#x7684;&#x7F3A;&#x70B9;<ul>
+<li>&#x6709;&#x4EE3;&#x7801;&#x4FB5;&#x5165;&#xFF0C;&#x9700;&#x8981;&#x4EBA;&#x4E3A;&#x7F16;&#x5199;try&#x3001;Confirm&#x548C;Cancel&#x63A5;&#x53E3;</li>
+<li>&#x8F6F;&#x72B6;&#x6001;&#xFF0C;&#x4E8B;&#x52A1;&#x662F;&#x6700;&#x7EC8;&#x4E00;&#x81F4;</li>
+<li>&#x9700;&#x8981;&#x8003;&#x8651;Confirm&#x548C;Cancel&#x5931;&#x8D25;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x9700;&#x8981;&#x505A;&#x5E42;&#x7B49;&#x5904;&#x7406;</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x7A7A;&#x56DE;&#x6EDA;&#x4E1A;&#x52A1;&#x60AC;&#x6302;"><a name="&#x7A7A;&#x56DE;&#x6EDA;&#x4E1A;&#x52A1;&#x60AC;&#x6302;" class="anchor-navigation-ex-anchor" href="#&#x7A7A;&#x56DE;&#x6EDA;&#x4E1A;&#x52A1;&#x60AC;&#x6302;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7A7A;&#x56DE;&#x6EDA;&amp;&#x4E1A;&#x52A1;&#x60AC;&#x6302;</h4>
+<p><a href="images/image-20210724183426891.png" data-lightbox="53024797-dc64-44b1-8c13-a79ddce7ab98" data-title="image-20210724183426891"><img src="images/image-20210724183426891.png" alt="image-20210724183426891"></a></p>
+<ul>
+<li>&#x5F53;&#x67D0;&#x5206;&#x652F;&#x4E8B;&#x52A1;&#x7684;try&#x9636;&#x6BB5;<strong>&#x963B;&#x585E;</strong>&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5168;&#x5C40;&#x4E8B;&#x52A1;&#x8D85;&#x65F6;&#x800C;&#x89E6;&#x53D1;&#x4E8C;&#x9636;&#x6BB5;&#x7684;cancel&#x64CD;&#x4F5C;&#x3002;&#x5728;&#x672A;&#x6267;&#x884C;try&#x64CD;&#x4F5C;&#x65F6;&#x5148;&#x6267;&#x884C;&#x4E86;cancel&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x65F6;cancel&#x4E0D;&#x80FD;&#x505A;&#x56DE;&#x6EDA;&#xFF0C;&#x5C31;&#x662F;<strong>&#x7A7A;&#x56DE;&#x6EDA;</strong>&#x3002;<ul>
+<li>&#x56E0;&#x6B64;&#xFF0C;&#x6267;&#x884C;cancel&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x5E94;&#x5F53;&#x5224;&#x65AD;try&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x5C1A;&#x672A;&#x6267;&#x884C;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x7A7A;&#x56DE;&#x6EDA;&#x3002;</li>
+</ul>
+</li>
+<li>&#x5BF9;&#x4E8E;&#x5DF2;&#x7ECF;&#x7A7A;&#x56DE;&#x6EDA;&#x7684;&#x4E1A;&#x52A1;&#xFF0C;&#x4E4B;&#x524D;&#x88AB;&#x963B;&#x585E;&#x7684;try&#x64CD;&#x4F5C;&#x6062;&#x590D;&#xFF0C;&#x7EE7;&#x7EED;&#x6267;&#x884C;try&#xFF0C;&#x5C31;&#x6C38;&#x8FDC;&#x4E0D;&#x53EF;&#x80FD;confirm&#x6216;cancel &#xFF0C;&#x4E8B;&#x52A1;&#x4E00;&#x76F4;&#x5904;&#x4E8E;&#x4E2D;&#x95F4;&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;<strong>&#x4E1A;&#x52A1;&#x60AC;&#x6302;</strong>&#x3002;<ul>
+<li>&#x56E0;&#x6B64;&#xFF0C;&#x6267;&#x884C;try&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x5E94;&#x5F53;&#x5224;&#x65AD;cancel&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x6267;&#x884C;&#x8FC7;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x6267;&#x884C;&#xFF0C;&#x5E94;&#x5F53;&#x963B;&#x6B62;&#x7A7A;&#x56DE;&#x6EDA;&#x540E;&#x7684;try&#x64CD;&#x4F5C;&#xFF0C;&#x907F;&#x514D;&#x60AC;&#x6302;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x5B9E;&#x73B0;tcc&#x6A21;&#x5F0F;"><a name="&#x5B9E;&#x73B0;tcc&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;tcc&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;TCC&#x6A21;&#x5F0F;</h4>
+<ul>
+<li><p>==&#x9700;&#x6839;&#x636E;&#x4E1A;&#x52A1;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x5F20;&#x4E2D;&#x95F4;&#x8868;==&#xFF0C;&#x5728;&#x4E1A;&#x52A1;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
+<ul>
+<li>xid&#xFF1A;&#x662F;&#x5168;&#x5C40;&#x4E8B;&#x52A1;id</li>
+<li>freeze_money&#xFF1A;&#x7528;&#x6765;&#x8BB0;&#x5F55;&#x7528;&#x6237;&#x51BB;&#x7ED3;&#x91D1;&#x989D;</li>
+<li>state&#xFF1A;&#x7528;&#x6765;&#x8BB0;&#x5F55;&#x4E8B;&#x52A1;&#x72B6;&#x6001;</li>
+</ul>
+<pre><code class="lang-mysql">CREATE TABLE `account_freeze_tbl`(
+    `xid` varchar(128) NOT NULL,
+    `user_id` varchar(255) DEFAULT NULL COMMENT&apos;&#x7528;&#x6237;id&apos;,
+    `freeze_money`int(11) unsigned DEFAULT&apos;0&apos;COMMENT&apos;&#x51BB;&#x7ED3;&#x91D1;&#x989D;&apos;,
+    `state`int(1) DEFAULT NULL COMMENT&apos;&#x4E8B;&#x52A1;&#x72B6;&#x6001;&#xFF0C;0:try&#xFF0C;1:confirm&#xFF0C;2:cancel&apos;,
+    PRIMARY KEY(`xid`)USING BTREE
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+</code></pre>
+</li>
+<li><p>&#x5728;&#x53D1;&#x8D77;&#x5168;&#x5C40;&#x4E8B;&#x52A1;&#x7684;&#x5165;&#x53E3;&#x65B9;&#x6CD5;&#x4E0A;&#x6DFB;&#x52A0;<code>@GlobalTransactional</code>&#x6CE8;&#x89E3;</p>
+</li>
+<li><p>&#x5B9E;&#x73B0;&#x903B;&#x8F91;</p>
+<pre><code>try&#xFF1A;
+  - &#x4E1A;&#x52A1;&#x60AC;&#x6302;&#x5904;&#x7406;&#xFF08;&#x6839;&#x636E;xid&#x67E5;&#x8BE2;&#x4E2D;&#x95F4;&#x8868;&#xFF0C;&#x5982;&#x679C;NoNull&#x5219;&#x8BC1;&#x660E;Cancel&#x5DF2;&#x7ECF;&#x6267;&#x884C;&#xFF0C;&#x5373;&#x523B;&#x7EC8;&#x6B62;&#xFF09;
+  - &#x5C06;&#x51BB;&#x7ED3;&#x8D44;&#x6E90;&#xFF0C;&#x4E8B;&#x52A1;&#x72B6;&#x6001;&#x7B49;&#x6DFB;&#x52A0;&#x5230;&#x4E2D;&#x95F4;&#x8868;
+  - &#x5B9E;&#x73B0;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;
+confirm&#xFF1A;
+  - &#x5E42;&#x7B49;&#x5904;&#x7406;&#xFF08;&#x7B2C;&#x4E00;&#x6B21;&#x6267;&#x884C;&#x540E;&#x6570;&#x636E;&#x5C31;&#x5DF2;&#x7ECF;&#x5220;&#x9664;&#xFF0C;&#x540E;&#x7EED;&#x64CD;&#x4F5C;&#x53EA;&#x4F1A;&#x8FD4;&#x56DE;false&#xFF0C;&#x5DF2;&#x7ECF;&#x5E42;&#x7B49;&#xFF09;
+  - &#x6839;&#x636E;&#x4E8B;&#x52A1;id&#x5220;&#x9664;&#x4E2D;&#x95F4;&#x8868;&#x6570;&#x636E;
+cancel&#xFF1A;
+  - &#x7A7A;&#x56DE;&#x6EDA;&#x5904;&#x7406;&#xFF08;&#x6839;&#x636E;xid&#x67E5;&#x8BE2;&#x4E2D;&#x95F4;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x4E3A;Null&#x5219;&#x8BF4;&#x660E;try&#x8FD8;&#x6CA1;&#x505A;&#xFF0C;&#x9700;&#x8981;&#x7A7A;&#x56DE;&#x6EDA;&#xFF09;
+  - &#x5E42;&#x7B49;&#x5904;&#x7406;&#xFF08;&#x5904;&#x7406;&#x5E76;&#x53D1;cancel&#xFF1B;&#x5982;&#x679C;&#x51BB;&#x7ED3;&#x8D44;&#x6E90;&#x72B6;&#x6001;&#x4E3A;cancel&#xFF0C;&#x5219;&#x8BF4;&#x660E;&#x5DF2;&#x7ECF;cancel&#x4E86;&#xFF0C;&#x5373;&#x523B;&#x7EC8;&#x6B62;&#xFF09;
+  - &#x91CA;&#x653E;&#x51BB;&#x7ED3;&#x8D44;&#x6E90;&#xFF0C;&#x6062;&#x590D;&#x6570;&#x636E;
+  - &#x66F4;&#x65B0;&#x4E2D;&#x95F4;&#x8868;&#x7684;&#x4E8B;&#x52A1;&#x72B6;&#x6001;&#x3001;&#x6E05;&#x7A7A;&#x51BB;&#x7ED3;&#x8D44;&#x6E90;
+</code></pre></li>
+<li><p>&#x7F16;&#x5199;&#x5B9E;&#x4F53;&#x7C7B;&#x548C;Mapper&#x63A5;&#x53E3;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.account.entity;
+
+<span class="hljs-keyword">import</span> com.baomidou.mybatisplus.annotation.IdType;
+<span class="hljs-keyword">import</span> com.baomidou.mybatisplus.annotation.TableId;
+<span class="hljs-keyword">import</span> com.baomidou.mybatisplus.annotation.TableName;
+<span class="hljs-keyword">import</span> lombok.Data;
+
+<span class="hljs-meta">@Data</span>
+<span class="hljs-meta">@TableName</span>(<span class="hljs-string">&quot;account_freeze_tbl&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountFreeze</span> </span>{
+    <span class="hljs-meta">@TableId</span>(type = IdType.INPUT)
+    <span class="hljs-keyword">private</span> String xid;
+    <span class="hljs-keyword">private</span> String userId;
+    <span class="hljs-keyword">private</span> Integer freezeMoney;
+    <span class="hljs-keyword">private</span> Integer state;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">State</span> </span>{
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> TRY = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> CONFIRM = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> CANCEL = <span class="hljs-number">2</span>;
+    }
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.account.mapper;
+
+<span class="hljs-keyword">import</span> cn.itcast.account.entity.AccountFreeze;
+<span class="hljs-keyword">import</span> com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">AccountFreezeMapper</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseMapper</span>&lt;<span class="hljs-title">AccountFreeze</span>&gt; </span>{
+}
+</code></pre>
+</li>
+<li><p><strong>&#x58F0;&#x660E;TCC&#x63A5;&#x53E3;</strong>&#xFF0C;&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x4E09;&#x4E2A;&#x6CE8;&#x89E3;&#xFF0C;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#x503C;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@LocalTCC</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">TCCService</span> </span>{
+    <span class="hljs-comment">/**
+     * Try&#x903B;&#x8F91;&#xFF0C;<span class="hljs-doctag">@TwoPhaseBusinessAction</span>&#x4E2D;&#x7684;name&#x5C5E;&#x6027;&#x8981;&#x4E0E;&#x5F53;&#x524D;&#x65B9;&#x6CD5;&#x540D;&#x4E00;&#x81F4;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;Try&#x903B;&#x8F91;&#x5BF9;&#x5E94;&#x7684;&#x65B9;&#x6CD5;
+     */</span>
+    <span class="hljs-meta">@TwoPhaseBusinessAction</span>(name = <span class="hljs-string">&quot;prepare&quot;</span>, commitMethod = <span class="hljs-string">&quot;confirm&quot;</span>, rollbackMethod = <span class="hljs-string">&quot;cancel&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">prepare</span><span class="hljs-params">(@BusinessActionContextParameter(paramName = <span class="hljs-string">&quot;param&quot;</span>)</span> String param)</span>;
+
+    <span class="hljs-comment">/**
+     * &#x4E8C;&#x9636;&#x6BB5;confirm&#x786E;&#x8BA4;&#x65B9;&#x6CD5;&#x3001;&#x53EF;&#x4EE5;&#x53E6;&#x547D;&#x540D;&#xFF0C;&#x4F46;&#x8981;&#x4FDD;&#x8BC1;&#x4E0E;commitMethod&#x4E00;&#x81F4;
+     *
+     * <span class="hljs-doctag">@param</span> context &#x4E0A;&#x4E0B;&#x6587;,&#x53EF;&#x4EE5;&#x4F20;&#x9012;try&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;
+     * <span class="hljs-doctag">@return</span> boolean &#x6267;&#x884C;&#x662F;&#x5426;&#x6210;&#x529F;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">confirm</span><span class="hljs-params">(BusinessActionContext context)</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x4E8C;&#x9636;&#x6BB5;&#x56DE;&#x6EDA;&#x65B9;&#x6CD5;&#xFF0C;&#x8981;&#x4FDD;&#x8BC1;&#x4E0E;rollbackMethod&#x4E00;&#x81F4;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">cancel</span><span class="hljs-params">(BusinessActionContext context)</span></span>;
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.account.service;
+
+<span class="hljs-keyword">import</span> io.seata.rm.tcc.api.BusinessActionContext;
+<span class="hljs-keyword">import</span> io.seata.rm.tcc.api.BusinessActionContextParameter;
+<span class="hljs-keyword">import</span> io.seata.rm.tcc.api.LocalTCC;
+<span class="hljs-keyword">import</span> io.seata.rm.tcc.api.TwoPhaseBusinessAction;
+
+<span class="hljs-meta">@LocalTCC</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">AccountTCCService</span> </span>{
+
+    <span class="hljs-comment">/**
+     * &#x6839;&#x636E;&#x7528;&#x6237;id&#x6263;&#x51CF;&#x4F59;&#x989D;&#xFF0C;&#x8BB0;&#x5F55;&#x51BB;&#x7ED3;&#x91D1;&#x989D;
+     * commitMethod &#x63D0;&#x4EA4;&#x65F6;&#x5BF9;&#x4E8E;&#x7684;&#x65B9;&#x6CD5;&#xFF1B;rollbackMethod&#x56DE;&#x6EDA;&#x65F6;&#x5BF9;&#x4E8E;&#x7684;&#x65B9;&#x6CD5;
+     * <span class="hljs-doctag">@param</span> userId &#x7528;&#x6237;id
+     * <span class="hljs-doctag">@param</span> money &#x6263;&#x51CF;&#x91D1;&#x989D;
+     */</span>
+    <span class="hljs-meta">@TwoPhaseBusinessAction</span>(name = <span class="hljs-string">&quot;deduct&quot;</span>, commitMethod = <span class="hljs-string">&quot;confirm&quot;</span>, rollbackMethod = <span class="hljs-string">&quot;cancel&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">deduct</span><span class="hljs-params">(@BusinessActionContextParameter(<span class="hljs-string">&quot;userId&quot;</span>)</span>String userId,
+                @<span class="hljs-title">BusinessActionContextParameter</span><span class="hljs-params">(<span class="hljs-string">&quot;money&quot;</span>)</span><span class="hljs-keyword">int</span> money)</span>;
+
+    <span class="hljs-comment">/**
+     * &#x6267;&#x884C;TCC&#x4E8B;&#x52A1;&#x65F6;&#xFF0C;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;&#x65F6;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;
+     * <span class="hljs-doctag">@param</span> ctx &#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;
+     * <span class="hljs-doctag">@return</span> &#x6267;&#x884C;&#x7ED3;&#x679C;
+     */</span>
+    <span class="hljs-function">Boolean <span class="hljs-title">confirm</span><span class="hljs-params">(BusinessActionContext ctx)</span></span>;
+
+    <span class="hljs-comment">/**
+     * &#x6267;&#x884C;TCC&#x4E8B;&#x52A1;&#x65F6;&#xFF0C;&#x56DE;&#x6EDA;&#x4E8B;&#x52A1;&#x65F6;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;
+     * <span class="hljs-doctag">@param</span> ctx &#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;
+     * <span class="hljs-doctag">@return</span> &#x6267;&#x884C;&#x7ED3;&#x679C;
+     */</span>
+    <span class="hljs-function">Boolean <span class="hljs-title">cancel</span><span class="hljs-params">(BusinessActionContext ctx)</span></span>;
+}
+</code></pre>
+</li>
+<li><p><strong>&#x7F16;&#x5199;&#x5B9E;&#x73B0;&#x7C7B;</strong>&#xFF0C;&#x5B9E;&#x73B0;TCC&#x4E1A;&#x52A1;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.itcast.account.service.impl;
+
+<span class="hljs-keyword">import</span> cn.itcast.account.entity.AccountFreeze;
+<span class="hljs-keyword">import</span> cn.itcast.account.mapper.AccountFreezeMapper;
+<span class="hljs-keyword">import</span> cn.itcast.account.mapper.AccountMapper;
+<span class="hljs-keyword">import</span> cn.itcast.account.service.AccountTCCService;
+<span class="hljs-keyword">import</span> io.seata.core.context.RootContext;
+<span class="hljs-keyword">import</span> io.seata.rm.tcc.api.BusinessActionContext;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Service;
+<span class="hljs-keyword">import</span> org.springframework.transaction.annotation.Transactional;
+
+<span class="hljs-keyword">import</span> java.util.Objects;
+
+<span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountTCCServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">AccountTCCService</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> AccountMapper accountMapper;
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> AccountFreezeMapper accountFreezeMapper;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-meta">@Transactional</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">deduct</span><span class="hljs-params">(String userId, <span class="hljs-keyword">int</span> money)</span> </span>{
+
+        <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5168;&#x5C40;&#x4E8B;&#x52A1;id</span>
+        String xid = RootContext.getXID();
+
+        <span class="hljs-comment">//&#x5904;&#x7406;&#x4E1A;&#x52A1;&#x60AC;&#x6302;</span>
+        AccountFreeze localFreeze = accountFreezeMapper.selectById(xid);
+        <span class="hljs-keyword">if</span> (Objects.nonNull(localFreeze)) {
+            <span class="hljs-comment">//&#x5982;&#x679C;&#x975E;&#x7A7A;&#xFF0C;&#x8BF4;&#x660E;&#x5DF2;&#x7ECF;cancel&#x8FC7;</span>
+            <span class="hljs-keyword">return</span>;
+        }
+
+        <span class="hljs-comment">//1 &#x6263;&#x51CF;&#x4F59;&#x989D;</span>
+        accountMapper.deduct(userId, money);
+        <span class="hljs-comment">//2 &#x8BB0;&#x5F55;&#x51BB;&#x7ED3;&#x91D1;&#x989D;</span>
+        AccountFreeze accountFreeze = <span class="hljs-keyword">new</span> AccountFreeze();
+        accountFreeze.setXid(xid);
+        accountFreeze.setUserId(userId);
+        accountFreeze.setFreezeMoney(money);
+        accountFreeze.setState(AccountFreeze.State.TRY);
+        accountFreezeMapper.insert(accountFreeze);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Boolean <span class="hljs-title">confirm</span><span class="hljs-params">(BusinessActionContext context)</span> </span>{
+        <span class="hljs-comment">//&#x5220;&#x9664;&#x51BB;&#x7ED3;&#x91D1;&#x989D;</span>
+        String xid = context.getXid();
+        <span class="hljs-keyword">int</span> count = accountFreezeMapper.deleteById(xid);
+        <span class="hljs-keyword">return</span> count == <span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Boolean <span class="hljs-title">cancel</span><span class="hljs-params">(BusinessActionContext context)</span> </span>{
+
+        <span class="hljs-comment">//&#x83B7;&#x53D6;xid</span>
+        String xid = context.getXid();
+
+        <span class="hljs-comment">//&#x83B7;&#x53D6;&#x7528;&#x6237;ID&#x548C;&#x51BB;&#x7ED3;&#x91D1;&#x989D;</span>
+        String userId = context.getActionContext(<span class="hljs-string">&quot;userId&quot;</span>).toString();
+        AccountFreeze localFreeze = accountFreezeMapper.selectById(xid);
+        Integer freezeMoney = localFreeze.getFreezeMoney();
+
+        <span class="hljs-comment">//&#x5904;&#x7406;&#x7A7A;&#x56DE;&#x6EDA;</span>
+        <span class="hljs-keyword">if</span> (Objects.isNull(localFreeze)) {
+            <span class="hljs-comment">//&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7ECF;&#x8FC7;try&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x4E3A;null</span>
+            AccountFreeze accountFreeze = <span class="hljs-keyword">new</span> AccountFreeze();
+            accountFreeze.setXid(xid);
+            accountFreeze.setUserId(userId);
+            accountFreeze.setFreezeMoney(<span class="hljs-number">0</span>);
+            accountFreeze.setState(AccountFreeze.State.CANCEL);
+            accountFreezeMapper.insert(accountFreeze);
+            <span class="hljs-keyword">return</span> Boolean.TRUE;
+        }
+
+        <span class="hljs-comment">//&#x5E42;&#x7B49;&#x5904;&#x7406;</span>
+        <span class="hljs-keyword">if</span> (localFreeze.getState() == AccountFreeze.State.CANCEL) {
+            <span class="hljs-comment">//&#x8BF4;&#x660E;&#x5DF2;&#x7ECF;&#x56DE;&#x6EDA;&#x8FC7;&#x4E86;,&#x4E0D;&#x9700;&#x8981;&#x518D;&#x5904;&#x7406;</span>
+            <span class="hljs-keyword">return</span> Boolean.TRUE;
+        }
+
+        <span class="hljs-comment">//1 &#x56DE;&#x9000;&#x91D1;&#x989D;</span>
+        accountMapper.refund(userId, freezeMoney);
+
+        <span class="hljs-comment">//2 &#x66F4;&#x65B0;&#x51BB;&#x7ED3;&#x91D1;&#x989D;&#x4E3A;0&#x548C;&#x72B6;&#x6001;</span>
+        localFreeze.setFreezeMoney(<span class="hljs-number">0</span>);
+        localFreeze.setState(AccountFreeze.State.CANCEL);
+        <span class="hljs-keyword">int</span> count = accountFreezeMapper.updateById(localFreeze);
+        <span class="hljs-keyword">return</span> count == <span class="hljs-number">1</span>;
+    }
+}
+</code></pre>
+</li>
+<li><p>&#x6539;&#x9020;&#x539F;Controller&#x65B9;&#x6CD5;</p>
+<p><a href="images/image-20220620195501868.png" data-lightbox="495ac5d2-b55c-45c8-82e1-daa5e8cef2d6" data-title="image-20220620195501868"><img src="images/image-20220620195501868.png" alt="image-20220620195501868"></a></p>
+</li>
+</ul>
+<h3 id="saga&#x6A21;&#x5F0F;"><a name="saga&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#saga&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>Saga&#x6A21;&#x5F0F;</h3>
+<blockquote>
+<p>&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4F9D;&#x6B21;&#x6267;&#x884C;&#x5404;&#x53C2;&#x4E0E;&#x8005;&#x7684;&#x6B63;&#x5411;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x6240;&#x6709;&#x6B63;&#x5411;&#x64CD;&#x4F5C;&#x5747;&#x6267;&#x884C;&#x6210;&#x529F;&#xFF0C;&#x90A3;&#x4E48;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x3002;&#x5982;&#x679C;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x6B63;&#x5411;&#x64CD;&#x4F5C;&#x6267;&#x884C;&#x5931;&#x8D25;&#xFF0C;&#x90A3;&#x4E48;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x4F1A;&#x53BB;&#x9000;&#x56DE;&#x53BB;&#x6267;&#x884C;&#x524D;&#x9762;&#x5404;&#x53C2;&#x4E0E;&#x8005;&#x7684;&#x9006;&#x5411;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;&#xFF0C;&#x56DE;&#x6EDA;&#x5DF2;&#x63D0;&#x4EA4;&#x7684;&#x53C2;&#x4E0E;&#x8005;&#xFF0C;&#x4F7F;&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;&#x56DE;&#x5230;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x3002;</p>
+</blockquote>
+<h4 id="&#x4F18;&#x7F3A;&#x70B9;_3"><a name="&#x4F18;&#x7F3A;&#x70B9;_3" class="anchor-navigation-ex-anchor" href="#&#x4F18;&#x7F3A;&#x70B9;_3"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F18;&#x7F3A;&#x70B9;</h4>
+<ul>
+<li>Saga&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x70B9;<ul>
+<li>&#x4E8B;&#x52A1;&#x53C2;&#x4E0E;&#x8005;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x5B9E;&#x73B0;&#x5F02;&#x6B65;&#x8C03;&#x7528;&#xFF0C;&#x541E;&#x5410;&#x9AD8;</li>
+<li>&#x4E00;&#x9636;&#x6BB5;&#x76F4;&#x63A5;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;&#xFF0C;&#x65E0;&#x9501;&#xFF0C;&#x6027;&#x80FD;&#x597D;</li>
+<li>&#x4E0D;&#x7528;&#x7F16;&#x5199;TCC&#x4E2D;&#x7684;&#x4E09;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x5B9E;&#x73B0;&#x7B80;&#x5355;</li>
+</ul>
+</li>
+<li>Saga&#x6A21;&#x5F0F;&#x7684;&#x7F3A;&#x70B9;<ul>
+<li>&#x8F6F;&#x72B6;&#x6001;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x4E0D;&#x786E;&#x5B9A;&#xFF0C;&#x65F6;&#x6548;&#x6027;&#x5DEE;</li>
+<li>&#x6CA1;&#x6709;&#x9501;&#xFF0C;&#x6CA1;&#x6709;&#x4E8B;&#x52A1;&#x9694;&#x79BB;&#xFF0C;&#x4F1A;&#x6709;&#x810F;&#x5199;</li>
+</ul>
+</li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2023-02-10 08:36 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Day60-Sentinel.html" class="navigation navigation-prev " aria-label="Previous page: Day60-Sentinel">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Day62~64-黑马商城.html" class="navigation navigation-next " aria-label="Next page: Day62~64-黑马商城">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Day61-Seata","level":"1.10.58","depth":2,"next":{"title":"Day62~64-黑马商城","level":"1.10.59","depth":2,"path":"Java笔记/Day62~64-黑马商城.md","ref":"Java笔记/Day62~64-黑马商城.md","articles":[]},"previous":{"title":"Day60-Sentinel","level":"1.10.57","depth":2,"path":"Java笔记/Day60-Sentinel.md","ref":"Java笔记/Day60-Sentinel.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://none.org.cn/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"0day计划","language":"zh-hans","links":{"sidebar":{"None's 树洞":"https://none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"Java笔记/Day61-Seata.md","mtime":"2023-02-10T00:36:03.834Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T00:23:40.981Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
