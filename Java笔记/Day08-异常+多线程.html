@@ -1337,12 +1337,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.59" data-path="Day62~64-黑马商城.html">
+        <li class="chapter " data-level="1.10.59" data-path="Day65-JWT&日志.html">
             
-                <a href="Day62~64-黑马商城.html">
+                <a href="Day65-JWT&日志.html">
             
                     
-                    Day62~64-黑马商城
+                    Day65-JWT&日志
             
                 </a>
             
@@ -1350,20 +1350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.60" data-path="Day65-黑马头条.html">
-            
-                <a href="Day65-黑马头条.html">
-            
-                    
-                    Day65-黑马头条
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.61" data-path="就业加强-MySQL.html">
+        <li class="chapter " data-level="1.10.60" data-path="就业加强-MySQL.html">
             
                 <a href="就业加强-MySQL.html">
             
@@ -1569,7 +1556,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h4 id="&#x5F02;&#x5E38;"><a name="&#x5F02;&#x5E38;" class="anchor-navigation-ex-anchor" href="#&#x5F02;&#x5E38;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F02;&#x5E38;</h4>
-<p><a href="images/image-20221109105029356.png" data-lightbox="71e19891-ccbb-4ae4-92e9-a8d3354e0ca1" data-title="image-20221109105029356"><img src="images/image-20221109105029356.png" alt="image-20221109105029356"></a></p>
+<p><a href="images/image-20221109105029356.png" data-lightbox="019be36e-8ce1-4516-b92f-91e88c22726b" data-title="image-20221109105029356"><img src="images/image-20221109105029356.png" alt="image-20221109105029356"></a></p>
 <h4 id="&#x5F02;&#x5E38;&#x5904;&#x7406;"><a name="&#x5F02;&#x5E38;&#x5904;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x5F02;&#x5E38;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F02;&#x5E38;&#x5904;&#x7406;</h4>
 <ul>
 <li><p>&#x901A;&#x5E38;&#x505A;&#x6CD5;&#xFF1A;&#x65B9;&#x6CD5;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;main&#x65B9;&#x6CD5;&#x6355;&#x6293;&#x5F02;&#x5E38;</p>
@@ -1786,7 +1773,7 @@
 <li><p>&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x5757;</p>
 <pre><code class="lang-java"><span class="hljs-comment">//&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x5757;</span>
 <span class="hljs-keyword">synchronized</span>(&#x540C;&#x6B65;&#x9501;){
-    &#x6709;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x4E3A;&#x9898;&#x7684;&#x4EE3;&#x7801;
+    &#x6709;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x7684;&#x4EE3;&#x7801;
 }
 </code></pre>
 <pre><code class="lang-java"><span class="hljs-comment">//&#x5356;&#x7968;&#x4EFB;&#x52A1;</span>
@@ -1903,7 +1890,8 @@
 </ul>
 <ul>
 <li><p>Lock&#x9501;&#x673A;&#x5236;</p>
-<pre><code class="lang-java">Lock lock = <span class="hljs-keyword">new</span> ReentrantLock();<span class="hljs-comment">//&#x53EF;&#x91CD;&#x5165;&#x9501;</span>
+<pre><code class="lang-java"><span class="hljs-comment">//Lock&#x9501;</span>
+Lock lock = <span class="hljs-keyword">new</span> ReentrantLock();<span class="hljs-comment">//&#x53EF;&#x91CD;&#x5165;&#x9501;</span>
 <span class="hljs-keyword">try</span>{
     lock.lock();<span class="hljs-comment">//&#x52A0;&#x9501;</span>
     &#x9700;&#x8981;&#x540C;&#x6B65;&#x5904;&#x7406;&#x7684;&#x4EE3;&#x7801;&#xFF1B;
@@ -1912,42 +1900,39 @@
 }
 </code></pre>
 <pre><code class="lang-java"><span class="hljs-comment">//&#x5356;&#x7968;&#x4EFB;&#x52A1;</span>
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Ticket</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Ticket</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+      <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> total = <span class="hljs-number">100</span>; <span class="hljs-comment">//&#x603B;&#x7968;&#x6570;</span>
+      <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Lock lock = <span class="hljs-keyword">new</span> ReentrantLock(); <span class="hljs-comment">//&#x53EF;&#x91CD;&#x5165;&#x9501;</span>
+      <span class="hljs-comment">//&#x6A21;&#x62DF;&#x7A97;&#x53E3;&#x5356;&#x7968;</span>
+      <span class="hljs-meta">@Override</span>
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+          String name = Thread.currentThread().getName(); <span class="hljs-comment">//&#x83B7;&#x53D6;&#x7EBF;&#x7A0B;&#x540D;&#x79F0;</span>
+          <span class="hljs-comment">//&#x4E00;&#x76F4;&#x5728;&#x5356;&#x7968;</span>
+          <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+              <span class="hljs-keyword">try</span> {
+                  lock.lock();<span class="hljs-comment">//&#x52A0;&#x9501;,&#x7EBF;&#x7A0B;&#x8981;&#x6267;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x83B7;&#x53D6;&#x9501;</span>
+                  <span class="hljs-keyword">if</span> (total &gt; <span class="hljs-number">0</span>) {
+                      total--;
+                      System.out.println(name + <span class="hljs-string">&quot;&#x5356;&#x7968;&#x6210;&#x529F;&#xFF0C;&#x5269;&#x4F59;&#x7968;&#x6570;&#xFF1A;&quot;</span> + total);
+                  } <span class="hljs-keyword">else</span> {
+                      <span class="hljs-keyword">break</span>;
+                  }
+              }<span class="hljs-keyword">finally</span> {
+                  lock.unlock();<span class="hljs-comment">//&#x89E3;&#x9501;&#x7684;&#x4EE3;&#x7801;&#x4E00;&#x5B9A;&#x8981;&#x6267;&#x884C;</span>
+              }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> total = <span class="hljs-number">100</span>; <span class="hljs-comment">//&#x603B;&#x7968;&#x6570;</span>
-
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Lock lock = <span class="hljs-keyword">new</span> ReentrantLock(); <span class="hljs-comment">//&#x53EF;&#x91CD;&#x5165;&#x9501;</span>
-
-    <span class="hljs-comment">//&#x6A21;&#x62DF;&#x7A97;&#x53E3;&#x5356;&#x7968;</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
-        String name = Thread.currentThread().getName(); <span class="hljs-comment">//&#x83B7;&#x53D6;&#x7EBF;&#x7A0B;&#x540D;&#x79F0;</span>
-        <span class="hljs-comment">//&#x4E00;&#x76F4;&#x5728;&#x5356;&#x7968;</span>
-        <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
-            <span class="hljs-keyword">try</span> {
-                lock.lock();<span class="hljs-comment">//&#x52A0;&#x9501;,&#x7EBF;&#x7A0B;&#x8981;&#x6267;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x83B7;&#x53D6;&#x9501;</span>
-                <span class="hljs-keyword">if</span> (total &gt; <span class="hljs-number">0</span>) {
-                    total--;
-                    System.out.println(name + <span class="hljs-string">&quot;&#x5356;&#x7968;&#x6210;&#x529F;&#xFF0C;&#x5269;&#x4F59;&#x7968;&#x6570;&#xFF1A;&quot;</span> + total);
-                } <span class="hljs-keyword">else</span> {
-                    <span class="hljs-keyword">break</span>;
-                }
-            }<span class="hljs-keyword">finally</span> {
-                lock.unlock();<span class="hljs-comment">//&#x89E3;&#x9501;&#x7684;&#x4EE3;&#x7801;&#x4E00;&#x5B9A;&#x8981;&#x6267;&#x884C;</span>
-            }
-
-            <span class="hljs-keyword">try</span> {
-                Thread.sleep(<span class="hljs-number">10</span>);
-            } <span class="hljs-keyword">catch</span> (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-}
+              <span class="hljs-keyword">try</span> {
+                  Thread.sleep(<span class="hljs-number">10</span>);
+              } <span class="hljs-keyword">catch</span> (InterruptedException e) {
+                  e.printStackTrace();
+              }
+          }
+      }
+  }
 </code></pre>
 </li>
 </ul>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2022-11-11 23:01 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2023-03-15 11:26 </span> </footer>
                                 
                                 </section>
                             
@@ -1990,7 +1975,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Day08-异常+多线程","level":"1.10.20","depth":2,"next":{"title":"Day09-线程池+Lambda+Stream流","level":"1.10.21","depth":2,"path":"Java笔记/Day09-线程池+Lambda+Stream流.md","ref":"Java笔记/Day09-线程池+Lambda+Stream流.md","articles":[]},"previous":{"title":"Day07-Map集合","level":"1.10.19","depth":2,"path":"Java笔记/Day07-Map集合.md","ref":"Java笔记/Day07-Map集合.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://none.org.cn/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"None's 树洞","language":"zh-hans","links":{"sidebar":{"None's 树洞":"https://none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"Java笔记/Day08-异常+多线程.md","mtime":"2022-11-11T15:01:43.561Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T09:55:31.219Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Day08-异常+多线程","level":"1.10.20","depth":2,"next":{"title":"Day09-线程池+Lambda+Stream流","level":"1.10.21","depth":2,"path":"Java笔记/Day09-线程池+Lambda+Stream流.md","ref":"Java笔记/Day09-线程池+Lambda+Stream流.md","articles":[]},"previous":{"title":"Day07-Map集合","level":"1.10.19","depth":2,"path":"Java笔记/Day07-Map集合.md","ref":"Java笔记/Day07-Map集合.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://none.org.cn/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"None's 树洞","language":"zh-hans","links":{"sidebar":{"None's 树洞":"https://none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"Java笔记/Day08-异常+多线程.md","mtime":"2023-03-15T03:26:53.272Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-28T14:53:54.060Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -2025,6 +2010,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

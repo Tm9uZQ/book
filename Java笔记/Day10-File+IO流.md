@@ -8,8 +8,10 @@
 ```java
 // 1.File(String pathname) 通过字符串路径创建File对象(重要) 定位到一个文件或文件
 File file = new File("D:\\MyFileTest\\aaa");
+
 // 2.File(String parent, String child) 通过父路径和子路径创建File对象
 File file1 = new File("D:\\MyFileTest", "aaa");
+
 // 3.File(File parent, String child) 通过父路径File对象和子路径创建File对象
 File fileParent = new File("D:\\MyFileTest");
 File file2 = new File(fileParent, "aaa");
@@ -159,9 +161,9 @@ File file2 = new File(fileParent, "aaa");
       fis.close();
   }
   ```
-
   
 
+  
 - 字符流复制文件
 
   ```java

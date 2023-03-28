@@ -237,7 +237,7 @@ public static void setAge(int age) throws Un18Exception {
   ```java
   //同步代码块
   synchronized(同步锁){
-      有线程安全为题的代码
+      有线程安全问题的代码
   }
   ```
 
@@ -360,6 +360,7 @@ public static void setAge(int age) throws Un18Exception {
 - Lock锁机制
 
   ```java
+  //Lock锁
   Lock lock = new ReentrantLock();//可重入锁
   try{
       lock.lock();//加锁
@@ -368,41 +369,38 @@ public static void setAge(int age) throws Un18Exception {
       lock.unlock();//在finally块中，保证锁一定会被释放
   }
   ```
-
+  
   ```java
   //卖票任务
-  public class Ticket implements Runnable {
-  
-      private static int total = 100; //总票数
-  
-      private static Lock lock = new ReentrantLock(); //可重入锁
-  
-      //模拟窗口卖票
-      @Override
-      public void run() {
-          String name = Thread.currentThread().getName(); //获取线程名称
-          //一直在卖票
-          while (true) {
-              try {
-                  lock.lock();//加锁,线程要执行代码，必须先获取锁
-                  if (total > 0) {
-                      total--;
-                      System.out.println(name + "卖票成功，剩余票数：" + total);
-                  } else {
-                      break;
-                  }
-              }finally {
-                  lock.unlock();//解锁的代码一定要执行
-              }
-  
-              try {
-                  Thread.sleep(10);
-              } catch (InterruptedException e) {
-                  e.printStackTrace();
-              }
-          }
-      }
-  }
+    public class Ticket implements Runnable {
+        private static int total = 100; //总票数
+        private static Lock lock = new ReentrantLock(); //可重入锁
+        //模拟窗口卖票
+        @Override
+        public void run() {
+            String name = Thread.currentThread().getName(); //获取线程名称
+            //一直在卖票
+            while (true) {
+                try {
+                    lock.lock();//加锁,线程要执行代码，必须先获取锁
+                    if (total > 0) {
+                        total--;
+                        System.out.println(name + "卖票成功，剩余票数：" + total);
+                    } else {
+                        break;
+                    }
+                }finally {
+                    lock.unlock();//解锁的代码一定要执行
+                }
+    
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
   ```
 
 

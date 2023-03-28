@@ -243,3 +243,51 @@
 
 #### Stream流
 
+- 创建Stream流的方式
+
+  ```java
+  ArrayList<Integer> list = new ArrayList<>();
+  Collections.addAll(list,11,22,33,44);
+  
+  //方式1：通过集合获取流 （调用集合的stream方法）
+  Stream<Integer> s1 = list.stream();
+  
+  //方式2：使用静态方法of直接创建流
+  Stream<Integer> s2 = Stream.of(11, 22, 33, 44, 55);
+  ```
+
+- 常用方法
+
+  | 成员方法 | 方法作用   | 返回值类型 | 方法种类 |
+  | -------- | ---------- | ---------- | -------- |
+  | filter   | 过滤       | Stream     | 中间方法 |
+  | limit    | 取用前几个 | Stream     | 中间方法 |
+  | skip     | 跳过前几个 | Stream     | 中间方法 |
+  | map      | 映射       | Stream     | 中间方法 |
+  | count    | 统计个数   | long       | 终结方法 |
+  | forEach  | 逐一处理   | void       | 终结方法 |
+
+- Stream收集到数组
+
+  ```java
+  Stream<String> st = Stream.of("11", "22", "33");
+  Object[] arr = st.toArray();
+  ```
+
+- Stream收集到集合
+
+  ```java
+  //1. 数据收集到List集合
+  Stream<String> st = Stream.of("11", "22", "33");
+  List<String> list = st.collect(Collectors.toList());
+  
+  //2. 数据收集到Set集合
+  Stream<String> st = Stream.of("11", "22", "33");
+  Set<String> set = st.collect(Collectors.toSet());
+  ```
+
+- 使用注意
+
+  - **一个Stream流对象只能操作一次**
+  - 调用中间方法会返回新流，以便下次操作使用
+  - **终结方法如果没调用，中间方法也不会执行**

@@ -1337,12 +1337,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.59" data-path="Day62~64-黑马商城.html">
+        <li class="chapter " data-level="1.10.59" data-path="Day65-JWT&日志.html">
             
-                <a href="Day62~64-黑马商城.html">
+                <a href="Day65-JWT&日志.html">
             
                     
-                    Day62~64-黑马商城
+                    Day65-JWT&日志
             
                 </a>
             
@@ -1350,20 +1350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.60" data-path="Day65-黑马头条.html">
-            
-                <a href="Day65-黑马头条.html">
-            
-                    
-                    Day65-黑马头条
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.61" data-path="就业加强-MySQL.html">
+        <li class="chapter " data-level="1.10.60" data-path="就业加强-MySQL.html">
             
                 <a href="就业加强-MySQL.html">
             
@@ -1579,8 +1566,10 @@
 </ul>
 <pre><code class="lang-java"><span class="hljs-comment">// 1.File(String pathname) &#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x4E32;&#x8DEF;&#x5F84;&#x521B;&#x5EFA;File&#x5BF9;&#x8C61;(&#x91CD;&#x8981;) &#x5B9A;&#x4F4D;&#x5230;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x6587;&#x4EF6;</span>
 File file = <span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;D:\\MyFileTest\\aaa&quot;</span>);
+
 <span class="hljs-comment">// 2.File(String parent, String child) &#x901A;&#x8FC7;&#x7236;&#x8DEF;&#x5F84;&#x548C;&#x5B50;&#x8DEF;&#x5F84;&#x521B;&#x5EFA;File&#x5BF9;&#x8C61;</span>
 File file1 = <span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;D:\\MyFileTest&quot;</span>, <span class="hljs-string">&quot;aaa&quot;</span>);
+
 <span class="hljs-comment">// 3.File(File parent, String child) &#x901A;&#x8FC7;&#x7236;&#x8DEF;&#x5F84;File&#x5BF9;&#x8C61;&#x548C;&#x5B50;&#x8DEF;&#x5F84;&#x521B;&#x5EFA;File&#x5BF9;&#x8C61;</span>
 File fileParent = <span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;D:\\MyFileTest&quot;</span>);
 File file2 = <span class="hljs-keyword">new</span> File(fileParent, <span class="hljs-string">&quot;aaa&quot;</span>);
@@ -1664,7 +1653,7 @@ File file2 = <span class="hljs-keyword">new</span> File(fileParent, <span class=
 <ul>
 <li>&#x6CE8;&#x610F;&#xFF1A;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x90FD;&#x662F;&#x4ECE;&#x7A0B;&#x5E8F;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x8BF4;&#x7684;</li>
 </ul>
-<p><a href="images/image-20221114195917387.png" data-lightbox="d9a720ef-cdad-4fb2-9b56-a2dd9b2ad6c5" data-title="image-20221114195917387"><img src="images/image-20221114195917387.png" alt="image-20221114195917387"></a></p>
+<p><a href="images/image-20221114195917387.png" data-lightbox="ce034e8c-2f4a-4c0b-88ea-611fd370df4d" data-title="image-20221114195917387"><img src="images/image-20221114195917387.png" alt="image-20221114195917387"></a></p>
 <ul>
 <li>IO&#x6D41;&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;<ul>
 <li>&#x521B;&#x5EFA;&#x6D41;&#x5BF9;&#x8C61;</li>
@@ -1758,7 +1747,7 @@ fiw.close();
 </code></pre>
 </li>
 </ul>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2022-11-27 19:25 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; by <a href="https://none.org.cn" target="_blank">None</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB;&#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0 &#x56FD;&#x9645;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2023-03-17 10:28 </span> </footer>
                                 
                                 </section>
                             
@@ -1801,7 +1790,7 @@ fiw.close();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Day10-File+IO流","level":"1.10.22","depth":2,"next":{"title":"Day11-IO流+装饰模式","level":"1.10.23","depth":2,"path":"Java笔记/Day11-IO流+装饰模式.md","ref":"Java笔记/Day11-IO流+装饰模式.md","articles":[]},"previous":{"title":"Day09-线程池+Lambda+Stream流","level":"1.10.21","depth":2,"path":"Java笔记/Day09-线程池+Lambda+Stream流.md","ref":"Java笔记/Day09-线程池+Lambda+Stream流.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://none.org.cn/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"None's 树洞","language":"zh-hans","links":{"sidebar":{"None's 树洞":"https://none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"Java笔记/Day10-File+IO流.md","mtime":"2022-11-27T11:25:06.613Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T09:55:31.219Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Day10-File+IO流","level":"1.10.22","depth":2,"next":{"title":"Day11-IO流+装饰模式","level":"1.10.23","depth":2,"path":"Java笔记/Day11-IO流+装饰模式.md","ref":"Java笔记/Day11-IO流+装饰模式.md","articles":[]},"previous":{"title":"Day09-线程池+Lambda+Stream流","level":"1.10.21","depth":2,"path":"Java笔记/Day09-线程池+Lambda+Stream流.md","ref":"Java笔记/Day09-线程池+Lambda+Stream流.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","-sharing","-lunr","-search","search-pro","anchor-navigation-ex","expandable-chapters","chapter-fold","splitter","lightbox","page-footer-ex","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"page-footer-ex":{"copyright":"Copyright © by [None](https://none.org.cn)，使用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://none.org.cn/logo.png"},"expandable-chapters":{}},"theme":"default","author":"None","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"None's 树洞","language":"zh-hans","links":{"sidebar":{"None's 树洞":"https://none.org.cn"}},"gitbook":"3.2.3"},"file":{"path":"Java笔记/Day10-File+IO流.md","mtime":"2023-03-17T02:28:05.378Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-28T14:53:54.060Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1836,6 +1825,10 @@ fiw.close();
     
         
         <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
